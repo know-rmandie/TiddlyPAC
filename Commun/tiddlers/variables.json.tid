@@ -1,0 +1,18 @@
+created: 20170824121832438
+modified: 20170914154804972
+title: variables.json
+type: application/json
+
+{
+    "nom_territoire": "CC de Bidule",
+    "type_document": "PLU",
+    "dans_scot": "SCoT de Machin-Chouette",
+    "departement": "27",
+    "communes_sensibles": "oui",
+    "est_plui": "oui",
+    "vaut_pdu": "oui",
+    "vaut_plh": "oui",
+    "dans_DTA": "DTA de truc",
+    "dans_PLH": "PLH de machin",
+    "dans_PPA": "PPA de Schmurz"
+}

@@ -1,0 +1,30 @@
+created: 20170905155527289
+modified: 20170905162043700
+title: Structure des parties
+type: text/vnd.tiddlywiki
+
+Pour faciliter l'utilisation par des régions (départements?) différentes, on a taché de séparer dans l'outil les éléments réutilisables par tous, de ceux qui sont spécifiquement locaux. Lorsqu'on lance le PAC pour une région, il charge l'intégralité des éléments de //Commun// puis tous ceux de la région concernée.
+
+* ''Commun'' (contient les éléments utilisables dans toutes les régions)
+** ''tiddlers''
+*** ''Thème A''
+*** ''Thème B''
+*** ...
+*** ''zConfig'' (configuration de l'outil)
+*** ''zDoc'' (documentation générale)
+*** //Porter_a_connaissance.tid// (comme son nom l'indique)
+*** //Sommaire.tid// (comme son nom l'indique)
+*** //Variables_globlales.tid// (pour l'édition des variables globales)
+*** //variables.json.tid// (toutes les variables globales)
+** //PAC.bat// (fichier de lancement)
+** //tiddlywiki.info// (fichier de configuration)
+* ''Région x'' (reprise de l'arborescence de commun, pour des compléments)
+** ''tiddlers''
+*** ''Thème A''
+*** ...
+*** //Variables_locales.tid// (pour l'édition des variables locales)
+*** //variables_locales.json.tid// (toutes les variables locales)
+** //PAC.bat// (fichier de lancement)
+** //tiddlywiki.info// (fichier de configuration)
+* zTools (outils)
+* zTrash (fichiers destinés à la suppression)

@@ -1,0 +1,14 @@
+created: 20170824122212870
+modified: 20170913074001322
+title: Porter à Connaissance
+type: text/vnd.tiddlywiki
+
+<style>
+{{$:/pac/styles}}
+</style>
+
+!!!!! les variables sont modifiables dans [[Variables]] ou dans l'onglet à droite.
+
+@@.titre
+! {{variables.json##nom_territoire}}<br/>{{variables.json##type_document}} <br/>Eléments de porter à connaissance
+@@

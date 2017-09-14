@@ -1,0 +1,30 @@
+created: 20170911152904342
+modified: 20170913140345029
+tags: 
+title: Variables globales
+type: text/vnd.tiddlywiki
+
+!! [[Variables globales]]
+Liste des variables globales modifiables contenues dans [[variables.json]].
+
+!!! Généralités
+* Nom du territoire : <$edit-text tiddler="variables.json" index="nom_territoire" tag="input" class="pac"/>
+* Type de document (//PLU ou SCoT//) : <$edit-text tiddler="variables.json" index="type_document" tag="input" class="pac short"/><$reveal type="match" state="variables.json##type_document" text="PLU">
+
+* est intercommunal (//oui / non//) ? <$edit-text tiddler="variables.json" index="est_plui" tag="input" default="" class="pac short"/><$reveal type="match" default="oui" state="variables.json##est_plui" text="oui">
+
+* vaut PDU (//oui / non//)  <$edit-text tiddler="variables.json" index="vaut_pdu" tag="input" default="" class="pac short"/>
+* vaut PLH (//oui / non//)  <$edit-text tiddler="variables.json" index="vaut_plh" tag="input" default="" class="pac short"/>
+</$reveal>
+
+* fait partie d'un SCoT (//non / SCoT de ...//)? <$edit-text tiddler="variables.json" index="dans_scot" tag="input" default="SCoT de ..." class="pac"/>
+</$reveal>
+* Département concerné :  <$edit-text tiddler="variables.json" index="departement" tag="input" default="numéro" class="pac short"/>
+
+!!! [[Projet de territoire]]
+* Le territoire est concerné par une DTA (//non / DTA de ...//) : <$edit-text tiddler="variables.json" index="dans_DTA" tag="input" class="pac"/>
+* Le territoire fait partie d'un PLH  (//non / PLH de ...//) : <$edit-text tiddler="variables.json" index="dans_PLH" tag="input" class="pac"/>
+
+!!! [[Qualité de l'air]]
+* Le territoire comporte des communes sensibles (//oui / non//) : <$edit-text tiddler="variables.json" index="communes_sensibles" tag="input" class="pac short"/>
+* Le territoire est concerné par un PPA (//non / PPA de ...//) : <$edit-text tiddler="variables.json" index="dans_PPA" tag="input" class="pac"/>

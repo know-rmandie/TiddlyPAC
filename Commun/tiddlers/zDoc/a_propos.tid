@@ -1,0 +1,32 @@
+created: 20170824120603675
+modified: 20170905161952102
+rank: 0
+tags: Documentation
+title: à propos
+type: text/vnd.tiddlywiki
+
+Essai d'outil utilisant [[TiddlyWiki|http://tiddlywiki.com/]] pour la mise en place d'un PAC Automatique. En résumé, la procédure escomptée est la suivante (pour les procédures détaillées cf. [[Utiliser TiddlyPAC]]) :
+
+* Pour l'utilisateur 
+** Mise à jour des champs dans [[Variables]]
+** Export du [[Porter à Connaissance]] obtenu
+* Pour la maintenance
+** Mise à jour des parties / sous-parties par les services, dont définition des [[Variables]] éventuelles
+** Mise à jour du [[Porter à Connaissance]] en fonction des évolutions
+
+!!! Questions / Problèmes en supens
+* Il faudrait sans doute réfléchir dès à présent à un système permettant de distinguer les niveaux territoriaux simplement, voire à adapter facilement l'outil d'un\e région\département à l'autre (voir [[Structure des parties]]) cela implique de permettre aussi un système de variables par région
+* Le fichier html exporté est correct. Pour des raisons évidentes, il est souhaitable de pouvoir le retravailler dans Libre-Office. Pour l'heure Libre-Office gère très mal le html avec des css et des classes : pas de rendu, pas d'édition des styles correspondants... Quelques solutions
+** procéder à l'impression dans un document .pdf, directement depuis le navigateur. Peut donner des petits problèmes de pagination.
+** ~~faire une moulinette qui convertit tous les `class="truc"` en `style="font: ..., ..."`~~ Un peu lourd
+** ~~utiliser un logiciel de conversion. Je regarde [[Pandoc|http://pandoc.org]]~~ non concluant
+* Ne faudrait-il pas utiliser la version tiddlers individuels / node.js pour la maintenance?
+** Pour : permet un suivi plus simple des versions de chaque thème / sous-thème
+** Contre : plus technique pour les néophites
+
+!!! Réglages
+* [[Styles|$:/pac/styles]] utilisés
+
+!!! Références et documentation
+* [[PAC "automatique" précédent|]] sur le réseau
+* [[Benchmark|$:/references/benchmark]] sur les modes de fonctionnement des autres DREAL

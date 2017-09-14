@@ -1,0 +1,68 @@
+created: 20170824063525726
+modified: 20170912134403596
+tags: Références
+title: Benchmark des PAC automatiques
+type: text/vnd.tiddlywiki
+
+! Benchmark des pratiques des DREAL en matière de PAC automatique
+
+//Il s’agit d’un tour d'horizon rapide (septembre 2017) des solutions adoptées par les autres régions pour traiter la question du Porter à Connaissance (PAC). Il a été obtenu rapidement par la consultation des sites internet et intranet des structures et n'est donc sans doute pas exhaustif puisque les services ne mettent pas systématiquement leurs outils à disposition...//
+
+!! Auvergne Rhône Alpes
+Pas de PAC automatique sur [[internet|http://www.auvergne-rhone-alpes.developpement-durable.gouv.fr/]] semble-t-il. La rubrique //données// [[renvoie|http://www.auvergne-rhone-alpes.developpement-durable.gouv.fr/portail-des-donnees-communales-a10066.html]] vers un outil [[portail des données communales|http://www.rdbrmc-travaux.com/basedreal/Accueil.php]] (pas mal bugué). Pas de mention de l'outil dans la rubrique //planification//.
+
+Rien sur [[l'intranet|http://intra.dreal-auvergne-rhone-alpes.e2.rie.gouv.fr]]. A noter une [[liste des données accessibles via PostGis|http://intra.dreal-auvergne-rhone-alpes.e2.rie.gouv.fr/liste-des-donnees-accessibles-directement-dans-la-a1369.html]]
+
+!! Bourgogne-Franche-Comté
+La DREAL Bourgogne-Franche-Comté met à disposition en accès sur son site internet une base de données communales permettant d’établir une fiche à la commune sur les données environnementales communes (N2000, ZNIEFF…).
+D’après les informations disponibles sur l’intranet, la DREAL contribue à un PAC non automatique avec une reprise des données adaptées au territoire.
+
+!! Bretagne
+La DREAL Bretagne renvoie depuis son site internet à des informations géographiques : géobretagne, atlas carto, carmen… Est également mis à disposition pour le PAC [[une série de données sous forme de liste|http://www.bretagne.developpement-durable.gouv.fr/les-porter-a-connaissance-a3199.html]].
+Des pages spécifiques thématiques sont disponibles notamment la page PAC Nature qui renvoie vers d’autres sites ou géobretagne.
+
+Un nouvel outil est a priori en cours d’élaboration.
+
+!! Centre-Val de Loire
+Aucune donnée n’est mise à disposition depuis le site internet de la DREAL. Néanmoins, sur l’intranet, il est fait référence à un PAC régional en 3 fascicules (1 réglementation nationale, 2 cadre juridique du territoire, 3 Attente particulière). La territorialisation du PAC est réalisé manuellement par les DDT. La DREAL ne fournit a priori pas de contribution.
+
+!! Corse
+Rien sur [[internet|http://www.corse.developpement-durable.gouv.fr/]]. Il n'y a même pas de rubrique planification. La rubrique données renvoie vers un site partenarial semble-t-il.
+
+L'[[intranet|http://intra.portail.e2.rie.gouv.fr/dreal-corse-a3828.html]] est en cours de refonte en cette fin août 2017.
+
+!! Grand Est
+Les données (paysages, ressources naturelles) sont mise à disposition sur internet à partir d’une base de données communales permettant de réaliser un tableau de données à la commune.  
+
+!! Hauts-de-France
+Les données (paysages, ressources naturelles) sont mise à disposition sur internet à partir d’une base de données communales.
+Une version d’un PAC sec pour l’ex Région Nord-Pas-de-Calais est disponible mais pas pour l’ex-région Picardie. 
+
+!! Normandie
+//Description de nos outils normands//
+
+!! Nouvelle-Aquitaine
+Le site  [[internet|http://www.nouvelle-aquitaine.developpement-durable.gouv.fr/les-outils-de-la-planification-r1042.html]] renvoie vers les données des anciennes régions (cf. ci-après) à noter un focus important mis sur la notion de [[diagnostic partagé territorial|http://www.nouvelle-aquitaine.developpement-durable.gouv.fr/un-outil-d-analyse-au-service-du-dialogue-avec-les-a1246.html]] qui est une façon assez intéressante de produire les [[enjeux]].
+
+L'[[intranet|http://intra.portail.e2.rie.gouv.fr/dreal-nouvelle-aquitaine-a2658.html]] comporte une page spécifique sur l'[[organisation des contributions en matière de planification|http://intra.dreal-aquitaine-limousin-poitou-charentes.e2.rie.gouv.fr/organisation-des-contributions-en-matiere-de-a1007.html]]. L'outil de nouveau régional n'est pas encore en place et il y a donc un renvoi vers les outils //internet //des anciennes régions :
+
+* [[Cartes et données en Aquitaine|http://www.donnees.aquitaine.developpement-durable.gouv.fr/DREAL/]] semble assez complet et permet une recherche par commune ou par liste de communes (à faire à la main), mais pas par EPCI semble-t-il,
+* [[SIG Porter à Connaissance DREAL|http://carto.geolimousin.fr/1/sig_pac.map]] fournit pour le Limousin une cartographie assez confortable des différentes couches. On peut utilise un bouton "i" pour avoir la liste des couches à un endroit donné. Ne parait pas très adapté pour une sortie papier. Pose également question quant à la complétude des données,
+* [[Pégase Poitou-Charente|http://www.pegase-poitou-charentes.fr/accueil/base_de_donnees_communales]] offre une base de données communale dont l'interface est plutôt aboutie et permet une consultation par EPCI. Elle parait d'ailleurs intégrer l'ensemble des données de la nouvelle région. Seul bémol, les regroupements de résultats seraient sans doute améliorables. On a aussi accès à une carte pour l'ancienne région qui fonctionne comme un cartélie mais avec une interface plus agréable.
+
+!! Occitanie
+Le site [[internet|http://www.occitanie.developpement-durable.gouv.fr/pac-type-languedoc-roussillon-a22632.html]] propose l'accès à son //pac-type// au format ``.odt`` avec en annexe des tableaux des carrières et établissements SEVESO.
+
+Pas plus d'informations sur le site [[intranet|]]. A noter toutefois dans l'espace //réseau aménagement//, la mention d'une démarche [[convergence des contributions DREAL|http://intra.dreal-occitanie.e2.rie.gouv.fr/travaux-en-cours-r12537.html]] probablement liée à la fusion.
+
+!! Pays de la Loire
+
+Le site [[internet|http://www.pays-de-la-loire.developpement-durable.gouv.fr/urbanisme-et-territoires-r208.html]] ne comporte pas de mention au PAC ou aux contributions de la DREAL. Une place importante est consacrée aux indicateurs de consommation d'espace, mais pas plus.
+
+Rien de plus sur le site [[intranet|http://intra.dreal-pays-de-la-loire.e2.rie.gouv.fr]], ni dans la partie //aménagement//, ni dans la partie //données//.
+
+!! Provence-Alpes-Côte d’Azur
+
+Le site [[internet|http://www.paca.developpement-durable.gouv.fr/donnees-territoriales-r383.html]] permet d'accéder aux données territoriales via l'outil (partenarial?) [[Batrame|http://batrame-paca.fr/recherche/territoire]]. Celui-ci permet une consultation efficace de l'ensemble des données avec un accès par différents périmètres territoriaux. Seul bémol, la dénomination des entités résultats par leur identifiant "technique" est parfois un peu rébarbative (quand le nom n'est pas renseigné). L'outil propose une sortie PDF pas très esthétique, mais très efficace.
+
+Le site [[intranet|http://intra.dreal-paca.i2/contribution-de-la-dreal-a-l-elaboration-des-r6577.html]] présente l'organisation en matière de contribution de la DREAL. Il y a notamment mention d'un cadre type de PAC, mais il ne semble pas avoir été publié...

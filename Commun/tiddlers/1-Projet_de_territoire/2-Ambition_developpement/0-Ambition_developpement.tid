@@ -1,0 +1,67 @@
+created: 20170825073044795
+modified: 20170914153705868
+rank: 2
+tags: [[Projet de territoire]]
+title: Ambition et organisation du développement
+type: text/vnd.tiddlywiki
+
+!! Ambition et organisation du développement territorial
+
+Le projet d’aménagement et de développement durables doit exposer le projet d’urbanisme et arrêter les orientations générales concernant un vaste ensemble de sujets^^1-2^^ qui traduisent l’ambition territoriale en matière de développement. 
+Cette ambition doit tenir compte tout à la fois des volontés et du contexte local, mais aussi de ceux des territoires environnants ainsi que des ressources et des capacités à ces différentes échelles. Elle doit aussi tenir compte des impacts potentiels qu’elle pourrait avoir.
+
+!!!!!! [1-2] L’article  L 151-5 du Code de l’Urbanisme rappelle les objectifs du PADD
+
+!!!!! le territoire fait partie d'un SCoT? ''{{variables.json##dans_scot}}'' ([[changer|Variables]])
+
+<$reveal type="nomatch" state="variables.json##dans_scot" text="non">
+
+!!!!! le territoire est intercommunal? ''{{variables.json##est_plui}}'' ([[changer|Variables]])
+
+<$reveal type="match" state="variables.json##est_plui" text="oui">
+
+Le {{variables.json##dans_scot}} dont fait partie le territoire a procédé à une première analyse des possibilités de développement pour l’ensemble du territoire et acté des ambitions de développement à cette échelle.
+
+Il revient au PLUi d’intégrer les éléments du SCoT en matière de polarisation et d’ambition du développement et de les décliner dans son PADD, ses OAP et son règlement.
+
+Pour compléter les éléments issus du SCoT, de nombreuses ressources sont également accessibles concernant la spatialisation des ambitions de développement.
+</$reveal>
+</$reveal>
+
+<$reveal type="match" state="variables.json##dans_scot" text="non">
+
+!!!!! le territoire est intercommunal? ''{{variables.json##est_plui}}'' ([[changer|Variables]])
+
+<$reveal type="match" state="variables.json##est_plui" text="oui">
+
+Aujourd’hui, la réalité du fonctionnement et de l’organisation des territoires fait de l’intercommunalité l’échelle la plus pertinente pour coordonner les politiques d’urbanisme, d’habitat et de déplacements. Le PLUi devient dans ce cadre un outil intégrateur des différentes politiques publiques. Cela implique qu’une réflexion particulière soit conduite sur la spatialisation des ambitions de développement.
+
+Les choix stratégiques qui seront effectués auront des conséquences pour l’attractivité de l’ensemble du territoire, tant pour l’accueil d’habitants que pour la pérennité des activités et des ressources territoriales.
+
+Assurer le développement et le renouvellement des logements à proximité des services et commerces existants est la meilleure façon de garantir leur avenir et donc l’attractivité des bourgs auxquels ils appartiennent. À l’inverse, renoncer à polariser le développement revient à renoncer à l’avantage que constituent ces services de proximité et à terme les condamner.
+Cette question est particulièrement sensible en matière d’espaces dédiés à l’activité ou aux commerces. Leur multiplication, loin de favoriser la création de nouveaux emplois incite à une relocalisation d’activités existantes au détriment de la qualité de service et de l’attractivité des centre-bourgs.
+
+De la même façon, favoriser par des orientations adaptées la production de logements de natures, d’emplacements et de dimensions variées permet d’offrir à la population du territoire un véritable parcours résidentiel. Les besoins ne sont pas les mêmes pour un jeune adulte qui s’émancipe, un couple qui s’installe, ou qui souhaite avoir des enfants, pour des familles dont les enfants grandissent ou quittent le domicile ou pour des personnes âgées. La production d’une offre trop uniforme sur le territoire ne permet pas à l’ensemble des ménages d’envisager leur avenir sur le territoire et risque de provoquer leur départ à terme.
+
+Le PLUi doit donc définir les principales polarités et les ambitions de développement par secteur du territoire en tenant compte des besoins du territoire et des éléments en question. Il doit aussi s’assurer que les éléments figurant dans les OAP et le règlement garantissent la mise en œuvre effective du projet de territoire.
+</$reveal>
+
+<$reveal type="match" state="variables.json##est_plui" text="non">
+
+Aujourd’hui, la réalité du fonctionnement et de l’organisation des territoires fait de l’intercommunalité l’échelle la plus pertinente pour coordonner les politiques d’urbanisme, d’habitat et de déplacements. Pour autant, même si son périmètre de réflexion est plus restreint, le PLU ne peut s’abstraire de ce contexte pour la définition de ses objectifs de développement. Il doit donc intégrer tout à la fois le contexte et les objectifs affichés par ses voisins et partenaires.
+
+À un niveau plus local encore, les choix en matière de polarisation de l’offre résidentielle, d’activité économique, ou encore de type de logements attendus devraient être coordonnés avec ces partenaires pour tenir compte des besoins de la population et garantir la pérennité du développement communal.
+
+Il appartient au territoire d’examiner le contexte intercommunal dans lequel il s’inscrit pour définir ses objectifs de développement proportionnés au contexte.
+Pour aider à la réflexion sur cette spatialisation des objectifs de développement, on pourra s’aider d’un certain nombre de ressources existantes.
+</$reveal>
+</$reveal>
+
+Les nombreux zonages que l’Insee met régulièrement à jour, permettent d’avoir une bonne vision des dépendances territoriales, de l’organisation des services et des déplacements domiciles travail.
+
+Les zonages des bassins de vie, les zonages en aires urbaines et en zones d’emplois peuvent être retrouvés sur le site internet de l’Insee :
+http://www.insee.fr/fr/methodes/nomenclatures/zonages/default.asp
+
+En matière de typologie communale pouvant concourir à la définition d’une organisation spatiale adaptée, d'autres réflexions peuvent également être examinées avec des éclairages complémentaires, comme la typologie des campagnes françaises mise au point par la DATAR^^1-2^^
+
+!!!!!! ^^[1-2]^^ La typologie des campagnes peut être retrouvée sur l’observatoire des territoires : http://www.observatoire-des-territoires.gouv.fr/observatoire-des-territoires/fr/typologie-des-campagnes-fran-aises-et-des-espaces-enjeux-sp-cifiques-littoral-et-montagne

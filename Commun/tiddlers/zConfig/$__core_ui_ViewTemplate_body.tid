@@ -1,0 +1,20 @@
+created: 20170912154905223
+modified: 20170912161228990
+tags: $:/tags/ViewTemplate
+title: $:/core/ui/ViewTemplate/body
+type: text/vnd.tiddlywiki
+
+<$reveal tag="div" class="tc-tiddler-body" type="nomatch" state=<<folded-state>> text="hide" retain="yes" animate="yes">
+
+<$list filter="[all[current]!has[plugin-type]!field:hide-body[yes]]">
+
+<$transclude>
+
+<$transclude tiddler="$:/language/MissingTiddler/Hint"/>
+
+</$transclude>
+
+</$list>
+
+</$reveal>
+<$macrocall $name="chapitre" tag=$(currentTiddler)$/>

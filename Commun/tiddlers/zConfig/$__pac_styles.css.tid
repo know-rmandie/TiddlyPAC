@@ -1,0 +1,106 @@
+created: 20170824122428244
+modified: 20170914154307256
+tags: $:/tags/Stylesheet
+title: $:/pac/styles
+type: text/css
+
+.tc-tiddler-body p {
+    text-align:justify;
+}
+
+.tc-tiddlylink-external {
+    font-family: "Liberation Sans Narrow";
+    color:green !important;
+}
+
+h1.titre {
+    text-align:center;
+}
+
+h5 {
+    font-size:.9em;
+}
+
+h5.todo {
+    background-color: orange;
+}
+
+h5, .com {
+    background-color: lightblue;
+    padding:.5em;
+    margin:2px;
+    font-style:italic;
+    font-family:serif;
+}
+
+h6, .nbp {
+    font-size:.8em;
+    font-style:italic;
+    color:gray;
+}
+
+input.pac {
+    border:none;
+    border-bottom:2px solid green;
+    padding:0 4px;
+}
+
+input.short {
+    width:3em
+}
+
+blockquote.ref {
+    font-family: "Liberation serif", Georgia, serif;
+   font-style:italic;
+   position: relative;
+   color:#555;
+   border-left: none; margin-left: 50px;
+   padding: 10px; border-radius: 8px; }
+
+blockquote.ref cite:before { content: "\2014 \2009"; }
+
+blockquote.ref:before {
+    font-family: "Liberation serif", Georgia, serif;
+   color: #bbb;
+   content: open-quote; font-size: 8em;
+   line-height: 0.1em;
+   margin-right: 0.25em;
+   vertical-align: -0.4em;
+   position: absolute; left: -50px; top: 42px;
+}
+
+/*blockquote.tc-big-quote:after { font-family: Georgia, serif; color: #bbb; content: close-quote; font-size: 8em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em; position: absolute; right: -80px; bottom: -20px; }*/
+
+blockquote.obli {
+    margin: 0;
+    border-left-color:blue;
+}
+
+blockquote.doc {
+    margin: 0;
+    font-style: italic;
+    color: gray;
+}
+
+/* si on passe à l'impression du document */
+@media print {
+body {
+   margin:1cm;
+}
+.tc-tiddler-title, .tc-subtitle, .tc-tags-wrapper, .todo, .com {
+    display:none;
+}
+.tc-tiddlylink, .tc-tiddlylink-missing {
+    color:black;
+    font-style:normal;
+}
+h1 {
+   page-break-before:always;
+}
+h1.titre {
+    font-size:20pt;
+    margin:10cm 0 5cm 0;
+    page-break-before:never;
+    line-height:25pt;
+}
+}

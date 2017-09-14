@@ -1,0 +1,29 @@
+created: 20170911092510798
+modified: 20170912162229648
+tags: $:/tags/Macro
+title: $:/pac/macroChapitre
+type: text/vnd.tiddlywiki
+
+\define chapitre(tag:"""chapitre""")
+
+<$list filter="[tag[$tag$]sort[rank]]">
+
+!!!!! <$link target=<<currentTiddler>>><<currentTiddler>></$link>
+
+{{||$:/core/ui/ViewTemplate/body}}
+</$list>
+\end
+
+Cette "macro" permet d'insérer toutes les sous-parties d'un chapitre donné, triées suivant le critère "rank"
+
+```
+\define chapitre(tag:"""chapitre""")
+
+<$list filter="[tag[$tag$]sort[rank]]">
+
+!!!!! <$link target=<<currentTiddler>>><<currentTiddler>></$link>
+
+{{||$:/core/ui/ViewTemplate/body}}
+</$list>
+\end
+```

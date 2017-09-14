@@ -1,0 +1,18 @@
+created: 20170825073044795
+modified: 20170914121043506
+rank: 2
+tags: [[si DTA]]
+title: Site logistique stratégique
+type: text/vnd.tiddlywiki
+
+!!!!! le territoire doit accueillir une zone logistique ?  {{variables_locales.json##a_zone_DTA}} (//oui// / //non// - [[changer|Variables]])
+
+<$reveal type="match" state="variables_locales.json##a_zone_DTA" text="oui">
+
+!!! Espace stratégique pour l’activité logistique
+Afin de permettre le développement de la logistique terrestre interrégionale ou internationale, la DTA a identifié dans ses orientations plusieurs sites susceptibles d’accueillir des activités logistiques à valeur ajoutée. Ces sites doivent permettre de transférer localement une partie de la richesse du fret transitant par les grands ports normands et répondent à des exigences plutôt rares de desserte multimodale.
+
+@@.obli
+> Un de ces sites ayant été identifié sur le territoire du {{variables.json##type_document}}, la DTA impose de préserver l’emprise correspondante de toute vocation qui pourrait s’avérer incompatible avec sa vocation future qui est d’accueillir de façon très majoritaire soit des activités logistiques soit des activités manufacturières de grande taille.
+@@
+</$reveal>

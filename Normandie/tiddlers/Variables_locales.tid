@@ -1,0 +1,14 @@
+created: 20170911153453007
+modified: 20170911153820359
+title: Variables locales
+type: text/vnd.tiddlywiki
+
+!! [[Variables locales]]
+Liste des variables locales (de niveau régional) modifiables contenues dans [[variables_locales.json]].
+
+!!! [[Projet de territoire]]
+<$reveal type="nomatch" default="non" state="variables.json##dans_DTA" text="non">
+
+* Le territoire fait partie de la ''{{variables.json##dans_DTA}}'' 
+** doit-il accueillir une zone logistique (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="a_zone_DTA" tag="input" default="" class="pac short"/>
+</$reveal>

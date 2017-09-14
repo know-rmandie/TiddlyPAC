@@ -1,0 +1,76 @@
+created: 20170825132234668
+modified: 20170825132515189
+tags: Références
+title: Qualité de l'air, notes diverses
+type: text/vnd.tiddlywiki
+
+//Des notes issues du travail de Pascale Gondeaux sur la qualité de l'air. Voir si on complète certaines partie de [[Qualité de l'air]] avec.//
+
+ANNEXE : liste des communes sensibles à la qualité de l’air
+
+La qualité de l’air est un enjeu sanitaire majeur. La pollution de l’air influence la prévalence des maladies cardio-respiratoires, cérébrales et des cancers (on estime, par exemple, que l’exposition aux particules fines − PM2,5 − est à l’origine de 48 000 morts prématurées chaque année en France). Le coût de cette pollution pour la société a été évalué à 30 milliards d’euros, dont près d’un milliard d’euros directement supporté par le système de soins.
+
+La pollution atmosphérique urbaine constitue un problème majeur de santé publique, compte tenu de la densité humaine, de la proportion de la population exposée et de la durée d’exposition.
+
+Un urbanisme favorable à la santé implique des pratiques d’aménagement qui tendent à promouvoir la santé et le bien-être. Cependant, la lutte contre la pollution atmosphérique ne dispose pas de transcriptions réglementaires spécifiques en matière d'urbanisme.
+Aussi, le présent rapport fournit un cadre de référence sur la prise en compte dans l'urbanisme de la problématique de la qualité de l'air afin que l’aménagement urbain en intègre pleinement les enjeux.
+
+!! Quelques notions sur la pollution atmosphérique
+
+La qualité de l'air résulte d'un équilibre complexe entre la quantité de polluants rejetée dans l'air et toute une série de phénomènes auxquels ces polluants vont être soumis une fois dans l'atmosphère sous l'action de la météorologie : transport, dispersion sous l'action du vent et de la pluie, dépôt ou réactions chimiques des polluants entre eux ou sous l'action des rayons du soleil.
+
+Ainsi, à partir d'émissions de polluants équivalentes en lieu et en intensité, les niveaux de
+polluants dans l'environnement peuvent varier suivant les conditions météorologiques plus ou moins favorables à la dispersion, ou au contraire à la concentration de ces polluants.
+
+Les espèces polluantes émises ou transformées dans l'atmosphère sont très nombreuses.
+Les principaux polluants atmosphériques sont les particules fines (PM10 : particules de diamètre inférieur à 10 μm), les oxydes d’azote, le dioxyde de soufre et l’ozone.
+
+La prise en compte de la qualité de l’air implique une appréhension à plusieurs échelles, et notamment à une échelle resserrée (les concentrations de polluants pouvant être très localisées) et met en jeu aussi bien l’émission des polluants que l’exposition des populations à ces polluants.
+
+!!! Les émissions de polluants
+Elles correspondent aux quantités de polluants directement rejetées dans l’atmosphère par les activités humaines (transport, chauffage, agriculture, industrie…) ou par des sources naturelles (volcans, composés émis par la végétation et les sols). Elles sont généralement exprimées en kilogrammes ou tonnes par an.
+
+Des phénomènes de dispersion, de dilution et de transformation dans l’environnement interviennent ensuite. Ils peuvent déplacer la pollution ou changer sa nature (l’ozone, par exemple, est un polluant « secondaire » issu de la transformation de polluants primaires émis par des activités humaines). Localement, ces phénomènes ont un impact sur la pollution atmosphérique. En zone urbaine, la forte densité des sources d’émissions implique des niveaux importants de polluants.
+
+@@.com
+à refaire : schéma
+
+<span style="width:20%;display:inline-block;border:1px dotted;padding:5px">Émissions<br>des polluants primaires</span>><span style="width:20%;display:inline-block;border:1px dotted;padding:5px">Transport dispersion<br>vent, turbulences, gradient thermique</span>><span style="width:20%;display:inline-block;border:1px dotted;padding:5px">Transformation<br>humidité, chaleur, soleil</span>><span style="width:20%;display:inline-block;border:1px dotted;padding:5px">Air ambiant<br>concentration</span>
+@@
+
+!!! L’exposition des populations
+Elle résulte des émissions et correspond aux concentrations de polluants auxquelles sont soumises les populations en un lieu donné. Ces concentrations sont prises en compte à une échelle locale et s’expriment le plus souvent en microgramme par mètre cube (μg/m3).
+
+C’est l’exposition des populations aux polluants qui fait de la qualité de l’air un enjeu de santé publique, particulièrement pour les populations à risque (personnes âgées, enfants, femmes enceintes…). La pollution de l’air a également des conséquences sur la végétation et sur les matériaux, qu’elle dégrade chimiquement (ce qui soulève des enjeux de préservation des bâtiments et de conservation du patrimoine).
+
+!!! Une approche à deux angles
+La question de la qualité de l’air doit donc être envisagée sous l’angle des émissions et des concentrations, deux approches qui sont intimement liées, mais dont les lectures peuvent être différentes voire contradictoires lorsqu’on les applique aux politiques d’urbanisme. À titre d’exemple, la ville compacte représente une forme urbaine susceptible de réduire les émissions de polluants en limitant la demande de déplacements et en facilitant les économies d’énergie. Toutefois, une pollution est tout de même émise et la compacité risque d’en limiter la dispersion, augmentant l’exposition des populations résidentes. Cet exemple montre la complexité du traitement de la pollution urbaine et la nécessaire utilisation d’outils de mesure (par les organismes en charge de la surveillance de la qualité de l’air) et d’outils de modélisation intégrée.
+
+!! Urbanisme - Des enjeux « qualité de l’air » à pondérer
+
+!!! Contexte
+L’urbanisme est un élément majeur de la maîtrise de l’exposition de la population à la pollution atmosphérique, en particulier dans un contexte où l’intensification urbaine tend à aggraver cette exposition (les points noirs existants ne sont pas résorbés et de nouvelles populations s’installent dans des zones fortement exposées : bordures de routes, friches industrielles...).
+
+!!! Généralités
+Le schéma ci-dessous résume les grands principes qui sous-tendent la manière de traiter la problématique de la qualité de l’air à l’échelle des territoires :
+
+@@.com
+à refaire : schéma sur l'action à mener
+@@
+
+Concevoir un urbanisme respectueux de la santé au vu de l’enjeu de qualité de l’air, c’est tout d’abord définir une politique d’aménagement qui intègre ces enjeux sanitaires en agissant :
+
+* sur la réduction des sources d’émissions polluantes : c’est-à-dire en réduisant les besoins de déplacement, en luttant contre l’étalement urbain...
+* sur la réduction de l’exposition de la population à la pollution de l’air.
+
+Dans le cadre d’élaborations ou de révisions de documents d’urbanisme, l’État intervient auprès des intercommunalités au travers du porter à connaissance, de l’association et de l’avis qu’il formule à l’issue de l’arrêt du projet.
+
+
+Le Porter à Connaissance
+
+Le porter à connaissance (PAC) transmis au début de la procédure (article L.121-2 du code de l’urbanisme) rappelle les dispositions législatives et réglementaires applicables au territoire, les projets des collectivités territoriales et de l’État, ainsi que tous les éléments ou informations nécessaires à l’élaboration du document (notamment les études techniques relatives à la prévention des risques et à la protection de l’environnement, l’inventaire du patrimoine culturel, les servitudes d’utilité publique...).
+
+Le PAC est l’occasion pour l’État d’insister sur l’importance de l’articulation et de la mise en cohérence des différentes politiques portées par la collectivité : urbanisme, habitat et transports et déplacements, mais aussi environnement, économie, etc.
+Il s'agit d'assurer la prise en compte des objectifs de la politique publique de l’État dans les
+documents d'urbanisme et notamment de vérifier le respect des principes de l'article L121-1 du code de l'urbanisme.
+Dans cette partie, les orientations du SRCAE, les notions de zones sensibles à la qualité de l'air, les actions du PPA s'il existe devront être prises en compte.

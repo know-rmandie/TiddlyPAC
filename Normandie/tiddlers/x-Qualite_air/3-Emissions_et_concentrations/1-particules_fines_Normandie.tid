@@ -1,0 +1,59 @@
+created: 20170825124834682
+modified: 20170825132715844
+rank: 1
+tags: [[Particules fines PM10]]
+title: Particules fines PM10 en Normandie
+type: text/vnd.tiddlywiki
+
+!!!! Episodes de pollutions pour le département
+
+!!!!! En fonction du département concerné : {{variables.json##departement}} ([[changer|Variables]])
+
+<$reveal type="match" state="variables.json##departement" text="14">
+
+||!2016|!2015|!2014|
+|!Calvados| i : 10<br>A : 0| i : 11<br>A : 4| i : 9<br>A : 4|
+</$reveal>
+
+<$reveal type="match" state="variables.json##departement" text="27">
+
+||!2016|!2015|!2014|
+|!Eure| i : 10<br>A : 1| i : 4<br>A : 1| i : 9*<br>A : 4^^*^^|
+//^^*^^ valeurs régionales//
+</$reveal>
+
+<$reveal type="match" state="variables.json##departement" text="50">
+
+||!2016|!2015|!2014|
+|!Manche| i : 8<br>A : 0| i : 11<br>A : 2| i : 7<br>A : 1|
+</$reveal>
+
+<$reveal type="match" state="variables.json##departement" text="61">
+
+||!2016|!2015|!2014|
+|!Orne| i : 4<br>A : 0| i : 11<br>A : 0| i : 8<br>A : 1|
+</$reveal>
+
+<$reveal type="match" state="variables.json##departement" text="76">
+
+||!2016|!2015|!2014|
+|!Seine-Maritime| i : 15<br>A : 2| i : 12<br>A : 1| i : 9*<br>A : 4^^*^^|
+//^^*^^ valeurs régionales//
+</$reveal>
+
+!!!! Émissions et concentrations
+Il est possible de connaître les valeurs moyennes annuelles de mesure de la concentration pour chaque station du réseau de surveillance de la qualité de l’air. Les données sont disponibles sur le site internet de l’association agréée pour la surveillance de la qualité de l’air (AASQA) (http://www.atmonormandie.fr/).
+
+@@.todo
+//Cette partie serait plutôt à mettre au PAC "données". A regarder.//
+
+Sur le territoire de l’EPCI auquel appartient la/les commune/s du PLU/PLUi (à compléter), les émissions de particules fines PM10 se répartissent comme suit :
+à compléter avec le module de calcul DREAL :
+- graphe des émissions 2014
+- graphe de l’évolution des émissions 2008-2014
+
+Les émissions de PM2,5 se répartissent comme suit :
+à compléter avec le module de calcul DREAL :
+- graphe des émissions 2014
+- graphe de l’évolution des émissions 2008-2014
+@@

@@ -1,0 +1,6 @@
+created: 20170824063343193
+modified: 20170825113026858
+title: $:/themes/tiddlywiki/vanilla/settings/codefontfamily
+type: text/vnd.tiddlywiki
+
+"Liberation Mono",Monaco, Consolas, "Lucida Console", "DejaVu Sans Mono", monospace

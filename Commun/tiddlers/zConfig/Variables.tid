@@ -1,0 +1,12 @@
+created: 20170824121739316
+list-before: $:/core/ui/SideBar/Open
+modified: 20170911153900348
+tags: $:/tags/SideBar
+title: Variables
+type: text/vnd.tiddlywiki
+
+Fiche pour la modification facile des variables. Consultez l'aide pour plus d'informations.
+
+{{Variables globales}}
+
+{{Variables locales}}
