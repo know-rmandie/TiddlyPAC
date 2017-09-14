@@ -1,5 +1,5 @@
 created: 20170824122428244
-modified: 20170914154307256
+modified: 20170914161837297
 tags: $:/tags/Stylesheet
 title: $:/pac/styles
 type: text/css
@@ -9,7 +9,7 @@ type: text/css
 }
 
 .tc-tiddlylink-external {
-    font-family: "Liberation Sans Narrow";
+    font-family: "Liberation Sans Narrow", sans-serif;
     color:green !important;
 }
 
