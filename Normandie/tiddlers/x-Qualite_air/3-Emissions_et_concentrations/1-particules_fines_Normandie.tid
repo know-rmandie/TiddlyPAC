@@ -1,5 +1,5 @@
 created: 20170825124834682
-modified: 20170825132715844
+modified: 20170915072712777
 rank: 1
 tags: [[Particules fines PM10]]
 title: Particules fines PM10 en Normandie
@@ -42,9 +42,13 @@ type: text/vnd.tiddlywiki
 </$reveal>
 
 !!!! Émissions et concentrations
-Il est possible de connaître les valeurs moyennes annuelles de mesure de la concentration pour chaque station du réseau de surveillance de la qualité de l’air. Les données sont disponibles sur le site internet de l’association agréée pour la surveillance de la qualité de l’air (AASQA) (http://www.atmonormandie.fr/).
+Il est possible de connaître les valeurs moyennes annuelles de mesure de la concentration pour chaque station du réseau de surveillance de la qualité de l’air.
 
-@@.todo
+<<<.doc
+Les données sont disponibles sur le site internet de l’association agréée pour la surveillance de la qualité de l’air (AASQA)
+<<< http://www.atmonormandie.fr/
+
+<<<.todo
 //Cette partie serait plutôt à mettre au PAC "données". A regarder.//
 
 Sur le territoire de l’EPCI auquel appartient la/les commune/s du PLU/PLUi (à compléter), les émissions de particules fines PM10 se répartissent comme suit :
@@ -56,4 +60,4 @@ Les émissions de PM2,5 se répartissent comme suit :
 à compléter avec le module de calcul DREAL :
 - graphe des émissions 2014
 - graphe de l’évolution des émissions 2008-2014
-@@
+<<<
