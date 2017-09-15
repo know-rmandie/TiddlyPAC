@@ -1,0 +1,7 @@
+created: 20170915144841689
+modified: 20170915160705527
+tags: footer
+title: $:/pac/footer
+type: text/vnd.tiddlywiki
+
+<div id="pied-de-page">{{variables.json##nom_territoire}} -  porter à connaissance<div id="num"></div></div>

@@ -1,31 +1,15 @@
 created: 20170824122428244
-modified: 20170915073028893
+modified: 20170915161517304
 tags: $:/tags/Stylesheet
 title: $:/pac/styles
 type: text/css
-
-.tc-tiddler-body p {
-    text-align:justify;
-}
-
-.tc-tiddlylink-external {
-    font-family: "Liberation Sans Narrow", sans-serif;
-    color:green !important;
-}
 
 h1.titre {
     text-align:center;
 }
 
-h5 {
-    font-size:.9em;
-}
-
-blockquote.todo, p.todo {
-    background-color: orange;
-}
-
-h5, blockquote.com {
+h5, .com, p.com {
+   font-size:.9em;
     background-color: lightblue;
     padding:.5em;
     margin:2px;
@@ -33,10 +17,59 @@ h5, blockquote.com {
     font-family:serif;
 }
 
-h6, blocquote.nbp, p.nbp, {
+h5.todo, .todo, p.todo {
+    background-color: orange;
+}
+
+h6, .nbp, p.npb {
     font-size:.8em;
     font-style:italic;
     color:gray;
+    border-left:none;
+    margin:0;
+}
+
+blockquote p {
+    margin: 7px 0 0 0;
+}
+
+.ref:before {
+    font-family: "Liberation serif", Georgia, serif;
+   color: #bbb;
+   content: "\00AB"; font-size: 4em;
+   line-height: 0.1em;
+   margin-right: 0.25em;
+   vertical-align: -0.4em;
+   position: absolute; left: -30px; top: 22px;
+}
+
+.ref cite {color:#585}
+
+.ref cite:before { content: "\2014 \2009"; }
+
+.ref {
+    font-family: "Liberation serif", Georgia, serif;
+   font-style:italic;
+   position: relative;
+   color:#555;
+   border-left: none; margin-left: 30px;
+   padding: 10px; border-radius: 8px; 
+}
+
+.obli {
+    margin: 0;
+    border-left-color:blue;
+}
+
+.doc {
+    margin: 0;
+    font-style: italic;
+    color: gray;
+}
+
+table {
+    min-width:60%;
+    margin:1em auto;
 }
 
 input.pac {
@@ -49,65 +82,85 @@ input.short {
     width:3em
 }
 
-blockquote p {
-    margin: 7px 0 0 0;
+.tc-tiddler-body p {
+    text-align:justify;
 }
 
-blockquote.ref {
-    font-family: "Liberation serif", Georgia, serif;
-   font-style:italic;
-   position: relative;
-   color:#555;
-   border-left: none; margin-left: 50px;
-   padding: 10px; border-radius: 8px; }
-
-blockquote.ref cite:before { content: "\2014 \2009"; }
-
-blockquote.ref:before {
-    font-family: "Liberation serif", Georgia, serif;
-   color: #bbb;
-   content: open-quote; font-size: 8em;
-   line-height: 0.1em;
-   margin-right: 0.25em;
-   vertical-align: -0.4em;
-   position: absolute; left: -50px; top: 42px;
-}
-
-blockquote.obli {
-    margin: 0;
-    border-left-color:blue;
-}
-
-blockquote.doc {
-    margin: 0;
-    font-style: italic;
-    color: gray;
-}
-
-table {
-    min-width:60%;
-    margin:1em auto;
+.tc-tiddlylink-external {
+    font-family: "Liberation Sans Narrow", sans-serif;
+    color:green !important;
 }
 
 /* si on passe à l'impression du document */
 @media print {
+html, body, .tc-dropzone, .tc-story-river {
+    margin:0;
+    padding:0;
+    width: 210mm;
+    height: 297mm;
+  }
+
 body {
-   margin:1cm;
+    margin: 15mm;
 }
-.tc-tiddler-title, .tc-subtitle, .tc-tags-wrapper, .todo, .com {
+
+.tc-body {
+    font-size:12pt;
+}
+
+h5, .tc-tiddler-title, .tc-subtitle, .tc-tags-wrapper, .todo, .com {
     display:none;
 }
+
 .tc-tiddlylink, .tc-tiddlylink-missing {
     color:black;
     font-style:normal;
 }
+
 h1 {
    page-break-before:always;
 }
+
 h1.titre {
     font-size:20pt;
     margin:10cm 0 5cm 0;
     page-break-before:never;
     line-height:25pt;
 }
+
+/*h1, h2, h3, h4 {
+    page-break-after:never;
+}
+
+a, p {
+    page-break-inside: avoid;
+  }*/
+
+.tc-tagged-TiddlyPAC {
+margin-bottom:1.5cm;
+}
+
+.tc-tagged-footer {
+ position: fixed !important;
+width:100%;
+  bottom:0;
+  left:0;
+}
+
+.#pied-de-page {
+  width:100%;
+  font-size:.8em;
+  text-align:center;
+  font-style:italic;
+}
+
+#num {
+float:right;
+    font-size:1em;
+}
+
+#pied-de-page #num:after {
+  content:counter(page);
+  counter-increment: page;
+  }
 }
