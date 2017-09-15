@@ -1,5 +1,5 @@
 created: 20170824122428244
-modified: 20170914161837297
+modified: 20170915073028893
 tags: $:/tags/Stylesheet
 title: $:/pac/styles
 type: text/css
@@ -21,11 +21,11 @@ h5 {
     font-size:.9em;
 }
 
-h5.todo {
+blockquote.todo, p.todo {
     background-color: orange;
 }
 
-h5, .com {
+h5, blockquote.com {
     background-color: lightblue;
     padding:.5em;
     margin:2px;
@@ -33,7 +33,7 @@ h5, .com {
     font-family:serif;
 }
 
-h6, .nbp {
+h6, blocquote.nbp, p.nbp, {
     font-size:.8em;
     font-style:italic;
     color:gray;
@@ -47,6 +47,10 @@ input.pac {
 
 input.short {
     width:3em
+}
+
+blockquote p {
+    margin: 7px 0 0 0;
 }
 
 blockquote.ref {
@@ -69,8 +73,6 @@ blockquote.ref:before {
    position: absolute; left: -50px; top: 42px;
 }
 
-/*blockquote.tc-big-quote:after { font-family: Georgia, serif; color: #bbb; content: close-quote; font-size: 8em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em; position: absolute; right: -80px; bottom: -20px; }*/
-
 blockquote.obli {
     margin: 0;
     border-left-color:blue;
@@ -80,6 +82,11 @@ blockquote.doc {
     margin: 0;
     font-style: italic;
     color: gray;
+}
+
+table {
+    min-width:60%;
+    margin:1em auto;
 }
 
 /* si on passe à l'impression du document */
