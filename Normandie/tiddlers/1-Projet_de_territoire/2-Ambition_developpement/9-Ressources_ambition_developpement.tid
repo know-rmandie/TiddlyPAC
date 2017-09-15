@@ -1,12 +1,24 @@
 created: 20170825073044795
-modified: 20170830161730832
+<<<<<<< Updated upstream
+modified: 20170915070204539
+=======
+modified: 20170915123338012
+>>>>>>> Stashed changes
 rank: 9
 tags: [[Ambition et organisation du développement]]
 title: Ressources sur l'ambition de développement
 type: text/vnd.tiddlywiki
 
 !!!!! études de niveau régional
-* La typologie des communes normandes en matière de logement est disponible sur le site internet de la DREAL Normandie : http://www.normandie.developpement-durable.gouv.fr/habitat-deux-typologies-des-territoires-normands-a178.html
+<<<<<<< Updated upstream
+<<<.doc
+La typologie des communes normandes en matière de logement est disponible sur le site internet de la DREAL Normandie
+=======
+
+<<<.doc
+Les typologies des communes normandes en matière de logement est disponible sur le site internet de la DREAL Normandie
+>>>>>>> Stashed changes
+<<< http://www.normandie.developpement-durable.gouv.fr/habitat-deux-typologies-des-territoires-normands-a178.html
 
 !!!!! études par département (''{{variables.json##departement}}'' - [[changer|Variables]])
 !!!!! - HN (27,76) : [[Etudes polarisation HN]]

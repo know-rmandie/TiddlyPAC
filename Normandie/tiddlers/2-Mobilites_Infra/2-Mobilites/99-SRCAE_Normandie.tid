@@ -1,0 +1,23 @@
+created: 20170911145154533
+modified: 20170912161344094
+title: SRCAE en Normandie
+type: text/vnd.tiddlywiki
+
+!!!!! En fonction du département : {{variables.json##departement}} ([[changer|Variables]])
+
+<$reveal type="match" state="variables.json##departement" text="14">
+Un schéma régional climat air énergie (SRCAE) couvrant les départements du Calvados, de la Manche et de l’Orne, a été adopté le 28 décembre 2013.
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="50">
+Un schéma régional climat air énergie (SRCAE) couvrant les départements du Calvados, de la Manche et de l’Orne, a été adopté le 28 décembre 2013.
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="61">
+Un schéma régional climat air énergie (SRCAE) couvrant les départements du Calvados, de la Manche et de l’Orne, a été adopté le 28 décembre 2013.
+</$reveal>
+
+<$reveal type="match" state="variables.json##departement" text="27">
+Un schéma régional climat air énergie (SRCAE) couvrant les départements de l’Eure et de la Seine-Maritime a été adopté le 21 mars 2013.
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="76">
+Un schéma régional climat air énergie (SRCAE) couvrant les départements de l’Eure et de la Seine-Maritime a été adopté le 21 mars 2013.
+</$reveal>
