@@ -1,5 +1,5 @@
 created: 20170825073044795
-modified: 20170830162005940
+modified: 20170915125227354
 rank: 3
 tags: [[Projet de territoire]]
 title: Déclinaison du PLH
@@ -9,9 +9,9 @@ type: text/vnd.tiddlywiki
 
 <$reveal type="nomatch" state="variables.json##dans_PLH" text="non">
 
-!! [[Déclinaison du PLH]]
+!! Déclinaison du PLH
 
 Le territoire fait partie du {{variables.json##dans_PLH}}. A ce titre, le document d'urbanisme doit être compatible avec ce document^^1-3^^ et permettre sa mise en œuvre dans de bonnes conditions. Il intégrera donc les objectifs en matière de production et de diversité de logements.
 
-!!!!!! [1-3] Article L 131.4 4° du Code de l’Urbanisme
+!!!!!! ^^1-3^^ Article L 131.4 4° du Code de l’Urbanisme
 </$reveal>
