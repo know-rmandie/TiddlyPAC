@@ -1,0 +1,15 @@
+created: 20170911145154533
+modified: 20170912161344094
+tags: [[Projets d'infrastructures]]
+rank: 1
+title: Projets d'infrastructures en Normandie
+type: text/vnd.tiddlywiki
+
+
+<$reveal type="nomatch" state="variables.json##projet_infra" text="non">
+
+<<<.doc
+Des informations sur les projets d’infrastructures en Normandie sont à disposition sur le site Internet de la DREAL Normandie à la rubrique « Mobilités et infrastructures »
+<<< http://www.dreal.normandie.gouv.fr
+
+</$reveal>

@@ -1,0 +1,16 @@
+created: 20170911145154533
+modified: 20170912161344094
+tags: [[PLUi valant PDU]]
+rank: 2
+title: PLUi valant PDU en Normandie
+type: text/vnd.tiddlywiki
+
+!!!!! Le document vaut PDU? {{variables.json##vaut_pdu}} ([[changer|Variables]])
+
+<$reveal type="match" state="variables.json##vaut_pdu" text="oui">
+
+{{SRCAE en Normandie}}
+
+{{PPA en Normandie}}
+
+</$reveal>

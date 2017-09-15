@@ -1,5 +1,9 @@
 created: 20170825115617074
+<<<<<<< Updated upstream
 modified: 20170915072314473
+=======
+modified: 20170915102902491
+>>>>>>> Stashed changes
 rank: 2
 tags: [[Plan de Protection de l’Atmosphère]]
 title: PPA en Normandie
@@ -19,6 +23,10 @@ Le PPA comprend uniquement des mesures volontaires et poursuit 3 objectifs fonda
 <<<.doc
 Les incitations du plan de protection de l’atmosphère sont consultables à l'adresse
 suivante :
+<<<<<<< Updated upstream
 <<<http://www.normandie.developpement-durable.gouv.fr/document-approuve-a491.html
+=======
+<<< http://www.normandie.developpement-durable.gouv.fr/document-approuve-a491.html
+>>>>>>> Stashed changes
 
 </$reveal>
