@@ -1,5 +1,5 @@
 created: 20170911152904342
-modified: 20170913140345029
+modified: 20170915103056108
 tags: 
 title: Variables globales
 type: text/vnd.tiddlywiki
@@ -9,9 +9,10 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 
 !!! Généralités
 * Nom du territoire : <$edit-text tiddler="variables.json" index="nom_territoire" tag="input" class="pac"/>
+* est intercommunal (//oui / non//) ? <$edit-text tiddler="variables.json" index="intercommunal" tag="input" default="oui" class="pac short"/>
 * Type de document (//PLU ou SCoT//) : <$edit-text tiddler="variables.json" index="type_document" tag="input" class="pac short"/><$reveal type="match" state="variables.json##type_document" text="PLU">
 
-* est intercommunal (//oui / non//) ? <$edit-text tiddler="variables.json" index="est_plui" tag="input" default="" class="pac short"/><$reveal type="match" default="oui" state="variables.json##est_plui" text="oui">
+* est PLUi (//oui / non//) ? <$edit-text tiddler="variables.json" index="est_plui" tag="input" default="" class="pac short"/><$reveal type="match" default="oui" state="variables.json##est_plui" text="oui">
 
 * vaut PDU (//oui / non//)  <$edit-text tiddler="variables.json" index="vaut_pdu" tag="input" default="" class="pac short"/>
 * vaut PLH (//oui / non//)  <$edit-text tiddler="variables.json" index="vaut_plh" tag="input" default="" class="pac short"/>

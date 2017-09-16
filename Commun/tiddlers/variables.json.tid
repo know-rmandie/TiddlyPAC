@@ -1,5 +1,5 @@
 created: 20170824121832438
-modified: 20170914154804972
+modified: 20170915122521592
 title: variables.json
 type: application/json
 
@@ -9,6 +9,7 @@ type: application/json
     "dans_scot": "SCoT de Machin-Chouette",
     "departement": "27",
     "communes_sensibles": "oui",
+    "intercommunal": "oui",
     "est_plui": "oui",
     "vaut_pdu": "oui",
     "vaut_plh": "oui",
