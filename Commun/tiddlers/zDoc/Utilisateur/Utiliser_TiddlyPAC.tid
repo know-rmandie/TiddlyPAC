@@ -1,14 +1,16 @@
-created: 20170831084907210
-modified: 20170905133610916
-tags: [[Utiliser TiddlyPAC]]
-title: Produire un PAC à partir du modèle
-type: text/vnd.tiddlywiki
+created: 20170905133225949
+modified: 20170905134525309
+rank: 1
+tags: Documentation
+title: Utiliser TiddlyPAC
+type: text/x-markdown
 
-!! récupération du PAC type
+## récupération du PAC type
+1. récupérer la [version souhaitée de TiddlyPAC][versions]
+2. appuyer sur _enregistrer_ (![save](img-save sauvegarder)
+3. choisir un lieu pour enregistrer le fichier
 
-# ouvrir le fichier [[TiddlyPAC.html|file:///]]
-# appuyer sur //enregistrer// ({{$:/core/images/save-button}})
-# choisir un lieu pour enregistrer le fichier
+_suite du texte à convertir en .md_
 
 !! création du PAC
 # aller dans l'explorateur windows et ouvrir le fichier enregistré
@@ -31,7 +33,7 @@ On peut imprimer directement le PAC ainsi créé depuis le navigateur pour les �
 # l'exporter au format //.odt// (//Fichier > Exporter...//)
 # fermer le fichier //.html// et ouvrir le fichier //.odt//
 # effacer les premières lignes du document : //blablabalba//
-# importer le modèle de style 
+# importer le modèle de style
 #* //Format > Style et formatage...//
 #* {{$:/doc/images/import_style.png}} //> Charger les styles...//
 #* cocher toutes les cases dont //écraser//
@@ -41,3 +43,5 @@ On peut imprimer directement le PAC ainsi créé depuis le navigateur pour les �
 Après une relecture rapide, le document est désormais prêt à être imprimé. Il est possible d'ajouter une table des matières
 
 !!!!!! ^^1^^ Le résultat est exactement le même<br/>^^2^^ Il sera peut-être nécessaire d'écraser le fichier courant
+
+[versions]: #versions de TiddlyPAC
