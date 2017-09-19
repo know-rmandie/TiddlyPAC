@@ -1,0 +1,21 @@
+created: 20170911145154533
+modified: 20170912161344094
+tags: [[Porter à Connaissance]] chapitre
+title: Risques technologiques
+type: text/vnd.tiddlywiki
+rank: 3
+
+<<<.com
+le territoire est concerné par
+
+* les risques technologiques au sens large? {{variables.json##risques_techno}} ([[changer|Variables]])
+** industriels? {{variables.json##risques_indus}} ([[changer|Variables]])
+** miniers? {{variables.json##risques_miniers}} ([[changer|Variables]])
+** sites et sols pollués? {{variables.json##sols_pollues}} ([[changer|Variables]])
+<<<
+
+<$reveal type="match" state="variables.json##risques_technos" text="oui">
+
+! Risques technologiques, pollution des sols
+
+</$reveal>

@@ -1,6 +1,6 @@
 created: 20170911152904342
 modified: 20170915103056108
-tags: 
+tags:
 title: Variables globales
 type: text/vnd.tiddlywiki
 
@@ -25,6 +25,14 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 !!! [[Projet de territoire]]
 * Le territoire est concerné par une DTA (//non / DTA de ...//) : <$edit-text tiddler="variables.json" index="dans_DTA" tag="input" class="pac"/>
 * Le territoire fait partie d'un PLH  (//non / PLH de ...//) : <$edit-text tiddler="variables.json" index="dans_PLH" tag="input" class="pac"/>
+
+!!! [[Risques technologiques]]
+* Le territoire est concerné par les risques technologiques, miniers ou la pollution des sols (//oui / non//) : <$edit-text tiddler="variables.json" index="risques_technos" tag="input" class="pac short"/>
+** industriels (//oui / non//) : <$edit-text tiddler="variables.json" index="risques_indus" tag="input" class="pac short"/>
+*** Un PPRT (//oui / en cours//) : <$edit-text tiddler="variables.json" index="dans_pprt" tag="input" class="pac short"/>
+*** ...
+** miniers (//oui / non//) : <$edit-text tiddler="variables.json" index="risques_miniers" tag="input" class="pac short"/>
+** sites et sols pollués (//oui / non//) : <$edit-text tiddler="variables.json" index="sols_pollues" tag="input" class="pac short"/>
 
 !!! [[Qualité de l'air]]
 * Le territoire comporte des communes sensibles (//oui / non//) : <$edit-text tiddler="variables.json" index="communes_sensibles" tag="input" class="pac short"/>
