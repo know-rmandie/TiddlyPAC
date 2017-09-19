@@ -28,8 +28,14 @@ Dans TiddlyPAC, on peut atteindre la note qu'on souhaite modifier (par exemple v
 
 Il est également possible d'utiliser git pour faire ses propositions de modification. Il suffit de cloner le présent dépôt, de faire les modifications souhaitées et de faire une demande d'intégration.
 
-## Crédits
-* [TiddlyWiki][tw] bien évidemment (_5.1.14_)
+# Crédits / Licence
+TiddlyPAC s'appuye sur
+* [TiddlyWiki][tw] bien évidemment (_5.1.14_) (licence [BSD 3-clause](https://opensource.org/licenses/BSD-3-Clause))
+    * son plugin Markown, pour essayer d'avoir la documentation à la fois dans le dépôt et dans l'outil
+
+L'ensemble des adaptations (modestes) du code et des textes établis sont sous [licence ouverte](https://www.etalab.gouv.fr/licence-ouverte-open-licence)
+
+<div style="text-align:center"><img src="http://www.etalab.gouv.fr/wp-content/uploads/2014/05/Logo_Licence_Ouverte_bleu_blanc_rouge.png"/></div>
 
 ## Circuit
 * **[Framagit][origin]** ([issues][issues])

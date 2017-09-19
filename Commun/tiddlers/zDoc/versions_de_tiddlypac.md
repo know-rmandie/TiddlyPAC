@@ -4,5 +4,4 @@
   * ...
 
 [neutre]: https://framagit.org/know-rmandie/TiddlyPAC/
-
 [normandie]: https://framagit.org/know-rmandie/TiddlyPAC/
