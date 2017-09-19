@@ -1,10 +1,3 @@
-created: 20170905133225949
-modified: 20170905134525309
-rank: 1
-tags: Documentation
-title: Utiliser TiddlyPAC
-type: text/x-markdown
-
 ## récupération du PAC type
 1. récupérer la [version souhaitée de TiddlyPAC][versions]
 2. appuyer sur _enregistrer_ (![save](img-save sauvegarder)

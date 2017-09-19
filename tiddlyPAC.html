@@ -44,7 +44,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Bidule — PLU - Eléments de porter à connaissance</title>
+<title>CC de Bidule — PLU - Eléments de porter à connaissance</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
 
 
@@ -124,8 +124,6 @@ Error message and password prompt
 
 <li>$:/config/MissingLinks</li>
 
-<li>$:/config/Navigation/UpdateAddressBar</li>
-
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki</li>
@@ -140,6 +138,12 @@ Error message and password prompt
 
 <li>$:/core</li>
 
+<li>$:/core/modules/parsers/wikiparser/rules/quoteblock.js</li>
+
+<li>$:/core/templates/exporters/StaticRiver</li>
+
+<li>$:/core/ui/PageTemplate</li>
+
 <li>$:/core/ui/ViewTemplate/body</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -152,13 +156,29 @@ Error message and password prompt
 
 <li>$:/languages/fr-FR</li>
 
+<li>$:/pac/footer</li>
+
 <li>$:/pac/macroChapitre</li>
 
 <li>$:/pac/styles</li>
 
+<li>$:/plugins/tiddlywiki/markdown</li>
+
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
+
+<li>$:/state/folded/Porter à Connaissance</li>
+
+<li>$:/state/showeditpreview</li>
+
+<li>$:/state/sidebar</li>
+
+<li>$:/state/tab/sidebar--1835078512</li>
+
+<li>$:/state/toc/chapitre-Documentation--682378955</li>
+
+<li>$:/state/toc/chapitre-Qualité de l'air--682378955</li>
 
 <li>$:/status/IsLoggedIn</li>
 
@@ -167,6 +187,8 @@ Error message and password prompt
 <li>$:/StoryList</li>
 
 <li>$:/temp/info-plugin</li>
+
+<li>$:/temp/search</li>
 
 <li>$:/theme</li>
 
@@ -206,6 +228,12 @@ Error message and password prompt
 
 <li>L’aménagement et la ville durables</li>
 
+<li>Mobilités</li>
+
+<li>Mobilités et infrastructures</li>
+
+<li>Mobilités pour un doc intercommunal</li>
+
 <li>Oxydes d'azote</li>
 
 <li>Ozone</li>
@@ -214,15 +242,15 @@ Error message and password prompt
 
 <li>Plan de Protection de l’Atmosphère</li>
 
-<li>Porter à Connaissance</li>
+<li>PLUi valant PDU</li>
 
-<li>Produire un PAC à partir du modèle</li>
+<li>Porter à Connaissance</li>
 
 <li>Projet de territoire</li>
 
-<li>Qualité de l'air</li>
+<li>Projets d'infrastructures</li>
 
-<li>Qualité de l'air, notes diverses</li>
+<li>Qualité de l'air</li>
 
 <li>Références</li>
 
@@ -236,13 +264,15 @@ Error message and password prompt
 
 <li>Structure des parties</li>
 
-<li>Utiliser TiddlyPAC</li>
+<li>utiliser_TiddlyPAC</li>
 
 <li>Variables</li>
 
 <li>Variables globales</li>
 
 <li>variables.json</li>
+
+<li>versions_de_TiddlyPAC</li>
 
 </ul>
 </p>
@@ -260,17 +290,14 @@ Error message and password prompt
 <div created="20170831081535813" modified="20170831084728286" title="$:/config/MissingLinks" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>yes</pre>
 </div>
-<div created="20170831081552306" modified="20170831081553478" title="$:/config/Navigation/UpdateAddressBar" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>permaview</pre>
-</div>
 <div created="20170824063509584" modified="20170825113026702" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>show</pre>
 </div>
 <div created="20170824082415304" modified="20170825113026684" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>show</pre>
 </div>
-<div created="20170825125202179" modified="20170911145149411" title="$:/config/RelinkOnRename" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>no</pre>
+<div created="20170825125202179" modified="20170919135305373" title="$:/config/RelinkOnRename" type="text/vnd.tiddlywiki" revision="1" bag="default">
+<pre>yes</pre>
 </div>
 <div created="20170831074102831" modified="20170831074103986" title="$:/config/Tiddlers/TitleLinks" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>yes</pre>
@@ -8478,6 +8505,195 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20170915131030172" modified="20170915131659318" module-type="wikirule" title="$:/core/modules/parsers/wikiparser/rules/quoteblock.js" type="application/javascript" revision="0" bag="default">
+<pre>/*\
+title: $:/core/modules/parsers/wikiparser/rules/quoteblock.js
+type: application/javascript
+module-type: wikirule
+
+Wiki text rule for quote blocks. For example:
+
+```
+	&lt;&lt;&lt;.optionalClass(es) optional cited from
+	a quote
+	&lt;&lt;&lt;
+	
+	&lt;&lt;&lt;.optionalClass(es)
+	a quote
+	&lt;&lt;&lt; optional cited from
+```
+
+Quotes can be quoted by putting more &lt;s
+
+```
+	&lt;&lt;&lt;
+	Quote Level 1
+	
+	&lt;&lt;&lt;&lt;
+	QuoteLevel 2
+	&lt;&lt;&lt;&lt;
+	
+	&lt;&lt;&lt;
+```
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+exports.name = &quot;quoteblock&quot;;
+exports.types = {block: true};
+
+exports.init = function(parser) {
+	this.parser = parser;
+	// Regexp to match
+	this.matchRegExp = /(&lt;&lt;&lt;+)/mg;
+};
+
+exports.parse = function() {
+	var classes = [&quot;&quot;];
+	// Get all the details of the match
+	var reEndString = &quot;^&quot; + this.match[1] + &quot;(?!&lt;)&quot;;
+	// Move past the &lt;s
+	this.parser.pos = this.matchRegExp.lastIndex;
+	
+	// Parse any classes, whitespace and then the optional cite itself
+	classes.push.apply(classes, this.parser.parseClasses());
+	this.parser.skipWhitespace({treatNewlinesAsNonWhitespace: true});
+	var cite = this.parser.parseInlineRun(/(\r?\n)/mg);
+	// before handling the cite, parse the body of the quote
+	var tree= this.parser.parseBlocks(reEndString);
+	// If we got a cite, put it before the text
+	if(cite.length &gt; 0) {
+		tree.unshift({
+			type: &quot;element&quot;,
+			tag: &quot;cite&quot;,
+			children: cite
+		});
+	}
+	// Parse any optional cite
+	this.parser.skipWhitespace({treatNewlinesAsNonWhitespace: true});
+	cite = this.parser.parseInlineRun(/(\r?\n)/mg);
+	// If we got a cite, push it
+	if(cite.length &gt; 0) {
+		tree.push({
+			type: &quot;element&quot;,
+			tag: &quot;cite&quot;,
+			children: cite
+		});
+	}
+	// Return the blockquote element
+	return [{
+		type: &quot;element&quot;,
+		tag: &quot;blockquote&quot;,
+		attributes: {
+			class: { type: &quot;string&quot;, value: classes.join(&quot;&quot;) },
+		},
+		children: tree
+	}];
+};
+
+})();
+</pre>
+</div>
+<div created="20170919095359038" description="{{$:/language/Exporters/StaticRiver}}" extension=".html" modified="20170919095535584" tags="$:/tags/Exporter" title="$:/core/templates/exporters/StaticRiver" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define tv-wikilink-template() #$uri_encoded$
+\define tv-config-toolbar-icons() no
+\define tv-config-toolbar-text() no
+\define tv-config-toolbar-class() tc-btn-invisible
+\rules only filteredtranscludeinline transcludeinline
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;
+&lt;meta name=&quot;generator&quot; content=&quot;TiddlyWiki&quot; /&gt;
+&lt;meta name=&quot;tiddlywiki-version&quot; content=&quot;{{$:/core/templates/version}}&quot; /&gt;
+&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot;&gt;
+&lt;link id=&quot;faviconLink&quot; rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot;&gt;
+&lt;title&gt;{{$:/core/wiki/title}}&lt;/title&gt;
+&lt;div id=&quot;styleArea&quot;&gt;
+{{$:/boot/boot.css||$:/core/templates/css-tiddler}}
+&lt;/div&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+{{$:/core/ui/PageStylesheet||$:/core/templates/wikified-tiddler}}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body class=&quot;tc-body static&quot;&gt;
+{{$:/StaticBanner||$:/core/templates/html-tiddler}}
+&lt;section class=&quot;tc-story-river&quot;&gt;
+{{$:/core/templates/exporters/StaticRiver/Content||$:/core/templates/html-tiddler}}
+&lt;/section&gt;
+&lt;footer&gt;
+&lt;div id=&quot;pied-de-page&quot;&gt;{{variables.json##nom_territoire}} - {{variables.json##type_document}} -  porter à connaissance&lt;div id=&quot;num&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<div created="20170917122921544" modified="20170919094421412" title="$:/core/ui/PageTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define containerClasses()
+tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$
+\end
+
+&lt;$importvariables filter=&quot;[[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]&quot;&gt;
+
+&lt;$set name=&quot;tv-config-toolbar-icons&quot; value={{$:/config/Toolbar/Icons}}&gt;
+
+&lt;$set name=&quot;tv-config-toolbar-text&quot; value={{$:/config/Toolbar/Text}}&gt;
+
+&lt;$set name=&quot;tv-config-toolbar-class&quot; value={{$:/config/Toolbar/ButtonClass}}&gt;
+
+&lt;$set name=&quot;themeTitle&quot; value={{$:/view}}&gt;
+
+&lt;$set name=&quot;currentTiddler&quot; value={{$:/language}}&gt;
+
+&lt;$set name=&quot;languageTitle&quot; value={{!!name}}&gt;
+
+&lt;$set name=&quot;currentTiddler&quot; value=&quot;&quot;&gt;
+
+&lt;div class=&lt;&lt;containerClasses&gt;&gt;&gt;
+
+&lt;$navigator story=&quot;$:/StoryList&quot; history=&quot;$:/HistoryList&quot; openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}} relinkOnRename={{$:/config/RelinkOnRename}}&gt;
+
+&lt;$dropzone&gt;
+
+&lt;$list filter=&quot;[all[shadows+tiddlers]tag[$:/tags/PageTemplate]!has[draft.of]]&quot; variable=&quot;listItem&quot;&gt;
+
+&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt;/&gt;
+
+&lt;/$list&gt;
+
+&lt;footer&gt;
+
+{{$:/pac/footer}}
+
+&lt;/footer&gt;
+
+&lt;/$dropzone&gt;
+
+&lt;/$navigator&gt;
+
+&lt;/div&gt;
+
+&lt;/$set&gt;
+
+&lt;/$set&gt;
+
+&lt;/$set&gt;
+
+&lt;/$set&gt;
+
+&lt;/$set&gt;
+
+&lt;/$set&gt;
+
+&lt;/$set&gt;
+
+&lt;/$importvariables&gt;
+</pre>
+</div>
 <div created="20170912154905223" modified="20170912161228990" tags="$:/tags/ViewTemplate" title="$:/core/ui/ViewTemplate/body" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$reveal tag=&quot;div&quot; class=&quot;tc-tiddler-body&quot; type=&quot;nomatch&quot; state=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
 
@@ -8494,7 +8710,7 @@ Error message and password prompt
 &lt;/$reveal&gt;
 &lt;$macrocall $name=&quot;chapitre&quot; tag=$(currentTiddler)$/&gt;</pre>
 </div>
-<div created="20170824063232203" modified="20170825113026964" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170824063232203" modified="20170919091441484" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>[[Porter à Connaissance]]
 </pre>
 </div>
@@ -12012,6 +12228,9 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20170915144841689" modified="20170919094443759" rank="9999" tags="footer" title="$:/pac/footer" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;div id=&quot;pied-de-page&quot;&gt;{{variables.json##nom_territoire}} -  porter à connaissance&lt;div id=&quot;num&quot;&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+</div>
 <div created="20170911092510798" modified="20170912162229648" tags="$:/tags/Macro" title="$:/pac/macroChapitre" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define chapitre(tag:&quot;&quot;&quot;chapitre&quot;&quot;&quot;)
 
@@ -12037,73 +12256,436 @@ Cette &quot;macro&quot; permet d'insérer toutes les sous-parties d'un chapitre 
 \end
 ```</pre>
 </div>
-<div created="20170824122428244" modified="20170913073817936" tags="$:/tags/Stylesheet" title="$:/pac/styles" type="text/css" revision="0" bag="default">
-<pre>.tc-tiddler-body p {
-    text-align:justify;
-}
-
-.tc-tiddlylink-external {
-    font-family: &quot;Liberation Sans Narrow&quot;;
-    color:green !important;
-}
+<div created="20170824122428244" modified="20170919093952440" tags="$:/tags/Stylesheet" title="$:/pac/styles" type="text/css" revision="0" bag="default">
+<pre>/* titres */
 
 h1.titre {
-    text-align:center;
+   text-align: center;
 }
+/* titres 5 et 6 : servent à commenter, annoter */
+/* h5 : commentaires masqués */
+/* .com commentaires pour l'utilisateur */
 
-h5 {
-    font-size:.9em;
+.com,
+h5,
+p.com {
+   font-size: 0.9em;
+   background-color: lightgray;
+   padding: 0.5em;
+   margin: 2px;
+   font-style: italic;
+   font-family: serif;
 }
+/* .todo &quot;choses à faire&quot; réflexions pour les participants à la création de l'outil */
+.todo,
+h5.todo,
+p.todo {
+   background-color: orange;
+}
+/* h6 : notes de bas de page */
 
-h5.todo {
-    background-color: orange;
+.nbp,
+h6,
+p.npb {
+   font-size: 0.8em;
+   font-style: italic;
+   color: gray;
+   border-left: none;
+   margin: 0;
 }
+/* tableaux (centrés, au moins 60% de large) */
 
-h5, .com {
-    background-color: lightblue;
-    padding:.5em;
-    margin:2px;
-    font-style:italic;
-    font-family:serif;
+table {
+   min-width: 60%;
+   margin: 1em auto;
 }
-
-h6, .nbp {
-    font-size:.8em;
-    font-style:italic;
-    color:gray;
-}
+/* champs de saisie des formulaires */
 
 input.pac {
-    border:none;
-    border-bottom:2px solid green;
-    padding:0 4px;
+   border: none;
+   border-bottom: 2px solid green;
+   padding: 0 4px;
 }
 
 input.short {
-    width:3em
+   width: 3em;
+}
+/* différents types de mise en exergue */
+
+blockquote p {
+   margin: 7px 0 0;
+}
+/* références, citations */
+
+.ref {
+   font-family: &quot;Liberation serif&quot;, Georgia, serif;
+   font-style: italic;
+   position: relative;
+   color: #555;
+   border-left: none;
+   margin-left: 30px;
+   padding: 10px;
+   border-radius: 8px;
 }
 
-/* si on passe à l'impression du document */
+.ref:before {
+   font-family: &quot;Liberation serif&quot;, Georgia, serif;
+   color: #bbb;
+   content: &quot;\00AB&quot;;
+   font-size: 4em;
+   line-height: 0.1em;
+   margin-right: 0.25em;
+   vertical-align: -0.4em;
+   position: absolute;
+   left: -30px;
+   top: 22px;
+}
+
+.ref cite {
+   color: #585;
+}
+
+.ref cite:before {
+   content: &quot;\2014 \2009&quot;;
+}
+/* ce qui est &quot;obligatoire&quot; */
+.obli {
+   margin: 0;
+   border-left-color: #003399;
+}
+/* documents à consulter, références à consulter */
+.doc {
+   margin: 0;
+   font-style: italic;
+   color: gray;
+}
+/* pied de page masqué */
+footer {
+   display: none;
+}
+/* --------- */
+/* ajustements de style de TiddlyWiki */
+
+.tc-tiddler-body p {
+   text-align: justify;
+}
+
+.tc-tiddlylink-external {
+   font-family: &quot;Liberation Sans Narrow&quot;, sans-serif;
+   color: green !important;
+}
+/* ------------------------------------------ */
+/* mise en page pour l'impression du document */
+/* cas des exports */
+/* nettoyage, masquage des entités inutiles */
+
+body.static .tc-story-river {
+   padding: 0;
+   margin: 0 auto;
+   width: 100%;
+   max-width: 210mm;
+}
+
+body.static .com,
+body.static .tc-btn-invisible,
+body.static .tc-sidebar-scrollable,
+body.static .tc-subtitle,
+body.static .tc-tags-wrapper,
+body.static .tc-tiddler-title,
+body.static .tc-topbar,
+body.static .todo,
+body.static h5 {
+   display: none;
+}
+
+body.static .tc-tiddlylink,
+body.static .tc-tiddlylink-missing {
+   color: black;
+   font-style: normal;
+}
+/* impression */
 @media print {
-body {
-   margin:1cm;
+   body,
+   html {
+      height: auto;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+
+   .tc-dropzone,
+   body.static {
+      display: table;
+   }
+
+   .tc-story-river {
+      display: table-row-group;
+   }
+
+   footer {
+      display: table-footer-group;
+      /*position: fixed;
+      bottom: 0;*/
+      width: 100%;
+      opacity: 0.85;
+      padding: 0;
+      height: 8mm;
+   }
+
+   footer p {
+      margin: 0;
+      width: 100%;
+   }
+
+   #pied-de-page {
+      height: 8mm;
+      margin: 0;
+      color: gray;
+      border-top: 1px solid lightgray;
+      padding: 0.5em 1em;
+      width: 100%;
+      font-size: 0.8em;
+      text-align: center;
+      font-style: italic;
+   }
+
+   #num {
+      color: #353;
+      float: right;
+      font-size: 1em;
+   }
+
+   #pied-de-page #num:after {
+      content: counter(page);
+      counter-increment: page;
+   }
+   /* nettoyage, masquage des entités inutiles */
+   .com,
+   .tc-btn-invisible,
+   .tc-sidebar-scrollable,
+   .tc-subtitle,
+   .tc-tags-wrapper,
+   .tc-tiddler-title,
+   .tc-topbar,
+   .todo,
+   h5 {
+      display: none;
+   }
+
+   .tc-tiddlylink,
+   .tc-tiddlylink-missing {
+      color: black;
+      font-style: normal;
+   }
+   /* améliorations des sauts de page */
+   a,
+   p {
+      orphans: 2;
+   }
+
+   h1 {
+      page-break-before: always;
+   }
+
+   h1.titre {
+      font-size: 20pt;
+      margin: 8cm 0 5cm;
+      page-break-before: avoid;
+      line-height: 25pt;
+   }
+
+   h1,
+   h2,
+   h3,
+   h4 {
+      page-break-after: avoid;
+   }
+
+   blockquote {
+      page-break-inside: avoid;
+   }
 }
-.tc-tiddler-title, .tc-subtitle, .tc-tags-wrapper, .todo, .com {
-    display:none;
-}
-.tc-tiddlylink, .tc-tiddlylink-missing {
-    color:black;
-    font-style:normal;
-}
-h1 {
-   page-break-before:always;
-}
-h1.titre {
-    font-size:20pt;
-    margin:10cm 0 5cm 0;
-    page-break-before:never;
-    line-height:25pt;
-}
+</pre>
+</div>
+<div author="JeremyRuston" core-version="&gt;=5.0.0" created="20170914155638660" dependents="" description="Markdown parser" list="readme usage" modified="20170914155638660" plugin-type="plugin" title="$:/plugins/tiddlywiki/markdown" type="application/json" version="5.1.14" revision="0" bag="default">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/bold&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/bold&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/bold&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/bold&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/Bold/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/Bold/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((bold))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;wrap-selection\&quot;\n\tprefix=\&quot;**\&quot;\n\tsuffix=\&quot;**\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-1&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-1&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/heading-1&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/heading-1&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/Heading1/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/Heading1/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((heading-1))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;prefix-lines\&quot;\n\tcharacter=\&quot;#\&quot;\n\tcount=\&quot;1\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-2&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-2&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/heading-2&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/heading-2&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/Heading2/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/Heading2/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((heading-2))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;prefix-lines\&quot;\n\tcharacter=\&quot;#\&quot;\n\tcount=\&quot;2\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-3&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-3&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/heading-3&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/heading-3&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/Heading3/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/Heading3/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((heading-3))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;prefix-lines\&quot;\n\tcharacter=\&quot;#\&quot;\n\tcount=\&quot;3\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-4&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-4&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/heading-4&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/heading-4&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/Heading4/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/Heading4/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((heading-4))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;prefix-lines\&quot;\n\tcharacter=\&quot;#\&quot;\n\tcount=\&quot;4\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-5&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-5&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/heading-5&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/heading-5&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/Heading5/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/Heading5/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((heading-5))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;prefix-lines\&quot;\n\tcharacter=\&quot;#\&quot;\n\tcount=\&quot;5\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-6&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/heading-6&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/heading-6&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/heading-6&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/Heading6/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/Heading6/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((heading-6))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;prefix-lines\&quot;\n\tcharacter=\&quot;#\&quot;\n\tcount=\&quot;6\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/italic&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/italic&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/italic&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/italic&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/Italic/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/Italic/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((italic))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;wrap-selection\&quot;\n\tprefix=\&quot;*\&quot;\n\tsuffix=\&quot;*\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/list-bullet&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/list-bullet&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/list-bullet&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/list-bullet&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/ListBullet/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/ListBullet/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((list-bullet))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;prefix-lines\&quot;\n\tcharacter=\&quot;*\&quot;\n\tcount=\&quot;1\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/list-number&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/list-number&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/list-number&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/list-number&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/ListNumber/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/ListNumber/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((list-number))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;prefix-lines\&quot;\n\tcharacter=\&quot;1.\&quot;\n\tcount=\&quot;1\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/mono-line&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/mono-line&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/mono-line&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/mono-line&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/MonoLine/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/MonoLine/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((mono-line))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;wrap-selection\&quot;\n\tprefix=\&quot;`\&quot;\n\tsuffix=\&quot;`\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/quote&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/EditorToolbar/quote&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/EditorToolbar/quote&quot;,
+            &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
+            &quot;icon&quot;: &quot;$:/core/images/quote&quot;,
+            &quot;caption&quot;: &quot;{{$:/language/Buttons/Quote/Caption}} (Markdown)&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/Quote/Hint}}&quot;,
+            &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;type[text/x-markdown]]&quot;,
+            &quot;shortcuts&quot;: &quot;((quote))&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;prefix-lines\&quot;\n\tcharacter=\&quot;&gt;\&quot;\n\tcount=\&quot;1\&quot;\n/&gt;\n&quot;
+        },
+        &quot;$:/config/markdown/dialect&quot;: {
+            &quot;title&quot;: &quot;$:/config/markdown/dialect&quot;,
+            &quot;text&quot;: &quot;Gruber&quot;
+        },
+        &quot;$:/language/Docs/Types/text/x-markdown&quot;: {
+            &quot;title&quot;: &quot;$:/language/Docs/Types/text/x-markdown&quot;,
+            &quot;description&quot;: &quot;Markdown&quot;,
+            &quot;name&quot;: &quot;text/x-markdown&quot;,
+            &quot;group&quot;: &quot;Text&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/markdown.js&quot;: {
+            &quot;text&quot;: &quot;// Released under MIT license\n// Copyright (c) 2009-2010 Dominic Baggott\n// Copyright (c) 2009-2010 Ash Berlin\n// Copyright (c) 2011 Christoph Dorn &lt;christoph@christophdorn.com&gt; (http://www.christophdorn.com)\n\n/*jshint browser:true, devel:true */\n\n(function( expose ) {\n\n/**\n *  class Markdown\n *\n *  Markdown processing in Javascript done right. We have very particular views\n *  on what constitutes 'right' which include:\n *\n *  - produces well-formed HTML (this means that em and strong nesting is\n *    important)\n *\n *  - has an intermediate representation to allow processing of parsed data (We\n *    in fact have two, both as [JsonML]: a markdown tree and an HTML tree).\n *\n *  - is easily extensible to add new dialects without having to rewrite the\n *    entire parsing mechanics\n *\n *  - has a good test suite\n *\n *  This implementation fulfills all of these (except that the test suite could\n *  do with expanding to automatically run all the fixtures from other Markdown\n *  implementations.)\n *\n *  ##### Intermediate Representation\n *\n *  *TODO* Talk about this :) Its JsonML, but document the node names we use.\n *\n *  [JsonML]: http://jsonml.org/ \&quot;JSON Markup Language\&quot;\n **/\nvar Markdown = expose.Markdown = function(dialect) {\n  switch (typeof dialect) {\n    case \&quot;undefined\&quot;:\n      this.dialect = Markdown.dialects.Gruber;\n      break;\n    case \&quot;object\&quot;:\n      this.dialect = dialect;\n      break;\n    default:\n      if ( dialect in Markdown.dialects ) {\n        this.dialect = Markdown.dialects[dialect];\n      }\n      else {\n        throw new Error(\&quot;Unknown Markdown dialect '\&quot; + String(dialect) + \&quot;'\&quot;);\n      }\n      break;\n  }\n  this.em_state = [];\n  this.strong_state = [];\n  this.debug_indent = \&quot;\&quot;;\n};\n\n/**\n *  parse( markdown, [dialect] ) -&gt; JsonML\n *  - markdown (String): markdown string to parse\n *  - dialect (String | Dialect): the dialect to use, defaults to gruber\n *\n *  Parse `markdown` and return a markdown document as a Markdown.JsonML tree.\n **/\nexpose.parse = function( source, dialect ) {\n  // dialect will default if undefined\n  var md = new Markdown( dialect );\n  return md.toTree( source );\n};\n\n/**\n *  toHTML( markdown, [dialect]  ) -&gt; String\n *  toHTML( md_tree ) -&gt; String\n *  - markdown (String): markdown string to parse\n *  - md_tree (Markdown.JsonML): parsed markdown tree\n *\n *  Take markdown (either as a string or as a JsonML tree) and run it through\n *  [[toHTMLTree]] then turn it into a well-formated HTML fragment.\n **/\nexpose.toHTML = function toHTML( source , dialect , options ) {\n  var input = expose.toHTMLTree( source , dialect , options );\n\n  return expose.renderJsonML( input );\n};\n\n/**\n *  toHTMLTree( markdown, [dialect] ) -&gt; JsonML\n *  toHTMLTree( md_tree ) -&gt; JsonML\n *  - markdown (String): markdown string to parse\n *  - dialect (String | Dialect): the dialect to use, defaults to gruber\n *  - md_tree (Markdown.JsonML): parsed markdown tree\n *\n *  Turn markdown into HTML, represented as a JsonML tree. If a string is given\n *  to this function, it is first parsed into a markdown tree by calling\n *  [[parse]].\n **/\nexpose.toHTMLTree = function toHTMLTree( input, dialect , options ) {\n  // convert string input to an MD tree\n  if ( typeof input ===\&quot;string\&quot; ) input = this.parse( input, dialect );\n\n  // Now convert the MD tree to an HTML tree\n\n  // remove references from the tree\n  var attrs = extract_attr( input ),\n      refs = {};\n\n  if ( attrs &amp;&amp; attrs.references ) {\n    refs = attrs.references;\n  }\n\n  var html = convert_tree_to_html( input, refs , options );\n  merge_text_nodes( html );\n  return html;\n};\n\n// For Spidermonkey based engines\nfunction mk_block_toSource() {\n  return \&quot;Markdown.mk_block( \&quot; +\n          uneval(this.toString()) +\n          \&quot;, \&quot; +\n          uneval(this.trailing) +\n          \&quot;, \&quot; +\n          uneval(this.lineNumber) +\n          \&quot; )\&quot;;\n}\n\n// node\nfunction mk_block_inspect() {\n  var util = require(\&quot;util\&quot;);\n  return \&quot;Markdown.mk_block( \&quot; +\n          util.inspect(this.toString()) +\n          \&quot;, \&quot; +\n          util.inspect(this.trailing) +\n          \&quot;, \&quot; +\n          util.inspect(this.lineNumber) +\n          \&quot; )\&quot;;\n\n}\n\nvar mk_block = Markdown.mk_block = function(block, trail, line) {\n  // Be helpful for default case in tests.\n  if ( arguments.length == 1 ) trail = \&quot;\\n\\n\&quot;;\n\n  var s = new String(block);\n  s.trailing = trail;\n  // To make it clear its not just a string\n  s.inspect = mk_block_inspect;\n  s.toSource = mk_block_toSource;\n\n  if ( line != undefined )\n    s.lineNumber = line;\n\n  return s;\n};\n\nfunction count_lines( str ) {\n  var n = 0, i = -1;\n  while ( ( i = str.indexOf(\&quot;\\n\&quot;, i + 1) ) !== -1 ) n++;\n  return n;\n}\n\n// Internal - split source into rough blocks\nMarkdown.prototype.split_blocks = function splitBlocks( input, startLine ) {\n  input = input.replace(/(\\r\\n|\\n|\\r)/g, \&quot;\\n\&quot;);\n  // [\\s\\S] matches _anything_ (newline or space)\n  // [^] is equivalent but doesn't work in IEs.\n  var re = /([\\s\\S]+?)($|\\n#|\\n(?:\\s*\\n|$)+)/g,\n      blocks = [],\n      m;\n\n  var line_no = 1;\n\n  if ( ( m = /^(\\s*\\n)/.exec(input) ) != null ) {\n    // skip (but count) leading blank lines\n    line_no += count_lines( m[0] );\n    re.lastIndex = m[0].length;\n  }\n\n  while ( ( m = re.exec(input) ) !== null ) {\n    if (m[2] == \&quot;\\n#\&quot;) {\n      m[2] = \&quot;\\n\&quot;;\n      re.lastIndex--;\n    }\n    blocks.push( mk_block( m[1], m[2], line_no ) );\n    line_no += count_lines( m[0] );\n  }\n\n  return blocks;\n};\n\n/**\n *  Markdown#processBlock( block, next ) -&gt; undefined | [ JsonML, ... ]\n *  - block (String): the block to process\n *  - next (Array): the following blocks\n *\n * Process `block` and return an array of JsonML nodes representing `block`.\n *\n * It does this by asking each block level function in the dialect to process\n * the block until one can. Succesful handling is indicated by returning an\n * array (with zero or more JsonML nodes), failure by a false value.\n *\n * Blocks handlers are responsible for calling [[Markdown#processInline]]\n * themselves as appropriate.\n *\n * If the blocks were split incorrectly or adjacent blocks need collapsing you\n * can adjust `next` in place using shift/splice etc.\n *\n * If any of this default behaviour is not right for the dialect, you can\n * define a `__call__` method on the dialect that will get invoked to handle\n * the block processing.\n */\nMarkdown.prototype.processBlock = function processBlock( block, next ) {\n  var cbs = this.dialect.block,\n      ord = cbs.__order__;\n\n  if ( \&quot;__call__\&quot; in cbs ) {\n    return cbs.__call__.call(this, block, next);\n  }\n\n  for ( var i = 0; i &lt; ord.length; i++ ) {\n    //D:this.debug( \&quot;Testing\&quot;, ord[i] );\n    var res = cbs[ ord[i] ].call( this, block, next );\n    if ( res ) {\n      //D:this.debug(\&quot;  matched\&quot;);\n      if ( !isArray(res) || ( res.length &gt; 0 &amp;&amp; !( isArray(res[0]) ) ) )\n        this.debug(ord[i], \&quot;didn't return a proper array\&quot;);\n      //D:this.debug( \&quot;\&quot; );\n      return res;\n    }\n  }\n\n  // Uhoh! no match! Should we throw an error?\n  return [];\n};\n\nMarkdown.prototype.processInline = function processInline( block ) {\n  return this.dialect.inline.__call__.call( this, String( block ) );\n};\n\n/**\n *  Markdown#toTree( source ) -&gt; JsonML\n *  - source (String): markdown source to parse\n *\n *  Parse `source` into a JsonML tree representing the markdown document.\n **/\n// custom_tree means set this.tree to `custom_tree` and restore old value on return\nMarkdown.prototype.toTree = function toTree( source, custom_root ) {\n  var blocks = source instanceof Array ? source : this.split_blocks( source );\n\n  // Make tree a member variable so its easier to mess with in extensions\n  var old_tree = this.tree;\n  try {\n    this.tree = custom_root || this.tree || [ \&quot;markdown\&quot; ];\n\n    blocks:\n    while ( blocks.length ) {\n      var b = this.processBlock( blocks.shift(), blocks );\n\n      // Reference blocks and the like won't return any content\n      if ( !b.length ) continue blocks;\n\n      this.tree.push.apply( this.tree, b );\n    }\n    return this.tree;\n  }\n  finally {\n    if ( custom_root ) {\n      this.tree = old_tree;\n    }\n  }\n};\n\n// Noop by default\nMarkdown.prototype.debug = function () {\n  var args = Array.prototype.slice.call( arguments);\n  args.unshift(this.debug_indent);\n  if ( typeof print !== \&quot;undefined\&quot; )\n      print.apply( print, args );\n  if ( typeof console !== \&quot;undefined\&quot; &amp;&amp; typeof console.log !== \&quot;undefined\&quot; )\n      console.log.apply( null, args );\n}\n\nMarkdown.prototype.loop_re_over_block = function( re, block, cb ) {\n  // Dont use /g regexps with this\n  var m,\n      b = block.valueOf();\n\n  while ( b.length &amp;&amp; (m = re.exec(b) ) != null ) {\n    b = b.substr( m[0].length );\n    cb.call(this, m);\n  }\n  return b;\n};\n\n/**\n * Markdown.dialects\n *\n * Namespace of built-in dialects.\n **/\nMarkdown.dialects = {};\n\n/**\n * Markdown.dialects.Gruber\n *\n * The default dialect that follows the rules set out by John Gruber's\n * markdown.pl as closely as possible. Well actually we follow the behaviour of\n * that script which in some places is not exactly what the syntax web page\n * says.\n **/\nMarkdown.dialects.Gruber = {\n  block: {\n    atxHeader: function atxHeader( block, next ) {\n      var m = block.match( /^(#{1,6})\\s*(.*?)\\s*#*\\s*(?:\\n|$)/ );\n\n      if ( !m ) return undefined;\n\n      var header = [ \&quot;header\&quot;, { level: m[ 1 ].length } ];\n      Array.prototype.push.apply(header, this.processInline(m[ 2 ]));\n\n      if ( m[0].length &lt; block.length )\n        next.unshift( mk_block( block.substr( m[0].length ), block.trailing, block.lineNumber + 2 ) );\n\n      return [ header ];\n    },\n\n    setextHeader: function setextHeader( block, next ) {\n      var m = block.match( /^(.*)\\n([-=])\\2\\2+(?:\\n|$)/ );\n\n      if ( !m ) return undefined;\n\n      var level = ( m[ 2 ] === \&quot;=\&quot; ) ? 1 : 2;\n      var header = [ \&quot;header\&quot;, { level : level }, m[ 1 ] ];\n\n      if ( m[0].length &lt; block.length )\n        next.unshift( mk_block( block.substr( m[0].length ), block.trailing, block.lineNumber + 2 ) );\n\n      return [ header ];\n    },\n\n    code: function code( block, next ) {\n      // |    Foo\n      // |bar\n      // should be a code block followed by a paragraph. Fun\n      //\n      // There might also be adjacent code block to merge.\n\n      var ret = [],\n          re = /^(?: {0,3}\\t| {4})(.*)\\n?/,\n          lines;\n\n      // 4 spaces + content\n      if ( !block.match( re ) ) return undefined;\n\n      block_search:\n      do {\n        // Now pull out the rest of the lines\n        var b = this.loop_re_over_block(\n                  re, block.valueOf(), function( m ) { ret.push( m[1] ); } );\n\n        if ( b.length ) {\n          // Case alluded to in first comment. push it back on as a new block\n          next.unshift( mk_block(b, block.trailing) );\n          break block_search;\n        }\n        else if ( next.length ) {\n          // Check the next block - it might be code too\n          if ( !next[0].match( re ) ) break block_search;\n\n          // Pull how how many blanks lines follow - minus two to account for .join\n          ret.push ( block.trailing.replace(/[^\\n]/g, \&quot;\&quot;).substring(2) );\n\n          block = next.shift();\n        }\n        else {\n          break block_search;\n        }\n      } while ( true );\n\n      return [ [ \&quot;code_block\&quot;, ret.join(\&quot;\\n\&quot;) ] ];\n    },\n\n    horizRule: function horizRule( block, next ) {\n      // this needs to find any hr in the block to handle abutting blocks\n      var m = block.match( /^(?:([\\s\\S]*?)\\n)?[ \\t]*([-_*])(?:[ \\t]*\\2){2,}[ \\t]*(?:\\n([\\s\\S]*))?$/ );\n\n      if ( !m ) {\n        return undefined;\n      }\n\n      var jsonml = [ [ \&quot;hr\&quot; ] ];\n\n      // if there's a leading abutting block, process it\n      if ( m[ 1 ] ) {\n        jsonml.unshift.apply( jsonml, this.processBlock( m[ 1 ], [] ) );\n      }\n\n      // if there's a trailing abutting block, stick it into next\n      if ( m[ 3 ] ) {\n        next.unshift( mk_block( m[ 3 ] ) );\n      }\n\n      return jsonml;\n    },\n\n    // There are two types of lists. Tight and loose. Tight lists have no whitespace\n    // between the items (and result in text just in the &lt;li&gt;) and loose lists,\n    // which have an empty line between list items, resulting in (one or more)\n    // paragraphs inside the &lt;li&gt;.\n    //\n    // There are all sorts weird edge cases about the original markdown.pl's\n    // handling of lists:\n    //\n    // * Nested lists are supposed to be indented by four chars per level. But\n    //   if they aren't, you can get a nested list by indenting by less than\n    //   four so long as the indent doesn't match an indent of an existing list\n    //   item in the 'nest stack'.\n    //\n    // * The type of the list (bullet or number) is controlled just by the\n    //    first item at the indent. Subsequent changes are ignored unless they\n    //    are for nested lists\n    //\n    lists: (function( ) {\n      // Use a closure to hide a few variables.\n      var any_list = \&quot;[*+-]|\\\\d+\\\\.\&quot;,\n          bullet_list = /[*+-]/,\n          number_list = /\\d+\\./,\n          // Capture leading indent as it matters for determining nested lists.\n          is_list_re = new RegExp( \&quot;^( {0,3})(\&quot; + any_list + \&quot;)[ \\t]+\&quot; ),\n          indent_re = \&quot;(?: {0,3}\\\\t| {4})\&quot;;\n\n      // TODO: Cache this regexp for certain depths.\n      // Create a regexp suitable for matching an li for a given stack depth\n      function regex_for_depth( depth ) {\n\n        return new RegExp(\n          // m[1] = indent, m[2] = list_type\n          \&quot;(?:^(\&quot; + indent_re + \&quot;{0,\&quot; + depth + \&quot;} {0,3})(\&quot; + any_list + \&quot;)\\\\s+)|\&quot; +\n          // m[3] = cont\n          \&quot;(^\&quot; + indent_re + \&quot;{0,\&quot; + (depth-1) + \&quot;}[ ]{0,4})\&quot;\n        );\n      }\n      function expand_tab( input ) {\n        return input.replace( / {0,3}\\t/g, \&quot;    \&quot; );\n      }\n\n      // Add inline content `inline` to `li`. inline comes from processInline\n      // so is an array of content\n      function add(li, loose, inline, nl) {\n        if ( loose ) {\n          li.push( [ \&quot;para\&quot; ].concat(inline) );\n          return;\n        }\n        // Hmmm, should this be any block level element or just paras?\n        var add_to = li[li.length -1] instanceof Array &amp;&amp; li[li.length - 1][0] == \&quot;para\&quot;\n                   ? li[li.length -1]\n                   : li;\n\n        // If there is already some content in this list, add the new line in\n        if ( nl &amp;&amp; li.length &gt; 1 ) inline.unshift(nl);\n\n        for ( var i = 0; i &lt; inline.length; i++ ) {\n          var what = inline[i],\n              is_str = typeof what == \&quot;string\&quot;;\n          if ( is_str &amp;&amp; add_to.length &gt; 1 &amp;&amp; typeof add_to[add_to.length-1] == \&quot;string\&quot; ) {\n            add_to[ add_to.length-1 ] += what;\n          }\n          else {\n            add_to.push( what );\n          }\n        }\n      }\n\n      // contained means have an indent greater than the current one. On\n      // *every* line in the block\n      function get_contained_blocks( depth, blocks ) {\n\n        var re = new RegExp( \&quot;^(\&quot; + indent_re + \&quot;{\&quot; + depth + \&quot;}.*?\\\\n?)*$\&quot; ),\n            replace = new RegExp(\&quot;^\&quot; + indent_re + \&quot;{\&quot; + depth + \&quot;}\&quot;, \&quot;gm\&quot;),\n            ret = [];\n\n        while ( blocks.length &gt; 0 ) {\n          if ( re.exec( blocks[0] ) ) {\n            var b = blocks.shift(),\n                // Now remove that indent\n                x = b.replace( replace, \&quot;\&quot;);\n\n            ret.push( mk_block( x, b.trailing, b.lineNumber ) );\n          }\n          else {\n            break;\n          }\n        }\n        return ret;\n      }\n\n      // passed to stack.forEach to turn list items up the stack into paras\n      function paragraphify(s, i, stack) {\n        var list = s.list;\n        var last_li = list[list.length-1];\n\n        if ( last_li[1] instanceof Array &amp;&amp; last_li[1][0] == \&quot;para\&quot; ) {\n          return;\n        }\n        if ( i + 1 == stack.length ) {\n          // Last stack frame\n          // Keep the same array, but replace the contents\n          last_li.push( [\&quot;para\&quot;].concat( last_li.splice(1, last_li.length - 1) ) );\n        }\n        else {\n          var sublist = last_li.pop();\n          last_li.push( [\&quot;para\&quot;].concat( last_li.splice(1, last_li.length - 1) ), sublist );\n        }\n      }\n\n      // The matcher function\n      return function( block, next ) {\n        var m = block.match( is_list_re );\n        if ( !m ) return undefined;\n\n        function make_list( m ) {\n          var list = bullet_list.exec( m[2] )\n                   ? [\&quot;bulletlist\&quot;]\n                   : [\&quot;numberlist\&quot;];\n\n          stack.push( { list: list, indent: m[1] } );\n          return list;\n        }\n\n\n        var stack = [], // Stack of lists for nesting.\n            list = make_list( m ),\n            last_li,\n            loose = false,\n            ret = [ stack[0].list ],\n            i;\n\n        // Loop to search over block looking for inner block elements and loose lists\n        loose_search:\n        while ( true ) {\n          // Split into lines preserving new lines at end of line\n          var lines = block.split( /(?=\\n)/ );\n\n          // We have to grab all lines for a li and call processInline on them\n          // once as there are some inline things that can span lines.\n          var li_accumulate = \&quot;\&quot;;\n\n          // Loop over the lines in this block looking for tight lists.\n          tight_search:\n          for ( var line_no = 0; line_no &lt; lines.length; line_no++ ) {\n            var nl = \&quot;\&quot;,\n                l = lines[line_no].replace(/^\\n/, function(n) { nl = n; return \&quot;\&quot;; });\n\n            // TODO: really should cache this\n            var line_re = regex_for_depth( stack.length );\n\n            m = l.match( line_re );\n            //print( \&quot;line:\&quot;, uneval(l), \&quot;\\nline match:\&quot;, uneval(m) );\n\n            // We have a list item\n            if ( m[1] !== undefined ) {\n              // Process the previous list item, if any\n              if ( li_accumulate.length ) {\n                add( last_li, loose, this.processInline( li_accumulate ), nl );\n                // Loose mode will have been dealt with. Reset it\n                loose = false;\n                li_accumulate = \&quot;\&quot;;\n              }\n\n              m[1] = expand_tab( m[1] );\n              var wanted_depth = Math.floor(m[1].length/4)+1;\n              //print( \&quot;want:\&quot;, wanted_depth, \&quot;stack:\&quot;, stack.length);\n              if ( wanted_depth &gt; stack.length ) {\n                // Deep enough for a nested list outright\n                //print ( \&quot;new nested list\&quot; );\n                list = make_list( m );\n                last_li.push( list );\n                last_li = list[1] = [ \&quot;listitem\&quot; ];\n              }\n              else {\n                // We aren't deep enough to be strictly a new level. This is\n                // where Md.pl goes nuts. If the indent matches a level in the\n                // stack, put it there, else put it one deeper then the\n                // wanted_depth deserves.\n                var found = false;\n                for ( i = 0; i &lt; stack.length; i++ ) {\n                  if ( stack[ i ].indent != m[1] ) continue;\n                  list = stack[ i ].list;\n                  stack.splice( i+1, stack.length - (i+1) );\n                  found = true;\n                  break;\n                }\n\n                if (!found) {\n                  //print(\&quot;not found. l:\&quot;, uneval(l));\n                  wanted_depth++;\n                  if ( wanted_depth &lt;= stack.length ) {\n                    stack.splice(wanted_depth, stack.length - wanted_depth);\n                    //print(\&quot;Desired depth now\&quot;, wanted_depth, \&quot;stack:\&quot;, stack.length);\n                    list = stack[wanted_depth-1].list;\n                    //print(\&quot;list:\&quot;, uneval(list) );\n                  }\n                  else {\n                    //print (\&quot;made new stack for messy indent\&quot;);\n                    list = make_list(m);\n                    last_li.push(list);\n                  }\n                }\n\n                //print( uneval(list), \&quot;last\&quot;, list === stack[stack.length-1].list );\n                last_li = [ \&quot;listitem\&quot; ];\n                list.push(last_li);\n              } // end depth of shenegains\n              nl = \&quot;\&quot;;\n            }\n\n            // Add content\n            if ( l.length &gt; m[0].length ) {\n              li_accumulate += nl + l.substr( m[0].length );\n            }\n          } // tight_search\n\n          if ( li_accumulate.length ) {\n            add( last_li, loose, this.processInline( li_accumulate ), nl );\n            // Loose mode will have been dealt with. Reset it\n            loose = false;\n            li_accumulate = \&quot;\&quot;;\n          }\n\n          // Look at the next block - we might have a loose list. Or an extra\n          // paragraph for the current li\n          var contained = get_contained_blocks( stack.length, next );\n\n          // Deal with code blocks or properly nested lists\n          if ( contained.length &gt; 0 ) {\n            // Make sure all listitems up the stack are paragraphs\n            forEach( stack, paragraphify, this);\n\n            last_li.push.apply( last_li, this.toTree( contained, [] ) );\n          }\n\n          var next_block = next[0] &amp;&amp; next[0].valueOf() || \&quot;\&quot;;\n\n          if ( next_block.match(is_list_re) || next_block.match( /^ / ) ) {\n            block = next.shift();\n\n            // Check for an HR following a list: features/lists/hr_abutting\n            var hr = this.dialect.block.horizRule( block, next );\n\n            if ( hr ) {\n              ret.push.apply(ret, hr);\n              break;\n            }\n\n            // Make sure all listitems up the stack are paragraphs\n            forEach( stack, paragraphify, this);\n\n            loose = true;\n            continue loose_search;\n          }\n          break;\n        } // loose_search\n\n        return ret;\n      };\n    })(),\n\n    blockquote: function blockquote( block, next ) {\n      if ( !block.match( /^&gt;/m ) )\n        return undefined;\n\n      var jsonml = [];\n\n      // separate out the leading abutting block, if any. I.e. in this case:\n      //\n      //  a\n      //  &gt; b\n      //\n      if ( block[ 0 ] != \&quot;&gt;\&quot; ) {\n        var lines = block.split( /\\n/ ),\n            prev = [],\n            line_no = block.lineNumber;\n\n        // keep shifting lines until you find a crotchet\n        while ( lines.length &amp;&amp; lines[ 0 ][ 0 ] != \&quot;&gt;\&quot; ) {\n            prev.push( lines.shift() );\n            line_no++;\n        }\n\n        var abutting = mk_block( prev.join( \&quot;\\n\&quot; ), \&quot;\\n\&quot;, block.lineNumber );\n        jsonml.push.apply( jsonml, this.processBlock( abutting, [] ) );\n        // reassemble new block of just block quotes!\n        block = mk_block( lines.join( \&quot;\\n\&quot; ), block.trailing, line_no );\n      }\n\n\n      // if the next block is also a blockquote merge it in\n      while ( next.length &amp;&amp; next[ 0 ][ 0 ] == \&quot;&gt;\&quot; ) {\n        var b = next.shift();\n        block = mk_block( block + block.trailing + b, b.trailing, block.lineNumber );\n      }\n\n      // Strip off the leading \&quot;&gt; \&quot; and re-process as a block.\n      var input = block.replace( /^&gt; ?/gm, \&quot;\&quot; ),\n          old_tree = this.tree,\n          processedBlock = this.toTree( input, [ \&quot;blockquote\&quot; ] ),\n          attr = extract_attr( processedBlock );\n\n      // If any link references were found get rid of them\n      if ( attr &amp;&amp; attr.references ) {\n        delete attr.references;\n        // And then remove the attribute object if it's empty\n        if ( isEmpty( attr ) ) {\n          processedBlock.splice( 1, 1 );\n        }\n      }\n\n      jsonml.push( processedBlock );\n      return jsonml;\n    },\n\n    referenceDefn: function referenceDefn( block, next) {\n      var re = /^\\s*\\[(.*?)\\]:\\s*(\\S+)(?:\\s+(?:(['\&quot;])(.*?)\\3|\\((.*?)\\)))?\\n?/;\n      // interesting matches are [ , ref_id, url, , title, title ]\n\n      if ( !block.match(re) )\n        return undefined;\n\n      // make an attribute node if it doesn't exist\n      if ( !extract_attr( this.tree ) ) {\n        this.tree.splice( 1, 0, {} );\n      }\n\n      var attrs = extract_attr( this.tree );\n\n      // make a references hash if it doesn't exist\n      if ( attrs.references === undefined ) {\n        attrs.references = {};\n      }\n\n      var b = this.loop_re_over_block(re, block, function( m ) {\n\n        if ( m[2] &amp;&amp; m[2][0] == \&quot;&lt;\&quot; &amp;&amp; m[2][m[2].length-1] == \&quot;&gt;\&quot; )\n          m[2] = m[2].substring( 1, m[2].length - 1 );\n\n        var ref = attrs.references[ m[1].toLowerCase() ] = {\n          href: m[2]\n        };\n\n        if ( m[4] !== undefined )\n          ref.title = m[4];\n        else if ( m[5] !== undefined )\n          ref.title = m[5];\n\n      } );\n\n      if ( b.length )\n        next.unshift( mk_block( b, block.trailing ) );\n\n      return [];\n    },\n\n    para: function para( block, next ) {\n      // everything's a para!\n      return [ [\&quot;para\&quot;].concat( this.processInline( block ) ) ];\n    }\n  }\n};\n\nMarkdown.dialects.Gruber.inline = {\n\n    __oneElement__: function oneElement( text, patterns_or_re, previous_nodes ) {\n      var m,\n          res,\n          lastIndex = 0;\n\n      patterns_or_re = patterns_or_re || this.dialect.inline.__patterns__;\n      var re = new RegExp( \&quot;([\\\\s\\\\S]*?)(\&quot; + (patterns_or_re.source || patterns_or_re) + \&quot;)\&quot; );\n\n      m = re.exec( text );\n      if (!m) {\n        // Just boring text\n        return [ text.length, text ];\n      }\n      else if ( m[1] ) {\n        // Some un-interesting text matched. Return that first\n        return [ m[1].length, m[1] ];\n      }\n\n      var res;\n      if ( m[2] in this.dialect.inline ) {\n        res = this.dialect.inline[ m[2] ].call(\n                  this,\n                  text.substr( m.index ), m, previous_nodes || [] );\n      }\n      // Default for now to make dev easier. just slurp special and output it.\n      res = res || [ m[2].length, m[2] ];\n      return res;\n    },\n\n    __call__: function inline( text, patterns ) {\n\n      var out = [],\n          res;\n\n      function add(x) {\n        //D:self.debug(\&quot;  adding output\&quot;, uneval(x));\n        if ( typeof x == \&quot;string\&quot; &amp;&amp; typeof out[out.length-1] == \&quot;string\&quot; )\n          out[ out.length-1 ] += x;\n        else\n          out.push(x);\n      }\n\n      while ( text.length &gt; 0 ) {\n        res = this.dialect.inline.__oneElement__.call(this, text, patterns, out );\n        text = text.substr( res.shift() );\n        forEach(res, add )\n      }\n\n      return out;\n    },\n\n    // These characters are intersting elsewhere, so have rules for them so that\n    // chunks of plain text blocks don't include them\n    \&quot;]\&quot;: function () {},\n    \&quot;}\&quot;: function () {},\n\n    __escape__ : /^\\\\[\\\\`\\*_{}\\[\\]()#\\+.!\\-]/,\n\n    \&quot;\\\\\&quot;: function escaped( text ) {\n      // [ length of input processed, node/children to add... ]\n      // Only esacape: \\ ` * _ { } [ ] ( ) # * + - . !\n      if ( this.dialect.inline.__escape__.exec( text ) )\n        return [ 2, text.charAt( 1 ) ];\n      else\n        // Not an esacpe\n        return [ 1, \&quot;\\\\\&quot; ];\n    },\n\n    \&quot;![\&quot;: function image( text ) {\n\n      // Unlike images, alt text is plain text only. no other elements are\n      // allowed in there\n\n      // ![Alt text](/path/to/img.jpg \&quot;Optional title\&quot;)\n      //      1          2            3       4         &lt;--- captures\n      var m = text.match( /^!\\[(.*?)\\][ \\t]*\\([ \\t]*([^\&quot;)]*?)(?:[ \\t]+([\&quot;'])(.*?)\\3)?[ \\t]*\\)/ );\n\n      if ( m ) {\n        if ( m[2] &amp;&amp; m[2][0] == \&quot;&lt;\&quot; &amp;&amp; m[2][m[2].length-1] == \&quot;&gt;\&quot; )\n          m[2] = m[2].substring( 1, m[2].length - 1 );\n\n        m[2] = this.dialect.inline.__call__.call( this, m[2], /\\\\/ )[0];\n\n        var attrs = { alt: m[1], href: m[2] || \&quot;\&quot; };\n        if ( m[4] !== undefined)\n          attrs.title = m[4];\n\n        return [ m[0].length, [ \&quot;img\&quot;, attrs ] ];\n      }\n\n      // ![Alt text][id]\n      m = text.match( /^!\\[(.*?)\\][ \\t]*\\[(.*?)\\]/ );\n\n      if ( m ) {\n        // We can't check if the reference is known here as it likely wont be\n        // found till after. Check it in md tree-&gt;hmtl tree conversion\n        return [ m[0].length, [ \&quot;img_ref\&quot;, { alt: m[1], ref: m[2].toLowerCase(), original: m[0] } ] ];\n      }\n\n      // Just consume the '!['\n      return [ 2, \&quot;![\&quot; ];\n    },\n\n    \&quot;[\&quot;: function link( text ) {\n\n      var orig = String(text);\n      // Inline content is possible inside `link text`\n      var res = Markdown.DialectHelpers.inline_until_char.call( this, text.substr(1), \&quot;]\&quot; );\n\n      // No closing ']' found. Just consume the [\n      if ( !res ) return [ 1, \&quot;[\&quot; ];\n\n      var consumed = 1 + res[ 0 ],\n          children = res[ 1 ],\n          link,\n          attrs;\n\n      // At this point the first [...] has been parsed. See what follows to find\n      // out which kind of link we are (reference or direct url)\n      text = text.substr( consumed );\n\n      // [link text](/path/to/img.jpg \&quot;Optional title\&quot;)\n      //                 1            2       3         &lt;--- captures\n      // This will capture up to the last paren in the block. We then pull\n      // back based on if there a matching ones in the url\n      //    ([here](/url/(test))\n      // The parens have to be balanced\n      var m = text.match( /^\\s*\\([ \\t]*([^\&quot;']*)(?:[ \\t]+([\&quot;'])(.*?)\\2)?[ \\t]*\\)/ );\n      if ( m ) {\n        var url = m[1];\n        consumed += m[0].length;\n\n        if ( url &amp;&amp; url[0] == \&quot;&lt;\&quot; &amp;&amp; url[url.length-1] == \&quot;&gt;\&quot; )\n          url = url.substring( 1, url.length - 1 );\n\n        // If there is a title we don't have to worry about parens in the url\n        if ( !m[3] ) {\n          var open_parens = 1; // One open that isn't in the capture\n          for ( var len = 0; len &lt; url.length; len++ ) {\n            switch ( url[len] ) {\n            case \&quot;(\&quot;:\n              open_parens++;\n              break;\n            case \&quot;)\&quot;:\n              if ( --open_parens == 0) {\n                consumed -= url.length - len;\n                url = url.substring(0, len);\n              }\n              break;\n            }\n          }\n        }\n\n        // Process escapes only\n        url = this.dialect.inline.__call__.call( this, url, /\\\\/ )[0];\n\n        attrs = { href: url || \&quot;\&quot; };\n        if ( m[3] !== undefined)\n          attrs.title = m[3];\n\n        link = [ \&quot;link\&quot;, attrs ].concat( children );\n        return [ consumed, link ];\n      }\n\n      // [Alt text][id]\n      // [Alt text] [id]\n      m = text.match( /^\\s*\\[(.*?)\\]/ );\n\n      if ( m ) {\n\n        consumed += m[ 0 ].length;\n\n        // [links][] uses links as its reference\n        attrs = { ref: ( m[ 1 ] || String(children) ).toLowerCase(),  original: orig.substr( 0, consumed ) };\n\n        link = [ \&quot;link_ref\&quot;, attrs ].concat( children );\n\n        // We can't check if the reference is known here as it likely wont be\n        // found till after. Check it in md tree-&gt;hmtl tree conversion.\n        // Store the original so that conversion can revert if the ref isn't found.\n        return [ consumed, link ];\n      }\n\n      // [id]\n      // Only if id is plain (no formatting.)\n      if ( children.length == 1 &amp;&amp; typeof children[0] == \&quot;string\&quot; ) {\n\n        attrs = { ref: children[0].toLowerCase(),  original: orig.substr( 0, consumed ) };\n        link = [ \&quot;link_ref\&quot;, attrs, children[0] ];\n        return [ consumed, link ];\n      }\n\n      // Just consume the \&quot;[\&quot;\n      return [ 1, \&quot;[\&quot; ];\n    },\n\n\n    \&quot;&lt;\&quot;: function autoLink( text ) {\n      var m;\n\n      if ( ( m = text.match( /^&lt;(?:((https?|ftp|mailto):[^&gt;]+)|(.*?@.*?\\.[a-zA-Z]+))&gt;/ ) ) != null ) {\n        if ( m[3] ) {\n          return [ m[0].length, [ \&quot;link\&quot;, { href: \&quot;mailto:\&quot; + m[3] }, m[3] ] ];\n\n        }\n        else if ( m[2] == \&quot;mailto\&quot; ) {\n          return [ m[0].length, [ \&quot;link\&quot;, { href: m[1] }, m[1].substr(\&quot;mailto:\&quot;.length ) ] ];\n        }\n        else\n          return [ m[0].length, [ \&quot;link\&quot;, { href: m[1] }, m[1] ] ];\n      }\n\n      return [ 1, \&quot;&lt;\&quot; ];\n    },\n\n    \&quot;`\&quot;: function inlineCode( text ) {\n      // Inline code block. as many backticks as you like to start it\n      // Always skip over the opening ticks.\n      var m = text.match( /(`+)(([\\s\\S]*?)\\1)/ );\n\n      if ( m &amp;&amp; m[2] )\n        return [ m[1].length + m[2].length, [ \&quot;inlinecode\&quot;, m[3] ] ];\n      else {\n        // TODO: No matching end code found - warn!\n        return [ 1, \&quot;`\&quot; ];\n      }\n    },\n\n    \&quot;  \\n\&quot;: function lineBreak( text ) {\n      return [ 3, [ \&quot;linebreak\&quot; ] ];\n    }\n\n};\n\n// Meta Helper/generator method for em and strong handling\nfunction strong_em( tag, md ) {\n\n  var state_slot = tag + \&quot;_state\&quot;,\n      other_slot = tag == \&quot;strong\&quot; ? \&quot;em_state\&quot; : \&quot;strong_state\&quot;;\n\n  function CloseTag(len) {\n    this.len_after = len;\n    this.name = \&quot;close_\&quot; + md;\n  }\n\n  return function ( text, orig_match ) {\n\n    if ( this[state_slot][0] == md ) {\n      // Most recent em is of this type\n      //D:this.debug(\&quot;closing\&quot;, md);\n      this[state_slot].shift();\n\n      // \&quot;Consume\&quot; everything to go back to the recrusion in the else-block below\n      return[ text.length, new CloseTag(text.length-md.length) ];\n    }\n    else {\n      // Store a clone of the em/strong states\n      var other = this[other_slot].slice(),\n          state = this[state_slot].slice();\n\n      this[state_slot].unshift(md);\n\n      //D:this.debug_indent += \&quot;  \&quot;;\n\n      // Recurse\n      var res = this.processInline( text.substr( md.length ) );\n      //D:this.debug_indent = this.debug_indent.substr(2);\n\n      var last = res[res.length - 1];\n\n      //D:this.debug(\&quot;processInline from\&quot;, tag + \&quot;: \&quot;, uneval( res ) );\n\n      var check = this[state_slot].shift();\n      if ( last instanceof CloseTag ) {\n        res.pop();\n        // We matched! Huzzah.\n        var consumed = text.length - last.len_after;\n        return [ consumed, [ tag ].concat(res) ];\n      }\n      else {\n        // Restore the state of the other kind. We might have mistakenly closed it.\n        this[other_slot] = other;\n        this[state_slot] = state;\n\n        // We can't reuse the processed result as it could have wrong parsing contexts in it.\n        return [ md.length, md ];\n      }\n    }\n  }; // End returned function\n}\n\nMarkdown.dialects.Gruber.inline[\&quot;**\&quot;] = strong_em(\&quot;strong\&quot;, \&quot;**\&quot;);\nMarkdown.dialects.Gruber.inline[\&quot;__\&quot;] = strong_em(\&quot;strong\&quot;, \&quot;__\&quot;);\nMarkdown.dialects.Gruber.inline[\&quot;*\&quot;]  = strong_em(\&quot;em\&quot;, \&quot;*\&quot;);\nMarkdown.dialects.Gruber.inline[\&quot;_\&quot;]  = strong_em(\&quot;em\&quot;, \&quot;_\&quot;);\n\n\n// Build default order from insertion order.\nMarkdown.buildBlockOrder = function(d) {\n  var ord = [];\n  for ( var i in d ) {\n    if ( i == \&quot;__order__\&quot; || i == \&quot;__call__\&quot; ) continue;\n    ord.push( i );\n  }\n  d.__order__ = ord;\n};\n\n// Build patterns for inline matcher\nMarkdown.buildInlinePatterns = function(d) {\n  var patterns = [];\n\n  for ( var i in d ) {\n    // __foo__ is reserved and not a pattern\n    if ( i.match( /^__.*__$/) ) continue;\n    var l = i.replace( /([\\\\.*+?|()\\[\\]{}])/g, \&quot;\\\\$1\&quot; )\n             .replace( /\\n/, \&quot;\\\\n\&quot; );\n    patterns.push( i.length == 1 ? l : \&quot;(?:\&quot; + l + \&quot;)\&quot; );\n  }\n\n  patterns = patterns.join(\&quot;|\&quot;);\n  d.__patterns__ = patterns;\n  //print(\&quot;patterns:\&quot;, uneval( patterns ) );\n\n  var fn = d.__call__;\n  d.__call__ = function(text, pattern) {\n    if ( pattern != undefined ) {\n      return fn.call(this, text, pattern);\n    }\n    else\n    {\n      return fn.call(this, text, patterns);\n    }\n  };\n};\n\nMarkdown.DialectHelpers = {};\nMarkdown.DialectHelpers.inline_until_char = function( text, want ) {\n  var consumed = 0,\n      nodes = [];\n\n  while ( true ) {\n    if ( text.charAt( consumed ) == want ) {\n      // Found the character we were looking for\n      consumed++;\n      return [ consumed, nodes ];\n    }\n\n    if ( consumed &gt;= text.length ) {\n      // No closing char found. Abort.\n      return null;\n    }\n\n    var res = this.dialect.inline.__oneElement__.call(this, text.substr( consumed ) );\n    consumed += res[ 0 ];\n    // Add any returned nodes.\n    nodes.push.apply( nodes, res.slice( 1 ) );\n  }\n}\n\n// Helper function to make sub-classing a dialect easier\nMarkdown.subclassDialect = function( d ) {\n  function Block() {}\n  Block.prototype = d.block;\n  function Inline() {}\n  Inline.prototype = d.inline;\n\n  return { block: new Block(), inline: new Inline() };\n};\n\nMarkdown.buildBlockOrder ( Markdown.dialects.Gruber.block );\nMarkdown.buildInlinePatterns( Markdown.dialects.Gruber.inline );\n\nMarkdown.dialects.Maruku = Markdown.subclassDialect( Markdown.dialects.Gruber );\n\nMarkdown.dialects.Maruku.processMetaHash = function processMetaHash( meta_string ) {\n  var meta = split_meta_hash( meta_string ),\n      attr = {};\n\n  for ( var i = 0; i &lt; meta.length; ++i ) {\n    // id: #foo\n    if ( /^#/.test( meta[ i ] ) ) {\n      attr.id = meta[ i ].substring( 1 );\n    }\n    // class: .foo\n    else if ( /^\\./.test( meta[ i ] ) ) {\n      // if class already exists, append the new one\n      if ( attr[\&quot;class\&quot;] ) {\n        attr[\&quot;class\&quot;] = attr[\&quot;class\&quot;] + meta[ i ].replace( /./, \&quot; \&quot; );\n      }\n      else {\n        attr[\&quot;class\&quot;] = meta[ i ].substring( 1 );\n      }\n    }\n    // attribute: foo=bar\n    else if ( /\\=/.test( meta[ i ] ) ) {\n      var s = meta[ i ].split( /\\=/ );\n      attr[ s[ 0 ] ] = s[ 1 ];\n    }\n  }\n\n  return attr;\n}\n\nfunction split_meta_hash( meta_string ) {\n  var meta = meta_string.split( \&quot;\&quot; ),\n      parts = [ \&quot;\&quot; ],\n      in_quotes = false;\n\n  while ( meta.length ) {\n    var letter = meta.shift();\n    switch ( letter ) {\n      case \&quot; \&quot; :\n        // if we're in a quoted section, keep it\n        if ( in_quotes ) {\n          parts[ parts.length - 1 ] += letter;\n        }\n        // otherwise make a new part\n        else {\n          parts.push( \&quot;\&quot; );\n        }\n        break;\n      case \&quot;'\&quot; :\n      case '\&quot;' :\n        // reverse the quotes and move straight on\n        in_quotes = !in_quotes;\n        break;\n      case \&quot;\\\\\&quot; :\n        // shift off the next letter to be used straight away.\n        // it was escaped so we'll keep it whatever it is\n        letter = meta.shift();\n      default :\n        parts[ parts.length - 1 ] += letter;\n        break;\n    }\n  }\n\n  return parts;\n}\n\nMarkdown.dialects.Maruku.block.document_meta = function document_meta( block, next ) {\n  // we're only interested in the first block\n  if ( block.lineNumber &gt; 1 ) return undefined;\n\n  // document_meta blocks consist of one or more lines of `Key: Value\\n`\n  if ( ! block.match( /^(?:\\w+:.*\\n)*\\w+:.*$/ ) ) return undefined;\n\n  // make an attribute node if it doesn't exist\n  if ( !extract_attr( this.tree ) ) {\n    this.tree.splice( 1, 0, {} );\n  }\n\n  var pairs = block.split( /\\n/ );\n  for ( p in pairs ) {\n    var m = pairs[ p ].match( /(\\w+):\\s*(.*)$/ ),\n        key = m[ 1 ].toLowerCase(),\n        value = m[ 2 ];\n\n    this.tree[ 1 ][ key ] = value;\n  }\n\n  // document_meta produces no content!\n  return [];\n};\n\nMarkdown.dialects.Maruku.block.block_meta = function block_meta( block, next ) {\n  // check if the last line of the block is an meta hash\n  var m = block.match( /(^|\\n) {0,3}\\{:\\s*((?:\\\\\\}|[^\\}])*)\\s*\\}$/ );\n  if ( !m ) return undefined;\n\n  // process the meta hash\n  var attr = this.dialect.processMetaHash( m[ 2 ] );\n\n  var hash;\n\n  // if we matched ^ then we need to apply meta to the previous block\n  if ( m[ 1 ] === \&quot;\&quot; ) {\n    var node = this.tree[ this.tree.length - 1 ];\n    hash = extract_attr( node );\n\n    // if the node is a string (rather than JsonML), bail\n    if ( typeof node === \&quot;string\&quot; ) return undefined;\n\n    // create the attribute hash if it doesn't exist\n    if ( !hash ) {\n      hash = {};\n      node.splice( 1, 0, hash );\n    }\n\n    // add the attributes in\n    for ( a in attr ) {\n      hash[ a ] = attr[ a ];\n    }\n\n    // return nothing so the meta hash is removed\n    return [];\n  }\n\n  // pull the meta hash off the block and process what's left\n  var b = block.replace( /\\n.*$/, \&quot;\&quot; ),\n      result = this.processBlock( b, [] );\n\n  // get or make the attributes hash\n  hash = extract_attr( result[ 0 ] );\n  if ( !hash ) {\n    hash = {};\n    result[ 0 ].splice( 1, 0, hash );\n  }\n\n  // attach the attributes to the block\n  for ( a in attr ) {\n    hash[ a ] = attr[ a ];\n  }\n\n  return result;\n};\n\nMarkdown.dialects.Maruku.block.definition_list = function definition_list( block, next ) {\n  // one or more terms followed by one or more definitions, in a single block\n  var tight = /^((?:[^\\s:].*\\n)+):\\s+([\\s\\S]+)$/,\n      list = [ \&quot;dl\&quot; ],\n      i, m;\n\n  // see if we're dealing with a tight or loose block\n  if ( ( m = block.match( tight ) ) ) {\n    // pull subsequent tight DL blocks out of `next`\n    var blocks = [ block ];\n    while ( next.length &amp;&amp; tight.exec( next[ 0 ] ) ) {\n      blocks.push( next.shift() );\n    }\n\n    for ( var b = 0; b &lt; blocks.length; ++b ) {\n      var m = blocks[ b ].match( tight ),\n          terms = m[ 1 ].replace( /\\n$/, \&quot;\&quot; ).split( /\\n/ ),\n          defns = m[ 2 ].split( /\\n:\\s+/ );\n\n      // print( uneval( m ) );\n\n      for ( i = 0; i &lt; terms.length; ++i ) {\n        list.push( [ \&quot;dt\&quot;, terms[ i ] ] );\n      }\n\n      for ( i = 0; i &lt; defns.length; ++i ) {\n        // run inline processing over the definition\n        list.push( [ \&quot;dd\&quot; ].concat( this.processInline( defns[ i ].replace( /(\\n)\\s+/, \&quot;$1\&quot; ) ) ) );\n      }\n    }\n  }\n  else {\n    return undefined;\n  }\n\n  return [ list ];\n};\n\n// splits on unescaped instances of @ch. If @ch is not a character the result\n// can be unpredictable\n\nMarkdown.dialects.Maruku.block.table = function table (block, next) {\n\n    var _split_on_unescaped = function(s, ch) {\n        ch = ch || '\\\\s';\n        if (ch.match(/^[\\\\|\\[\\]{}?*.+^$]$/)) { ch = '\\\\' + ch; }\n        var res = [ ],\n            r = new RegExp('^((?:\\\\\\\\.|[^\\\\\\\\' + ch + '])*)' + ch + '(.*)'),\n            m;\n        while(m = s.match(r)) {\n            res.push(m[1]);\n            s = m[2];\n        }\n        res.push(s);\n        return res;\n    }\n\n    var leading_pipe = /^ {0,3}\\|(.+)\\n {0,3}\\|\\s*([\\-:]+[\\-| :]*)\\n((?:\\s*\\|.*(?:\\n|$))*)(?=\\n|$)/,\n        // find at least an unescaped pipe in each line\n        no_leading_pipe = /^ {0,3}(\\S(?:\\\\.|[^\\\\|])*\\|.*)\\n {0,3}([\\-:]+\\s*\\|[\\-| :]*)\\n((?:(?:\\\\.|[^\\\\|])*\\|.*(?:\\n|$))*)(?=\\n|$)/,\n        i, m;\n    if (m = block.match(leading_pipe)) {\n        // remove leading pipes in contents\n        // (header and horizontal rule already have the leading pipe left out)\n        m[3] = m[3].replace(/^\\s*\\|/gm, '');\n    } else if (! ( m = block.match(no_leading_pipe))) {\n        return undefined;\n    }\n\n    var table = [ \&quot;table\&quot;, [ \&quot;thead\&quot;, [ \&quot;tr\&quot; ] ], [ \&quot;tbody\&quot; ] ];\n\n    // remove trailing pipes, then split on pipes\n    // (no escaped pipes are allowed in horizontal rule)\n    m[2] = m[2].replace(/\\|\\s*$/, '').split('|');\n\n    // process alignment\n    var html_attrs = [ ];\n    forEach (m[2], function (s) {\n        if (s.match(/^\\s*-+:\\s*$/))       html_attrs.push({align: \&quot;right\&quot;});\n        else if (s.match(/^\\s*:-+\\s*$/))  html_attrs.push({align: \&quot;left\&quot;});\n        else if (s.match(/^\\s*:-+:\\s*$/)) html_attrs.push({align: \&quot;center\&quot;});\n        else                              html_attrs.push({});\n    });\n\n    // now for the header, avoid escaped pipes\n    m[1] = _split_on_unescaped(m[1].replace(/\\|\\s*$/, ''), '|');\n    for (i = 0; i &lt; m[1].length; i++) {\n        table[1][1].push(['th', html_attrs[i] || {}].concat(\n            this.processInline(m[1][i].trim())));\n    }\n\n    // now for body contents\n    forEach (m[3].replace(/\\|\\s*$/mg, '').split('\\n'), function (row) {\n        var html_row = ['tr'];\n        row = _split_on_unescaped(row, '|');\n        for (i = 0; i &lt; row.length; i++) {\n            html_row.push(['td', html_attrs[i] || {}].concat(this.processInline(row[i].trim())));\n        }\n        table[2].push(html_row);\n    }, this);\n\n    return [table];\n}\n\nMarkdown.dialects.Maruku.inline[ \&quot;{:\&quot; ] = function inline_meta( text, matches, out ) {\n  if ( !out.length ) {\n    return [ 2, \&quot;{:\&quot; ];\n  }\n\n  // get the preceeding element\n  var before = out[ out.length - 1 ];\n\n  if ( typeof before === \&quot;string\&quot; ) {\n    return [ 2, \&quot;{:\&quot; ];\n  }\n\n  // match a meta hash\n  var m = text.match( /^\\{:\\s*((?:\\\\\\}|[^\\}])*)\\s*\\}/ );\n\n  // no match, false alarm\n  if ( !m ) {\n    return [ 2, \&quot;{:\&quot; ];\n  }\n\n  // attach the attributes to the preceeding element\n  var meta = this.dialect.processMetaHash( m[ 1 ] ),\n      attr = extract_attr( before );\n\n  if ( !attr ) {\n    attr = {};\n    before.splice( 1, 0, attr );\n  }\n\n  for ( var k in meta ) {\n    attr[ k ] = meta[ k ];\n  }\n\n  // cut out the string and replace it with nothing\n  return [ m[ 0 ].length, \&quot;\&quot; ];\n};\n\nMarkdown.dialects.Maruku.inline.__escape__ = /^\\\\[\\\\`\\*_{}\\[\\]()#\\+.!\\-|:]/;\n\nMarkdown.buildBlockOrder ( Markdown.dialects.Maruku.block );\nMarkdown.buildInlinePatterns( Markdown.dialects.Maruku.inline );\n\nvar isArray = Array.isArray || function(obj) {\n  return Object.prototype.toString.call(obj) == \&quot;[object Array]\&quot;;\n};\n\nvar forEach;\n// Don't mess with Array.prototype. Its not friendly\nif ( Array.prototype.forEach ) {\n  forEach = function( arr, cb, thisp ) {\n    return arr.forEach( cb, thisp );\n  };\n}\nelse {\n  forEach = function(arr, cb, thisp) {\n    for (var i = 0; i &lt; arr.length; i++) {\n      cb.call(thisp || arr, arr[i], i, arr);\n    }\n  }\n}\n\nvar isEmpty = function( obj ) {\n  for ( var key in obj ) {\n    if ( hasOwnProperty.call( obj, key ) ) {\n      return false;\n    }\n  }\n\n  return true;\n}\n\nfunction extract_attr( jsonml ) {\n  return isArray(jsonml)\n      &amp;&amp; jsonml.length &gt; 1\n      &amp;&amp; typeof jsonml[ 1 ] === \&quot;object\&quot;\n      &amp;&amp; !( isArray(jsonml[ 1 ]) )\n      ? jsonml[ 1 ]\n      : undefined;\n}\n\n\n\n/**\n *  renderJsonML( jsonml[, options] ) -&gt; String\n *  - jsonml (Array): JsonML array to render to XML\n *  - options (Object): options\n *\n *  Converts the given JsonML into well-formed XML.\n *\n *  The options currently understood are:\n *\n *  - root (Boolean): wether or not the root node should be included in the\n *    output, or just its children. The default `false` is to not include the\n *    root itself.\n */\nexpose.renderJsonML = function( jsonml, options ) {\n  options = options || {};\n  // include the root element in the rendered output?\n  options.root = options.root || false;\n\n  var content = [];\n\n  if ( options.root ) {\n    content.push( render_tree( jsonml ) );\n  }\n  else {\n    jsonml.shift(); // get rid of the tag\n    if ( jsonml.length &amp;&amp; typeof jsonml[ 0 ] === \&quot;object\&quot; &amp;&amp; !( jsonml[ 0 ] instanceof Array ) ) {\n      jsonml.shift(); // get rid of the attributes\n    }\n\n    while ( jsonml.length ) {\n      content.push( render_tree( jsonml.shift() ) );\n    }\n  }\n\n  return content.join( \&quot;\\n\\n\&quot; );\n};\n\nfunction escapeHTML( text ) {\n  return text.replace( /&amp;/g, \&quot;&amp;amp;\&quot; )\n             .replace( /&lt;/g, \&quot;&amp;lt;\&quot; )\n             .replace( /&gt;/g, \&quot;&amp;gt;\&quot; )\n             .replace( /\&quot;/g, \&quot;&amp;quot;\&quot; )\n             .replace( /'/g, \&quot;&amp;#39;\&quot; );\n}\n\nfunction render_tree( jsonml ) {\n  // basic case\n  if ( typeof jsonml === \&quot;string\&quot; ) {\n    return escapeHTML( jsonml );\n  }\n\n  var tag = jsonml.shift(),\n      attributes = {},\n      content = [];\n\n  if ( jsonml.length &amp;&amp; typeof jsonml[ 0 ] === \&quot;object\&quot; &amp;&amp; !( jsonml[ 0 ] instanceof Array ) ) {\n    attributes = jsonml.shift();\n  }\n\n  while ( jsonml.length ) {\n    content.push( render_tree( jsonml.shift() ) );\n  }\n\n  var tag_attrs = \&quot;\&quot;;\n  for ( var a in attributes ) {\n    tag_attrs += \&quot; \&quot; + a + '=\&quot;' + escapeHTML( attributes[ a ] ) + '\&quot;';\n  }\n\n  // be careful about adding whitespace here for inline elements\n  if ( tag == \&quot;img\&quot; || tag == \&quot;br\&quot; || tag == \&quot;hr\&quot; ) {\n    return \&quot;&lt;\&quot;+ tag + tag_attrs + \&quot;/&gt;\&quot;;\n  }\n  else {\n    return \&quot;&lt;\&quot;+ tag + tag_attrs + \&quot;&gt;\&quot; + content.join( \&quot;\&quot; ) + \&quot;&lt;/\&quot; + tag + \&quot;&gt;\&quot;;\n  }\n}\n\nfunction convert_tree_to_html( tree, references, options ) {\n  var i;\n  options = options || {};\n\n  // shallow clone\n  var jsonml = tree.slice( 0 );\n\n  if ( typeof options.preprocessTreeNode === \&quot;function\&quot; ) {\n      jsonml = options.preprocessTreeNode(jsonml, references);\n  }\n\n  // Clone attributes if they exist\n  var attrs = extract_attr( jsonml );\n  if ( attrs ) {\n    jsonml[ 1 ] = {};\n    for ( i in attrs ) {\n      jsonml[ 1 ][ i ] = attrs[ i ];\n    }\n    attrs = jsonml[ 1 ];\n  }\n\n  // basic case\n  if ( typeof jsonml === \&quot;string\&quot; ) {\n    return jsonml;\n  }\n\n  // convert this node\n  switch ( jsonml[ 0 ] ) {\n    case \&quot;header\&quot;:\n      jsonml[ 0 ] = \&quot;h\&quot; + jsonml[ 1 ].level;\n      delete jsonml[ 1 ].level;\n      break;\n    case \&quot;bulletlist\&quot;:\n      jsonml[ 0 ] = \&quot;ul\&quot;;\n      break;\n    case \&quot;numberlist\&quot;:\n      jsonml[ 0 ] = \&quot;ol\&quot;;\n      break;\n    case \&quot;listitem\&quot;:\n      jsonml[ 0 ] = \&quot;li\&quot;;\n      break;\n    case \&quot;para\&quot;:\n      jsonml[ 0 ] = \&quot;p\&quot;;\n      break;\n    case \&quot;markdown\&quot;:\n      jsonml[ 0 ] = \&quot;html\&quot;;\n      if ( attrs ) delete attrs.references;\n      break;\n    case \&quot;code_block\&quot;:\n      jsonml[ 0 ] = \&quot;pre\&quot;;\n      i = attrs ? 2 : 1;\n      var code = [ \&quot;code\&quot; ];\n      code.push.apply( code, jsonml.splice( i, jsonml.length - i ) );\n      jsonml[ i ] = code;\n      break;\n    case \&quot;inlinecode\&quot;:\n      jsonml[ 0 ] = \&quot;code\&quot;;\n      break;\n    case \&quot;img\&quot;:\n      jsonml[ 1 ].src = jsonml[ 1 ].href;\n      delete jsonml[ 1 ].href;\n      break;\n    case \&quot;linebreak\&quot;:\n      jsonml[ 0 ] = \&quot;br\&quot;;\n    break;\n    case \&quot;link\&quot;:\n      jsonml[ 0 ] = \&quot;a\&quot;;\n      break;\n    case \&quot;link_ref\&quot;:\n      jsonml[ 0 ] = \&quot;a\&quot;;\n\n      // grab this ref and clean up the attribute node\n      var ref = references[ attrs.ref ];\n\n      // if the reference exists, make the link\n      if ( ref ) {\n        delete attrs.ref;\n\n        // add in the href and title, if present\n        attrs.href = ref.href;\n        if ( ref.title ) {\n          attrs.title = ref.title;\n        }\n\n        // get rid of the unneeded original text\n        delete attrs.original;\n      }\n      // the reference doesn't exist, so revert to plain text\n      else {\n        return attrs.original;\n      }\n      break;\n    case \&quot;img_ref\&quot;:\n      jsonml[ 0 ] = \&quot;img\&quot;;\n\n      // grab this ref and clean up the attribute node\n      var ref = references[ attrs.ref ];\n\n      // if the reference exists, make the link\n      if ( ref ) {\n        delete attrs.ref;\n\n        // add in the href and title, if present\n        attrs.src = ref.href;\n        if ( ref.title ) {\n          attrs.title = ref.title;\n        }\n\n        // get rid of the unneeded original text\n        delete attrs.original;\n      }\n      // the reference doesn't exist, so revert to plain text\n      else {\n        return attrs.original;\n      }\n      break;\n  }\n\n  // convert all the children\n  i = 1;\n\n  // deal with the attribute node, if it exists\n  if ( attrs ) {\n    // if there are keys, skip over it\n    for ( var key in jsonml[ 1 ] ) {\n        i = 2;\n        break;\n    }\n    // if there aren't, remove it\n    if ( i === 1 ) {\n      jsonml.splice( i, 1 );\n    }\n  }\n\n  for ( ; i &lt; jsonml.length; ++i ) {\n    jsonml[ i ] = convert_tree_to_html( jsonml[ i ], references, options );\n  }\n\n  return jsonml;\n}\n\n\n// merges adjacent text nodes into a single node\nfunction merge_text_nodes( jsonml ) {\n  // skip the tag name and attribute hash\n  var i = extract_attr( jsonml ) ? 2 : 1;\n\n  while ( i &lt; jsonml.length ) {\n    // if it's a string check the next item too\n    if ( typeof jsonml[ i ] === \&quot;string\&quot; ) {\n      if ( i + 1 &lt; jsonml.length &amp;&amp; typeof jsonml[ i + 1 ] === \&quot;string\&quot; ) {\n        // merge the second string into the first and remove it\n        jsonml[ i ] += jsonml.splice( i + 1, 1 )[ 0 ];\n      }\n      else {\n        ++i;\n      }\n    }\n    // if it's not a string recurse\n    else {\n      merge_text_nodes( jsonml[ i ] );\n      ++i;\n    }\n  }\n}\n\n} )( (function() {\n  if ( typeof exports === \&quot;undefined\&quot; ) {\n    window.markdown = {};\n    return window.markdown;\n  }\n  else {\n    return exports;\n  }\n} )() );\n&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/markdown.js&quot;,
+            &quot;module-type&quot;: &quot;library&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/images/new-markdown-button&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/images/new-markdown-button&quot;,
+            &quot;tags&quot;: &quot;$:/tags/Image&quot;,
+            &quot;text&quot;: &quot;&lt;svg class=\&quot;tc-image-new-markdown-button tc-image-button\&quot; viewBox=\&quot;0 0 128 128\&quot; width=\&quot;22pt\&quot; height=\&quot;22pt\&quot;&gt;\n    &lt;g fill-rule=\&quot;evenodd\&quot;&gt;\n        &lt;rect x=\&quot;80\&quot; y=\&quot;96\&quot; width=\&quot;48\&quot; height=\&quot;16\&quot; rx=\&quot;8\&quot;&gt;&lt;/rect&gt;\n        &lt;rect x=\&quot;96\&quot; y=\&quot;80\&quot; width=\&quot;16\&quot; height=\&quot;48\&quot; rx=\&quot;8\&quot;&gt;&lt;/rect&gt;\n        &lt;path d=\&quot;M3.23876972,39.5396716 C3.23876972,35.9653274 6.13586353,33.0691646 9.7141757,33.0691646 L98.1283744,33.0691646 C101.706101,33.0691646 104.60378,35.9646626 104.60378,39.5396716 L104.60378,84.8296213 C104.60378,88.4039654 101.706687,91.3001282 98.1283744,91.3001282 L9.7141757,91.3001282 C6.13644944,91.3001282 3.23876972,88.4046302 3.23876972,84.8296213 L3.23876972,39.5396716 L3.23876972,39.5396716 Z M-2.15298617,39.5396716 L-2.15298617,84.8296213 C-2.15298617,91.3833243 3.15957363,96.6918841 9.7141757,96.6918841 L98.1283744,96.6918841 C104.684083,96.6918841 109.995536,91.382138 109.995536,84.8296213 L109.995536,39.5396716 C109.995536,32.9859686 104.682977,27.6774087 98.1283744,27.6774087 L9.7141757,27.6774087 C3.15846686,27.6774087 -2.15298617,32.9871549 -2.15298617,39.5396716 Z M14.0222815,80.5166164 L14.0222815,43.8526764 L24.8057933,43.8526764 L35.589305,57.3320661 L46.3728168,43.8526764 L57.1563286,43.8526764 L57.1563286,80.5166164 L46.3728168,80.5166164 L46.3728168,59.4887685 L35.589305,72.9681582 L24.8057933,59.4887685 L24.8057933,80.5166164 L14.0222815,80.5166164 Z M81.4192301,80.5166164 L65.2439624,62.723822 L76.0274742,62.723822 L76.0274742,43.8526764 L86.810986,43.8526764 L86.810986,62.723822 L97.5944978,62.723822 L81.4192301,80.5166164 Z\&quot;transform=\&quot;translate(53.921275, 62.184646) rotate(-60.000000) translate(-53.921275, -62.184646) \&quot;&gt;&lt;/path&gt;\n    &lt;/g&gt;\n&lt;/svg&gt;&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/new-markdown-button&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/new-markdown-button&quot;,
+            &quot;tags&quot;: &quot;$:/tags/PageControls&quot;,
+            &quot;caption&quot;: &quot;{{$:/plugins/tiddlywiki/markdown/images/new-markdown-button}} {{$:/language/Buttons/NewMarkdown/Caption}}&quot;,
+            &quot;description&quot;: &quot;{{$:/language/Buttons/NewMarkdown/Hint}}&quot;,
+            &quot;list-after&quot;: &quot;$:/core/ui/Buttons/new-tiddler&quot;,
+            &quot;text&quot;: &quot;&lt;$button tooltip={{$:/language/Buttons/NewMarkdown/Hint}} aria-label={{$:/language/Buttons/NewMarkdown/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;\n&lt;$action-sendmessage $message=\&quot;tm-new-tiddler\&quot; type=\&quot;text/x-markdown\&quot;/&gt;\n&lt;$list filter=\&quot;[&lt;tv-config-toolbar-icons&gt;prefix[yes]]\&quot;&gt;\n{{$:/plugins/tiddlywiki/markdown/images/new-markdown-button}}\n&lt;/$list&gt;\n&lt;$list filter=\&quot;[&lt;tv-config-toolbar-text&gt;prefix[yes]]\&quot;&gt;\n&lt;span class=\&quot;tc-btn-text\&quot;&gt;&lt;$text text={{$:/language/Buttons/NewMarkdown/Caption}}/&gt;&lt;/span&gt;\n&lt;/$list&gt;\n&lt;/$button&gt;\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/readme&quot;,
+            &quot;text&quot;: &quot;This is a TiddlyWiki plugin for parsing Markdown text, based on the [[markdown-js|https://github.com/evilstreak/markdown-js]] project from Dominic Baggott. \n\nIt is completely self-contained, and doesn't need an Internet connection in order to work. It works both in the browser and under Node.js.\n\n[[Source code|https://github.com/Jermolene/TiddlyWiki5/blob/master/plugins/tiddlywiki/markdown]]\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/usage&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/usage&quot;,
+            &quot;text&quot;: &quot;! Markdown Dialects\n\nBy default the markdown parser recognises the original dialect of Markdown [[as described by John Gruber|http://daringfireball.net/projects/markdown/]]. An extended dialect called \&quot;Maruku\&quot; is also included that provides table support and other advanced features. The syntax extensions are modelled on those of [[PHP Markdown Extra|https://michelf.ca/projects/php-markdown/extra/]].\n\nThe configuration tiddler [[$:/config/markdown/dialect]] determines which dialect is used:\n\n|!Dialect |!Description |\n|Gruber |Standard Markdown |\n|Maruku |Extended Maruku Markdown |\n\n\n! Creating ~WikiLinks\n\nCreate wiki links with the usual Markdown link syntax targeting `#` and the target tiddler title:\n\n```\n[link text](#TiddlerTitle)\n```\n\n! Images\n\nMarkdown image syntax can be used to reference images by tiddler title or an external URI. For example:\n\n```\n![alt text](/path/to/img.jpg \&quot;Title\&quot;)\n\n![alt text](Motovun Jack.jpg \&quot;Title\&quot;)\n```\n&quot;
+        },
+        &quot;$:/plugins/tiddlywiki/markdown/wrapper.js&quot;: {
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/tiddlywiki/markdown/wrapper.js\ntype: application/javascript\nmodule-type: parser\n\nWraps up the markdown-js parser for use in TiddlyWiki5\n\n\\*/\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false */\n\&quot;use strict\&quot;;\n\nvar markdown = require(\&quot;$:/plugins/tiddlywiki/markdown/markdown.js\&quot;);\n\nvar CONFIG_DIALECT_TIDDLER = \&quot;$:/config/markdown/dialect\&quot;,\n\tDEFAULT_DIALECT = \&quot;Gruber\&quot;;\n\nfunction transformNodes(nodes) {\n\tvar results = [];\n\tfor(var index=0; index&lt;nodes.length; index++) {\n\t\tresults.push(transformNode(nodes[index]));\n\t}\n\treturn results;\n}\n\nfunction transformNode(node) {\n\tif($tw.utils.isArray(node)) {\n\t\tvar p = 0,\n\t\t\twidget = {type: \&quot;element\&quot;, tag: node[p++]};\n\t\tif(!$tw.utils.isArray(node[p]) &amp;&amp; typeof(node[p]) === \&quot;object\&quot;) {\n\t\t\twidget.attributes = {};\n\t\t\t$tw.utils.each(node[p++],function(value,name) {\n\t\t\t\twidget.attributes[name] = {type: \&quot;string\&quot;, value: value};\n\t\t\t});\n\t\t}\n\t\twidget.children = transformNodes(node.slice(p++));\n\t\t// Massage images into the image widget\n\t\tif(widget.tag === \&quot;img\&quot;) {\n\t\t\twidget.type = \&quot;image\&quot;;\n\t\t\tif(widget.attributes.alt) {\n\t\t\t\twidget.attributes.tooltip = widget.attributes.alt;\n\t\t\t\tdelete widget.attributes.alt;\n\t\t\t}\n\t\t\tif(widget.attributes.src) {\n\t\t\t\twidget.attributes.source = widget.attributes.src;\n\t\t\t\tdelete widget.attributes.src;\n\t\t\t}\n\t\t}\n\t\t// Convert internal links to proper wikilinks\n\t\tif (widget.tag === \&quot;a\&quot; &amp;&amp; widget.attributes.href.value[0] === \&quot;#\&quot;) {\n\t\t\twidget.type = \&quot;link\&quot;;\n\t\t\twidget.attributes.to = widget.attributes.href;\n\t\t\tif (widget.attributes.to.type === \&quot;string\&quot;) {\n\t\t\t\t//Remove '#' before conversion to wikilink\n\t\t\t\twidget.attributes.to.value = widget.attributes.to.value.substr(1);\n\t\t\t}\n\t\t\t//Children is fine\n\t\t\tdelete widget.tag;\n\t\t\tdelete widget.attributes.href;\n\t\t}\n\t\treturn widget;\n\t} else {\n\t\treturn {type: \&quot;text\&quot;, text: node};\n\t}\n}\n\nvar MarkdownParser = function(type,text,options) {\n\tvar dialect = options.wiki.getTiddlerText(CONFIG_DIALECT_TIDDLER,DEFAULT_DIALECT),\n\t\tmarkdownTree = markdown.toHTMLTree(text,dialect),\n\t\tnode = $tw.utils.isArray(markdownTree[1]) ? markdownTree.slice(1) : markdownTree.slice(2);\n\tthis.tree = transformNodes(node);\n};\n\n/*\n\n[ 'html',\n  [ 'p', 'something' ],\n  [ 'h1',\n    'heading and ',\n    [ 'strong', 'other' ] ] ]\n\n*/\n\nexports[\&quot;text/x-markdown\&quot;] = MarkdownParser;\n\n})();\n\n&quot;,
+            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/markdown/wrapper.js&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;module-type&quot;: &quot;parser&quot;
+        }
+    }
 }</pre>
 </div>
 <div created="20170824063219672" modified="20170830160014733" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -12112,13 +12694,31 @@ h1.titre {
 <div created="20170824063202973" modified="20170830155905729" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>{{variables.json##nom_territoire}}</pre>
 </div>
+<div created="20170919135427974" modified="20170919135438046" title="$:/state/folded/Porter à Connaissance" revision="3" bag="default">
+<pre>hide</pre>
+</div>
+<div created="20170919134825699" modified="20170919134825699" title="$:/state/showeditpreview" revision="1" bag="default">
+<pre>yes</pre>
+</div>
+<div created="20170919134824004" modified="20170919135148967" title="$:/state/sidebar" revision="2" bag="default">
+<pre>yes</pre>
+</div>
+<div created="20170919134428161" modified="20170919135457492" title="$:/state/tab/sidebar--1835078512" revision="4" bag="default">
+<pre>Variables</pre>
+</div>
+<div created="20170919134635625" modified="20170919135454869" title="$:/state/toc/chapitre-Documentation--682378955" revision="2" bag="default">
+<pre>close</pre>
+</div>
+<div created="20170919134433952" modified="20170919134434640" title="$:/state/toc/chapitre-Qualité de l'air--682378955" revision="2" bag="default">
+<pre>close</pre>
+</div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
 <pre>yes</pre>
 </div>
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="[[Porter à Connaissance]]" title="$:/StoryList" revision="1" bag="default">
+<div list="[[Porter à Connaissance]]" title="$:/StoryList" revision="38" bag="default">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json" revision="0" bag="default">
@@ -12167,7 +12767,10 @@ h1.titre {
     }
 }</pre>
 </div>
-<div created="20170824063320392" modified="20170905134753649" title="$:/theme" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170919134441155" modified="20170919134445704" title="$:/temp/search" revision="13" bag="default">
+<pre>documentation</pre>
+</div>
+<div created="20170824063320392" modified="20170915123440782" title="$:/theme" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/snowwhite" description="Centralises the story river" name="Centralised" plugin-type="theme" title="$:/themes/tiddlywiki/centralised" type="application/json" version="5.1.14" revision="0" bag="default">
@@ -12296,37 +12899,56 @@ h1.titre {
 <div created="20170824063333366" modified="20170825113026847" title="$:/themes/tiddlywiki/vanilla/settings/fontfamily" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&quot;Liberation Sans&quot;,&quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, &quot;DejaVu Sans&quot;, sans-serif</pre>
 </div>
-<div created="20170824120603675" modified="20170905161952102" rank="0" tags="Documentation" title="à propos" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Essai d'outil utilisant [[TiddlyWiki|http://tiddlywiki.com/]] pour la mise en place d'un PAC Automatique. En résumé, la procédure escomptée est la suivante (pour les procédures détaillées cf. [[Utiliser TiddlyPAC]]) :
+<div created="20170824120603675" modified="20170919135248805" rank="0" tags="Documentation" title="à propos" type="text/x-markdown" revision="5" bag="default">
+<pre>Le [projet original][origin] est hébergé sur [l'instance gitlab de Framasoft][framagit]. Merci de faire vos propositions à cet endroit. D'autres versions peuvent être déployées, notamment sur gitlab ou github, mais il s'agit de mirroirs...*
 
-* Pour l'utilisateur 
-** Mise à jour des champs dans [[Variables]]
-** Export du [[Porter à Connaissance]] obtenu
-* Pour la maintenance
-** Mise à jour des parties / sous-parties par les services, dont définition des [[Variables]] éventuelles
-** Mise à jour du [[Porter à Connaissance]] en fonction des évolutions
+TiddlyPAC est une tentative pour faciliter la production de Porter à Connaissance par les services de l'Etat. Elle s'appuye sur le logiciel libre [TiddlyWiki][tw] qui est à la fois un outil et une plate-forme.
 
-!!! Questions / Problèmes en supens
-* Il faudrait sans doute réfléchir dès à présent à un système permettant de distinguer les niveaux territoriaux simplement, voire à adapter facilement l'outil d'un\e région\département à l'autre (voir [[Structure des parties]]) cela implique de permettre aussi un système de variables par région
-* Le fichier html exporté est correct. Pour des raisons évidentes, il est souhaitable de pouvoir le retravailler dans Libre-Office. Pour l'heure Libre-Office gère très mal le html avec des css et des classes : pas de rendu, pas d'édition des styles correspondants... Quelques solutions
-** procéder à l'impression dans un document .pdf, directement depuis le navigateur. Peut donner des petits problèmes de pagination.
-** ~~faire une moulinette qui convertit tous les `class=&quot;truc&quot;` en `style=&quot;font: ..., ...&quot;`~~ Un peu lourd
-** ~~utiliser un logiciel de conversion. Je regarde [[Pandoc|http://pandoc.org]]~~ non concluant
-* Ne faudrait-il pas utiliser la version tiddlers individuels / node.js pour la maintenance?
-** Pour : permet un suivi plus simple des versions de chaque thème / sous-thème
-** Contre : plus technique pour les néophites
+## Utiliser TiddlyPAC
+En version simplifiée (voir [utiliser TiddlyPAC][utiliser TP] pour plus de détails), le processus de production d'un porter à connaissance est le suivant :
 
-!!! Réglages
-* [[Styles|$:/pac/styles]] utilisés
+1. récupérer le fichier `tiddlyPAC.html` dans la version requise (voir [Versions de TiddlyPAC][versions])
+2. mettre à jour les [variables][variables] décrivant le territoire concerné
+3. exporter le //tiddler// principal (Porter à Connaissance) au format `.html`
+4. imprimer ou exporter au format `.pdf`
 
-!!! Références et documentation
-* [[PAC &quot;automatique&quot; précédent|]] sur le réseau
-* [[Benchmark|$:/references/benchmark]] sur les modes de fonctionnement des autres DREAL
+Il est également possible de travailler plus finement sur la mise en forme en important le fichier dans libre office.
+
+## Contribuer à TiddlyPAC
+L'outil est le fruit d'un travail collectif qui s'enrichit des mises à jours régulières, commentaires et propositions d'amélioration. Plusieurs possibilités sont offertes pour ce faire (voir [contribuer à TiddlyPAC][contribuer TP] pour plus de détails) :
+
+* en [ajoutant une &quot;issue&quot;][issues] directement dans framagit (plate-forme où est hébergé le code de l'application)
+* en éditant directement la partie à améliorer dans l'outil, en l'exportant puis en envoyant le fichier `.tid` ainsi modifié
+* en travaillant directement sur un &quot;clône&quot; de TiddlyPAC et utilisant l'outil __git__
+
+## Crédits / Licence
+TiddlyPAC s'appuye sur
+* [TiddlyWiki][tw] bien évidemment (_5.1.14_) (licence [BSD 3-clause](https://opensource.org/licenses/BSD-3-Clause))
+    * son plugin Markown, pour essayer d'avoir la documentation à la fois dans le dépôt et dans l'outil
+
+L'ensemble des adaptations (modestes) du code et des textes établis sont sous [licence ouverte](https://www.etalab.gouv.fr/licence-ouverte-open-licence)
+
+![licence ouverte](https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Logo_Licence_Ouverte_bleu_blanc_rouge.png &quot;licence ouverte&quot;)
+
+### Circuit
+* **[Framagit][origin]** ([issues][issues])
+
+[versions]: #versions_de_TiddlyPAC
+[utiliser TP]: #utiliser_TiddlyPAC
+[contribuer TP]: #contribuer_à_TiddlyPAC
+
+[origin]:https://framagit.org/know-rmandie/TiddlyPAC
+[issues]:https://framagit.org/know-rmandie/TiddlyPAC/issues
+
+[tw]:http://tiddlywiki.com
+[framagit]:https://framagit.org
 </pre>
 </div>
-<div created="20170825073044795" modified="20170912162300642" rank="2" tags="[[Projet de territoire]]" title="Ambition et organisation du développement" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170825073044795" modified="20170915123144161" rank="2" tags="[[Projet de territoire]]" title="Ambition et organisation du développement" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! Ambition et organisation du développement territorial
-Le projet d’aménagement et de développement durables doit exposer le projet d’urbanisme et arrêter les orientations générales concernant un vaste ensemble de sujets^^1-2^^ qui traduisent l’ambition territoriale en matière de développement. Cette ambition doit tenir compte tout à la fois des volontés et du contexte local, mais aussi de ceux des territoires environnants ainsi que des ressources et des capacités à ces différentes échelles. Elle doit aussi tenir compte des impacts potentiels qu’elle pourrait avoir.
+
+Le projet d’aménagement et de développement durables doit exposer le projet d’urbanisme et arrêter les orientations générales concernant un vaste ensemble de sujets^^1-2^^ qui traduisent l’ambition territoriale en matière de développement. 
+Cette ambition doit tenir compte tout à la fois des volontés et du contexte local, mais aussi de ceux des territoires environnants ainsi que des ressources et des capacités à ces différentes échelles. Elle doit aussi tenir compte des impacts potentiels qu’elle pourrait avoir.
 
 !!!!!! [1-2] L’article  L 151-5 du Code de l’Urbanisme rappelle les objectifs du PADD
 
@@ -12377,19 +12999,22 @@ Pour aider à la réflexion sur cette spatialisation des objectifs de développe
 
 Les nombreux zonages que l’Insee met régulièrement à jour, permettent d’avoir une bonne vision des dépendances territoriales, de l’organisation des services et des déplacements domiciles travail.
 
+&lt;&lt;&lt;.doc
 Les zonages des bassins de vie, les zonages en aires urbaines et en zones d’emplois peuvent être retrouvés sur le site internet de l’Insee :
-http://www.insee.fr/fr/methodes/nomenclatures/zonages/default.asp
+&lt;&lt;&lt; http://www.insee.fr/fr/methodes/nomenclatures/zonages/default.asp
 
-En matière de typologie communale pouvant concourir à la définition d’une organisation spatiale adaptée, d'autres réflexions peuvent également être examinées avec des éclairages complémentaires, comme la typologie des campagnes françaises mise au point par la DATAR^^1-2^^
-
-!!!!!! ^^[1-2]^^ La typologie des campagnes peut être retrouvée sur l’observatoire des territoires : http://www.observatoire-des-territoires.gouv.fr/observatoire-des-territoires/fr/typologie-des-campagnes-fran-aises-et-des-espaces-enjeux-sp-cifiques-littoral-et-montagne
+&lt;&lt;&lt;.doc
+En matière de typologie communale pouvant concourir à la définition d’une organisation spatiale adaptée, d'autres réflexions peuvent également être examinées avec des éclairages complémentaires, comme la typologie des campagnes françaises mise au point par la DATAR
+&lt;&lt;&lt; http://www.observatoire-des-territoires.gouv.fr/observatoire-des-territoires/fr/typologie-des-campagnes-fran-aises-et-des-espaces-enjeux-sp-cifiques-littoral-et-montagne
 </pre>
 </div>
-<div created="20170828093049959" modified="20170830162252185" rank="1" tags="[[L’aménagement et la ville durables]]" title="Approche environnementale de l’urbanisme" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170828093049959" modified="20170915071700394" rank="1" tags="[[L’aménagement et la ville durables]]" title="Approche environnementale de l’urbanisme" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!! Approche environnementale de l’urbanisme
 L’Approche Environnementale de l’Urbanisme (AEU), portée par l’ADEME, propose une approche transversale dès la conception du projet de territoire. Les finalités du développement durable y sont traitées de manière systémique en les croisant avec les enjeux environnementaux liés au projet : énergie et climat, déplacements, déchets, eau, biodiversité et paysages, sols et sites pollués, bruit, pour aboutir à un ensemble de solutions.
 
-Les informations sur l’AEU2 peuvent être retrouvées sur le site de l’ADEME : http://www.ademe.fr/expertises/urbanisme-amenagement/passer-a-laction/approche-environnementale-lurbanisme-2
+&lt;&lt;&lt;.doc
+Les informations sur l’AEU,,2,, peuvent être retrouvées sur le site de l’ADEME
+&lt;&lt;&lt; http://www.ademe.fr/expertises/urbanisme-amenagement/passer-a-laction/approche-environnementale-lurbanisme-2
 </pre>
 </div>
 <div created="20170824063525726" modified="20170912134403596" tags="Références" title="Benchmark des PAC automatiques" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -12463,7 +13088,7 @@ Le site [[intranet|http://intra.dreal-paca.i2/contribution-de-la-dreal-a-l-elabo
 @@
 </pre>
 </div>
-<div created="20170825073044795" modified="20170830162121951" rank="4" tags="[[Projet de territoire]]" title="Consommation d’espace et densité" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170825073044795" modified="20170915070451995" rank="4" tags="[[Projet de territoire]]" title="Consommation d’espace et densité" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! Consommation d’espace et densité
 
 La connaissance, l’analyse, la définition d’une stratégie de maîtrise et de diminution de la consommation d’espace ainsi que sa déclinaison dans l’ensemble des pièces du PLUi sont des éléments fondamentaux attendus pour le projet de territoire^^1-4^^.
@@ -12479,41 +13104,25 @@ Au-delà des aspects évidents concernant le développement durable du territoir
 
 Afin d’aider à cet exercice de qualification de la consommation d’espace et de définition des stratégies de gestion économes, l’État et ses partenaires mettent au point et tiennent à jour des outils multiples.
 
-Travaux du CERTU : http://www.certu-catalogue.fr/la-consommation-d-espaces-par-l-urbanisation.html
-
-&lt;&lt;chapitre &quot;Consommation d’espace et densité&quot;&gt;&gt;
-
-En fonction des réflexions conduites au niveau national, notamment les travaux du CEREMA, et en les faisant évoluer au cours du temps si nécessaire, la DREAL Normandie tient à jour une série d’indicateurs concernant la consommation d’espace.
-
-Indicateurs de consommation d’espace pour la Normandie : http://know-rmandie.github.io/I/CE/ sur la base notamment des
-
-!!!!! études disponibles en fonction du département ({{variables.json##departement}} - [[changer|Variables]])&lt;br/&gt;* HN (27,76) : [[Etudes Consommation d'espace HN]]
-@@
-
-&lt;$reveal type=&quot;match&quot; state=&quot;variables.json##departement&quot; text=&quot;27&quot;&gt;
-
-{{Etudes Consommation d'espace HN}}
-&lt;/$reveal&gt;
-&lt;$reveal type=&quot;match&quot; state=&quot;variables.json##departement&quot; text=&quot;76&quot;&gt;
-
-{{Etudes Consommation d'espace HN}}
-&lt;/$reveal&gt;
+&lt;&lt;&lt;.doc
+Travaux du CERTU sur la consommation d'espaces par l'urbanisation
+&lt;&lt;&lt; http://www.certu-catalogue.fr/la-consommation-d-espaces-par-l-urbanisation.html
 </pre>
 </div>
-<div created="20170825073044795" modified="20170830162005940" rank="3" tags="[[Projet de territoire]]" title="Déclinaison du PLH" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170825073044795" modified="20170915125227354" rank="3" tags="[[Projet de territoire]]" title="Déclinaison du PLH" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!!!! le territoire est concerné par un PLH? (''{{variables.json##dans_PLH}}'' - [[changer|Variables]])
 
 &lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##dans_PLH&quot; text=&quot;non&quot;&gt;
 
-!! [[Déclinaison du PLH]]
+!! Déclinaison du PLH
 
 Le territoire fait partie du {{variables.json##dans_PLH}}. A ce titre, le document d'urbanisme doit être compatible avec ce document^^1-3^^ et permettre sa mise en œuvre dans de bonnes conditions. Il intégrera donc les objectifs en matière de production et de diversité de logements.
 
-!!!!!! [1-3] Article L 131.4 4° du Code de l’Urbanisme
+!!!!!! ^^1-3^^ Article L 131.4 4° du Code de l’Urbanisme
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div created="20170828093049959" modified="20170912140954687" rank="1" tags="[[L’aménagement et la ville durables]]" title="Démarche ÉcoQuartier" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170828093049959" modified="20170915071949979" rank="1" tags="[[L’aménagement et la ville durables]]" title="Démarche ÉcoQuartier" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!! Démarche ÉcoQuartier
 Au-delà du projet urbain porté par le document d’urbanisme, la démarche ÉcoQuartier^^1-6-2^^ est proposée par l’État aux collectivités souhaitant mettre en œuvre des projets urbains dans une perspective ambitieuse de réponse aux défis sociaux, urbains et environnementaux du XXIème siècle.
 
@@ -12526,17 +13135,15 @@ La « Grille ÉcoQuartier » est formalisée au travers de 20 engagements qui 
 
 Ces 20 engagements constituent une référence commune que chaque collectivité est appelée à décliner en fonction de son contexte, de la conception des projets à leur mise en œuvre opérationnelle.
 
-Pouvant inspirer les collectivités dans l’élaboration de leur projet territorial, la démarche écoquartier se concrétise également par la délivrance du label national ÉcoQuartier, destiné à valoriser les projets exemplaires. Dans le cadre de cette démarche, un dispositif est mis en place par les services de l’État en région pour proposer des expertises et une amélioration en continu du projet. En Normandie, depuis les premiers appels à projets, une trentaine de collectivités de toutes tailles se sont engagées dans une démarche de labellisation écoquartier.
+Pouvant inspirer les collectivités dans l’élaboration de leur projet territorial, la démarche écoquartier se concrétise également par la délivrance du label national ÉcoQuartier, destiné à valoriser les projets exemplaires. Dans le cadre de cette démarche, un dispositif est mis en place par les services de l’État en région pour proposer des expertises et une amélioration en continu du projet.
 
-!!!!!! ^^[1-6-2]^^ site //ÉcoQuartiers// officiel : http://www.ecoquartiers.logement.gouv.fr
-
-&lt;&lt;chapitre &quot;Démarche ÉcoQuartier&quot;&gt;&gt;
+&lt;&lt;&lt;.doc
+site //ÉcoQuartiers// national officiel
+&lt;&lt;&lt; http://www.ecoquartiers.logement.gouv.fr
 </pre>
 </div>
-<div created="20170905132726426" modified="20170905134044188" rank="99" tags="chapitre" title="Documentation" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
-&lt;&lt;toc &quot;Documentation&quot; &quot;sort[rank]&quot;&gt;&gt;
-&lt;/div&gt;</pre>
+<div created="20170919134605876" modified="20170919134634954" rank="99" tags="chapitre" title="Documentation" type="text/vnd.tiddlywiki" revision="3" bag="default">
+<pre></pre>
 </div>
 <div caption="Directive Territoriale d'Aménagement" created="20170825073044795" modified="20170913073717280" rank="0" tags="[[Projet de territoire]]" title="DTA" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!!!! le territoire est concerné par une DTA? {{variables.json##dans_DTA}} (//non// / //DTA de ...// [[changer|Variables]])
@@ -12546,20 +13153,24 @@ Pouvant inspirer les collectivités dans l’élaboration de leur projet territo
 {{si DTA||$:/core/ui/ViewTemplate/body}}
 &lt;/$reveal&gt;</pre>
 </div>
-<div created="20170825073044795" modified="20170913073506014" rank="1" tags="[[si DTA]]" title="DTA si le territoire fait partie d'un SCoT approuvé" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170825073044795" modified="20170915124545138" rank="1" tags="[[si DTA]]" title="DTA si le territoire fait partie d'un SCoT approuvé" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!!!! le territoire fait partie d'un SCoT approuvé ? ({{variables.json##dans_scot}} (//non// / //SCoT de ...// [[changer|Variables]])
 
 &lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##dans_scot&quot; text=&quot;non&quot;&gt;
 
 La {{variables.json##dans_DTA}} approuvée par décret le 10 juillet 2006 et publiée le 12 juillet 2006 fait partie des directives territoriales définies à l’article L. 172-1 du code de l’urbanisme.
 
-À ce titre, le {{variables.json##dans_scot}}, auquel appartient {{variables.json##nom_territoire}}, est compatible avec elle et les dispositions correspondantes doivent donc être reprises dans le document d’urbanisme.
+@@.obli
+&gt; À ce titre, le {{variables.json##dans_scot}}, auquel appartient {{variables.json##nom_territoire}}, est compatible avec elle et les dispositions correspondantes doivent donc être reprises dans le document d’urbanisme.
+@@
 &lt;/$reveal&gt;
 &lt;$reveal type=&quot;match&quot; state=&quot;variables.json##dans_scot&quot; text=&quot;non&quot;&gt;
 
 La {{variables.json##dans_DTA}} approuvée par décret le 10 juillet 2006 et publiée le 12 juillet 2006 fait partie des directives territoriales définies à l’article L. 172-1 du code de l’urbanisme.
 
-À ce titre, les plans locaux d’urbanisme ou les documents en tenant lieu doivent être compatibles avec elle.
+@@.obli
+&gt; À ce titre, les plans locaux d’urbanisme ou les documents en tenant lieu doivent être compatibles avec elle.
+@@
 &lt;/$reveal&gt;
 </pre>
 </div>
@@ -12567,13 +13178,66 @@ La {{variables.json##dans_DTA}} approuvée par décret le 10 juillet 2006 et pub
 <pre>!! Emissions et concentrations des principaux polluants atmosphériques
 </pre>
 </div>
-<div created="20170828093049959" modified="20170830162252185" rank="6" tags="[[Projet de territoire]]" title="L’aménagement et la ville durables" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170828093049959" modified="20170915070647813" rank="6" tags="[[Projet de territoire]]" title="L’aménagement et la ville durables" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! L’aménagement et la ville durables
-Pour la plupart des citoyens, les notions de qualité de vie, d’agrément de l’environnement qu’il soit urbain ou rural, de cadre apaisé sont essentielles pour apprécier l’attractivité du territoire. Le document d’urbanisme constitue un cadre idéal pour produire un projet de territoire ayant ces qualités en s’appuyant sur les outils mis en place par plusieurs démarches de l’État, dans le cadre du plan ville durable^^1-6-0^^, et de ses partenaires.
+Pour la plupart des citoyens, les notions de qualité de vie, d’agrément de l’environnement qu’il soit urbain ou rural, de cadre apaisé sont essentielles pour apprécier l’attractivité du territoire. Le document d’urbanisme constitue un cadre idéal pour produire un projet de territoire ayant ces qualités en s’appuyant sur les outils mis en place par plusieurs démarches de l’État, dans le cadre du plan ville durable^^1.6.0^^, et de ses partenaires.
 
-!!!!!! ^^[1-6-0]^^ informations sur le plan ville durable : http://www.normandie.developpement-durable.gouv.fr/le-plan-ville-durable-du-ministere-r120.html
+!!!!!! ^^[1.6.0]^^ informations sur le plan ville durable : http://www.normandie.developpement-durable.gouv.fr/le-plan-ville-durable-du-ministere-r120.html
+</pre>
+</div>
+<div created="20170911145154533" modified="20170915101631794" rank="2" tags="[[Mobilités et infrastructures]]" title="Mobilités" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! Mobilités
+Il existe de très forts liens entre les thématiques du développement économique, de l’habitat, de l’urbanisme et des déplacements qui doivent être au cœur du projet de territoire. Il importe donc que le document réponde, conformément à l’article L101-2 du Code de l’urbanisme et dans le respect des objectifs du développement durable à un équilibre tenant compte des ''« besoins en matière de mobilité »'' et permettant la ''« diminution des obligations de déplacements motorisés »'' et le ''« développement des transports alternatifs à l'usage individuel de l'automobile »''.
 
-&lt;&lt;chapitre &quot;L’aménagement et la ville durables&quot;&gt;&gt;
+Ces différents aspects devront être abordés au fil des différents documents constituant le document d’urbanisme.
+
+* ''Le rapport de présentation'', explique les choix retenus en s’appuyant sur un diagnostic territorial qui doit être établi au regard notamment des prévisions économiques et démographiques et pour notre thématique des besoins répertoriés en matière de transports. Il établit un inventaire des capacités de stationnement de véhicules motorisés, de véhicules hybrides et électriques et de vélos des parcs ouverts au public et des possibilités de mutualisation de ces capacités^^2.2.a^^.
+* ''Le projet d’aménagement et de développement durables'' (PADD) définit les orientations générales des politiques d’aménagement dont plusieurs concernent la thématique des mobilités : équipements dont équipement commercial, loisirs, habitat, transports et déplacements, communications numériques^^2.2.b^^…
+* ''Les orientations d’aménagement et de programmation'' (OAP) comprennent les dispositions portant sur l’aménagement, l’habitat, les transports et les déplacements. Si elles n’ont pas de cadre strict, elles devraient au moins porter, pour la thématique mobilité sur les besoins en matière de stationnement, la desserte par les transports en commun et les caractéristiques des voies et espaces publics.
+* Le règlement qui fixe les règles générales d’urbanisation2 doit permettre d’assurer la promotion des modes actifs dès l’acte de construction via notamment :
+** des règles sur l’incitation au report modal par la contrainte de stationnement pour les immeubles de bureaux (trajets domicile-travail) et d’habitation,
+** la fixation éventuelle d’une densité minimale de construction au sein de secteurs délimités à proximité des transports collectifs^^2.2.c^^,
+** des obligations minimales de stationnement pour les vélos qui viennent nécessairement compléter celles prises en matière de stationnement des véhicules motorisé, et leur modulation liée à la prise en compte de l’autopartage et de l’electro-mobilité, ou à la distance aux stations de transports structurants^^2.2.d^^.
+
+Ainsi, bien que la tendance à l’éloignement entre lieu de résidence et lieu de travail relève de problématiques qu’un projet d’urbanisme local seul ne peut enrayer, les territoires peuvent toutefois infléchir les tendances en matière de mobilité. L’objectif de réduction de l’usage de la voiture individuelle, réaffirmé par la loi relative à la transition énergétique pour la croissance verte^^2.2.e^^, doit orienter les choix d’urbanisation vers une diminution des distances à parcourir, notamment via l’intensité de l’urbanisation ou le rapprochement des fonctions d’habitat de services et de commerces, vers une incitation au report modal et vers l’encouragement des modes actifs.
+
+&lt;&lt;&lt;.ref
+Autrefois envisagée sous l’angle des infrastructures, la thématique des déplacements est aujourd’hui partie prenante des politiques d’aménagement et, loin de se limiter aux espaces urbains, elle concerne l’ensemble des territoires.
+
+Au-delà des objectifs immédiats et locaux de planification de l’aménagement d’un territoire auxquels répond l’élaboration d’un PLU ou d’un SCoT, il est nécessaire de rappeler le contexte dans lequel s’inscrivent l’ensemble des politiques actuelles que sont les deux objectifs énergie-climat du « 3x20 » à échéance 2020 et « Facteur 4 » à échéance 2050 dans laquelle la France est aujourd’hui engagée. On rappelle que le secteur des transports est aujourd’hui encore le plus gros émetteur de gaz à effet de serre avec 26 % des émissions directes des GES, dont 91 % imputables au transport routier (données pour l’année 2009, source : MEDDE/CGDD).
+
+Si ces horizons de 2020 et 2050 peuvent sembler lointains lors de la réflexion dans le cadre de politiques d’urbanisme et ces questions très éloignées des préoccupations locales, il n’en est en fait rien. En effet, 2050 représente aujourd’hui seulement 2 échéances de SCoT et 2020 est déjà « dépassé » pour un PLU dont l’élaboration commencerait à peine. Il reste donc aux territoires seulement 1 à 2 « chances » pour que le document d’urbanisme atteigne les objectifs énergie-climat fixés à ce jour, et qui dans le futur seront certainement amenés à être renforcés. »
+&lt;&lt;&lt; Extrait du guide //PLU et déplacements, analyses de cas et enseignements// - CEREMA - novembre 2015.
+
+&lt;&lt;&lt;.doc
+Le guide PLU et déplacements constitue un outil précieux dans l’élaboration d’un PLU. Il est téléchargeable gratuitement
+&lt;&lt;&lt; http://www.certu-catalogue.fr/plu-et-deplacements-1.html
+
+&lt;&lt;&lt;.nbp
+^^2.2.a^^ articles L 151-4 à L 151-8 du code de l’urbanisme
+
+^^2.2.b^^ articles L 151-26 à L 151-32 du code de l’urbanisme
+
+^^2.2.c^^ article L 151-26 du code de l’urbanisme
+
+^^2.2.d^^ article L 151-30, L 151-31 et L 151-36 du code de l’urbanisme
+
+^^2.2.e^^ loi n° 2015-992 du 17 août 2015
+&lt;&lt;&lt;
+</pre>
+</div>
+<div created="20170911145154533" modified="20170912161344094" rank="2" tags="[[Porter à Connaissance]] chapitre" title="Mobilités et infrastructures" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>! Mobilités et infrastructures
+</pre>
+</div>
+<div created="20170911145154533" modified="20170912161344094" rank="1" tags="Mobilités" title="Mobilités pour un doc intercommunal" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!!!!! Le document est intercommunal? {{variables.json##intercommunal}} ([[changer|Variables]])
+
+&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##intercommunal&quot; text=&quot;non&quot;&gt;
+
+Le  {{variables.json##type_document}} s'élabore à une échelle intercommunale qui est très pertinente pour mettre en cohérence les objectifs de développement entre eux et notamment les politiques d’urbanisme, d’habitat et de déplacements. L’ensemble des réflexions doivent se coordonner pour une répartition du développement entre communes qui favorise un moindre usage des modes motorisés. Le projet de territoire devra donc proposer un développement clairement hiérarchisé assurant la pérennité des pôles les mieux dotés en services et commerces et favorisant leur compacité.
+
+&lt;/$reveal&gt;
 </pre>
 </div>
 <div created="20170825124834682" modified="20170825132715844" rank="2" tags="[[Emissions et concentrations]]" title="Oxydes d'azote" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -12614,8 +13278,59 @@ Le {{variables.json##type_document}} a vocation à valoir également PDU. A ce t
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div created="20170824122212870" modified="20170913074001322" title="Porter à Connaissance" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;style&gt;
+<div created="20170911145154533" modified="20170912161344094" rank="2" tags="Mobilités" title="PLUi valant PDU" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!!!!! Le document vaut PDU? {{variables.json##vaut_pdu}} ([[changer|Variables]])
+
+&lt;$reveal type=&quot;match&quot; state=&quot;variables.json##vaut_pdu&quot; text=&quot;oui&quot;&gt;
+
+!! PLUi valant Plan de Déplacement Urbain
+Lorsque le plan local d'urbanisme tient lieu de plan de déplacements urbains, les éléments spécifiques en matière de transports, qui sont rappelés aux articles L. 1214-1 et L. 1214-2 du code des transports, doivent être explicités dans le rapport de présentation, dans le projet d'aménagement et de développement durables ainsi que dans le réglement et les orientations d'aménagement et de programmation.
+
+Pour mémoire, l’article L1214-2 du Code des transports renvoie aux onze objectifs poursuivis par les plans de déplacements urbains.
+
+&lt;&lt;&lt;.obli
+Par ailleurs, du fait de ce statut particulier, ''l’évaluation prévue pour le PLUi neuf ans au plus après son approbation doit comporter une analyse complémentaire'' telle que prévue pour les PDU : ''évaluations et calculs des émissions de gaz à effet de serre et de polluants atmosphériques'' générées par les déplacements. Cette évaluation est également nécessaire pour l’élaboration du document (« état zéro »). Elle concerne les oxydes d’azote (NOx), les particules fines (PM 10 et PM 2,5) ainsi que les composés organiques volatiles non méthaniques (COVNM)3.
+&lt;&lt;&lt;
+
+!!! Dispositions à intégrer obligatoirement au PLUi
+S’agissant d’un PLUi valant PDU, le document est renforcé sur les thématiques propres à la mobilité, déjà évoquées ci-avant et certaines dispositions optionnelles deviennent obligatoires.
+
+Ainsi, le projet d'aménagement et de développement durables doit traiter des objectifs complémentaires à ceux du PLU et qui concernent l'organisation du transport de personnes et de marchandises, la circulation et le stationnement dans le ressort territorial de l'autorité organisatrice de la mobilité.
+
+Le règlement et les Orientations d’Aménagement et de Programmation devront quant à eux préciser les actions et opérations d'aménagement visant à poursuivre les principes et les objectifs énoncés.
+
+&lt;&lt;&lt;.obli
+Ainsi le règlement devra ''fixer les obligations minimales en matière de stationnement pour les véhicules non motorisés'', en tenant compte de la desserte en transports publics réguliers ou de la destination des bâtiments,
+
+Il devra également ''déterminer des secteurs à l'intérieur desquels les conditions de desserte permettent de réduire ou de supprimer les obligations minimales en matière de stationnement'' pour les véhicules motorisés. Il fixera aussi ''un nombre maximal de stationnements'' pour les bâtiments destinés à un usage autre que l'habitation.
+&lt;&lt;&lt;
+
+!!! Composantes particulières du PDU à intégrer au PLUi
+Au-delà de la transposition des objectifs des PDU dans les différentes parties du PLUi, la construction d’un PLUi valant PDU implique la production de tous les éléments d’information et de mise en œuvre spécifiques nécessaires aux politiques de déplacement.
+
+&lt;&lt;&lt;.obli
+Ainsi, le PLUi tenant lieu de PDU doit comprendre outre les éléments habituels :
+
+* ''un programme d'orientations et d'actions''. Ce POA est l’instrument de mise en œuvre de la politique des transports et déplacements pour un PLUi tenant lieu de PDU. Il vient préciser et détailler les orientations et objectifs inscrits dans le PADD et intègre les dispositions qu’il n’est pas possible de faire figurer dans les OAP. Il précise les conditions de mise en place de l’observatoire des accidents impliquant au moins un piéton ou un cycliste. Il est également accompagné
+** d'une ''étude des modalités de financement et de la couverture des coûts d'exploitation'' des mesures qu'il contient.
+** du ''calendrier des décisions et réalisations'' des mesures pour atteindre l’objectif de renforcement de la cohésion sociale et urbaine (notamment pour l'accès aux réseaux de transports de toutes les personnes).
+** une ''annexe particulière, précisant les mesures d'aménagement et d'exploitation'' à mettre en œuvre afin ''d'améliorer l'accessibilité des réseaux de transports publics aux personnes handicapées et à mobilité réduite''.
+* ''les plans de mise en accessibilité de la voirie et des espaces publics''  , prévus à l'article 45 de la loi n° 2005-102 du 11 février 20056.
+
+&lt;&lt;&lt;
+
+!!! Compatibilités particulières
+Lorsque le PLUi tient lieu de PDU, celui-ci emporte les effets du PDU, ce qui entraîne une compatibilité des actes pris au titre de la police du stationnement et de la circulation ainsi que des actes et décisions relatifs à la voirie et à la gestion du domaine public routier.
+
+&lt;&lt;&lt;.obli
+Par ailleurs, dans ce cas, le PLUi doit assurer sa compatibilité avec les documents qui s’imposent habituellement au PDU comme les Schémas Régionaux Climat Air Energie ou les Plans de Protection de l'Atmosphère.
+&lt;&lt;&lt;
+
+&lt;/$reveal&gt;
+</pre>
+</div>
+<div created="20170824122212870" modified="20170919093732684" tags="TiddlyPAC" title="Porter à Connaissance" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;style type=&quot;text/css&quot;&gt;
 {{$:/pac/styles}}
 &lt;/style&gt;
 
@@ -12623,46 +13338,17 @@ Le {{variables.json##type_document}} a vocation à valoir également PDU. A ce t
 
 @@.titre
 ! {{variables.json##nom_territoire}}&lt;br/&gt;{{variables.json##type_document}} &lt;br/&gt;Eléments de porter à connaissance
-@@</pre>
-</div>
-<div created="20170831084907210" modified="20170905133610916" tags="[[Utiliser TiddlyPAC]]" title="Produire un PAC à partir du modèle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!! récupération du PAC type
+@@
 
-# ouvrir le fichier [[TiddlyPAC.html|file:///]]
-# appuyer sur //enregistrer// ({{$:/core/images/save-button}})
-# choisir un lieu pour enregistrer le fichier
+Ainsi que le rappelle l’article L. 101-1 du code de l’urbanisme, le territoire français est « le patrimoine commun de la nation, dont les collectivités publiques sont à la fois gestionnaires et garantes ». Une des fonctions des documents d’urbanisme est donc d’atteindre les nombreux objectifs de développement durable dans une logique de projet de territoire.
 
-!! création du PAC
-# aller dans l'explorateur windows et ouvrir le fichier enregistré
-# modifier les variables pour le territoire concerné
-#* dans l'onglet //Sommaire// ou la fiche [[Variables]]^^1^^
-#* ou en éditant directement [[variables.json]]
-# appuyer sur le bouton //accueil// ({{$:/core/images/home-button}}) pour afficher le PAC créé
-# sauvegarder en appuyant sur  //enregistrer// ({{$:/core/images/save-button}}) ^^2^^
+Un certain nombre de documents sectoriels encadrent le projet de territoire dans les domaines de l’énergie, de la biodiversité, du paysage… D’autres plus transversaux donnent des orientations générales qui sont à reprendre pour intégrer de manière cohérente les projets locaux dans les ensembles que constituent la Région Normandie, la Vallée de la Seine, la Nation et l’Europe.
 
-On peut imprimer directement le PAC ainsi créé depuis le navigateur pour les étapes de validation interne. Une fois le document validé et pour l'envoi, il peut être nécessaire pour une mise en page améliorée de passer par libre-office.
+Par ailleurs, des études, analyses et méthodes sont régulièrement développées et mises à jour pour aider les territoires à construire leur projet dans les meilleures conditions.
+C’est le propos de cette partie « éléments de cadrage » de la contribution de la DREAL au Porter-à-Connaissance des services de l’État qui comporte à la fois des éléments réglementaires, documentaires et des recommandations méthodologiques.
 
-!! import dans Libre Office
-
-# exporter le PAC
-#* en haut de [[Porter à Connaissance]], appuyer sur le bouton //autres actions// ({{$:/core/images/down-arrow}})
-#* choisir //Exporter ce tiddler &gt; html statique//
-#* enregistrer le fichier dans le dossier souhaité
-# ouvrir Libre Office
-# ouvrir le fichier //.html// du PAC créé précédemment
-# l'exporter au format //.odt// (//Fichier &gt; Exporter...//)
-# fermer le fichier //.html// et ouvrir le fichier //.odt//
-# effacer les premières lignes du document : //blablabalba//
-# importer le modèle de style 
-#* //Format &gt; Style et formatage...//
-#* {{$:/doc/images/import_style.png}} //&gt; Charger les styles...//
-#* cocher toutes les cases dont //écraser//
-#* //A partir d'un fichier...//
-#* sélectionner ''modele-pac.odt''
-
-Après une relecture rapide, le document est désormais prêt à être imprimé. Il est possible d'ajouter une table des matières
-
-!!!!!! ^^1^^ Le résultat est exactement le même&lt;br/&gt;^^2^^ Il sera peut-être nécessaire d'écraser le fichier courant</pre>
+Elle vient compléter la partie « données essentielles » fournie par ailleurs.
+</pre>
 </div>
 <div created="20170911145154533" modified="20170912161344094" tags="[[Porter à Connaissance]] chapitre" title="Projet de territoire" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>! Projet de territoire
@@ -12671,92 +13357,27 @@ Après une relecture rapide, le document est désormais prêt à être imprimé.
 !!!!! Aménagement numérique ?
 @@</pre>
 </div>
-<div created="20170825073044795" modified="20170825132803248" rank="7" tags="[[Porter à Connaissance]] chapitre" title="Qualité de l'air" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170911145154533" modified="20170912161344094" rank="1" tags="[[Mobilités et infrastructures]]" title="Projets d'infrastructures" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!!!!! Le territoire est concerné par des projets particuliers qui méritent d’être pris en compte pour l’élaboration du projet de PLUi? {{variables.json##projet_infra}} ([[changer|Variables]])
+
+&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##projet_infra&quot; text=&quot;non&quot;&gt;
+
+!! Projets d’infrastructures
+Le territoire est concerné par des projets particuliers qui méritent d’être pris en compte pour l’élaboration du projet de PLUi, conformément aux articles L 132-1 et L 132-2 du code de l’urbanisme.
+
+&lt;/$reveal&gt;
+</pre>
+</div>
+<div created="20170825073044795" modified="20170915072138858" rank="7" tags="[[Porter à Connaissance]] chapitre" title="Qualité de l'air" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>! Qualité de l'air
 La loi sur l'Air et l'Utilisation Rationnelle de l’Énergie (loi //LAURE// n°96-1236 du 30 décembre 1996), désormais codifiée dans le code de l’environnement, affirme le droit de chacun à respirer un air qui ne nuise pas à sa santé. Cette loi intègre les risques de pollutions et de nuisances dans le cadre de l'urbanisme et dans les études d'impact relatives aux projets d'équipements. Elle rend également obligatoire la surveillance de la qualité de l'air assurée par l'État, la définition d'objectifs de qualité et l'information du public.
 
 La loi relative à la transition énergétique pour la croissance verte du 17 août 2015 fixe les grands objectifs du nouveau modèle énergétique français. Cette loi comporte de nombreuses dispositions en faveur de la qualité de l’air, et renforce notamment la prise en compte de la qualité de l’air dans les documents de planification.
 </pre>
 </div>
-<div created="20170825132234668" modified="20170825132515189" tags="Références" title="Qualité de l'air, notes diverses" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>//Des notes issues du travail de Pascale Gondeaux sur la qualité de l'air. Voir si on complète certaines partie de [[Qualité de l'air]] avec.//
-
-ANNEXE : liste des communes sensibles à la qualité de l’air
-
-La qualité de l’air est un enjeu sanitaire majeur. La pollution de l’air influence la prévalence des maladies cardio-respiratoires, cérébrales et des cancers (on estime, par exemple, que l’exposition aux particules fines − PM2,5 − est à l’origine de 48 000 morts prématurées chaque année en France). Le coût de cette pollution pour la société a été évalué à 30 milliards d’euros, dont près d’un milliard d’euros directement supporté par le système de soins.
-
-La pollution atmosphérique urbaine constitue un problème majeur de santé publique, compte tenu de la densité humaine, de la proportion de la population exposée et de la durée d’exposition.
-
-Un urbanisme favorable à la santé implique des pratiques d’aménagement qui tendent à promouvoir la santé et le bien-être. Cependant, la lutte contre la pollution atmosphérique ne dispose pas de transcriptions réglementaires spécifiques en matière d'urbanisme.
-Aussi, le présent rapport fournit un cadre de référence sur la prise en compte dans l'urbanisme de la problématique de la qualité de l'air afin que l’aménagement urbain en intègre pleinement les enjeux.
-
-!! Quelques notions sur la pollution atmosphérique
-
-La qualité de l'air résulte d'un équilibre complexe entre la quantité de polluants rejetée dans l'air et toute une série de phénomènes auxquels ces polluants vont être soumis une fois dans l'atmosphère sous l'action de la météorologie : transport, dispersion sous l'action du vent et de la pluie, dépôt ou réactions chimiques des polluants entre eux ou sous l'action des rayons du soleil.
-
-Ainsi, à partir d'émissions de polluants équivalentes en lieu et en intensité, les niveaux de
-polluants dans l'environnement peuvent varier suivant les conditions météorologiques plus ou moins favorables à la dispersion, ou au contraire à la concentration de ces polluants.
-
-Les espèces polluantes émises ou transformées dans l'atmosphère sont très nombreuses.
-Les principaux polluants atmosphériques sont les particules fines (PM10 : particules de diamètre inférieur à 10 μm), les oxydes d’azote, le dioxyde de soufre et l’ozone.
-
-La prise en compte de la qualité de l’air implique une appréhension à plusieurs échelles, et notamment à une échelle resserrée (les concentrations de polluants pouvant être très localisées) et met en jeu aussi bien l’émission des polluants que l’exposition des populations à ces polluants.
-
-!!! Les émissions de polluants
-Elles correspondent aux quantités de polluants directement rejetées dans l’atmosphère par les activités humaines (transport, chauffage, agriculture, industrie…) ou par des sources naturelles (volcans, composés émis par la végétation et les sols). Elles sont généralement exprimées en kilogrammes ou tonnes par an.
-
-Des phénomènes de dispersion, de dilution et de transformation dans l’environnement interviennent ensuite. Ils peuvent déplacer la pollution ou changer sa nature (l’ozone, par exemple, est un polluant « secondaire » issu de la transformation de polluants primaires émis par des activités humaines). Localement, ces phénomènes ont un impact sur la pollution atmosphérique. En zone urbaine, la forte densité des sources d’émissions implique des niveaux importants de polluants.
-
-@@.com
-à refaire : schéma
-
-&lt;span style=&quot;width:20%;display:inline-block;border:1px dotted;padding:5px&quot;&gt;Émissions&lt;br&gt;des polluants primaires&lt;/span&gt;&gt;&lt;span style=&quot;width:20%;display:inline-block;border:1px dotted;padding:5px&quot;&gt;Transport dispersion&lt;br&gt;vent, turbulences, gradient thermique&lt;/span&gt;&gt;&lt;span style=&quot;width:20%;display:inline-block;border:1px dotted;padding:5px&quot;&gt;Transformation&lt;br&gt;humidité, chaleur, soleil&lt;/span&gt;&gt;&lt;span style=&quot;width:20%;display:inline-block;border:1px dotted;padding:5px&quot;&gt;Air ambiant&lt;br&gt;concentration&lt;/span&gt;
-@@
-
-!!! L’exposition des populations
-Elle résulte des émissions et correspond aux concentrations de polluants auxquelles sont soumises les populations en un lieu donné. Ces concentrations sont prises en compte à une échelle locale et s’expriment le plus souvent en microgramme par mètre cube (μg/m3).
-
-C’est l’exposition des populations aux polluants qui fait de la qualité de l’air un enjeu de santé publique, particulièrement pour les populations à risque (personnes âgées, enfants, femmes enceintes…). La pollution de l’air a également des conséquences sur la végétation et sur les matériaux, qu’elle dégrade chimiquement (ce qui soulève des enjeux de préservation des bâtiments et de conservation du patrimoine).
-
-!!! Une approche à deux angles
-La question de la qualité de l’air doit donc être envisagée sous l’angle des émissions et des concentrations, deux approches qui sont intimement liées, mais dont les lectures peuvent être différentes voire contradictoires lorsqu’on les applique aux politiques d’urbanisme. À titre d’exemple, la ville compacte représente une forme urbaine susceptible de réduire les émissions de polluants en limitant la demande de déplacements et en facilitant les économies d’énergie. Toutefois, une pollution est tout de même émise et la compacité risque d’en limiter la dispersion, augmentant l’exposition des populations résidentes. Cet exemple montre la complexité du traitement de la pollution urbaine et la nécessaire utilisation d’outils de mesure (par les organismes en charge de la surveillance de la qualité de l’air) et d’outils de modélisation intégrée.
-
-!! Urbanisme - Des enjeux « qualité de l’air » à pondérer
-
-!!! Contexte
-L’urbanisme est un élément majeur de la maîtrise de l’exposition de la population à la pollution atmosphérique, en particulier dans un contexte où l’intensification urbaine tend à aggraver cette exposition (les points noirs existants ne sont pas résorbés et de nouvelles populations s’installent dans des zones fortement exposées : bordures de routes, friches industrielles...).
-
-!!! Généralités
-Le schéma ci-dessous résume les grands principes qui sous-tendent la manière de traiter la problématique de la qualité de l’air à l’échelle des territoires :
-
-@@.com
-à refaire : schéma sur l'action à mener
-@@
-
-Concevoir un urbanisme respectueux de la santé au vu de l’enjeu de qualité de l’air, c’est tout d’abord définir une politique d’aménagement qui intègre ces enjeux sanitaires en agissant :
-
-* sur la réduction des sources d’émissions polluantes : c’est-à-dire en réduisant les besoins de déplacement, en luttant contre l’étalement urbain...
-* sur la réduction de l’exposition de la population à la pollution de l’air.
-
-Dans le cadre d’élaborations ou de révisions de documents d’urbanisme, l’État intervient auprès des intercommunalités au travers du porter à connaissance, de l’association et de l’avis qu’il formule à l’issue de l’arrêt du projet.
-
-
-Le Porter à Connaissance
-
-Le porter à connaissance (PAC) transmis au début de la procédure (article L.121-2 du code de l’urbanisme) rappelle les dispositions législatives et réglementaires applicables au territoire, les projets des collectivités territoriales et de l’État, ainsi que tous les éléments ou informations nécessaires à l’élaboration du document (notamment les études techniques relatives à la prévention des risques et à la protection de l’environnement, l’inventaire du patrimoine culturel, les servitudes d’utilité publique...).
-
-Le PAC est l’occasion pour l’État d’insister sur l’importance de l’articulation et de la mise en cohérence des différentes politiques portées par la collectivité : urbanisme, habitat et transports et déplacements, mais aussi environnement, économie, etc.
-Il s'agit d'assurer la prise en compte des objectifs de la politique publique de l’État dans les
-documents d'urbanisme et notamment de vérifier le respect des principes de l'article L121-1 du code de l'urbanisme.
-Dans cette partie, les orientations du SRCAE, les notions de zones sensibles à la qualité de l'air, les actions du PPA s'il existe devront être prises en compte.
-</pre>
-</div>
 <div created="20170905133931155" modified="20170905134447313" rank="999" tags="Documentation" title="Références" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Eléments bibliographiques glanés au fil de l'élaboration de l'outil.
-
-&lt;div class=&quot;tc-table-of-contents&quot;&gt;
-&lt;&lt;toc &quot;Références&quot; &quot;sort[rank]&quot;&gt;&gt;
-&lt;/div&gt;</pre>
+</pre>
 </div>
 <div created="20170828093049959" modified="20170830162252185" rank="3" tags="[[L’aménagement et la ville durables]]" title="Référentiel des villes et territoires durables" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!! Référentiel des villes et territoires durables
@@ -12779,13 +13400,11 @@ Les DTA approuvées avant le 13 juillet 2010, instaurées par la Loi n° 95-115 
 &lt;/div&gt;
 </pre>
 </div>
-<div created="20170825073044795" modified="20170830162152128" rank="5" tags="[[Projet de territoire]]" title="Stratégie foncière" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170825073044795" modified="20170915070523393" rank="5" tags="[[Projet de territoire]]" title="Stratégie foncière" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!! Stratégie foncière
 Les projets de territoires, quels qu’ils soient, et a fortiori lorsqu’ils ont l’ambition de s’inscrire dans une utilisation mesurée et durable des sols ont besoin d’une matière première essentielle : le foncier. L’expérience montre que la maîtrise des emprises foncières nécessaires à l’exécution des projets est souvent difficile, faute d’avoir été anticipée.
 
 Ainsi, dès l’élaboration du projet de territoire, il est recommandé d’avoir une réflexion sur les terrains nécessaires aux éléments les plus structurants de ce projet, les conditions de leur mobilisation, de leur préparation à l’accueil des activités envisagées. Le {{variables.json##type_document}} est un des outils identifiés comme pouvant être particulièrement efficace face aux problématiques de rétention foncière ou de rareté.
-
-&lt;&lt;chapitre &quot;Stratégie foncière&quot;&gt;&gt;
 </pre>
 </div>
 <div created="20170905155527289" modified="20170905162043700" title="Structure des parties" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -12816,8 +13435,48 @@ Ainsi, dès l’élaboration du projet de territoire, il est recommandé d’avo
 * zTrash (fichiers destinés à la suppression)
 </pre>
 </div>
-<div created="20170905133225949" modified="20170905134525309" rank="1" tags="Documentation" title="Utiliser TiddlyPAC" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
+<div created="20170905133225949" modified="20170919135409648" rank="1" tags="Documentation" title="utiliser_TiddlyPAC" type="text/x-markdown" revision="1" bag="default">
+<pre>## récupération du PAC type
+1. récupérer la [version souhaitée de TiddlyPAC][versions]
+2. appuyer sur _enregistrer_ (![save](img-save sauvegarder)
+3. choisir un lieu pour enregistrer le fichier
+
+_suite du texte à convertir en .md_
+
+!! création du PAC
+# aller dans l'explorateur windows et ouvrir le fichier enregistré
+# modifier les variables pour le territoire concerné
+#* dans l'onglet //Sommaire// ou la fiche [[Variables]]^^1^^
+#* ou en éditant directement [[variables.json]]
+# appuyer sur le bouton //accueil// ({{$:/core/images/home-button}}) pour afficher le PAC créé
+# sauvegarder en appuyant sur  //enregistrer// ({{$:/core/images/save-button}}) ^^2^^
+
+On peut imprimer directement le PAC ainsi créé depuis le navigateur pour les étapes de validation interne. Une fois le document validé et pour l'envoi, il peut être nécessaire pour une mise en page améliorée de passer par libre-office.
+
+!! import dans Libre Office
+
+# exporter le PAC
+#* en haut de [[Porter à Connaissance]], appuyer sur le bouton //autres actions// ({{$:/core/images/down-arrow}})
+#* choisir //Exporter ce tiddler &gt; html statique//
+#* enregistrer le fichier dans le dossier souhaité
+# ouvrir Libre Office
+# ouvrir le fichier //.html// du PAC créé précédemment
+# l'exporter au format //.odt// (//Fichier &gt; Exporter...//)
+# fermer le fichier //.html// et ouvrir le fichier //.odt//
+# effacer les premières lignes du document : //blablabalba//
+# importer le modèle de style
+#* //Format &gt; Style et formatage...//
+#* {{$:/doc/images/import_style.png}} //&gt; Charger les styles...//
+#* cocher toutes les cases dont //écraser//
+#* //A partir d'un fichier...//
+#* sélectionner ''modele-pac.odt''
+
+Après une relecture rapide, le document est désormais prêt à être imprimé. Il est possible d'ajouter une table des matières
+
+!!!!!! ^^1^^ Le résultat est exactement le même&lt;br/&gt;^^2^^ Il sera peut-être nécessaire d'écraser le fichier courant
+
+[versions]: #versions de TiddlyPAC
+</pre>
 </div>
 <div created="20170824121739316" list-before="$:/core/ui/SideBar/Open" modified="20170911153900348" tags="$:/tags/SideBar" title="Variables" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Fiche pour la modification facile des variables. Consultez l'aide pour plus d'informations.
@@ -12827,23 +13486,24 @@ Ainsi, dès l’élaboration du projet de territoire, il est recommandé d’avo
 {{Variables locales}}
 </pre>
 </div>
-<div created="20170911152904342" modified="20170911153951894" tags="" title="Variables globales" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170911152904342" modified="20170915103056108" tags="" title="Variables globales" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! [[Variables globales]]
 Liste des variables globales modifiables contenues dans [[variables.json]].
 
 !!! Généralités
 * Nom du territoire : &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;nom_territoire&quot; tag=&quot;input&quot; class=&quot;pac&quot;/&gt;
-* Type de document (PLU ou SCoT) : &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;type_document&quot; tag=&quot;input&quot; class=&quot;pac&quot;/&gt;&lt;$reveal type=&quot;match&quot; state=&quot;variables.json##type_document&quot; text=&quot;PLU&quot;&gt;
+* est intercommunal (//oui / non//) ? &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;intercommunal&quot; tag=&quot;input&quot; default=&quot;oui&quot; class=&quot;pac short&quot;/&gt;
+* Type de document (//PLU ou SCoT//) : &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;type_document&quot; tag=&quot;input&quot; class=&quot;pac short&quot;/&gt;&lt;$reveal type=&quot;match&quot; state=&quot;variables.json##type_document&quot; text=&quot;PLU&quot;&gt;
 
-* est intercommunal (oui / non) ? &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;est_plui&quot; tag=&quot;input&quot; default=&quot;&quot; class=&quot;pac short&quot;/&gt;&lt;$reveal type=&quot;match&quot; default=&quot;oui&quot; state=&quot;variables.json##est_plui&quot; text=&quot;oui&quot;&gt;
+* est PLUi (//oui / non//) ? &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;est_plui&quot; tag=&quot;input&quot; default=&quot;&quot; class=&quot;pac short&quot;/&gt;&lt;$reveal type=&quot;match&quot; default=&quot;oui&quot; state=&quot;variables.json##est_plui&quot; text=&quot;oui&quot;&gt;
 
-* vaut PDU (oui / non)  &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;vaut_pdu&quot; tag=&quot;input&quot; default=&quot;&quot; class=&quot;pac short&quot;/&gt;
-* vaut PLH (oui / non)  &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;vaut_plh&quot; tag=&quot;input&quot; default=&quot;&quot; class=&quot;pac short&quot;/&gt;
+* vaut PDU (//oui / non//)  &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;vaut_pdu&quot; tag=&quot;input&quot; default=&quot;&quot; class=&quot;pac short&quot;/&gt;
+* vaut PLH (//oui / non//)  &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;vaut_plh&quot; tag=&quot;input&quot; default=&quot;&quot; class=&quot;pac short&quot;/&gt;
 &lt;/$reveal&gt;
 
 * fait partie d'un SCoT (//non / SCoT de ...//)? &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;dans_scot&quot; tag=&quot;input&quot; default=&quot;SCoT de ...&quot; class=&quot;pac&quot;/&gt;
 &lt;/$reveal&gt;
-* Département concerné :  &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;departement&quot; tag=&quot;input&quot; default=&quot;numéro du département&quot; class=&quot;pac short&quot;/&gt;
+* Département concerné :  &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;departement&quot; tag=&quot;input&quot; default=&quot;numéro&quot; class=&quot;pac short&quot;/&gt;
 
 !!! [[Projet de territoire]]
 * Le territoire est concerné par une DTA (//non / DTA de ...//) : &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;dans_DTA&quot; tag=&quot;input&quot; class=&quot;pac&quot;/&gt;
@@ -12854,19 +13514,33 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 * Le territoire est concerné par un PPA (//non / PPA de ...//) : &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;dans_PPA&quot; tag=&quot;input&quot; class=&quot;pac&quot;/&gt;
 </pre>
 </div>
-<div created="20170824121832438" modified="20170913073724838" title="variables.json" type="application/json" revision="0" bag="default">
+<div created="20170824121832438" modified="20170915122521592" title="variables.json" type="application/json" revision="0" bag="default">
 <pre>{
-    &quot;nom_territoire&quot;: &quot;Bidule&quot;,
+    &quot;nom_territoire&quot;: &quot;CC de Bidule&quot;,
     &quot;type_document&quot;: &quot;PLU&quot;,
     &quot;dans_scot&quot;: &quot;SCoT de Machin-Chouette&quot;,
-    &quot;departement&quot;: &quot;76&quot;,
+    &quot;departement&quot;: &quot;27&quot;,
     &quot;communes_sensibles&quot;: &quot;oui&quot;,
+    &quot;intercommunal&quot;: &quot;oui&quot;,
     &quot;est_plui&quot;: &quot;oui&quot;,
     &quot;vaut_pdu&quot;: &quot;oui&quot;,
     &quot;vaut_plh&quot;: &quot;oui&quot;,
-    &quot;dans_DTA&quot;: &quot;non&quot;,
-    &quot;dans_PLH&quot;: &quot;PLH de machin&quot;
+    &quot;dans_DTA&quot;: &quot;DTA de truc&quot;,
+    &quot;dans_PLH&quot;: &quot;PLH de machin&quot;,
+    &quot;dans_PPA&quot;: &quot;PPA de Schmurz&quot;
 }</pre>
+</div>
+<div created="20170905133225949" modified="20170919135306724" rank="2" tags="Documentation" title="versions_de_TiddlyPAC" type="text/x-markdown" revision="1" bag="default">
+<pre>## les différentes versions de TiddlyPAC
+
+* [TiddlyPAC &quot;neutre&quot;][neutre] : version de base qui peut en théorie fonctionner sur n'importe quel SCoT ou PLU de France.
+* Déclinaisons régionales
+  * [TiddlyPAC Normandie][normandie]
+  * ...
+
+[neutre]: https://framagit.org/know-rmandie/TiddlyPAC/
+[normandie]: https://framagit.org/know-rmandie/TiddlyPAC/
+</pre>
 </div>
 
 </div>
