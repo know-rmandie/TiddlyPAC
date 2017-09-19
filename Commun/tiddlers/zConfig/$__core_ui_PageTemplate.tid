@@ -1,5 +1,5 @@
 created: 20170917122921544
-modified: 20170918115506502
+modified: 20170919094421412
 title: $:/core/ui/PageTemplate
 type: text/vnd.tiddlywiki
 
@@ -35,17 +35,17 @@ tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$
 
 </$list>
 
-</$dropzone>
-
-</$navigator>
-
-</div>
-
 <footer>
 
 {{$:/pac/footer}}
 
 </footer>
+
+</$dropzone>
+
+</$navigator>
+
+</div>
 
 </$set>
 

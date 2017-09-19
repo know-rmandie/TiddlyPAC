@@ -1,28 +1,30 @@
 /* titres */
+
 h1.titre {
    text-align: center;
 }
 /* titres 5 et 6 : servent à commenter, annoter */
 /* h5 : commentaires masqués */
 /* .com commentaires pour l'utilisateur */
-h5,
+
 .com,
+h5,
 p.com {
    font-size: 0.9em;
-   background-color: lightblue;
+   background-color: lightgray;
    padding: 0.5em;
    margin: 2px;
    font-style: italic;
    font-family: serif;
 }
 /* .todo "choses à faire" réflexions pour les participants à la création de l'outil */
-
 .todo,
 h5.todo,
 p.todo {
    background-color: orange;
 }
 /* h6 : notes de bas de page */
+
 .nbp,
 h6,
 p.npb {
@@ -33,11 +35,13 @@ p.npb {
    margin: 0;
 }
 /* tableaux (centrés, au moins 60% de large) */
+
 table {
    min-width: 60%;
    margin: 1em auto;
 }
 /* champs de saisie des formulaires */
+
 input.pac {
    border: none;
    border-bottom: 2px solid green;
@@ -48,10 +52,12 @@ input.short {
    width: 3em;
 }
 /* différents types de mise en exergue */
+
 blockquote p {
    margin: 7px 0 0;
 }
 /* références, citations */
+
 .ref {
    font-family: "Liberation serif", Georgia, serif;
    font-style: italic;
@@ -86,7 +92,7 @@ blockquote p {
 /* ce qui est "obligatoire" */
 .obli {
    margin: 0;
-   border-left-color: blue;
+   border-left-color: #003399;
 }
 /* documents à consulter, références à consulter */
 .doc {
@@ -94,8 +100,13 @@ blockquote p {
    font-style: italic;
    color: gray;
 }
+/* pied de page masqué */
+footer {
+   display: none;
+}
 /* --------- */
 /* ajustements de style de TiddlyWiki */
+
 .tc-tiddler-body p {
    text-align: justify;
 }
@@ -104,11 +115,36 @@ blockquote p {
    font-family: "Liberation Sans Narrow", sans-serif;
    color: green !important;
 }
-/* pied de page masqué */
-footer {
+/* ------------------------------------------ */
+/* mise en page pour l'impression du document */
+/* cas des exports */
+/* nettoyage, masquage des entités inutiles */
+
+body.static .tc-story-river {
+   padding: 0;
+   margin: 0 auto;
+   width: 100%;
+   max-width: 210mm;
+}
+
+body.static .com,
+body.static .tc-btn-invisible,
+body.static .tc-sidebar-scrollable,
+body.static .tc-subtitle,
+body.static .tc-tags-wrapper,
+body.static .tc-tiddler-title,
+body.static .tc-topbar,
+body.static .todo,
+body.static h5 {
    display: none;
 }
-/* mise en page pour l'impression du document */
+
+body.static .tc-tiddlylink,
+body.static .tc-tiddlylink-missing {
+   color: black;
+   font-style: normal;
+}
+/* impression */
 @media print {
    body,
    html {
@@ -118,11 +154,12 @@ footer {
       padding: 0;
    }
 
-   .tc-page-container-wrapper > div {
+   .tc-dropzone,
+   body.static {
       display: table;
    }
 
-   .tc-page-container {
+   .tc-story-river {
       display: table-row-group;
    }
 
@@ -131,7 +168,6 @@ footer {
       /*position: fixed;
       bottom: 0;*/
       width: 100%;
-      background: lightgray;
       opacity: 0.85;
       padding: 0;
       height: 8mm;
@@ -145,6 +181,8 @@ footer {
    #pied-de-page {
       height: 8mm;
       margin: 0;
+      color: gray;
+      border-top: 1px solid lightgray;
       padding: 0.5em 1em;
       width: 100%;
       font-size: 0.8em;
@@ -153,6 +191,7 @@ footer {
    }
 
    #num {
+      color: #353;
       float: right;
       font-size: 1em;
    }
