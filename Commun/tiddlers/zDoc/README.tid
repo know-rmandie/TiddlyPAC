@@ -1,5 +1,5 @@
 created: 20170824120603675
-modified: 20170919135250025
+modified: 20170920114821478
 rank: 0
 tags: Documentation
 title: à propos
@@ -12,9 +12,9 @@ TiddlyPAC est une tentative pour faciliter la production de Porter à Connaissan
 ## Utiliser TiddlyPAC
 En version simplifiée (voir [utiliser TiddlyPAC][utiliser TP] pour plus de détails), le processus de production d'un porter à connaissance est le suivant :
 
-1. récupérer le fichier `tiddlyPAC.html` dans la version requise (voir [Versions de TiddlyPAC][versions])
-2. mettre à jour les [variables][variables] décrivant le territoire concerné
-3. exporter le //tiddler// principal (Porter à Connaissance) au format `.html`
+1. récupérer le fichier `tiddlyPAC.html` dans la [version][versions] souhaitée
+2. mettre à jour les [variables](#Variables) décrivant le territoire concerné
+3. exporter le _tiddler_ principal ([Porter à Connaissance](#Porter à Connaissance)) au format `.html`
 4. imprimer ou exporter au format `.pdf`
 
 Il est également possible de travailler plus finement sur la mise en forme en important le fichier dans libre office.

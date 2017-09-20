@@ -26,7 +26,7 @@ Si on souhaite travailler sur la mise en page, il est possible d'importer ce fic
 
 [versions]: #versions_de_TiddlyPAC
 
-[img-save]: $:/doc/images/save_tw.png
-[img-home]: $:/doc/images/home.png
-[img-edit]: $:/doc/images/edit.png
-[img-export]: $:/doc/images/export_pac.png
+[img-save]: ../Commun/tiddlers/zDoc/images/$__doc_images_save_tw.png
+[img-home]: ../Commun/tiddlers/zDoc/images/$__doc_images_home.png
+[img-edit]: ../Commun/tiddlers/zDoc/images/$__doc_images_edit.png
+[img-export]: ../Commun/tiddlers/zDoc/images/$__doc_images_export_pac.png
