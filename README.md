@@ -32,7 +32,7 @@ L'ensemble des adaptations (modestes) du code et des textes établis sont sous [
 * **[Framagit][origin]** ([issues][issues])
 
 [versions]: ./Doc/versions_de_tiddlypac.md
-[utiliser TP]: ./Doc/utiliser_tiddlypac.md
+[utiliser TP]: ./Doc/utiliser_TiddlyPAC.md
 [contribuer TP]: ./Doc/contribuer_a_tiddlypac.md
 
 [origin]:https://framagit.org/know-rmandie/TiddlyPAC
