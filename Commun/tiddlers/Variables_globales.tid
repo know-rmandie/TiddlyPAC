@@ -1,6 +1,6 @@
 created: 20170911152904342
-modified: 20170915103056108
-tags:
+modified: 20170920094334402
+tags: Variables
 title: Variables globales
 type: text/vnd.tiddlywiki
 
@@ -29,9 +29,10 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 !!! [[Risques technologiques]]
 * Le territoire est concerné par les risques technologiques, miniers ou la pollution des sols (//oui / non//) : <$edit-text tiddler="variables.json" index="risques_technos" tag="input" class="pac short"/>
 ** industriels (//oui / non//) : <$edit-text tiddler="variables.json" index="risques_indus" tag="input" class="pac short"/>
-*** Un PPRT (//oui / en cours//) : <$edit-text tiddler="variables.json" index="dans_pprt" tag="input" class="pac short"/>
-*** ...
-** miniers (//oui / non//) : <$edit-text tiddler="variables.json" index="risques_miniers" tag="input" class="pac short"/>
+*** Un PPRT (//oui / en cours//) : <$edit-text tiddler="variables.json" index="dans_pprt" tag="input" class="pac mid"/>
+*** Des ICPE générant des zones de danger (//oui / non//) : <$edit-text tiddler="variables.json" index="icpe_danger" tag="input" class="pac short"/>
+*** Des ITMD (//non / oui / sup / en cours//) : <$edit-text tiddler="variables.json" index="itmd" tag="input" class="pac mid"/>
+** miniers (//non / oui / pprm / en cours//) : <$edit-text tiddler="variables.json" index="risques_miniers" tag="input" class="pac mid"/>
 ** sites et sols pollués (//oui / non//) : <$edit-text tiddler="variables.json" index="sols_pollues" tag="input" class="pac short"/>
 
 !!! [[Qualité de l'air]]

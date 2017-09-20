@@ -1,24 +1,26 @@
 created: 20170824121832438
-modified: 20170919150347583
+modified: 20170920101820882
 title: variables.json
 type: application/json
 
 {
-   "departement": "27",
-   "nom_territoire": "CC de Bidule",
-   "intercommunal": "oui",
-   "type_document": "PLU",
-   "est_plui": "oui",
-   "dans_scot": "SCoT de Machin-Chouette",
-   "vaut_pdu": "oui",
-   "vaut_plh": "oui",
-   "dans_DTA": "DTA de truc",
-   "dans_PLH": "PLH de machin",
-   "dans_PPA": "PPA de Schmurz",
-   "risques_technos": "oui",
-   "risques_indus": "oui",
-   "dans_pprt": "en cours",
-   "risques_miniers": "oui",
-   "sols_pollues": "oui",
-   "communes_sensibles": "oui"
+    "departement": "27",
+    "nom_territoire": "CC de Bidule",
+    "intercommunal": "oui",
+    "type_document": "PLU",
+    "est_plui": "oui",
+    "dans_scot": "SCoT de Machin-Chouette",
+    "vaut_pdu": "oui",
+    "vaut_plh": "oui",
+    "dans_DTA": "DTA de truc",
+    "dans_PLH": "PLH de machin",
+    "dans_PPA": "PPA de Schmurz",
+    "risques_technos": "oui",
+    "risques_indus": "oui",
+    "dans_pprt": "en cours",
+    "risques_miniers": "en cours",
+    "sols_pollues": "oui",
+    "communes_sensibles": "oui",
+    "icpe_danger": "oui",
+    "itmd": "en cours"
 }

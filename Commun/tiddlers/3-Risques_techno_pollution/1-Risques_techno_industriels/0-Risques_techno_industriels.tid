@@ -1,9 +1,9 @@
 created: 20170911145154533
-modified: 20170912161344094
+modified: 20170920094821456
+rank: 1
 tags: [[Risques technologiques]]
 title: Risques technologiques industriels
 type: text/vnd.tiddlywiki
-rank: 1
 
 !!!!! le territoire est concerné des risques industriels? {{variables.json##risques_indus}} ([[changer|Variables]])
 
