@@ -1,0 +1,24 @@
+created: 20170926120054533
+modified: 20170926120054533
+rank: 0
+tags: [[Submersion marine]]
+title: Submersion marine Normandie
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" state="variables.json##r_inond_submersion" text="oui">
+
+!!!!!! l'exercice n'a été fait que pour la Basse-Normandie
+<$reveal type="match" state="variables.json##departement" text="14">
+
+<<<.doc
+La DREAL Normandie a élaboré un atlas des zones sous le niveau marin (ZNM) permettant de délimiter l’emprise des zones sous le niveau marin de référence potentiellement inondables lors d’une submersion marine. L’identification de ces zones repose sur une analyse topographique de la frange littorale.
+<<< http://carmen.application.developpement-durable.gouv.fr/8/risques_littoraux.map
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="50">
+
+<<<.doc
+La DREAL Normandie a élaboré un atlas des zones sous le niveau marin (ZNM) permettant de délimiter l’emprise des zones sous le niveau marin de référence potentiellement inondables lors d’une submersion marine. L’identification de ces zones repose sur une analyse topographique de la frange littorale.
+<<< http://carmen.application.developpement-durable.gouv.fr/8/risques_littoraux.map
+</$reveal>
+
+</$reveal>

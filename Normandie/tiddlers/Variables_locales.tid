@@ -3,7 +3,13 @@ modified: 20170915102948210
 title: Variables locales
 type: text/vnd.tiddlywiki
 
-!! [[Variables locales]]
+!! [[Variables locales]] <$reveal type="nomatch" state="$:/state/varloc" text="show">
+<$button set="$:/state/varloc" setTo="show">{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/varloc" text="show">
+<$button set="$:/state/varloc" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/varloc" text="show">
+
 Liste des variables locales (de niveau régional) modifiables contenues dans [[variables_locales.json]].
 
 !!! [[Projet de territoire]]
@@ -13,5 +19,15 @@ Liste des variables locales (de niveau régional) modifiables contenues dans [[v
 ** doit-il accueillir une zone logistique (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="a_zone_DTA" tag="input" default="" class="pac short"/>
 </$reveal>
 
+!!! [[Risques naturels]]
+<$reveal type="nomatch" default="non" state="variables.json##pgri" text="non">
+
+* Utilisé dans la partie PGRI
+** Le territoire est concerné par le bassin Seine-Normandie (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="bassin_SN" tag="input" default="non" class="pac short"/>
+** Le territoire est concerné par le bassin Loire-Bretagne (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="bassin_LB" tag="input" default="non" class="pac short"/>
+</$reveal>
+
 !!! [[Mobilités]]
 * Le territoire devrait-il être un pluid? ''{{variables.json##doit_pluid}}'' (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="doit_pluid" tag="input" default="" class="pac short"/>
+
+</$reveal>

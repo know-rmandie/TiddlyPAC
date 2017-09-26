@@ -1,0 +1,17 @@
+created: 20170926145154533
+modified: 20170926145154533
+rank: 0
+tags: [[Eboulements, chutes de pierres]]
+title: Eboulements en Normandie
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" state="variables.json##r_mouv_eboul" text="oui">
+
+!!!!! Données en fonction du département
+<$reveal type="match" state="variables.json##departement" text="14">
+
+<<<.doc
+La DREAL Normandie a élaboré un atlas chutes de blocs. L’identification de ces zones repose essentiellement sur une analyse topographique du territoire. A retrouver sur la carte globale de prédisposition aux risques naturels.
+<<< http://carmen.application.developpement-durable.gouv.fr/8/risques_naturels_mvt.map#
+</$reveal>
+</$reveal>
