@@ -1,0 +1,20 @@
+created: 20171220145154533
+modified: 20171215145154533
+rank: 6
+tags: [[Risque inondation]]
+title: PAPI
+type: text/vnd.tiddlywiki
+
+<<<.com
+Territoire concerné par un PAPI? (''{{variables.json##papi}}''  - [[changer|Variables]])
+<<<
+
+<$reveal type="match" state="variables.json##papi" text="oui">
+
+!!! Programme d’actions de prévention des inondations
+Le territoire est concerné par au moins un Programme d’Actions de Prévention des Inondations (PAPI).
+
+Lancés en 2002, les PAPI visent à promouvoir une gestion intégrée des risques d’inondation en vue de réduire les conséquences dommageables sur la santé humaine, les biens, les activités économiques et l’environnement. Outil de contractualisation entre l’État et les collectivités, le dispositif PAPI permet la mise en œuvre d’une politique globale des inondations, pensée à l’échelle du bassin de risque.
+
+Ce dispositif PAPI a été initié pour traiter le risque inondation de manière globale, à travers des actions combinant gestion de l’aléa (réhabilitation de zones d’expansion de crues, ralentissement dynamique, ouvrages de protection…) et réduction de la vulnérabilité des personnes, des biens et des territoires (limitation de l’urbanisation des zones inondables, réduction de la vulnérabilité des constructions, amélioration de la prévision et de la gestion des crises…) mais aussi la culture du risque (information préventive, pose de repères de crue, démarches de mise en sûreté et de sauvegarde…). 
+</$reveal>

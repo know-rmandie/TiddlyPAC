@@ -1,0 +1,45 @@
+created: 20171220145154533
+modified: 20171215145154533
+rank: 5.5
+tags: [[Risque inondation]]
+title: TRI - SLGRI
+type: text/vnd.tiddlywiki
+
+<<<.com
+Territoire concerné par un TRI? (''{{variables.json##tri}}''  - [[changer|Variables]])
+<<<
+
+<$reveal type="match" state="variables.json##tri" text="oui">
+
+<<<.todo
+Cette partie est "Normande" à ce stade. Est-elle "nationalisable"?
+<<<
+
+!!! Territoire à risque important d’inondation
+Dans le cadre de la directive inondation, l’exploitation des connaissances rassemblées dans l’évaluation préliminaire des risques d’inondation du bassin, réalisée au cours de l’année 2011, a conduit à identifier le territoire comme territoire à risque important d’inondation (TRI).
+
+Pour chaque TRI, à minimum trois scénarios d’inondation ont été cartographiés, dont :
+
+* un événement fréquent : période de retour 10 à 30 ans,
+* un événement moyen : période de retour 100 à 300 ans,
+* un événement extrême : période de retour supérieure à 1000 ans.
+
+<<<.doc
+Ces cartographies sont consultables et téléchargeables sur le site de la DREAL
+<<< http://www.normandie.developpement-durable.gouv.fr/phase-3-cartographie-des-territoires-a-risque-r530.html
+</$reveal>
+
+<<<.com
+Territoire concerné par un SLGRI? (''{{variables.json##slgri}}''  - [[changer|Variables]])
+<<<
+
+<$reveal type="match" state="variables.json##slgri" text="oui">
+
+De plus, dans le cadre de la mise en œuvre de la Directive Inondation, une stratégie locale de gestion du risque inondation a été élaborée. Cette stratégie locale à atteindre sur les TRI et, au-delà, sur le périmètre de la stratégie, définit les objectifs de réduction des conséquences négatives des inondations. Elle s’inscrit dans la continuité des démarches en cours en complétant ou renforçant les dispositifs de gestion du risque d’inondation existants, sans pour autant s’y substituer, fournissant ainsi un cadre de référence pour prévenir le risque inondation.
+
+Les périmètres d’action des stratégies locales comprennent a minima les territoires à risque important d’inondation (TRI), mais peuvent être plus larges pour gérer le risque à des échelles pertinentes (bassin versant, cellule de submersion, etc.). Les périmètres, les objectifs principaux des stratégies locales ainsi que leur délai d’élaboration ont été arrêtés par les préfets coordonnateurs de bassin en 2014.
+
+<<<.doc
+Des informations complémentaires sont disponibles sur le site internet de la DREAL Normandie
+<<< http://www.normandie.developpement-durable.gouv.fr/les-strategies-locales-de-gestion-du-risque-d-r544.html
+</$reveal>

@@ -29,14 +29,22 @@ L'ensemble des adaptations (modestes) du code et des textes établis sont sous [
 ![licence ouverte](https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Logo_Licence_Ouverte_bleu_blanc_rouge.png "licence ouverte")
 
 ### Circuit
-* **[Framagit][origin]** ([issues][issues])
+* **[Framagit][origin]** ([issues][issues]) > [pages][fm-pages]
+    * [Gitlab][gitlab] > [pages][gl-pages]
+        * [Github][github] > [pages][gh-pages]
 
 [versions]: ./Doc/versions_de_tiddlypac.md
 [utiliser TP]: ./Doc/utiliser_TiddlyPAC.md
 [contribuer TP]: ./Doc/contribuer_a_tiddlypac.md
 
-[origin]:https://framagit.org/know-rmandie/TiddlyPAC
-[issues]:https://framagit.org/know-rmandie/TiddlyPAC/issues
+[origin]: https://framagit.org/know-rmandie/TiddlyPAC
+[issues]: https://framagit.org/know-rmandie/TiddlyPAC/issues
+[fm-pages]: https://know-rmandie.frama.io/TiddlyPAC
+
+[gitlab]: https://gitlab.com/know-rmandie/TiddlyPAC
+[gl-pages]: https://know-rmandie.gitlab.io/TiddlyPAC
+[github]: https://github.com/know-rmandie/TiddlyPAC
+[gl-pages]: https://know-rmandie.github.io/TiddlyPAC
 
 [tw]:http://tiddlywiki.com
 [framagit]:https://framagit.org

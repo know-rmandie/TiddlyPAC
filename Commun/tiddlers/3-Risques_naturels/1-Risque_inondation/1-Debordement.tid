@@ -1,0 +1,25 @@
+created: 20170926115554533
+modified: 20170926115554533
+rank: 1
+tags: [[Risque inondation]]
+title: Débordement de cours d’eau
+type: text/vnd.tiddlywiki
+
+<<<.com
+Risque inondation par débordement? (''{{variables.json##r_inond_debord}}''  - [[changer|Variables]])
+<<<
+
+<$reveal type="match" state="variables.json##r_inond_debord" text="oui">
+
+!!! Risque d'inondation par débordement de cours d’eau
+
+<<<.com
+Le territoire est concerné par un PPRI? (''{{variables.json##ppri}}''  - [[changer|Variables]])
+<<<
+
+<$reveal type="match" state="variables.json##ppri" text="oui">
+
+Dans les zones bénéficiant d’un plan de prévention des risques inondations (PPRi), les zones inondables sont celles du PPRi, qui sont le résultat d’analyses hydro-géomorphologiques et localement de modélisations hydrauliques.
+</$reveal>
+
+</$reveal>

@@ -1,5 +1,5 @@
 created: 20170911152904342
-modified: 20170920094334402
+modified: 20170926134352965
 tags: Variables
 title: Variables globales
 type: text/vnd.tiddlywiki
@@ -7,7 +7,13 @@ type: text/vnd.tiddlywiki
 !! [[Variables globales]]
 Liste des variables globales modifiables contenues dans [[variables.json]].
 
-!!! Généralités
+!!! Généralités  <$reveal type="nomatch" state="$:/state/gen" text="show">
+<$button set="$:/state/gen" setTo="show">{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/gen" text="show">
+<$button set="$:/state/gen" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/gen" text="show">
+
 * Nom du territoire : <$edit-text tiddler="variables.json" index="nom_territoire" tag="input" class="pac"/>
 * est intercommunal (//oui / non//) ? <$edit-text tiddler="variables.json" index="intercommunal" tag="input" default="oui" class="pac short"/>
 * Type de document (//PLU ou SCoT//) : <$edit-text tiddler="variables.json" index="type_document" tag="input" class="pac short"/><$reveal type="match" state="variables.json##type_document" text="PLU">
@@ -21,12 +27,50 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 * fait partie d'un SCoT (//non / SCoT de ...//)? <$edit-text tiddler="variables.json" index="dans_scot" tag="input" default="SCoT de ..." class="pac"/>
 </$reveal>
 * Département concerné :  <$edit-text tiddler="variables.json" index="departement" tag="input" default="numéro" class="pac short"/>
+</$reveal>
 
-!!! [[Projet de territoire]]
+!!! [[Projet de territoire]] <$reveal type="nomatch" state="$:/state/p_ter" text="show">
+<$button set="$:/state/p_ter" setTo="show">{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/p_ter" text="show">
+<$button set="$:/state/p_ter" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/p_ter" text="show">
+
 * Le territoire est concerné par une DTA (//non / DTA de ...//) : <$edit-text tiddler="variables.json" index="dans_DTA" tag="input" class="pac"/>
 * Le territoire fait partie d'un PLH  (//non / PLH de ...//) : <$edit-text tiddler="variables.json" index="dans_PLH" tag="input" class="pac"/>
+</$reveal>
 
-!!! [[Risques technologiques]]
+!!! [[Risques naturels]] <$reveal type="nomatch" state="$:/state/R_nat" text="show">
+<$button set="$:/state/R_nat" setTo="show">{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/R_nat" text="show">
+<$button set="$:/state/R_nat" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/R_nat" text="show">
+
+* Le territoire est concerné par les risques naturels (//oui / non//) : <$edit-text tiddler="variables.json" index="risques_nat" tag="input" class="pac short"/>
+** Risque inondation (//oui / non//) : <$edit-text tiddler="variables.json" index="risque_inond" tag="input" class="pac short"/>
+*** concerné par un PPRI (//oui / non//) : <$edit-text tiddler="variables.json" index="ppri" tag="input" class="pac short"/>
+*** par débordement de cours d'eau (//oui / non//) : <$edit-text tiddler="variables.json" index="r_inond_debord" tag="input" class="pac short"/>
+*** par submersion marine (//oui / non//) : <$edit-text tiddler="variables.json" index="r_inond_submersion" tag="input" class="pac short"/>
+*** par remontée de nappe (//oui / non//) : <$edit-text tiddler="variables.json" index="r_inond_nappe" tag="input" class="pac short"/>
+*** par ruissellement (//oui / non//) : <$edit-text tiddler="variables.json" index="r_inond_ruis" tag="input" class="pac short"/>
+*** concerné par un TRI (//oui / non//) : <$edit-text tiddler="variables.json" index="tri" tag="input" class="pac short"/>
+**** concerné par une SLGRI (//oui / non//) : <$edit-text tiddler="variables.json" index="slgri" tag="input" class="pac short"/>
+*** concerné par un PAPI (//oui / non//) : <$edit-text tiddler="variables.json" index="papi" tag="input" class="pac short"/>
+** Risques mouvements de terrain  (//oui / non//) : <$edit-text tiddler="variables.json" index="risque_mouv_ter" tag="input" class="pac short"/> dont
+*** Cavités souterraines  (//oui / non//) : <$edit-text tiddler="variables.json" index="r_mouv_cavites" tag="input" class="pac short"/>, Eboulements / chutes de pierres (//oui / non//) : <$edit-text tiddler="variables.json" index="r_mouv_eboul" tag="input" class="pac short"/>, Glissements de terrain (//oui / non//) : <$edit-text tiddler="variables.json" index="r_mouv_gliss" tag="input" class="pac short"/>, Retrait argiles (//oui / non//) : <$edit-text tiddler="variables.json" index="r_mouv_argiles" tag="input" class="pac short"/>
+** Risque sismique (//oui / non//) : <$edit-text tiddler="variables.json" index="risque_sismique" tag="input" class="pac short"/>
+** PPRn (//oui / non//) : <$edit-text tiddler="variables.json" index="pprn" tag="input" class="pac short"/>
+** arrêtés de catastrophe naturelle (//oui / non//) : <$edit-text tiddler="variables.json" index="risque_catnat" tag="input" class="pac short"/>
+</$reveal>
+
+!!! [[Risques technologiques]] <$reveal type="nomatch" state="$:/state/R_tech" text="show">
+<$button set="$:/state/R_tech" setTo="show">{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/R_tech" text="show">
+<$button set="$:/state/R_tech" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/R_tech" text="show">
+
 * Le territoire est concerné par les risques technologiques, miniers ou la pollution des sols (//oui / non//) : <$edit-text tiddler="variables.json" index="risques_technos" tag="input" class="pac short"/>
 ** industriels (//oui / non//) : <$edit-text tiddler="variables.json" index="risques_indus" tag="input" class="pac short"/>
 *** Un PPRT (//oui / en cours//) : <$edit-text tiddler="variables.json" index="dans_pprt" tag="input" class="pac mid"/>
@@ -34,7 +78,15 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 *** Des ITMD (//non / oui / sup / en cours//) : <$edit-text tiddler="variables.json" index="itmd" tag="input" class="pac mid"/>
 ** miniers (//non / oui / pprm / en cours//) : <$edit-text tiddler="variables.json" index="risques_miniers" tag="input" class="pac mid"/>
 ** sites et sols pollués (//oui / non//) : <$edit-text tiddler="variables.json" index="sols_pollues" tag="input" class="pac short"/>
+</$reveal>
 
-!!! [[Qualité de l'air]]
+!!! [[Qualité de l'air]] <$reveal type="nomatch" state="$:/state/air" text="show">
+<$button set="$:/state/air" setTo="show">{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/air" text="show">
+<$button set="$:/state/air" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/air" text="show">
+
 * Le territoire comporte des communes sensibles (//oui / non//) : <$edit-text tiddler="variables.json" index="communes_sensibles" tag="input" class="pac short"/>
 * Le territoire est concerné par un PPA (//non / PPA de ...//) : <$edit-text tiddler="variables.json" index="dans_PPA" tag="input" class="pac"/>
+</$reveal>

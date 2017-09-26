@@ -13,9 +13,16 @@ type: text/vnd.tiddlywiki
 Le territoire étudié est impacté par les zones de dangers d'un ou plusieurs établissements industriels relevant de la réglementation des installations classées pour la protection de l’environnement.
 
 !!!!! [[zones de dangers]]
+!!!!! Si on a aussi un PPRT en cours on a déjà explicité les zones de dangers
+<$reveal type="match" state="variables.json##pprt" text="en cours">
+
+Ainsi que cela été présenté pour le PPRT en cours d'élaboration, ces zones sont issues des études des dangers et sont susceptibles d'évoluer dans le temps. Elles classent les effets potentiels des accidents par type et niveau de gravité.
+</$reveal>
+
+<$reveal type="nomatch" state="variables.json##pprt" text="en cours">
+
 {{zones de dangers}}
-
-
+</$reveal>
 
 <<<.obli
 Pour les établissements relevant de l’arrêté du 29 mars 2004, ''des zones forfaitaires d’éloignement devant faire l'objet de préconisations d'urbanisme sont à prendre en compte''.

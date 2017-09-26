@@ -10,9 +10,9 @@ type: text/vnd.tiddlywiki
 <$reveal type="match" state="variables.json##dans_pprt" text="en cours">
 
 !!! PPRT en cours d'élaboration
-Du fait de la présence d’un ou plusieurs établissements SEVESO seuil haut, un PPRT est en cours d’élaboration pour le territoire étudié.
+Du fait de la présence d’un ou plusieurs établissements SEVESO seuil haut, un PPRT est en cours d’élaboration pour le territoire étudié. Les cartes d'aléas définitives du PPRT, réalisées à partir des zones de dangers des installations classées concernées et devant servir à l’élaboration des prescriptions, ont été présentées par la DREAL aux Personnes et Organismes Associés.
 
-Les cartes d'aléas définitives du PPRT, réalisées à partir des zones de dangers des installations classées concernées et devant servir à l’élaboration des prescriptions, ont été présentées par la DREAL de Normandie aux Personnes et Organismes Associés. Ces zones de dangers sont issues des études des dangers remises sous la responsabilité des exploitants et analysées par les services de la DREAL de Normandie.
+{{zones de dangers}}
 
 <<<.obli
 La circulaire DPPR/SEI2/FA-07-0066 du 04 mai 2007^^3-1-a^^ relative au porter à connaissance « risque technologique » et à la maîtrise de l’urbanisation autour des installations classées indique les préconisations à suivre en matière d’urbanisme, pour le cas des établissements SEVESO seuil haut. Ces préconisations reprennent les principes d'interdiction et d'autorisation décrits dans le guide méthodologique PPRT.
