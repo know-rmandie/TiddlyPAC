@@ -1,0 +1,22 @@
+created: 20170920085431906
+modified: 20170920085654382
+tags:
+title: zones de dangers
+type: text/vnd.tiddlywiki
+
+Ces zones sont issues des études des dangers remises sous la responsabilité des exploitants et analysées par les services de la DREAL. Elles sont susceptibles d'évoluer dans le temps dans la mesure où les études de dangers sont des documents qui peuvent être réexaminés et que le travail de l'inspection s'inscrit dans une démarche d'amélioration continue de la sécurité.
+
+Pour chaque accident majeur identifié, 3 types d'effets sont à prendre en compte :
+
+* l'effet thermique ;
+* l'effet de surpression ;
+* l'effet toxique.
+
+Pour ces effets, plusieurs zones de danger sont définies, les définitions des différentes zones d’effets sont les suivantes :
+
+* ''Zone des effets létaux significatifs'' (ZELS) : cette zone correspond à la zone des dangers très graves pour la vie humaine (létalité de 5% de la population exposée en limite de zone).
+* ''Zone des premiers effets létaux'' (ZPEL) : cette zone correspond à la zone des dangers graves pour la vie humaine (létalité de 1% de la population exposée en limite de zone). Cette dénomination recouvre l’ancienne dénomination Z1.
+* ''Zone des effets irréversibles'' (ZEI) : cette zone correspond à la zone des dangers significatifs pour la vie humaine (effets irréversibles). Cette dénomination recouvre l’ancienne dénomination Z2.
+* ''Zone des effets indirects par Bris de Vitre'' (ZBV) : cette zone correspond à la zone des dangers significatifs pour la vie humaine des effets de surpression liés aux bris de vitre (effets irréversibles). Pour les établissements dont la zone ZBV n’était pas définie lors de leur autorisation, cette zone d’effet a été ajoutée forfaitairement comme le double de la distance des effets irréversibles de surpression.
+
+Des effets moindres et passagers pourraient être constatés au-delà de ces zones (gênes respiratoires, vomissements, …). De même des dégâts aux structures (bris de vitres, …) ne sont pas à exclure.

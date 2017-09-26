@@ -1,0 +1,25 @@
+created: 20170926125154533
+modified: 20170926125154533
+rank: 3
+tags: [[Risque inondation]]
+title: Remontée de nappe
+type: text/vnd.tiddlywiki
+
+<<<.com
+Risque inondation par remontée de nappe? (''{{variables.json##r_inond_nappe}}''  - [[changer|Variables]])
+<<<
+
+<$reveal type="match" state="variables.json##r_inond_nappe" text="oui">
+
+!!! Risque inondation par remontée de nappes phréatiques
+Après des périodes de précipitations prolongées, le niveau de la nappe phréatique peut remonter et s’approcher des zones les plus basses. On peut alors constater des résurgences de la nappe phréatique et des infiltrations par capillarité dans les sous-sols qui peuvent conduire à des inondations de longue durée.
+
+<<<.todo
+Il faudrait sans doute dire quoi faire si le territoire est concerné?
+<<<
+
+<<<.doc
+Le Bureau de Recherches Géologiques et Minières (BRGM), établissement public référent pour la prévention du risque d’inondation par remontée de la nappe phréatique, a cartographié les secteurs les plus exposés à ce risque en comparant la profondeur de la nappe (en incluant sa variation naturelle saisonnière et pluriannuelle) à l’altitude des terrains en surface. Cette cartographie nationale n’a pas pour ambition de déceler les risques d’inondation par remontée de nappe à l’échelle locale mais d’identifier des secteurs pouvant présenter des risques potentiels.
+<<< http://www.inondationsnappes.fr
+
+</$reveal>

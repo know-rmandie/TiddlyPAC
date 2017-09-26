@@ -1,0 +1,27 @@
+created: 20170911145154533
+modified: 20170920094821456
+rank: 1
+tags: [[Risques technologiques]]
+title: Risques technologiques industriels
+type: text/vnd.tiddlywiki
+
+!!!!! le territoire est concerné des risques industriels? {{variables.json##risques_indus}} ([[changer|Variables]])
+
+<$reveal type="match" state="variables.json##risques_indus" text="oui">
+
+!! Risques technologiques industriels
+Les risques industriels concernent la présence éventuelle :
+
+* d’installations classées pour la protection de l’environnement (ICPE)
+* d’ouvrages d’infrastructure liée aux transports de matières dangereuses (ITMD)
+* de canalisations de transport de matières dangereuses (canalisations TMD)
+
+Parmi les ICPE relevant du régime de l’autorisation peuvent être distingués les établissements classés SEVESO seuil haut à la date d’entrée en vigueur de la loi n°2003-699 du 30 juillet 2003, pour les lesquels un plan de prévention des risques technologiques (PPRT) doit être mis en place.
+
+Par ailleurs, certaines autres ICPE, ainsi que des ITMD, peuvent générer des zones de dangers, issues de scénarios accidentels avec des effets au-delà des limites de l’établissement. ''Seules les informations concernant uniquement les ICPE et les ITMD générant des zones de dangers au-delà des limites de l’établissement sont communiquées''.
+
+<<<.doc
+Pour ce qui concerne les ICPE relevant des régimes d’autorisation et enregistrement ne générant pas de zones de dangers, on pourra se référer à la base correspondante disponible sur internet
+<<< http://www.installationsclassees.developpement-durable.gouv.fr
+
+</$reveal>

@@ -1,0 +1,28 @@
+created: 20170926145154533
+modified: 20170926145154533
+rank: 5
+tags: [[Risques naturels]]
+title: Catastrophes naturelles
+type: text/vnd.tiddlywiki
+
+<<<.com
+le territoire est concerné par un arrêté de catastrophe naturelle au moins (''{{variables.json##risque_catnat}}''  - [[changer|Variables]])
+<<<
+
+<$reveal type="match" state="variables.json##risque_catnat" text="oui">
+
+!! Reconnaissance de l’État de catastrophe naturelle
+
+<<<.doc
+La liste des arrêtés de reconnaissance de catastrophe naturelle est consultable sur :
+
+* http://macommune.prim.net/ (échelle communale)
+* http://macommune.prim.net/gaspar/visualisation.php (échelle départementale)
+<<<
+
+Compte-tenu de l’incertitude liée à l’évaluation des risques, les phénomènes dangereux susceptibles de se produire et les distances d’effet associées ne sauraient avoir de valeur absolue.
+
+<<<.obli
+Il convient donc d’être prudent sur les projets en limite d’exposition aux risques en éloignant autant que possible les projets importants ou sensibles.
+<<<
+</$reveal>

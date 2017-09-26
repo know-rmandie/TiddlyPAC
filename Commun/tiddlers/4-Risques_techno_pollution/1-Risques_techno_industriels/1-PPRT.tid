@@ -1,0 +1,49 @@
+created: 20170911145154533
+modified: 20170919150643287
+rank: 1
+tags: [[Risques technologiques industriels]]
+title: PPRT
+type: text/vnd.tiddlywiki
+
+!!!!! Y a-t-il un PPRT? {{variables.json##pprt}} ([[changer|Variables]])
+
+<$reveal type="match" state="variables.json##dans_pprt" text="en cours">
+
+!!! PPRT en cours d'élaboration
+Du fait de la présence d’un ou plusieurs établissements SEVESO seuil haut, un PPRT est en cours d’élaboration pour le territoire étudié. Les cartes d'aléas définitives du PPRT, réalisées à partir des zones de dangers des installations classées concernées et devant servir à l’élaboration des prescriptions, ont été présentées par la DREAL aux Personnes et Organismes Associés.
+
+{{zones de dangers}}
+
+<<<.obli
+La circulaire DPPR/SEI2/FA-07-0066 du 04 mai 2007^^3-1-a^^ relative au porter à connaissance « risque technologique » et à la maîtrise de l’urbanisation autour des installations classées indique les préconisations à suivre en matière d’urbanisme, pour le cas des établissements SEVESO seuil haut. Ces préconisations reprennent les principes d'interdiction et d'autorisation décrits dans le guide méthodologique PPRT.
+
+Elles ne présagent pas des conditions du règlement (où seront entièrement définies les contraintes sur l'urbanisme) qui sera établi en vue de l'approbation du PPRT.
+<<<
+
+Elles sont résumées dans les tableaux « Principes de réglementation de l'urbanisme – Établissement SEVESO seuil haut - PPRT » et « PPRT – Principes de réglementation des usages des infrastructures » figurant ci-après.
+
+!!!!!! ^^3-1-a^^ http://www.ineris.fr/aida/consultation_document/7287
+
+{{tableau-seveso_haut_PPRT.png}}
+
+-----
+
+{{tableau-seveso_haut_PPRT-infras.png}}
+
+</$reveal>
+<$reveal type="match" state="variables.json##dans_pprt" text="oui">
+
+!!! PPRT approuvé
+Du fait de la présence d’un ou plusieurs établissements SEVESO seuil haut, un PPRT a été approuvé par arrêté préfectoral sur le territoire concerné.
+
+<<<.obli
+Les contraintes sur l’urbanisme sont entièrement définies dans le règlement du PPRT, un PPRT valant servitude d’utilité publique dès son approbation.
+<<<
+
+Les zones de dangers prises en compte pour la définition de l’aléa du PPRT sont issues des études des dangers remises sous la responsabilité des exploitants et analysées par les services de la DREAL.
+
+Des effets moindres et passagers pourraient être constatés au-delà de ces zones (gênes respiratoires, vomissements…). De même des dégâts aux structures (bris de vitres, …) ne sont pas à exclure.
+
+En fonction des évolutions des installations industrielles et des éventuelles mesures de réduction du risque à la source entreprises, ce PPRT peut être révisé au plus tous les 5 ans.
+
+</$reveal>

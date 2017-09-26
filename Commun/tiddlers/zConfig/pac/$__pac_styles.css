@@ -1,3 +1,4 @@
+
 /* titres */
 
 h1.titre {
@@ -39,6 +40,18 @@ p.npb {
 table {
    min-width: 60%;
    margin: 1em auto;
+   font-family:"Liberation Sans Narrow", Georgia, serif;
+}
+
+table caption {
+   caption-side:top;
+   font-style:italic;
+   font-family:"Liberation serif", Georgia, serif;
+}
+
+table ul, .com ul, .nbp ul, .todo ul {
+    margin: 0;
+    padding-left: 1em;
 }
 /* champs de saisie des formulaires */
 
@@ -51,6 +64,11 @@ input.pac {
 input.short {
    width: 3em;
 }
+
+input.mid {
+   width: 6em;
+}
+
 /* différents types de mise en exergue */
 
 blockquote p {

@@ -1,19 +1,42 @@
 created: 20170824121832438
-modified: 20170915122521592
+modified: 20170926133401306
 title: variables.json
 type: application/json
 
 {
-    "nom_territoire": "CC de Bidule",
-    "type_document": "PLU",
-    "dans_scot": "SCoT de Machin-Chouette",
     "departement": "27",
-    "communes_sensibles": "oui",
+    "nom_territoire": "CC de Bidule",
     "intercommunal": "oui",
+    "type_document": "PLU",
     "est_plui": "oui",
+    "dans_scot": "SCoT de Machin-Chouette",
     "vaut_pdu": "oui",
     "vaut_plh": "oui",
     "dans_DTA": "DTA de truc",
     "dans_PLH": "PLH de machin",
-    "dans_PPA": "PPA de Schmurz"
+    "dans_PPA": "PPA de Schmurz",
+    "risques_technos": "oui",
+    "risques_indus": "oui",
+    "dans_pprt": "en cours",
+    "risques_miniers": "en cours",
+    "sols_pollues": "oui",
+    "communes_sensibles": "oui",
+    "icpe_danger": "oui",
+    "itmd": "en cours",
+    "risques_nat": "oui",
+    "risque_inond": "oui",
+    "ppri": "oui",
+    "r_inond_debord": "oui",
+    "r_inond_submersion": "oui",
+    "r_inond_nappe": "oui",
+    "r_inond_ruis": "oui",
+    "papi": "oui",
+    "risque_mouv_ter": "oui",
+    "r_mouv_cavites": "oui",
+    "r_mouv_eboul": "oui",
+    "r_mouv_gliss": "oui",
+    "r_mouv_argiles": "oui",
+    "risque_sismique": "oui",
+    "pprn": "oui",
+    "risque_catnat": "oui"
 }

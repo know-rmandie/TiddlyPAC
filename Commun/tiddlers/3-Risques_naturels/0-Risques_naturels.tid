@@ -1,0 +1,28 @@
+created: 20170926145154533
+modified: 20170926145154533
+rank: 3
+tags: [[Porter à Connaissance]] chapitre
+title: Risques naturels
+type: text/vnd.tiddlywiki
+
+<<<.com
+le territoire est concerné par les risques naturels au sens large? (''{{variables.json##risques_nat}}''  - [[changer|Variables]])
+
+''attention à la cohérence des sous-variables''
+<<<
+
+<$reveal type="match" state="variables.json##risques_nat" text="oui">
+
+! Risques naturels
+La politique de l’État en matière de prévention des risques majeurs a pour objectif d’assurer la sécurité des biens et des personnes dans les territoires exposés à ces risques. Il s’agit d’une politique globale organisée autour de quatre grands axes complémentaires que sont la prévention, la protection, la prévision et l’information^^3-0-a^^.
+
+Localement, l’action des collectivités en matière d’urbanisme vise à atteindre les objectifs de sécurité et de salubrité publique ainsi que de prévention des risques naturels prévisibles^^3-0-a^^ (...). La prévention des risques et des nuisances, outre la protection des populations et de l’environnement, doit également faciliter la cohabitation des zones dédiées à des fonctions différentes (activités, habitat, agriculture …). Plusieurs lois, décrets et circulaires, traduits dans le code de l’urbanisme et de l’environnement, ont précisé les mesures à prendre en conséquence.
+
+<<<.nbp
+
+^^3-0-a^^ L’organisation de l’information préventive sur les risques majeurs s’effectue en application notamment des articles L.125-2 et R.125-11
+
+^^3-0-b^^ article L.101-2 4° et 5° du code de l’urbanisme
+<<<
+
+</$reveal>

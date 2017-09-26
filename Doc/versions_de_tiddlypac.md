@@ -1,9 +1,8 @@
 ## les différentes versions de TiddlyPAC
 
-* [TiddlyPAC "neutre"][neutre] : version de base qui peut en théorie fonctionner sur n'importe quel SCoT ou PLU de France.
-* Déclinaisons régionales
-  * [TiddlyPAC Normandie][normandie]
-  * ...
+TiddlyPAC existe en plusieurs saveur pour s'adapter au territoire :
 
-[neutre]: https://framagit.org/know-rmandie/TiddlyPAC/
-[normandie]: https://framagit.org/know-rmandie/TiddlyPAC/
+* <a href="https://know-rmandie.frama.io/TiddlyPAC/tiddlyPAC.html" download target="_blank">TiddlyPAC "neutre"</a> : version de base qui peut en théorie fonctionner sur n'importe quel SCoT ou PLU de France.
+* Déclinaisons régionales
+  * <a href="https://know-rmandie.frama.io/TiddlyPAC/tiddlyPAC-Normandie.html" download target="_blank">Normandie</a>
+  * ...

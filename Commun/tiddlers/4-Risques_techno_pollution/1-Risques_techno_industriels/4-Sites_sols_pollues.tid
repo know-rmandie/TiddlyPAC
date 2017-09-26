@@ -1,0 +1,35 @@
+created: 20170920100406546
+modified: 20170920101336778
+rank: 4
+tags: [[Risques technologiques]]
+title: Sites et sols pollués
+type: text/vnd.tiddlywiki
+
+!!!!! Le territoire est concerné par des sites pollués? ''{{variables.json##sols_pollues}}'' ([[changer|Variables]])
+<$reveal type="match" state="variables.json##sols_pollues" text="oui">
+
+!! Sites et sols pollués ou potentiellement pollués
+Un site pollué est un site qui, du fait d'anciens dépôts de déchets ou de l'infiltration de substances polluantes, présente une pollution susceptible de provoquer une nuisance ou un risque pérenne pour les personnes ou l'environnement.
+
+Les sites et sols pollués, ou potentiellement pollués, appelant une action des pouvoirs publics à titre préventif ou curatif, sont recensés sur la base de données BASOL.
+
+Les anciens sites industriels et activités de service sont recensés sur la banque de données BASIAS. L'inscription d'un site dans cette banque de données ne préjuge pas de la présence ou non d'une pollution sur ce site.
+
+<<<.obli
+La liste de ces sites doit être citée dans le rapport de présentation, et le règlement des zones où se situent ces sites doit faire mention de l’existence de ces sites et des restrictions d’usage qui s’y appliquent.
+<<<
+
+L’exhaustivité de ces bases n’étant pas assurée, il convient de se référer également aux données documentaires et historiques de la commune (archives communales, cadastres,...) pour s’assurer de l’état des sols avant tout projet d’aménagement.
+
+<<<.obli
+D'une manière générale, il convient  de s’assurer, sur le fondement de l’article R111-2 du Code de l’urbanisme, que les terrains d’assiette du projet se trouvent dans un état compatible avec l’implantation des constructions projetées.
+<<<
+
+<<<.doc
+Les bases de données concernant les sites et sols polluées sont à retrouver sur internet
+
+BASOL : http://basol.developpement-durable.gouv.fr.
+
+BASIAS : http://basias.brgm.fr.
+<<<
+</$reveal>
