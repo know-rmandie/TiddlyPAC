@@ -34,6 +34,11 @@ html, body {
     max-width: 1000px;
 }
 
+.header {
+    padding: .5em;
+}
+.header p {margin:.5em 0}
+
 .header ul {
     margin: 0;
     padding: 0;
@@ -76,10 +81,6 @@ table tr:last-child td {
 #nav, #main>div, h1, #footer {
     padding: .5em;
     margin: 0
-}
-
-#main #header {
-    padding-bottom: 0
 }
 
 .footer {
