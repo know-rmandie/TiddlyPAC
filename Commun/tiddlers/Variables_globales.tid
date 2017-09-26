@@ -54,6 +54,8 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 *** par submersion marine (//oui / non//) : <$edit-text tiddler="variables.json" index="r_inond_submersion" tag="input" class="pac short"/>
 *** par remontée de nappe (//oui / non//) : <$edit-text tiddler="variables.json" index="r_inond_nappe" tag="input" class="pac short"/>
 *** par ruissellement (//oui / non//) : <$edit-text tiddler="variables.json" index="r_inond_ruis" tag="input" class="pac short"/>
+*** concerné par un TRI (//oui / non//) : <$edit-text tiddler="variables.json" index="tri" tag="input" class="pac short"/>
+**** concerné par une SLGRI (//oui / non//) : <$edit-text tiddler="variables.json" index="slgri" tag="input" class="pac short"/>
 *** concerné par un PAPI (//oui / non//) : <$edit-text tiddler="variables.json" index="papi" tag="input" class="pac short"/>
 ** Risques mouvements de terrain  (//oui / non//) : <$edit-text tiddler="variables.json" index="risque_mouv_ter" tag="input" class="pac short"/> dont
 *** Cavités souterraines  (//oui / non//) : <$edit-text tiddler="variables.json" index="r_mouv_cavites" tag="input" class="pac short"/>, Eboulements / chutes de pierres (//oui / non//) : <$edit-text tiddler="variables.json" index="r_mouv_eboul" tag="input" class="pac short"/>, Glissements de terrain (//oui / non//) : <$edit-text tiddler="variables.json" index="r_mouv_gliss" tag="input" class="pac short"/>, Retrait argiles (//oui / non//) : <$edit-text tiddler="variables.json" index="r_mouv_argiles" tag="input" class="pac short"/>
