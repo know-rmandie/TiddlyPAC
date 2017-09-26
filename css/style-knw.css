@@ -97,8 +97,17 @@ table tr:last-child td {
 
 .hidden {display:none}
 
-.col {box-sizing: border-box}
+.row {vertical-align: top}
 
+.col {
+    vertical-align: top;
+    box-sizing: border-box;
+    display: inline-block;
+    width:100%;
+    padding:.5em;
+    margin:.15em 0;
+    text-align:justify;
+}
 /*****************
 //    T Y P O    //
 ******************/
@@ -232,8 +241,9 @@ li.onglet.active {
 
 @media (min-width: 550px) {
     .col {
-        width: 50%;
-        display: inline-block
+        text-align: left;
+        width: 49%;
+        margin: .15em 0;
     }
 }
 
@@ -252,7 +262,8 @@ li.onglet.active {
 
 @media (min-width: 900px) {
     .col {
-        width: 33%;
+        width: 32%;
+        margin: .15em 0;
     }
 }
 
@@ -261,8 +272,8 @@ li.onglet.active {
 
 @media (min-width: 1000px) {
     .col {
-       margin:0 .5%;
        width: 24%;
+       margin: .15em 0;
     }
 }
 
