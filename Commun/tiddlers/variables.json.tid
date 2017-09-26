@@ -1,5 +1,5 @@
 created: 20170824121832438
-modified: 20170926133401306
+modified: 20170926145209342
 title: variables.json
 type: application/json
 
@@ -38,5 +38,7 @@ type: application/json
     "r_mouv_argiles": "oui",
     "risque_sismique": "oui",
     "pprn": "oui",
-    "risque_catnat": "oui"
+    "risque_catnat": "oui",
+    "tri": "oui",
+    "slgri": "oui"
 }
