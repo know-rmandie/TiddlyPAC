@@ -1,0 +1,16 @@
+created: 20170926145154533
+modified: 20170926145154533
+rank: 2
+tags: [[Risque mouvement de terrain]]
+title: Eboulements, chutes de pierres
+type: text/vnd.tiddlywiki
+
+<<<.com
+le territoire est concerné par les Eboulements (''{{variables.json##r_mouv_eboul}}''  - [[changer|Variables]])
+<<<
+
+<$reveal type="match" state="variables.json##r_mouv_eboul" text="oui">
+
+!!! Éboulements, chutes de pierres et de blocs
+L’évolution des falaises et des versants rocheux engendre des chutes de pierres ou de blocs ou des éboulements en masse. Les blocs isolés rebondissent ou roulent sur le versant, tandis que dans le cas des éboulements en masse, les matériaux « s’écoulent » à grande vitesse sur une très grande distance. Ces phénomènes trouvent leur origine dans des phénomènes naturels comme la géologie, l’hydrogéologie ou les séismes, mais ils peuvent aussi être favorisés par l’activité de l’homme (modification de l’hydrologie, raidissement d’une pente suite à des travaux d’aménagement, utilisation d’explosifs…).
+</$reveal>

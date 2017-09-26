@@ -1,0 +1,16 @@
+created: 20170926145154533
+modified: 20170926145154533
+rank: 4
+tags: [[Risque mouvement de terrain]]
+title: Retrait-gonflement des argiles
+type: text/vnd.tiddlywiki
+
+<<<.com
+le territoire est concerné par le retrait-gonflement des argiles (''{{variables.json##r_mouv_argiles}}''  - [[changer|Variables]])
+<<<
+
+<$reveal type="match" state="variables.json##r_mouv_argiles" text="oui">
+
+!!! Le risque retrait-gonflement des sols argileux
+Les couches superficielles du sol peuvent être composées de matériaux argileux en concentration plus ou moins forte. Ces matériaux ont tendance à gonfler en cas d’apport d’eau et à se rétracter lors des périodes de sécheresse. Cela occasionne des mouvements de sol, à cinétique lente, susceptibles d’endommager les constructions possédant des fondations peu profondes que l’on retrouve particulièrement au niveau du bâti pavillonnaire. Cependant, ces mouvements étant lents et de faible amplitude, ils ne présentent, en général, pas de risque pour les vies humaines.
+</$reveal>

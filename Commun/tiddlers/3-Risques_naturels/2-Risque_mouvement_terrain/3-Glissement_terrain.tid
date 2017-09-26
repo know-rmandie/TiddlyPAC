@@ -1,0 +1,16 @@
+created: 20170926145154533
+modified: 20170926145154533
+rank: 3
+tags: [[Risque mouvement de terrain]]
+title: Glissements de terrain
+type: text/vnd.tiddlywiki
+
+<<<.com
+le territoire est concerné par les glissements de terrain (''{{variables.json##r_mouv_gliss}}''  - [[changer|Variables]])
+<<<
+
+<$reveal type="match" state="variables.json##r_mouv_gliss" text="oui">
+
+!!! Glissements de terrain
+Les glissements de terrain se produisent généralement en situation de forte saturation des sols en eau. Ils trouvent leur origine dans des phénomènes naturels comme la géologie, la pente des terrains, la végétation, les séismes,… mais peuvent aussi être favorisés par l’activité humaine (modification des apports d’eau, modification des pentes, terrassements, remblaiements, etc.). Ils peuvent mobiliser des volumes considérables de terrain, qui se déplacent le long d’une surface de rupture.
+</$reveal>

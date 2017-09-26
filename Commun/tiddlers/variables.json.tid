@@ -1,5 +1,5 @@
 created: 20170824121832438
-modified: 20170920101820882
+modified: 20170926133401306
 title: variables.json
 type: application/json
 
@@ -22,5 +22,21 @@ type: application/json
     "sols_pollues": "oui",
     "communes_sensibles": "oui",
     "icpe_danger": "oui",
-    "itmd": "en cours"
+    "itmd": "en cours",
+    "risques_nat": "oui",
+    "risque_inond": "oui",
+    "ppri": "oui",
+    "r_inond_debord": "oui",
+    "r_inond_submersion": "oui",
+    "r_inond_nappe": "oui",
+    "r_inond_ruis": "oui",
+    "papi": "oui",
+    "risque_mouv_ter": "oui",
+    "r_mouv_cavites": "oui",
+    "r_mouv_eboul": "oui",
+    "r_mouv_gliss": "oui",
+    "r_mouv_argiles": "oui",
+    "risque_sismique": "oui",
+    "pprn": "oui",
+    "risque_catnat": "oui"
 }

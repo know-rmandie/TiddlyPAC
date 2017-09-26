@@ -6,10 +6,10 @@ title: Risque inondation
 type: text/vnd.tiddlywiki
 
 <<<.com
-le territoire est concerné par le risque inondation au sens large? (''{{variables.json##risques_inond}}''  - [[changer|Variables]])
+le territoire est concerné par le risque inondation au sens large? (''{{variables.json##risque_inond}}''  - [[changer|Variables]])
 <<<
 
-<$reveal type="match" state="variables.json##risques_inond" text="oui">
+<$reveal type="match" state="variables.json##risque_inond" text="oui">
 
 !! Le risque inondation
 L’un des principes fondateurs de la prise en compte et de la traduction du risque inondation dans les documents d’urbanisme consiste à développer autant que faire se peut l’urbanisation en dehors des zones inondables pour :
