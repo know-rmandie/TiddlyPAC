@@ -1,10 +1,10 @@
 created: 20170824121832438
-modified: 20170926145209342
+modified: 20170926152211505
 title: variables.json
 type: application/json
 
 {
-    "departement": "27",
+    "departement": "14",
     "nom_territoire": "CC de Bidule",
     "intercommunal": "oui",
     "type_document": "PLU",

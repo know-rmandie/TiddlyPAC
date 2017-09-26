@@ -120,6 +120,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="http://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/config/DefaultSidebarTab</li>
+
 <li>$:/config/DownloadSaver/AutoSave</li>
 
 <li>$:/config/MissingLinks</li>
@@ -176,13 +178,13 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
-<li>$:/state/gen</li>
-
-<li>$:/state/R_nat</li>
-
 <li>$:/state/tab/sidebar--1835078512</li>
 
-<li>$:/state/varloc</li>
+<li>$:/state/toc/chapitre-Projet de territoire--682378955</li>
+
+<li>$:/state/toc/chapitre-Risques naturels--682378955</li>
+
+<li>$:/state/toc/chapitre/Projet de territoire-DTA--682378955</li>
 
 <li>$:/status/IsLoggedIn</li>
 
@@ -370,8 +372,6 @@ Error message and password prompt
 
 <li>TiddlyPAC</li>
 
-<li>TRI</li>
-
 <li>TRI - SLGRI</li>
 
 <li>utiliser_TiddlyPAC</li>
@@ -400,6 +400,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20170926152139726" modified="20170926152144542" title="$:/config/DefaultSidebarTab" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>Variables</pre>
+</div>
 <div created="20170824070035684" modified="20170825113026715" title="$:/config/DownloadSaver/AutoSave" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>yes</pre>
 </div>
@@ -12838,17 +12841,17 @@ body.static .tc-tiddlylink-missing {
 <div created="20170824063202973" modified="20170830155905729" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>{{variables.json##nom_territoire}}</pre>
 </div>
-<div created="20170926145159114" modified="20170926145247883" title="$:/state/gen" revision="3" bag="default">
-<pre>show</pre>
-</div>
-<div created="20170926145201389" modified="20170926145216970" title="$:/state/R_nat" revision="2" bag="default">
-<pre>hide</pre>
-</div>
-<div created="20170926145147299" modified="20170926145147299" title="$:/state/tab/sidebar--1835078512" revision="1" bag="default">
+<div created="20170926152538889" modified="20170926152558239" title="$:/state/tab/sidebar--1835078512" revision="2" bag="default">
 <pre>Variables</pre>
 </div>
-<div created="20170926145148683" modified="20170926145243587" title="$:/state/varloc" revision="6" bag="default">
-<pre>hide</pre>
+<div created="20170926152540519" modified="20170926152551951" title="$:/state/toc/chapitre-Projet de territoire--682378955" revision="4" bag="default">
+<pre>close</pre>
+</div>
+<div created="20170926152552883" modified="20170926152555273" title="$:/state/toc/chapitre-Risques naturels--682378955" revision="2" bag="default">
+<pre>close</pre>
+</div>
+<div created="20170926152543937" modified="20170926152546193" title="$:/state/toc/chapitre/Projet de territoire-DTA--682378955" revision="2" bag="default">
+<pre>close</pre>
 </div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
 <pre>yes</pre>
@@ -14654,45 +14657,7 @@ La DREAL Normandie a élaboré un atlas des zones sous le niveau marin (ZNM) per
 
 Le présent //tiddler// regroupe les éléments permettant de faire fonctionner le système pour un accès plus facile. N'y touchez pas si vous ne savez pas ce que vous faites (ou faites une sauvegarde avant...)</pre>
 </div>
-<div created="20171220145154533" modified="20171215145154533" rank="7" tags="[[Risque inondation]]" title="TRI" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;&lt;.com
-Territoire concerné par un TRI? (''{{variables.json##tri}}''  - [[changer|Variables]])
-&lt;&lt;&lt;
-
-&lt;$reveal type=&quot;match&quot; state=&quot;variables.json##tri&quot; text=&quot;oui&quot;&gt;
-
-&lt;&lt;&lt;.todo
-Cette partie &quot;Normande&quot; est-elle &quot;nationalisable&quot;?
-&lt;&lt;&lt;
-
-!!! Territoire à risque important d’inondation
-Dans le cadre de la directive inondation, l’exploitation des connaissances rassemblées dans l’évaluation préliminaire des risques d’inondation du bassin, réalisée au cours de l’année 2011, a conduit à identifier le territoire comme territoire à risque important d’inondation (TRI).
-
-Pour chaque TRI, à minimum trois scénarios d’inondation ont été cartographiés, dont :
-
-* un événement fréquent : période de retour 10 à 30 ans,
-* un événement moyen : période de retour 100 à 300 ans,
-* un événement extrême : période de retour supérieure à 1000 ans.
-
-Ces cartographies sont consultables et téléchargeables à l’adresse suivante : http://www.normandie.developpement-durable.gouv.fr/phase-3-cartographie-des-territoires-a-risque-r530.html
-
-&lt;&lt;&lt;.com
-Territoire concerné par une SLGRI? (''{{variables.json##slgri}}''  - [[changer|Variables]])
-&lt;&lt;&lt;
-&lt;$reveal type=&quot;match&quot; state=&quot;variables.json##slgri&quot; text=&quot;oui&quot;&gt;
-
-De plus, dans le cadre de la mise en œuvre de la Directive Inondation, une stratégie locale de gestion du risque inondation a été élaborée. Cette stratégie locale à atteindre sur les TRI et, au-delà, sur le périmètre de la stratégie, définit les objectifs de réduction des conséquences négatives des inondations. Elle s’inscrit dans la continuité des démarches en cours en complétant ou renforçant les dispositifs de gestion du risque d’inondation existants, sans pour autant s’y substituer, fournissant ainsi un cadre de référence pour prévenir le risque inondation.
-
-Les périmètres d’action des stratégies locales comprennent a minima les territoires à risque important d’inondation (TRI), mais peuvent être plus larges pour gérer le risque à des échelles pertinentes (bassin versant, cellule de submersion, etc.). Les périmètres, les objectifs principaux des stratégies locales ainsi que leur délai d’élaboration ont été arrêtés par les préfets coordonnateurs de bassin en 2014.
-
-&lt;&lt;&lt;.doc
-Des informations complémentaires sont disponibles
-&lt;&lt;&lt; http://www.normandie.developpement-durable.gouv.fr/les-strategies-locales-de-gestion-du-risque-d-r544.html
-&lt;/$reveal&gt;
-&lt;/$reveal&gt;
-</pre>
-</div>
-<div created="20171220145154533" modified="20171215145154533" rank="5.5" tags="[[Risque inondation]]" title="TRI - SLGRI" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20171220145154533" modified="20171215145154533" rank="7" tags="[[Risque inondation]]" title="TRI - SLGRI" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;&lt;.com
 Territoire concerné par un TRI? (''{{variables.json##tri}}''  - [[changer|Variables]])
 &lt;&lt;&lt;
@@ -14902,9 +14867,9 @@ Liste des variables locales (de niveau régional) modifiables contenues dans [[v
 }
 </pre>
 </div>
-<div created="20170824121832438" modified="20170926145207972" title="variables.json" type="application/json" revision="6" bag="default">
+<div created="20170824121832438" modified="20170926152211505" title="variables.json" type="application/json" revision="0" bag="default">
 <pre>{
-    &quot;departement&quot;: &quot;27&quot;,
+    &quot;departement&quot;: &quot;14&quot;,
     &quot;nom_territoire&quot;: &quot;CC de Bidule&quot;,
     &quot;intercommunal&quot;: &quot;oui&quot;,
     &quot;type_document&quot;: &quot;PLU&quot;,
