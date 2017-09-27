@@ -42,5 +42,5 @@ La meilleure solution pour contribuer reste bien sûr de participer directement 
 
 [origin]: https://framagit.org/know-rmandie/TiddlyPAC
 [fm-pages]: https://know-rmandie.frama.io/TiddlyPAC
-[mattermost]: https://framateam.org/pac-automatique/
+[mattermost]: https://framateam.org/signup_user_complete/?id=4qbkmz8swtg3tyrs7gceamq8fo
 [issues]: https://framagit.org/know-rmandie/TiddlyPAC/issues

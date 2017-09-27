@@ -37,7 +37,7 @@ L'ensemble des adaptations (modestes) du code et des textes établis sont sous [
 [versions]: ./Doc/versions_de_tiddlypac.md
 [utiliser TP]: ./Doc/utiliser_TiddlyPAC.md
 [contribuer TP]: ./CONTRIBUTING.md
-[mattermost]: https://framateam.org/pac-automatique/
+[mattermost]: https://framateam.org/signup_user_complete/?id=4qbkmz8swtg3tyrs7gceamq8fo
 
 [origin]: https://framagit.org/know-rmandie/TiddlyPAC
 [issues]: https://framagit.org/know-rmandie/TiddlyPAC/issues
