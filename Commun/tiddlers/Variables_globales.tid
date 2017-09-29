@@ -80,6 +80,37 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 ** sites et sols pollués (//oui / non//) : <$edit-text tiddler="variables.json" index="sols_pollues" tag="input" class="pac short"/>
 </$reveal>
 
+!!! [[Paysages et sites]] <$reveal type="nomatch" state="$:/state/sites" text="show">
+<$button set="$:/state/sites" setTo="show">{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/sites" text="show">
+<$button set="$:/state/sites" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/sites" text="show">
+
+* Le territoire est concerné un site classé ou inscrit (//oui / non//) : <$edit-text tiddler="variables.json" index="sites" tag="input" class="pac short"/>
+* Le territoire comporte un site patrimoine mondial ou Grand Site de France  (//oui / non//) : <$edit-text tiddler="variables.json" index="grand_site" tag="input" class="pac short"/>
+</$reveal>
+
+!!! [[Milieux et biodiversité]] <$reveal type="nomatch" state="$:/state/milieux" text="show">
+<$button set="$:/state/milieux" setTo="show">{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/milieux" text="show">
+<$button set="$:/state/milieux" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/milieux" text="show">
+
+* Le territoire est concerné une ZNIEFF (//non / 1 / 2 / 1 et 2//) : <$edit-text tiddler="variables.json" index="znieff" tag="input" class="pac short"/>
+* Le territoire a fait l’objet d’un inventaire géologique  (//oui / non//) : <$edit-text tiddler="variables.json" index="inventaire_geo" tag="input" class="pac short"/>
+* Le territoire est concerné par une des protections suivantes
+** Réserve naturelle (//oui / non//) : <$edit-text tiddler="variables.json" index="reserves_nat" tag="input" class="pac short"/>
+** Un arrêté de protection de biotope (//oui / non//) : <$edit-text tiddler="variables.json" index="appb" tag="input" class="pac short"/>
+** Une foret de protection (//oui / non//) : <$edit-text tiddler="variables.json" index="forets_protection" tag="input" class="pac short"/>
+** Une site Natura 2000 (//oui / non//) : <$edit-text tiddler="variables.json" index="natura_2000" tag="input" class="pac short"/>
+** Une zone de compensation (//oui / non//) : <$edit-text tiddler="variables.json" index="zones_compensation" tag="input" class="pac short"/>
+** Une zone humide (//oui / non//) : <$edit-text tiddler="variables.json" index="zones_humides" tag="input" class="pac short"/>
+*** Un site RAMSAR (//oui / non//) : <$edit-text tiddler="variables.json" index="ramsar" tag="input" class="pac short"/>
+** Un Parc Naturel Régional (//oui / non//) : <$edit-text tiddler="variables.json" index="pnr" tag="input" class="pac short"/>
+</$reveal>
+
 !!! [[Qualité de l'air]] <$reveal type="nomatch" state="$:/state/air" text="show">
 <$button set="$:/state/air" setTo="show">{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/air" text="show">

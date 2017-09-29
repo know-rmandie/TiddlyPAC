@@ -1,0 +1,25 @@
+created: 20170929145154533
+modified: 20170929113959021
+rank: 5
+tags: [[Espaces protégés]]
+title: Natura 2000
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##natura_2000" text="non">
+
+!!! Le réseau Natura 2000
+Le réseau NATURA 2000 est un réseau écologique majeur qui doit structurer durablement le territoire européen et contribuer à la préservation de la diversité biologique à laquelle l’Union européenne s’est engagée dans le cadre de la convention de Rio adoptée au Sommet de la Terre en juin 1992. L’objectif de ce réseau est d’assurer le maintien, le rétablissement ou la conservation d’espèces et d’espaces naturels reconnus d’intérêt communautaire. Il doit aussi contribuer à la mise en œuvre d’un développement durable conciliant les exigences écologiques des habitats naturels et des espèces avec les exigences économiques, sociales et culturelles ainsi que les particularités locales.
+
+Ce réseau est mis en place en application de deux directives européennes :
+
+* la directive Oiseaux, adoptée en 1979,
+* la directive Habitats Faune Flore adoptée en 1992.
+
+Les sites désignés au titre de la directive Oiseaux sont des Zones de Protection Spéciales (ZPS), ceux relevant de la directive Habitats sont des Zones Spéciales de Conservation (ZSC). Les ZSC sont créées pour des espèces autres que les oiseaux, les milieux qui les abritent et des habitats rares ou en danger à l’échelle de l’Europe. L’ensemble des ZPS et des ZSC forme le réseau Natura 2000. Pour chaque site, un DOCument d’OBjectifs (DOCOB) équivalent à un plan de gestion présente l’état des lieux du site, définit les enjeux et les objectifs de gestion ainsi que les modalités de mise en œuvre.
+
+La démarche Natura 2000 vise à concilier activités humaines et préservation de l’environnement. Les projets de territoire y compris les documents d’urbanisme, étant susceptibles d’affecter de façon notable le milieu naturel doivent faire l’objet d’une ''évaluation des incidences''. Cette évaluation des incidences correspond au volet réglementaire de Natura 2000 (article R.414-19 du code de l’environnement). L’objectif de cette procédure est de prévenir des éventuels dommages sur la biodiversité et la mise en place d’éventuelles mesures d’adaptation et de compensation. Elle doit en particulier examiner les mesures prises par le document d’urbanisme, proposer le cas échéant des mesures d’évitement puis de réduction et ''être conclusive'' quant au niveau d’incidence du document sur le réseau. Son contenu est décrit à l’article R.414‑23 du code de l’environnement.
+
+<<<.obli
+Il est fortement recommandé de se rapprocher au plus tôt du ou des animateurs Natura 2000 lors de l’élaboration du document de planification pour estimer l’incidence du document sur la gestion du ou des sites. Un zonage N pour une ZSC prévoyant sous condition des extensions des constructions existantes et N ou A pour une ZPS ne remettant pas en cause les exploitations agricoles ou forestières en activité sont à privilégier.
+<<<
+</$reveal>
