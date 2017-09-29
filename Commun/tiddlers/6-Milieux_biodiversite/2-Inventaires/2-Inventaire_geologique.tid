@@ -1,0 +1,25 @@
+created: 20170929145154533
+modified: 20170929113959021
+rank: 2
+tags: [[Inventaires]]
+title: Inventaires géologiques
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##inventaire_geo" text="non">
+
+!!! Inventaires géologiques
+Lancé officiellement par le ministère en charge de l’Ecologie en 2007, l’inventaire du patrimoine géologique s’inscrit dans le cadre de la loi du 27 février 2002, relative à la démocratie de proximité.
+
+<<<.ref
+l’État (…) assure la conception, l’animation et l’évaluation de l’inventaire du patrimoine naturel qui comprend les richesses écologiques, faunistiques, floristiques, géologiques, minéralogiques et paléontologiques.
+<<< article L. 411-5 du code de l’environnement
+
+L’inventaire du patrimoine géologique de l’ensemble du territoire français a pour objectif :
+
+* d’identifier l’ensemble des sites et objets d’intérêt géologique, in situ et ex situ,
+* de collecter et saisir leurs caractéristiques sur des fiches appropriées,
+* de hiérarchiser et valider les sites à vocation patrimoniale,
+* d’évaluer leur vulnérabilité et les besoins en matière de protection.
+
+Le territoire est concerné par au moins un site géologique d'importance.
+</$reveal>
