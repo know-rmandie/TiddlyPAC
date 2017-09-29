@@ -1,0 +1,20 @@
+created: 20170929145154533
+modified: 20170929113959021
+rank: 8
+tags: [[Espaces protégés]]
+title: Espaces naturels sensibles
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##espaces_nat_sensibles" text="non">
+
+!!! Espaces naturels sensibles
+Sur l’ensemble du département, le Conseil Départemental conduit une politique de préservation des espaces naturels remarquables, d’intérêt écologique ou paysager. Il acquiert des terrains délaissés et impropres à la culture, dont la richesse floristique et faunistique est menacée de disparition par manque d’entretien: ces terrains sont alors classés Espaces Naturels Sensibles.
+
+Les Espaces Naturels Sensibles (L. 113-8 du code de l’urbanisme) ont été créés par l’article 12 de la loi n°85-729 du 18 juillet 1985. Afin de préserver des sites reconnus pour leur intérêt écologique et paysager, le Conseil Départemental est compétent pour élaborer et mettre en oeuvre une politique de protection, de gestion et d’ouverture au public des Espaces Naturels Sensibles (ENS).
+
+!!!!! disposition très "PLU". à décliner pour SCOT?
+
+<<<.obli
+Sur ces espaces, un zonage N est à privilégier. Cependant, il convient de s’informer auprès du Conseil Départemental afin d’identifier les mesures de gestion associé à l’ENS et éventuellement associer un classement en EBC pour un espace boisé si cela s’avère pertinent (hors mare, coteau calcaire, landes, dunes ...).
+<<<
+</$reveal>

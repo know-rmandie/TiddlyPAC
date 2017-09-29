@@ -1,0 +1,18 @@
+created: 20170929145154533
+modified: 20170929113959021
+rank: 4
+tags: [[Espaces protégés]]
+title: Forêts de protection
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##forets_protection" text="non">
+
+!!! Les forêts de protection
+Cette procédure a été créée en 1922 pour la protection des bois et forêts situés soit à la périphérie des grandes agglomérations, soit dans des zones où leur maintien s’impose pour des raisons écologiques ou pour le bien-être des populations. Elle peut porter sur des forêts publiques ou privées.
+
+Cette protection interdit tout changement d’affectation ou de tout mode d’occupation du sol de nature à compromettre la conservation ou la protection des boisements. La fréquentation du public peut être réglementée. Le classement est établi par décret en Conseil d’État et constitue une servitude d’utilité publique opposable aux tiers, inscrite dans les documents d’urbanisme.
+
+<<<.obli
+Un zonage N avec EBC est à privilégier. Une attention particulière devra être portée au traitement de la lisière forestière notamment par un espace de recul de toute urbanisation par rapport à la forêt.
+<<<
+</$reveal>

@@ -1,0 +1,28 @@
+created: 20170929145154533
+modified: 20170929113959021
+rank: 1
+tags: [[Espaces protégés]]
+title: Réserves naturelles
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##reserves_nat" text="non">
+
+!!! Les réserves naturelles
+Conformément à l’article L.332-1 du code de l’environnement, les réserves naturelles concernent des parties du territoire d’une ou plusieurs communes dont la faune, la flore, le sol, les eaux, les gisements de minéraux ou de fossiles ou le milieu naturel présentant une importance particulière.
+
+Sont prises en considération :
+
+* la préservation d’espèces animales ou végétales et d’habitats en voie de disparition ou présentant des qualités remarquables ;
+* la reconstitution de populations animales ou végétales ou de leurs habitats ;
+* la conservation des jardins botaniques et arboretums constituant des réserves d’espèces végétales en voie de disparition, rares ou remarquables ;
+* la préservation de biotopes et de formations géologiques ou spéléologiques remarquables ;
+* la préservation ou constitution d’étapes sur les grandes voies de migration de la faune sauvage ;
+* la préservation des sites présentant un intérêt particulier pour l’étude de l’évolution de la vie et des premières activités humaines.
+
+L’objectif est d’assurer :
+* la conservation d’éléments du milieu naturel d’intérêt national,
+* ou la mise en œuvre d’une réglementation communautaire,
+* ou la mise en œuvre d’une obligation résultant d’une convention internationale.
+
+Il existe deux types de réserves naturelles : les réserves naturelles régionales et les réserves naturelles nationales.
+</$reveal>

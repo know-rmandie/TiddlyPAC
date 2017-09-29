@@ -1,0 +1,13 @@
+created: 20170929145154533
+modified: 20170929113959021
+rank: 2
+tags: [[Espaces protégés]]
+title: Réserves biologiques
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##reserves_bio" text="non">
+
+!!!!!.todo un peu court peut-être?
+!!! Réserves Biologiques
+Les réserves biologiques constituent un outil de protection propre aux forêts publiques qu’elles soient domaniales, départementales ou communales mais gérées par l’Office National des Forêts. Elles font l’objet d’une gestion pour maintenir l’élément de patrimoine que l’on souhaite protéger.
+</$reveal>
