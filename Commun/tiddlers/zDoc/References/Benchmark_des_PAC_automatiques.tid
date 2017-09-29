@@ -1,5 +1,5 @@
 created: 20170824063525726
-modified: 20170912134403596
+modified: 20170929115144020
 tags: Références
 title: Benchmark des PAC automatiques
 type: text/vnd.tiddlywiki
@@ -39,7 +39,9 @@ Les données (paysages, ressources naturelles) sont mise à disposition sur inte
 Une version d’un PAC sec pour l’ex Région Nord-Pas-de-Calais est disponible mais pas pour l’ex-région Picardie. 
 
 !! Normandie
-//Description de nos outils normands//
+La DREAL Normandie propose un [[outil d'extraction des données|http://www.donnees.normandie.developpement-durable.gouv.fr/]] aux échelles communale et intercommunale qui permet de lister en particulier les protections environnementales pour un territoire donné. Elle a récemment lancé le [[concours HackDN|http://www.normandie.developpement-durable.gouv.fr/la-dreal-normandie-organise-un-concours-en-mode-a1643.html]] pour moderniser l'interface et l'adapter à de nouveaux publics.
+
+En complément les services en charge de l'urbanisme utilisent un outil d'extraction dérivé de la base communale pour produire une partie "données" du PAC et un modèle type pour la partie "cadrage" qui s'ajuste à partir de variables. Initialement développé directement dans libre-office, ce deuxième outil est désormais développé dans une version plus interactive sous la forme du [[TiddlyPAC|https://framagit.org/know-rmandie/TiddlyPAC]]
 
 !! Nouvelle-Aquitaine
 Le site  [[internet|http://www.nouvelle-aquitaine.developpement-durable.gouv.fr/les-outils-de-la-planification-r1042.html]] renvoie vers les données des anciennes régions (cf. ci-après) à noter un focus important mis sur la notion de [[diagnostic partagé territorial|http://www.nouvelle-aquitaine.developpement-durable.gouv.fr/un-outil-d-analyse-au-service-du-dialogue-avec-les-a1246.html]] qui est une façon assez intéressante de produire les [[enjeux]].

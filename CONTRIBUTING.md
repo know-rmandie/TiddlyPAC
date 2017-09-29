@@ -24,7 +24,7 @@ Si certaines modifications vous paraissent aller de soi, il est tout à fait pos
 * par email (si vous le connaissez) à un des contributeurs du projet
 
 ### Contribuer directement au code
-La meilleure solution pour contribuer reste bien sûr de participer directement à la rédaction du "code". Du fait de la nature de TiddlyPAC, l'essentiel du code est constituer de fichiers textes et ne présente pas de difficulté d'apprentissage d'un langage complexe.
+La meilleure solution pour contribuer reste bien sûr de participer directement à la rédaction du "code". Du fait de la nature de TiddlyPAC, l'essentiel du code est constitué de fichiers textes et ne présente pas de difficulté d'apprentissage d'un langage complexe.
 
 **Pré-requis** :
 * Il est nécessaire d'avoir les rudiments de l'utilsation de **Git** (un mini guide est en préparation)
