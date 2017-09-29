@@ -1,0 +1,30 @@
+created: 20170929145154533
+modified: 20170929113959021
+rank: 0
+tags: [[Zones humides]]
+title: Zones humides Normandie
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##zones_humides" text="non">
+
+<$reveal type="match" state="variables.json##departement" text="14">
+
+{{inventaire ZH bas-normand}}
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="27">
+
+{{inventaire ZH haut-normand}}
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="50">
+
+{{inventaire ZH bas-normand}}
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="61">
+
+{{inventaire ZH bas-normand}}
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="76">
+
+{{inventaire ZH haut-normand}}
+</$reveal>
+</$reveal>

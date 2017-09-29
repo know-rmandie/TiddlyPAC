@@ -19,6 +19,11 @@ Liste des variables locales (de niveau régional) modifiables contenues dans [[v
 ** doit-il accueillir une zone logistique (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="a_zone_DTA" tag="input" default="" class="pac short"/>
 </$reveal>
 
+!!! [[Mobilités]]
+* Le territoire devrait-il être un pluid? ''{{variables.json##doit_pluid}}'' (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="doit_pluid" tag="input" default="" class="pac short"/>
+
+</$reveal>
+
 !!! [[Risques naturels]]
 <$reveal type="nomatch" default="non" state="variables.json##pgri" text="non">
 
@@ -27,7 +32,8 @@ Liste des variables locales (de niveau régional) modifiables contenues dans [[v
 ** Le territoire est concerné par le bassin Loire-Bretagne (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="bassin_LB" tag="input" default="non" class="pac short"/>
 </$reveal>
 
-!!! [[Mobilités]]
-* Le territoire devrait-il être un pluid? ''{{variables.json##doit_pluid}}'' (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="doit_pluid" tag="input" default="" class="pac short"/>
-
-</$reveal>
+!!! [[Milieux et biodiversité]]
+* Le territoire fait-il partie
+** de la [[Réserve naturelle de l'estuaire de la Seine]] (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="RN_estuaire_Seine" tag="input" default="non" class="pac short"/>
+** du PNR
+*** des boucles de la Seine (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="pnrbs" tag="input" default="non" class="pac short"/>
