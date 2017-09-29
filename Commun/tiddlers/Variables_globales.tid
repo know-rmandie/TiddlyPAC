@@ -80,6 +80,17 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 ** sites et sols pollués (//oui / non//) : <$edit-text tiddler="variables.json" index="sols_pollues" tag="input" class="pac short"/>
 </$reveal>
 
+!!! [[Paysages et sites]] <$reveal type="nomatch" state="$:/state/sites" text="show">
+<$button set="$:/state/sites" setTo="show">{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/sites" text="show">
+<$button set="$:/state/sites" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/sites" text="show">
+
+* Le territoire est concerné un site classé ou inscrit (//oui / non//) : <$edit-text tiddler="variables.json" index="sites" tag="input" class="pac short"/>
+* Le territoire comporte un site patrimoine mondial ou Grand Site de France  (//oui / non//) : <$edit-text tiddler="variables.json" index="grand_site" tag="input" class="pac short"/>
+</$reveal>
+
 !!! [[Qualité de l'air]] <$reveal type="nomatch" state="$:/state/air" text="show">
 <$button set="$:/state/air" setTo="show">{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/air" text="show">
