@@ -12,4 +12,22 @@ type: text/vnd.tiddlywiki
 Le territoire fait partie du Parc naturel régional des Boucles de la Seine Normande.
 <<< http://www.pnr-seine-normande.com
 </$reveal>
+<$reveal type="nomatch" state="variables.json##pnrmcb" text="non">
+
+<<<.doc
+Le territoire fait partie du Parc naturel régional des Marais du Cotentin et du Bessin.
+<<< http://www.parc-cotentin-bessin.fr
+</$reveal>
+<$reveal type="nomatch" state="variables.json##pnrnm" text="non">
+
+<<<.doc
+Le territoire fait partie du Parc naturel régional Normandie-Maine.
+<<< http://www.parc-naturel-normandie-maine.fr
+</$reveal>
+<$reveal type="nomatch" state="variables.json##pnrp" text="non">
+
+<<<.doc
+Le territoire fait partie du Parc naturel régional du Perche.
+<<< http://www.parc-naturel-perche.fr
+</$reveal>
 </$reveal>
