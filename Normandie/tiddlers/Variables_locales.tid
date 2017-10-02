@@ -1,5 +1,5 @@
 created: 20170911153453007
-modified: 20170915102948210
+modified: 20171002095936016
 title: Variables locales
 type: text/vnd.tiddlywiki
 
@@ -32,8 +32,11 @@ Liste des variables locales (de niveau régional) modifiables contenues dans [[v
 ** Le territoire est concerné par le bassin Loire-Bretagne (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="bassin_LB" tag="input" default="non" class="pac short"/>
 </$reveal>
 
-!!! [[Milieux et biodiversité]]
+!!! [[Milieux naturels et biodiversité]]
 * Le territoire fait-il partie
 ** de la [[Réserve naturelle de l'estuaire de la Seine]] (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="RN_estuaire_Seine" tag="input" default="non" class="pac short"/>
-** du PNR
+** d'un PNR
 *** des boucles de la Seine (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="pnrbs" tag="input" default="non" class="pac short"/>
+*** des Marais du Cotentin et du Bessin (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="pnrmcb" tag="input" default="non" class="pac short"/>
+*** Normandie-Maine (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="pnrnm" tag="input" default="non" class="pac short"/>
+*** du Perche (//oui / non//)  <$edit-text tiddler="variables_locales.json" index="pnrp" tag="input" default="non" class="pac short"/>
