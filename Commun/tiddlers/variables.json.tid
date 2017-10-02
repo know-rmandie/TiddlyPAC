@@ -1,5 +1,5 @@
 created: 20170824121832438
-modified: 20170926152211505
+modified: 20171002095100803
 title: variables.json
 type: application/json
 
@@ -40,5 +40,7 @@ type: application/json
     "pprn": "oui",
     "risque_catnat": "oui",
     "tri": "oui",
-    "slgri": "oui"
+    "slgri": "oui",
+    "littoral": "oui",
+    "urbain": "oui"
 }

@@ -1,0 +1,50 @@
+created: 20170929145154533
+modified: 20171002095308365
+rank: 2
+tags: [[Nature ordinaire]]
+title: Nature en ville
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" state="variables.json##urbain" text="oui">
+
+!!!!! Le territoire concerné est de type urbain
+!!! La nature en ville
+La nature en ville peut être considérée comme une des composantes du développement du territoire, notamment parce qu’elle contribue à la qualité du cadre de vie et au bien-être des habitants et renvoie une image positive du territoire.
+
+La nature en ville concerne l’ensemble des espaces et ressources naturels (eau, espèces animales et végétales) et des écosystèmes présents sur le territoire. Sont aussi concernés les espaces non bâtis ayant une valeur d’usage pour le citadin (production agricole de proximité, loisirs, qualité de vie) et les espaces bâtis qui peuvent accueillir également de la nature ou avoir un impact sur les ressources et écosystèmes.
+
+L’enjeu pour la collectivité est donc de préserver et de développer la présence de la nature dans la ville, des espaces de nature favorables à la fois aux usages des citadins et à la diversité de la faune et de la flore et contribuer au sentiment de bien-être les citadins.
+
+Ainsi, les arbres isolés ou en alignement, les bosquets, les haies, les chemins bordés de végétation spontanée, les friches, les jardins publics et privés, les talus herbeux, les parcs, les espaces verts publics et des zones d’activités, les jardins potagers, les jardins botaniques, les toitures et murs végétalisés, les balcons fleuris, les délaissés, les cours d’eau, les fossés, les bords de route, les bordures des terrains de sport sont autant d’éléments contribuant à la TVB. Ces continuités en forme de « pas japonais » peuvent permettre à toute une faune et une flore de se déplacer de proche en proche. La figure ci-dessous décrit les différents éléments potentiels pouvant contribuer à des continuités fonctionnelles dans un milieu urbain.
+
+| Éléments fonctionnels pouvant contribuer à la TVB - NatureParif - 2013 |c
+
+{{nature_en_ville-fonctions-natureParif-2013.png}}
+
+<<<.obli
+De manière pratique, la nature en ville peut être traitée dans une Orientation d’Aménagement et de Programmation thématique « TVB – nature en ville ». Une localisation précise des terrains est également possible.
+<<<
+
+<<<.ref
+le document d’urbanisme peut localiser, dans les zones urbaines, les terrains cultivés et les espaces non bâtis nécessaires au maintien des continuités écologiques à protéger et inconstructibles quels que soient les équipements qui, le cas échéant, les desservent.
+<<< article L.151-23 du code de l’urbanisme
+
+!!!! Place de l'agriculture
+En outre, la mise en œuvre de continuités écologiques doit être l’occasion de composer la ville en lien avec les territoires agricoles situés en lisière de la ville. L’agriculture périurbaine doit trouver sa place dans le projet urbain. Elle peut non seulement alimenter la ville par ses productions de proximité mais elle peut aussi protéger des risques naturels, prévenir la pollution des eaux, recycler des déchets organiques, s’ouvrir aux loisirs de plein air, offrir une qualité de paysages et créer des emplois. L’émergence d’une agriculture multifonctionnelle est une condition de l’efficacité des continuités écologiques.
+
+!!!! Aménagement commercial
+La loi pour la reconquête de la biodiversité, de la nature et des paysages s’est intéressée à la prise en compte de la biodiversité pour les structures commerciales. Ainsi, depuis le 1er mars 2017 pour la construction de nouveaux bâtiments commerciaux définis à l’article L.752-1 du code du commerce un certain nombre de dispositions sont désormais obligatoires
+
+<<<.ref
+1° Sur tout ou partie de leurs toitures, et de façon non exclusive, soit des procédés de production d’énergies renouvelables, soit un système de végétalisation basé sur un mode cultural garantissant un haut degré d’efficacité thermique et d’isolation et favorisant la préservation et la reconquête de la biodiversité, soit d’autres dispositifs aboutissant au même résultat
+;
+
+2° Sur les aires de stationnement, des revêtements de surface, des aménagements hydrauliques ou des dispositifs végétalisés favorisant la perméabilité et l’infiltration des eaux pluviales ou leur évaporation et préservant les fonctions écologiques des sols.
+<<< article L111-19 du code de l’urbanisme
+
+Pour aller plus loin :
+
+<<<.doc
+CEREMA – plaquette « ville vivante, ville vivable - les services écosystémiques » juin 2014
+<<< http://www.territoires-ville.cerema.fr/IMG/pdf/Ecosysteme-final-HD_cle0dfef1.pdf
+</$reveal>
