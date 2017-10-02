@@ -1,0 +1,74 @@
+created: 20170929145154533
+modified: 20170929113919072
+rank: 4
+tags: [[Milieux naturels et biodiversité]]
+title: Littoral
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##littoral" text="non">
+
+!! Littoral
+
+Les dispositions de la loi « littoral » s’appliquent aux communes riveraines des mers et océans, des étangs salés et plans d’eau intérieurs d’une superficie supérieure à 1 000 ha ainsi qu’aux communes riveraines des estuaires et deltas, définies par l’article R.321-1 du code de l’environnement, lorsque celles-ci sont situées en aval de la salure des eaux et participent aux équilibres économiques et écologiques littoraux.
+
+Les principaux objectifs de la loi « littoral » sont :
+
+* l’orientation et la limitation de l’urbanisation dans les zones littorales
+* la préservation des espaces terrestres et marins, des sites et paysages remarquables, les milieux nécessaires au maintien des équilibres biologiques ou représentant un intérêt écologique ;
+* concilier la protection des espaces et le maintien des activités économiques traditionnelles
+
+<<<.obli
+Les dispositions de protection issues de la loi « littoral » sont opposables aux documents d’urbanisme locaux, qui doivent être compatibles avec elles, et aux autorisations individuelles d’occuper et utiliser le sol.
+<<<
+
+En application de l’article L.121-21 du code de l’urbanisme, la collectivité doit déterminer la capacité d’accueil des espaces urbanisés ou à urbaniser en tenant compte
+
+# De la préservation des espaces et milieux mentionnés à l’article L.121-23 du code de l’urbanisme ;
+# De la protection des espaces nécessaires au maintien ou au développement des activités agricoles, pastorales, forestières et maritimes ;
+# Des conditions de fréquentation par le public des espaces naturels, du rivage et des équipements qui y sont liés.
+
+Pour cela, le document d’urbanisme littoral doit distinguer plusieurs éléments
+
+!!! Les espaces proches du rivage
+
+<<<.obli
+Les espaces proches du rivage^^6-4-a^^ doivent être délimités graphiquement dans les documents d’urbanisme. Leur délimitation qui doit reposer sur des critères de distance, de covisibilité et nature des espaces sera justifiée dans le rapport de présentation.
+<<<
+!!!!!! ^^6-4-a^^ article L.121-13 du code de l’urbanisme
+
+!!! La bande des 100 mètres
+La bande inconstructible de cent mètres est calculée par rapport à la limite haute du rivage^^6-4-b^^. Cette limite peut donc être fluctuante du fait de phénomène d’érosion. Dans ce cas, la bande de cent mètres peut donc être étendue.
+
+<<<.obli
+Le règlement devra indiquer la distance retenue et le rapport de présentation devra en justifier.
+<<<
+!!!!!! ^^6-4-b^^ article L.121-16 du code de l’urbanisme
+
+!!! Les espaces remarquables du littoral
+Les espaces remarquables^^^6-4-c^^ correspondent aux milieux à préserver, comportant notamment, en fonction de l’intérêt écologique qu’ils présentent, les dunes et les landes côtières, les plages et lidos, les forêts et zones boisées côtières, les îlots inhabités, les parties naturelles des estuaires, des rias ou abers et des caps, les marais, les vasières, les zones humides et milieux temporairement immergés ainsi que les zones de repos, de nidification et de gagnage de l’avifaune désignée par la directive 79/409 CEE du 2 avril 1979 concernant la conservation des oiseaux sauvages.
+
+<<<.obli
+Un classement en zone N de ces espaces est à privilégier. Le règlement devra fixer des règles particulièrement restrictives allant de l’inconstructibilité totale à une constructibilité limitée au seul profit des installations aquacoles et conchylicoles.
+<<<
+!!!!!! ^^6-4-c^^ article L.121-23 du code de l’urbanisme
+
+!!! Les coupures d’urbanisation
+<<<.ref
+Les « plans locaux d’urbanisme doivent prévoir des espaces naturels présentant le caractère d’une coupure d’urbanisation.
+<<< article L.121-22 du code de l’urbanisme
+
+<<<.obli
+Ces espaces doivent être assortis d’un zonage N ou A. Le règlement devra exclure les constructions constituant une urbanisation y compris la construction de bâtiments d’exploitation. L’étude des continuités écologiques du territoire ne doit pas se limiter à l’étude des coupures d’urbanisation prévue par la loi Littoral.
+À noter que, dans les communes littorales, le classement des parcs et ensembles boisés les plus significatifs est obligatoire, après consultation de la commission départementale de la nature des paysages et des sites^^6-4-d^^ (CDNPS).
+<<<
+!!!!!! ^^6-4-d^^ article L.121-27 du code de l’urbanisme
+
+Pour aller plus loin :
+
+<<<.doc
+Les principes d’aménagement du littoral
+<<< http://www.developpement-durable.gouv.fr/IMG/pdf/DGALN_Littoral_3_cle72d5d6.pdf
+<<<.doc
+Référentiel Littoral (fascicule n°6 du 7 avril 2014 – 59 pages) – DREAL Bretagne
+<<< http://www.bretagne.developpement-durable.gouv.fr/IMG/pdf/Fascicule_L-_146-6_2014_v2_cle15b55b.pdf 
+</$reveal>
