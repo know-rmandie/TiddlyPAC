@@ -1,9 +1,16 @@
 created: 20170911153832573
-modified: 20170911153834663
+modified: 20171009133755692
 title: variables_locales.json
 type: application/json
 
 {
     "a_zone_DTA": "oui",
-    "doit_pluid": "non"
+    "doit_pluid": "oui",
+    "bassin_SN": "oui",
+    "bassin_LB": "oui",
+    "RN_estuaire_Seine": "oui",
+    "pnrbs": "oui",
+    "pnrmcb": "oui",
+    "pnrnm": "oui",
+    "pnrp": "oui"
 }
