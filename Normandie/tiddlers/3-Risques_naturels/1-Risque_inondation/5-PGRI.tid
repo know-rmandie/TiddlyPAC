@@ -7,6 +7,7 @@ type: text/vnd.tiddlywiki
 
 <$reveal type="match" default="non" state="variables_locales.json##bassin_SN" text="oui">
 
+!!!! PGRI du bassin Seine-Normandie
 Le plan de gestion des risques d’inondation (PGRI) du bassin Seine-Normandie a été arrêté le 7 décembre 2015 par le préfet coordonnateur de bassin. Il fixe quatre grands objectifs de réduction des conséquences dommageables des inondations pour l’ensemble du district et identifie les dispositions à mettre en œuvre pour les atteindre. Ces quatre objectifs sont
 
 * de réduire la vulnérabilité des territoires,
