@@ -16,7 +16,9 @@ La loi pour la reconquête de la biodiversité, de la nature et des paysages du 
 Le fait d’abattre, de porter atteinte à l’arbre, de compromettre la conservation ou de modifier radicalement l’aspect d’un ou de plusieurs arbres d’une allée ou d’un alignement d’arbres est interdit, sauf lorsqu’il est démontré que l’état sanitaire ou mécanique des arbres présente un danger pour la sécurité des personnes et des biens ou un danger sanitaire pour les autres arbres ou bien lorsque l’esthétique de la composition ne peut plus être assurée et que la préservation de la biodiversité peut être obtenue par d’autres mesures.
 <<< article L.350-3 du code de l’environnement
 
-A travers le document de planification, ces enjeux de nature ordinaire peuvent être traduites
+<$reveal type="match" state="variables.json##type_document" text="PLU">
+
+A travers le document de planification, ces enjeux de nature ordinaire peuvent être traduits
 
 <<<.ref
 Le règlement peut identifier et localiser les éléments de paysage et délimiter les sites et secteurs à protéger pour des motifs d’ordre écologique, notamment pour la préservation, le maintien ou la remise en état des continuités écologiques et définir, le cas échéant, les prescriptions de nature à assurer leur préservation. Lorsqu’il s’agit d’espaces boisés, il est fait application du régime d’exception prévu à l’article L.421-4 du code de l’urbanisme pour les coupes et abattages d’arbres.
@@ -27,3 +29,4 @@ Cet outil protège sans pour autant figer le territoire. Les éléments doivent 
 <<<.obli
 L’utilisation de l’article L.151-23 du code de l’urbanisme pour protéger les mares, zones humides, corridors écologiques, vergers, prairies, pour les arbres isolés, haies, alignements, la ripisylve… est fortement recommandée. Cet outil est à confronter avec l’Espace Boisé Classé qui offre une protection plus forte. Dans tous les cas, des prescriptions doivent être précisées en fonction des types d’éléments identifiés.
 <<<
+</$reveal>

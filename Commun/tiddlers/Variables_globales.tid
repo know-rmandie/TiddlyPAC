@@ -1,16 +1,22 @@
 created: 20170911152904342
-modified: 20171002095233906
+modified: 20171009145233906
 tags: Variables
 title: Variables globales
 type: text/vnd.tiddlywiki
 
-!! [[Variables globales]]
+!! [[Variables globales]] <$reveal type="nomatch" state="$:/state/varglo" text="show">
+<$button set="$:/state/varglo" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/varglo" text="show">
+<$button set="$:/state/varglo" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/varglo" text="show">
+
 Liste des variables globales modifiables contenues dans [[variables.json]].
 
 !!! Généralités  <$reveal type="nomatch" state="$:/state/gen" text="show">
-<$button set="$:/state/gen" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/gen" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/gen" text="show">
-<$button set="$:/state/gen" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/gen" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/gen" text="show">
 
@@ -34,9 +40,9 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 
 
 !!! [[Projet de territoire]] <$reveal type="nomatch" state="$:/state/p_ter" text="show">
-<$button set="$:/state/p_ter" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/p_ter" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/p_ter" text="show">
-<$button set="$:/state/p_ter" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/p_ter" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/p_ter" text="show">
 
@@ -45,9 +51,9 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 </$reveal>
 
 !!! [[Risques naturels]] <$reveal type="nomatch" state="$:/state/R_nat" text="show">
-<$button set="$:/state/R_nat" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/R_nat" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/R_nat" text="show">
-<$button set="$:/state/R_nat" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/R_nat" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/R_nat" text="show">
 
@@ -69,9 +75,9 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 </$reveal>
 
 !!! [[Risques technologiques]] <$reveal type="nomatch" state="$:/state/R_tech" text="show">
-<$button set="$:/state/R_tech" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/R_tech" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/R_tech" text="show">
-<$button set="$:/state/R_tech" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/R_tech" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/R_tech" text="show">
 
@@ -85,9 +91,9 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 </$reveal>
 
 !!! [[Paysages et sites]] <$reveal type="nomatch" state="$:/state/sites" text="show">
-<$button set="$:/state/sites" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/sites" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/sites" text="show">
-<$button set="$:/state/sites" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/sites" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/sites" text="show">
 
@@ -96,9 +102,9 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 </$reveal>
 
 !!! [[Milieux naturels et biodiversité]] <$reveal type="nomatch" state="$:/state/milieux" text="show">
-<$button set="$:/state/milieux" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/milieux" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/milieux" text="show">
-<$button set="$:/state/milieux" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/milieux" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/milieux" text="show">
 
@@ -116,12 +122,13 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 </$reveal>
 
 !!! [[Qualité de l'air]] <$reveal type="nomatch" state="$:/state/air" text="show">
-<$button set="$:/state/air" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/air" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/air" text="show">
-<$button set="$:/state/air" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/air" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/air" text="show">
 
 * Le territoire comporte des communes sensibles (//oui / non//) : <$edit-text tiddler="variables.json" index="communes_sensibles" tag="input" class="pac short"/>
 * Le territoire est concerné par un PPA (//non / PPA de ...//) : <$edit-text tiddler="variables.json" index="dans_PPA" tag="input" class="pac"/>
+</$reveal>
 </$reveal>

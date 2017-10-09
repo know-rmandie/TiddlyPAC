@@ -9,6 +9,8 @@ type: text/vnd.tiddlywiki
 le territoire est concerné par un PPRn  (''{{variables.json##pprn}}''  - [[changer|Variables]])
 <<<
 
+!!!!! PLU(i) seulement a priori
+<$reveal type="match" state="variables.json##type_document" text="PLU">
 <$reveal type="match" state="variables.json##pprn" text="oui">
 
 !! Plans de prévention des risques naturels
@@ -18,5 +20,6 @@ En matière de gestion des risques majeurs, la loi du 2 février 1995 relativeme
 Le plan de prévention des risques naturels (PPRn) délimite les zones exposées au sein desquelles l’utilisation des sols est réglementée. Le PPRn approuvé doit obligatoirement être annexé au PLU en tant que servitude d’utilité publique^^3-4^^.
 <<<
 
-!!!!!! ^^3-4^^ articles L.126-1 du code de l’urbanisme et L.564-4 du code de l’environnement
+!!!!!! ^^3-4^^ articles L151-43 et R.151-53 du code de l’urbanisme, L.562-4 du code de l’environnement
+</$reveal>
 </$reveal>
