@@ -6,7 +6,7 @@ title: Risques naturels
 type: text/vnd.tiddlywiki
 
 <<<.com
-le territoire est concerné par les risques naturels au sens large? (''{{variables.json##risques_nat}}''  - [[changer|Variables]])
+le territoire est concerné par les risques naturels au sens large? ''{{variables.json##risques_nat}}'' ([[changer|Variables]])
 
 ''attention à la cohérence des sous-variables''
 <<<
