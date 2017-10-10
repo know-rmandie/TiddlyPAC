@@ -121,6 +121,20 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 ** Un Parc Naturel Régional (//oui / non//) : <$edit-text tiddler="variables.json" index="pnr" tag="input" class="pac short"/>
 </$reveal>
 
+!!! [[Ressource en eau]] <$reveal type="nomatch" state="$:/state/eau" text="show">
+<$button set="$:/state/eau" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/eau" text="show">
+<$button set="$:/state/eau" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/eau" text="show">
+
+* Le territoire est concerné par un ou plusieurs cours d'eau (//non / oui//) : <$edit-text tiddler="variables.json" index="cours_eau" tag="input" class="pac short"/>
+* Le territoire est concerné par des zones de répartition des eaux  (//oui / non//) : <$edit-text tiddler="variables.json" index="zre" tag="input" class="pac short"/>
+* Le territoire est concerné par des zones vulnérables ou d'actions renforcées (//oui / non//) : <$edit-text tiddler="variables.json" index="zv_zar" tag="input" class="pac short"/>
+* Le territoire est concerné par des zones sensibles (//oui / non//) : <$edit-text tiddler="variables.json" index="zones_sensibles" tag="input" class="pac short"/>
+* Le territoire est concerné par des captages (//non / oui / prioritaire//) : <$edit-text tiddler="variables.json" index="captages" tag="input" class="pac short"/>
+</$reveal>
+
 !!! [[Qualité de l'air]] <$reveal type="nomatch" state="$:/state/air" text="show">
 <$button set="$:/state/air" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/air" text="show">

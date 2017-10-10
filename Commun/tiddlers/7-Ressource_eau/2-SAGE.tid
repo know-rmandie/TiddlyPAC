@@ -1,0 +1,37 @@
+created: 20170929145154533
+modified: 20170929113919072
+rank: 2
+tags: [[Ressource en eau]]
+title: SAGE
+type: text/vnd.tiddlywiki
+
+!! Schémas d’Aménagement et de Gestion des Eaux (SAGE)
+Le SDAGE et le SAGE, sont complémentaires par nature puisque le SDAGE est l’outil de mise en œuvre de la Directive Cadre Européenne sur l’eau et constitue une réponse aux principaux enjeux à l’échelle du bassin. Les SAGE constituent, eux, un outil indispensable à la mise en œuvre du SDAGE en déclinant concrètement les orientations et les dispositions, en les adaptant aux contextes locaux et en les complétant si nécessaire. D’initiative locale, ils doivent eux aussi se conformer au SDAGE, et eux-mêmes sont opposables aux tiers.
+
+<$reveal type="match" state="variables.json##type_document" text="SCOT">
+
+<<<.obli
+Le SCOT doit être compatible avec les objectifs de protection définis par les schémas d'aménagement et de gestion des eaux prévus à l'article L. 212-3 du code de l'environnement^^7-2^^.
+<<<
+!!!!!! ^^7-2^^ article L131-1 9° du code de l'urbanisme
+</$reveal>
+<$reveal type="match" state="variables.json##type_document" text="PLU">
+<$reveal type="nomatch" state="variables.json##dans_scot" text="non">
+
+<<<.obli
+Le document d'urbanisme doit reprendre les dispositions du {{variables.json##dans_scot}}, lui-même compatible avec les objectifs de protection définis par les schémas d'aménagement et de gestion des eaux prévus à l'article L. 212-3 du code de l'environnement^^7-2^^.
+<<<
+!!!!!! ^^7-2^^ articles L131-4 et L131-1 9° du code de l'urbanisme
+</$reveal>
+<$reveal type="nomatch" state="variables.json##dans_scot" text="non">
+
+<<<.obli
+En l'absence de SCOT, le document d'urbanisme doit être compatible avec les objectifs de protection définis par les schémas d'aménagement et de gestion des eaux prévus à l'article L. 212-3 du code de l'environnement^^7-2^^.
+<<<
+!!!!!! ^^7-2^^ articles L131-7 et L131-1 9° du code de l'urbanisme
+</$reveal>
+</$reveal>
+
+<<<.doc
+Des informations complémentaires sur les SAGE peuvent être obtenues sur le site des outils de gestion intégrée de l’eau « GEST’EAU »
+<<< http://www.gesteau.fr/presentation/sage

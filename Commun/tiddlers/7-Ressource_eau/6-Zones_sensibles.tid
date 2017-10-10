@@ -1,0 +1,17 @@
+created: 20170929145154533
+modified: 20170929113919072
+rank: 6
+tags: [[Ressource en eau]]
+title: Zones sensibles
+type: text/vnd.tiddlywiki
+
+!!!!! Le territoire est concerné par des zones sensibles ''{{variables.json##zones_sensibles}}'' ([[changer|Variables]])
+<$reveal type="match" state="variables.json##zones_sensibles" text="oui">
+
+!! Zones sensibles
+Les zones sensibles sont des bassins versants, lacs ou zones maritimes qui sont particulièrement sensibles aux pollutions, notamment des zones qui sont sujettes à l’eutrophisation et dans lesquelles les rejets de phosphore, d’azote, ou de ces deux substances, doivent être réduits. Il peut également s’agir de zones dans lesquelles un traitement complémentaire (traitement de l’azote ou de la pollution microbiologique) est nécessaire afin de satisfaire aux directives dans le domaine de l’eau (directive "eaux brutes", "baignade" ou "conchyliculture").
+
+La première délimitation des zones sensibles à l’eutrophisation a été réalisée dans le cadre de l’application du décret n°94-469 du 3 juin 1994 qui transcrit en droit français la directive européenne n°91/271 du 21 mai 1991 relative au traitement des eaux urbaines résiduaires. Les zones sensibles sont rappelées dans le SDAGE concerné.
+
+Les Plans d’Actions Opérationnels Territorialisés, élaborés par les missions interservices de l’eau, hiérarchisent également les zones sensibles concernées par les eaux résiduaires urbaines. Les rejets provenant des stations d’épuration, dans et hors zone sensible, sont surveillés par le biais d’autocontrôles réalisés par l’exploitant de la station d’épuration.
+</$reveal>

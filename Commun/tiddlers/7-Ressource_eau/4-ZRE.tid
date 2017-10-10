@@ -1,0 +1,19 @@
+created: 20170929145154533
+modified: 20170929113919072
+rank: 4
+tags: [[Ressource en eau]]
+title: ZRE
+type: text/vnd.tiddlywiki
+
+!!!!! Le territoire est concerné par des zones de répartition des eaux ''{{variables.json##zre}}'' ([[changer|Variables]])
+<$reveal type="match" state="variables.json##zre" text="oui">
+
+!! Zone de Répartition des Eaux (ZRE)
+Une Zone de répartition des eaux (ZRE) est une zone comprenant des bassins, sous-bassins, systèmes aquifères ou fractions de ceux-ci caractérisés par une insuffisance, autre qu'exceptionnelle, des ressources par rapport aux besoins. Les ZRE sont définies par l'article R211-71 du code de l'environnement et sont fixées par le préfet coordonnateur de bassin. L'arrêté pris par les préfets de département concernés traduit la ZRE en une liste de communes. Cet arrêté est le texte réglementaire fondateur de la ZRE.
+
+L’inscription d’une ressource (bassin hydrographique ou système aquifère) en ZRE permet d’assurer une gestion plus fine des demandes de prélèvements dans cette ressource, par un abaissement des seuils de déclaration et d’autorisation de prélèvements. Elle constitue un signal fort de reconnaissance d’un déséquilibre durablement instauré entre la ressource et les besoins en eau.
+
+<<<.obli
+Etant concerné par une Zone de Répartition des Eaux, le document d'urbanisme prêtera une attention particulière à la mise en adéquation entre son projet de développement la ressource disponible en eau.
+<<<
+</$reveal>

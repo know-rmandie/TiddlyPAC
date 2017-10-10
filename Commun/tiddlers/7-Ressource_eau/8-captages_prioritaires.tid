@@ -1,0 +1,19 @@
+created: 20170929145154533
+modified: 20170929113919072
+rank: 8
+tags: [[Ressource en eau]]
+title: Captages prioritaires
+type: text/vnd.tiddlywiki
+
+!!!!! Le territoire est concerné par des captages ''{{variables.json##captages}}'' ([[changer|Variables]])
+<$reveal type="match" state="variables.json##captages" text="prioritaire">
+
+!! Captages Prioritaires
+Les ministères en charge du Développement durable, de la Santé et de l’Agriculture ont ainsi publié en 2009, sur leur site internet respectif, une liste des « 500 captages Grenelle » parmi les plus menacés par les pollutions diffuses, notamment les nitrates et les produits phytosanitaires. Pour chaque captage identifié, le dispositif consiste à arrêter la zone de protection de l’aire d’alimentation du captage (AAC) à l’intérieur de laquelle seront définis les programmes d’actions, ceci sur la base d’un diagnostic territorial des pressions agricoles. Cette liste de captages prioritaires a été complétée à la suite de la conférence environnementale de septembre 2013 par l’identification des « 1000 captages prioritaires » pour reconquérir la qualité des ressources en eau.
+
+Ces points d’eau représentent environ 10% du nombre de points d’eau utilisés pour l’alimentation en eau potable et intègrent les « 500 captages Grenelle ». Les captages prioritaires font l’objet de plans et de programmes d’actions adaptés afin de reconquérir la qualité de la ressource en eau et les listes figurent dans les SDAGE.
+
+Les programmes d’actions mis en place par les collectivités maîtres d’ouvrage, reposent sur la mobilisation volontaire de toutes les parties prenantes, en particulier des agriculteurs, sur une base contractuelle. Les aires d'alimentation de captage, d'étendue plus large que la stricte protection du captage (périmètres de protections), permettent de délimiter les lieux des points du sol qui alimentent le captage (pollutions diffuses). Le programme d'actions est ainsi défini vers les pratiques agricoles mais aussi vers les assainissements individuels non conformes.
+
+!!!!!.todo voir comment on traduit ça en exigence pour le document d'urbanisme
+</$reveal>

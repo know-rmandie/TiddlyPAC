@@ -1,0 +1,19 @@
+created: 20170929145154533
+modified: 20170929113919072
+rank: 3
+tags: [[Ressource en eau]]
+title: Cours d'eau
+type: text/vnd.tiddlywiki
+
+!!!!! le territoire est concerné par un ou plusieurs cours d'eau ''{{variables.json##cours_eau}}'' ([[changer|Variables]])
+<$reveal type="match" state="variables.json##cours_eau" text="oui">
+
+!! Cours d'eau
+Le document d'urbanisme peut avoir une incidence sur le cours d'eau dans le cadre d'un aménagement. En effet, une intervention sur le cours d'eau peut dégrader la qualité biologique du ruisseau. Cette dégradation (par voie de déviation du lit, rectification du cours, canalisation par busage,...) va induire la disparition d'habitats et donc de peuplements piscicoles.
+
+<<<.obli
+Préserver un cours d'eau dans un document d'urbanisme s'illustre par une protection des rives vis-à-vis de la construction, des zones inondables et la restauration de la continuité par intégration de la trame bleue.
+
+Sont par ailleurs souvent associées au cours d'eau des zones inondables et des zones humides auxquelles il convient d'apporter une attention dans le document d'urbanisme pour conserver leur fonctionnalité dans la prévention des inondations en aval et de rétention d'eau dans la constitution des nappes d'eau souterraines.
+<<<
+</$reveal>

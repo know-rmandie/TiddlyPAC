@@ -1,0 +1,15 @@
+created: 20170929145154533
+modified: 20170929113919072
+rank: 5
+tags: [[Ressource en eau]]
+title: ZV et ZAR
+type: text/vnd.tiddlywiki
+
+!!!!! Le territoire est concerné par des zones vulnérables ou d'actions renforcées ''{{variables.json##zv_zar}}'' ([[changer|Variables]])
+<$reveal type="match" state="variables.json##zv_zar" text="oui">
+
+!! Zones Vulnérables (ZV) et Zones d’Actions Renforcées (ZAR)
+Le 5e programme d’actions nitrates (Directive Nitrates) est applicable sur la zone vulnérable. Il est constitué d’un volet national et d’un volet régional. Le volet national est défini par l’[[arrêté ministériel du 19 décembre 2011|https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000025001662]] modifié le 23 octobre 2013^^7-5^^.
+
+Ces 2 textes fixent les prescriptions relatives aux périodes d’interdiction d’épandage, au stockage des effluents d’élevage, à l’équilibre de la fertilisation, aux plans prévisionnels de fumure et à l’enregistrement des pratiques, à l’épandage en conditions particulières, à la gestion des sols et des intercultures…
+</$reveal>
