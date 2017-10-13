@@ -1,16 +1,22 @@
 created: 20170911152904342
-modified: 20170926134352965
+modified: 20171009145233906
 tags: Variables
 title: Variables globales
 type: text/vnd.tiddlywiki
 
-!! [[Variables globales]]
+!! [[Variables globales]] <$reveal type="nomatch" state="$:/state/varglo" text="show">
+<$button set="$:/state/varglo" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/varglo" text="show">
+<$button set="$:/state/varglo" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/varglo" text="show">
+
 Liste des variables globales modifiables contenues dans [[variables.json]].
 
 !!! Généralités  <$reveal type="nomatch" state="$:/state/gen" text="show">
-<$button set="$:/state/gen" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/gen" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/gen" text="show">
-<$button set="$:/state/gen" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/gen" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/gen" text="show">
 
@@ -26,13 +32,17 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 
 * fait partie d'un SCoT (//non / SCoT de ...//)? <$edit-text tiddler="variables.json" index="dans_scot" tag="input" default="SCoT de ..." class="pac"/>
 </$reveal>
-* Département concerné :  <$edit-text tiddler="variables.json" index="departement" tag="input" default="numéro" class="pac short"/>
+* Département concerné (//numéro//)  <$edit-text tiddler="variables.json" index="departement" tag="input" default="numéro" class="pac short"/>
+* comporte une partie littorale (//oui / non//) <$edit-text tiddler="variables.json" index="littoral" tag="input" default="non" class="pac short"/>
+* comporte des parties urbaines (//oui / non//) <$edit-text tiddler="variables.json" index="urbain" tag="input" default="oui" class="pac short"/>
 </$reveal>
 
+
+
 !!! [[Projet de territoire]] <$reveal type="nomatch" state="$:/state/p_ter" text="show">
-<$button set="$:/state/p_ter" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/p_ter" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/p_ter" text="show">
-<$button set="$:/state/p_ter" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/p_ter" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/p_ter" text="show">
 
@@ -41,9 +51,9 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 </$reveal>
 
 !!! [[Risques naturels]] <$reveal type="nomatch" state="$:/state/R_nat" text="show">
-<$button set="$:/state/R_nat" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/R_nat" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/R_nat" text="show">
-<$button set="$:/state/R_nat" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/R_nat" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/R_nat" text="show">
 
@@ -65,9 +75,9 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 </$reveal>
 
 !!! [[Risques technologiques]] <$reveal type="nomatch" state="$:/state/R_tech" text="show">
-<$button set="$:/state/R_tech" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/R_tech" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/R_tech" text="show">
-<$button set="$:/state/R_tech" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/R_tech" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/R_tech" text="show">
 
@@ -80,13 +90,59 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 ** sites et sols pollués (//oui / non//) : <$edit-text tiddler="variables.json" index="sols_pollues" tag="input" class="pac short"/>
 </$reveal>
 
+!!! [[Paysages et sites]] <$reveal type="nomatch" state="$:/state/sites" text="show">
+<$button set="$:/state/sites" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/sites" text="show">
+<$button set="$:/state/sites" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/sites" text="show">
+
+* Le territoire est concerné un site classé ou inscrit (//oui / non//) : <$edit-text tiddler="variables.json" index="sites" tag="input" class="pac short"/>
+* Le territoire comporte un site patrimoine mondial ou Grand Site de France  (//oui / non//) : <$edit-text tiddler="variables.json" index="grand_site" tag="input" class="pac short"/>
+</$reveal>
+
+!!! [[Milieux naturels et biodiversité]] <$reveal type="nomatch" state="$:/state/milieux" text="show">
+<$button set="$:/state/milieux" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/milieux" text="show">
+<$button set="$:/state/milieux" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/milieux" text="show">
+
+* Le territoire est concerné une ZNIEFF (//non / 1 / 2 / 1 et 2//) : <$edit-text tiddler="variables.json" index="znieff" tag="input" class="pac short"/>
+* Le territoire a fait l’objet d’un inventaire géologique  (//oui / non//) : <$edit-text tiddler="variables.json" index="inventaire_geo" tag="input" class="pac short"/>
+* Le territoire est concerné par une des protections suivantes
+** Réserve naturelle (//oui / non//) : <$edit-text tiddler="variables.json" index="reserves_nat" tag="input" class="pac short"/>
+** Un arrêté de protection de biotope (//oui / non//) : <$edit-text tiddler="variables.json" index="appb" tag="input" class="pac short"/>
+** Une foret de protection (//oui / non//) : <$edit-text tiddler="variables.json" index="forets_protection" tag="input" class="pac short"/>
+** Une site Natura 2000 (//oui / non//) : <$edit-text tiddler="variables.json" index="natura_2000" tag="input" class="pac short"/>
+** Une zone de compensation (//oui / non//) : <$edit-text tiddler="variables.json" index="zones_compensation" tag="input" class="pac short"/>
+** Une zone humide (//oui / non//) : <$edit-text tiddler="variables.json" index="zones_humides" tag="input" class="pac short"/>
+*** Un site RAMSAR (//oui / non//) : <$edit-text tiddler="variables.json" index="ramsar" tag="input" class="pac short"/>
+** Un Parc Naturel Régional (//oui / non//) : <$edit-text tiddler="variables.json" index="pnr" tag="input" class="pac short"/>
+</$reveal>
+
+!!! [[Ressource en eau]] <$reveal type="nomatch" state="$:/state/eau" text="show">
+<$button set="$:/state/eau" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/eau" text="show">
+<$button set="$:/state/eau" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/eau" text="show">
+
+* Le territoire est concerné par un ou plusieurs cours d'eau (//non / oui//) : <$edit-text tiddler="variables.json" index="cours_eau" tag="input" class="pac short"/>
+* Le territoire est concerné par des zones de répartition des eaux  (//oui / non//) : <$edit-text tiddler="variables.json" index="zre" tag="input" class="pac short"/>
+* Le territoire est concerné par des zones vulnérables ou d'actions renforcées (//oui / non//) : <$edit-text tiddler="variables.json" index="zv_zar" tag="input" class="pac short"/>
+* Le territoire est concerné par des zones sensibles (//oui / non//) : <$edit-text tiddler="variables.json" index="zones_sensibles" tag="input" class="pac short"/>
+* Le territoire est concerné par des captages (//non / oui / prioritaire//) : <$edit-text tiddler="variables.json" index="captages" tag="input" class="pac short"/>
+</$reveal>
+
 !!! [[Qualité de l'air]] <$reveal type="nomatch" state="$:/state/air" text="show">
-<$button set="$:/state/air" setTo="show">{{$:/core/images/down-arrow}}</$button>
+<$button set="$:/state/air" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/air" text="show">
-<$button set="$:/state/air" setTo="hide">{{$:/core/images/up-arrow}}</$button>
+<$button set="$:/state/air" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
 </$reveal>
 <$reveal type="match" state="$:/state/air" text="show">
 
 * Le territoire comporte des communes sensibles (//oui / non//) : <$edit-text tiddler="variables.json" index="communes_sensibles" tag="input" class="pac short"/>
 * Le territoire est concerné par un PPA (//non / PPA de ...//) : <$edit-text tiddler="variables.json" index="dans_PPA" tag="input" class="pac"/>
+</$reveal>
 </$reveal>

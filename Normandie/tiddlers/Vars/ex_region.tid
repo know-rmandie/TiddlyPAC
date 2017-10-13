@@ -1,0 +1,7 @@
+14: BN
+created: 20170911153453007
+modified: 20171013172736739
+title: ex-region
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" state="variables.json##departement" text="14">BN</$reveal><$reveal type="match" state="variables.json##departement" text="27">HN</$reveal><$reveal type="match" state="variables.json##departement" text="50">BN</$reveal><$reveal type="match" state="variables.json##departement" text="61">BN</$reveal><$reveal type="match" state="variables.json##departement" text="76">HN</$reveal>

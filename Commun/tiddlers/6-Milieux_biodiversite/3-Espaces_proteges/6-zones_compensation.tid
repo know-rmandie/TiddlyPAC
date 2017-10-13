@@ -1,0 +1,26 @@
+created: 20170929145154533
+modified: 20170929113959021
+rank: 6
+tags: [[Espaces protégés]]
+title: Zones de compensation
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##zones_compensation" text="non">
+
+!!! Les zones de compensation
+En application de la doctrine « Eviter Réduire Compenser », des terrains sont susceptibles d’être mobilisés pour recevoir des mesures de compensation.
+
+En France, les mesures de compensation sont inscrites dans les études d’impact prévues au code de l’environnement pour « les projets de travaux, d’ouvrages ou d’aménagements publics et privés qui, par leur nature, leurs dimensions ou leur localisation sont susceptibles d’avoir des incidences notables sur l’environnement ou la santé humaine » et sont renforcées au travers de la loi pour la reconquête de la biodiversité, de la nature et des paysages^^6-3-6^^.
+
+Ces mesures de compensation sont établies suite à l’évaluation des incidences d’un projet au titre de différentes réglementations, gérées par différents services de l’État : loi sur l’eau, régime spécifique des Installations Classées pour la Protection de l’Environnement, incidences sur sites Natura 2000 par exemple. Elles sont prescrites quand il subsiste des incidences sur l’environnement malgré les mesures d’évitement et de réduction.
+
+Les mesures de compensation sont inscrites dans les arrêtés d’autorisation des projets, qui en précisent l’objet, la localisation, la gestion, la durée et le suivi à mettre en place.
+
+<<<.obli
+Le territoire comprend au moins une parcelle concernée par une mesure compensatoire. Le document d’urbanisme devra être compatible avec les mesures de gestion associées à cette(s) parcelle(s). Selon la nature de la compensation, un zonage N ou A avec des règles fortes d’inconstructibilité est à privilégier sur la ou les parcelles concernées.
+<<<
+
+Une attention particulière doit être apportée sur l’interprétation de la cartographie disponible sous Carmen. Il est possible que seule une partie de la zone cartographiée soit considérée comme une mesure compensatoire. En cas de doute, il est important de contacter les services instructeurs de l’État.
+
+!!!!!! ^^6-3-6^^ articles L.163-1 à L.163-5 du code de l’environnement
+</$reveal>

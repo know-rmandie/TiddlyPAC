@@ -1,0 +1,44 @@
+created: 20171013173919072
+modified: 20171013173919072
+rank: 1
+tags: [[SDAGE]]
+title: SDAGE Normandie
+type: text/vnd.tiddlywiki
+
+!!!!! Le territoire est concerné par le bassin Seine-Normandie? ''{{variables_locales.json##bassin_SN}}'' ([[changer|Variables]])
+<$reveal type="nomatch" state="variables_locales.json##bassin_SN" text="non">
+
+!!!! SDAGE Seine-Normandie
+Le SDAGE Seine-Normandie 2016-2021, approuvé le 5 novembre 2015, vise l'atteinte du bon état écologique pour 62% des rivières et 28% de bon état chimique pour les eaux souterraines. Il compte 44 orientations et 191 dispositions qui sont organisées autour de grands défis comme :
+
+* la diminution des pollutions ponctuelles ;
+* la diminution des pollutions diffuses ;
+* la protection de la mer et du littoral ;
+* la restauration des milieux aquatiques ;
+* la protection des captages pour l'alimentation en eau potable ;
+* la prévention du risque d'inondation
+
+<<<.doc
+Le SDAGE Seine-Normandie est disponible sur le site de l'agence de l'eau
+<<< http://www.eau-seine-normandie.fr/index.php?id=8027
+</$reveal>
+
+!!!!! Le territoire est concerné par le bassin Loire-Bretagne? ''{{variables_locales.json##bassin_LB}}'' ([[changer|Variables]])
+<$reveal type="nomatch" state="variables_locales.json##bassin_LB" text="non">
+
+!!!! SDAGE Loire-Bretagne
+Le SDAGE Loire-Bretagne 2016-2021, approuvé le 4 novembre 2015, vise l'atteinte du bon état écologique pour 61 % des rivières d’ici 2021. Les chapitres du SDAGE 2016-2021 sont organisés en réponse aux quatre questions importantes regroupant 14 chapitres :
+
+* Qualité de l’eau
+* Milieux aquatiques
+* Quantité
+* Gouvernance
+
+<<<.doc
+Le SDAGE Loire-Bretagne est disponible sur le site de l'agence de l'eau
+<<< http://www.eau-loire-bretagne.fr/sdage
+</$reveal>
+
+<<<.doc
+les cartes des SDAGE pour la Normandie sont consultables sous Carmen
+<<< http://carmen.application.developpement-durable.gouv.fr/8/gestion_eau.map

@@ -1,0 +1,58 @@
+created: 20170929145154533
+modified: 20170929113959021
+rank: 7
+tags: [[Espaces protégés]]
+title: Zones humides
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##zones_humides" text="non">
+
+!!! Les zones humides
+
+<<<.ref
+(...) on entend par zone humide les terrains, exploités ou non, habituellement inondés ou gorgés d'eau douce, salée ou saumâtre de façon permanente ou temporaire ; la végétation, quand elle existe, y est dominée par des plantes hygrophiles pendant au moins une partie de l'année ;
+<<< article L.211-1 du code de l’environnement
+
+Récemment, les critères de définition et de délimitation d’une zone humide ont été explicités afin de faciliter une appréciation partagée de ce qu’est une zone humide en vue de leur préservation par la réglementation1. La commune est concernée par des zones humides potentielles.
+
+Un espace est considéré comme zone humide au sens du 1° du I de l’article L.211-1 du code de l’environnement, dès qu’il présente l’un des critères suivants :
+
+* Ses sols correspondent à un ou plusieurs types pédologiques particuliers ;
+* Sa végétation, si elle existe, est caractérisée :
+** soit par des espèces indicatrices de zones humides ;
+** soit par des habitats (communautés végétales), caractéristiques de zones humides.
+En absence de végétation hygrophile, la morphologie des sols suffit à définir une zone humide.
+
+La loi du 23 février 2005 relative au développement des territoires ruraux précise que la préservation et la gestion durable des zones humides sont reconnues d’intérêt général et que l’ensemble des politiques doit tenir compte des spécificités de ces milieux et de leurs intérêts.
+
+L’arrêté ministériel du 1er octobre 2009 modifiant l’arrêté ministériel du 24 juin 2008, pris en application des dispositions des articles L.211-1 et R.211-108 du code de l’environnement, précise les critères de définition et de délimitation des zones humides.
+
+Les zones humides remplissent trois fonctions majeures :
+
+|''hydrologiques'' |éponges naturelles, permettant la régulation, l’atténuation des crues, le soutien du débit des cours d’eau en période d’étiage, le recharge des nappes |
+|''physiques et biogéochimiques'' |filtres épurateurs naturels, contribuant au maintien et à l’amélioration de la qualité de l’eau |
+|''écologiques'' |réservoirs de biodiversité, accueillant de nombreuses espèces végétales et animales |
+
+
+!!!!! Le territoire est concerné par la présence de site Ramsar
+<$reveal type="nomatch" state="variables.json##ramsar" text="non">
+
+La Convention de Ramsar, officiellement Convention relative aux zones humides d’importance internationale particulièrement comme habitats des oiseaux d’eau, est un traité international adopté le 2 février 1971 à Ramsar (Iran) pour la conservation et l’utilisation durable des zones humides, qui vise à enrayer leur dégradation ou disparition, aujourd’hui et demain, en reconnaissant leurs fonctions écologiques ainsi que leur valeur économique, culturelle, scientifique et récréative.
+
+<<<.obli
+Le territoire est concerné par au moins un site figurant dans le réseau mondial RAMSAR. Cette désignation consacre l’importance internationale de cette zone humide qui doit être préservée à ce titre.
+<<<
+</$reveal>
+
+!!!!!.todo éléments sur le SDAGE : prévoir une différence en fonction du bassin?
+!!!! Schéma Directeur d’Aménagement et de Gestion des Eaux
+Le Schéma Directeur d’Aménagement et de Gestion des Eaux (SDAGE) prévoit notamment de mettre fin à la disparition et à la dégradation des zones humides et de préserver, maintenir et protéger leur fonctionnalité. Le document d’urbanisme doit être compatible avec les orientations fondamentales d’une gestion équilibrée de la ressource en eau et les objectifs de qualité et de quantité des eaux définis par le SDAGE.
+
+<<<.obli
+La compatibilité du document d’urbanisme avec le SDAGE pourra notamment se traduire par :
+
+* La mise en place de moyens ciblés comme un zonage et des règles associées adéquates permettant la protection des zones humides. L’article L.151-23 du code de l’urbanisme prévoit que « le règlement peut identifier et localiser les éléments de paysage et délimiter les sites et secteurs à protéger pour des motifs d’ordre écologique, notamment pour la préservation, le maintien ou la remise en état des continuités écologiques et définir, le cas échéant, les prescriptions de nature à assurer leur préservation. » En application de cet article, le document graphique doit identifier les zones humides. Le règlement doit interdire tout exhaussement ou remblaiement.
+* L’intégration de ces zones humides le plus en amont possible lors des choix d’aménagements et de développement du territoire.
+* L’intégration, dans le règlement, d’une part minimale de surfaces non-imperméabilisées ou éco-aménageables afin de contribuer au maintien des zones humides.
+<<<
+</$reveal>

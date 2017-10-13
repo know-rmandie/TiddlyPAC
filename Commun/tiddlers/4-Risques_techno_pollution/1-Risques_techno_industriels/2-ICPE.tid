@@ -5,12 +5,13 @@ tags: [[Risques technologiques industriels]]
 title: ICPE
 type: text/vnd.tiddlywiki
 
+<$reveal type="match" state="variables.json##type_document" text="PLU">
 !!!!! Y a-t-il des ICPE avec zones de dangers? {{variables.json##icpe_danger}} ([[changer|Variables]])
 
 <$reveal type="match" state="variables.json##icpe_danger" text="oui">
 
 !!! ICPE avec zones de dangers
-Le territoire étudié est impacté par les zones de dangers d'un ou plusieurs établissements industriels relevant de la réglementation des installations classées pour la protection de l’environnement.
+Le territoire est impacté par les zones de dangers d'un ou plusieurs établissements industriels relevant de la réglementation des installations classées pour la protection de l’environnement.
 
 !!!!! [[zones de dangers]]
 !!!!! Si on a aussi un PPRT en cours on a déjà explicité les zones de dangers
@@ -58,4 +59,5 @@ Pour ce qui concerne les zones d'éloignement forfaitaires (ZFOR), il convient d
 * toute voie de communication dont le débit est supérieur à 2000 véhicules par jour, voies ferrées sur lesquelles circulent plus de 30 trains de voyageurs par jour.
 <<<
 
+</$reveal>
 </$reveal>

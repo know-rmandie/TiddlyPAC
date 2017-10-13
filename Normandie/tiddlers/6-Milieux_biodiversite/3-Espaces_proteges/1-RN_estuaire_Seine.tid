@@ -1,0 +1,26 @@
+created: 20170929145154533
+modified: 20170929113959021
+rank: 1
+tags: [[Réserves naturelles]]
+title: Réserve naturelle de l'estuaire de la Seine
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##reserves_nat" text="non">
+<$reveal type="nomatch" state="variables.json##RN_estuaire_Seine" text="non">
+
+!!! La réserve naturelle nationale de l’estuaire de la Seine
+La réserve naturelle nationale de l’estuaire de la Seine a été classée par le ministère en charge de l’environnement, le 30 décembre 1997 pour une superficie de 3 678 ha (décret n° 97-1329). Elle a été étendue à 8 528 ha le 9 novembre 2004 (décret n° 2004-1187).
+
+La réglementation applicable sur le territoire de la réserve de l’estuaire de la Seine vise à protéger le milieu de toute destruction ou modification. Elle est exposée dans le décret de classement n° 97-1329 du 30 décembre 1997.
+
+<<<.obli
+Le classement en réserve naturelle engendre une servitude d’utilité publique. En cas de divergence entre la réglementation de la réserve et le document d'urbanisme, la règle la plus contraignante s’imposera. Aussi, celui-ci devra être établi en cohérence avec cette servitude.
+<<<
+
+L’association « la Maison de l’Estuaire » s’est vue confier la gestion de la réserve naturelle nationale de l’estuaire de la Seine en 1999. Le plan de gestion de la réserve naturelle encadre les différentes activités de manière à ce qu’elles répondent aux objectifs de conservation des milieux tels que les roselières, les prairies humides et les mares. Il définit également l’ensemble des actions de suivi scientifique, de gestion, de surveillance et d’information mises en œuvre par le gestionnaire.
+
+<<<.doc
+L’ensemble des informations relatives à la réserve naturelle de l’estuaire de la Seine peut être obtenu sur le site internet de la DREAL
+<<< http://www.normandie.developpement-durable.gouv.fr/la-reserve-naturelle-nationale-de-l-estuaire-de-la-r343.html .
+</$reveal>
+</$reveal>

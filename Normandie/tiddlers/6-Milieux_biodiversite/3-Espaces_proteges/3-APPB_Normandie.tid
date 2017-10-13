@@ -1,0 +1,15 @@
+created: 20170929145154533
+modified: 20170929113959021
+rank: 0
+tags: [[Arrêtés de protection de biotopes]]
+title: accès aux APPB normands
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##appb" text="non">
+
+!!!!! peut-être à remonter au niveau "Commun" - toutes les DREAL doivent mettre en ligne les APPB normalement?
+
+<<<.doc
+Les cartes, descriptifs et arrêtés correspondants sont disponibles sur le site internet de la DREAL de Normandie.
+<<< http://normandie.developpement-durable.gouv.fr/les-arretes-prefectoraux-de-protection-de-biotope-r677.html
+</$reveal>

@@ -7,7 +7,7 @@ type: text/vnd.tiddlywiki
 
 !! Consommation d’espace et densité
 
-La connaissance, l’analyse, la définition d’une stratégie de maîtrise et de diminution de la consommation d’espace ainsi que sa déclinaison dans l’ensemble des pièces du PLUi sont des éléments fondamentaux attendus pour le projet de territoire^^1-4^^.
+La connaissance, l’analyse, la définition d’une stratégie de maîtrise et de diminution de la consommation d’espace ainsi que sa déclinaison dans l’ensemble des pièces du {{variables.json##type_document}} sont des éléments fondamentaux attendus pour le projet de territoire^^1-4^^.
 
 Au-delà des aspects évidents concernant le développement durable du territoire par la préservation de ses ressources naturelles et agricoles, cet exercice d’économie d’usage du sol est également bénéfique au projet de territoire par de multiples aspects :
 
@@ -16,7 +16,14 @@ Au-delà des aspects évidents concernant le développement durable du territoir
 * en obligeant à une réflexion sur les formes urbaines, il permet la production de logements et de locaux variés qui permettent un plus grand éventail d’usages et des parcours résidentiels plus complets qui sont bénéfiques au maintien des populations sur le territoire,
 * Certaines zones inondables incluses dans des secteurs à aménager peuvent être valorisées, en les déclinant en espaces de détente ou d’agriculture (verger, maraîchage, jardins partagés), et en y intégrant une dimension de gestion des eaux pluviales.
 
-!!!!!! [1-4] articles L 151-1 et suivants du code de l’urbanisme
+<$reveal type="match" state="variables.json##type_document" text="PLU">
+
+!!!!!! [1-4] article L 151-5 du code de l’urbanisme
+</$reveal>
+<$reveal type="match" state="variables.json##type_document" text="SCOT">
+
+!!!!!! [1-4] article L 141-3 du code de l’urbanisme
+</$reveal>
 
 Afin d’aider à cet exercice de qualification de la consommation d’espace et de définition des stratégies de gestion économes, l’État et ses partenaires mettent au point et tiennent à jour des outils multiples.
 
