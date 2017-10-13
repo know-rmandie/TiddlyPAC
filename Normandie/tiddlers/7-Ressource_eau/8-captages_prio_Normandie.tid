@@ -1,0 +1,25 @@
+created: 20170929145154533
+modified: 20171013173415686
+rank: 1
+tags: [[Captages prioritaires]]
+title: Captages prioritaires Normandie
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" state="variables.json##captages" text="prioritaire">
+
+!!!!!.todo Il est peut-être possible de remonter le début de cette exigence au niveau "Commun" (en réponse à la remarque ci-dessus)
+<<<.obli
+Le document d'urbanisme doit, plus particulièrement dans ces zones, se conformer au zonage d'assainissement indiquant l'aptitude du sol à l'assainissement. Ces programmes peuvent être rendus obligatoires en cas d’insuffisance de mise en œuvre au travers d’un arrêté Zones Soumises à Contraintes Environnementales (ZSCE).
+
+!!!!! Partie du texte qui dépend du département ''{{variables.json##departement}}'' ([[changer|Variables]])
+<$reveal type="match" state="variables.json##departement" text="14">
+Le département a une démarche basée sur le volontariat.
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="50">
+Le département a une démarche basée sur le volontariat.
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="61">
+Le département a une démarche basée sur le volontariat.
+</$reveal>
+<<<
+</$reveal>

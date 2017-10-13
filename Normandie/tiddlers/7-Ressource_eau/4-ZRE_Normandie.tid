@@ -1,0 +1,13 @@
+created: 20171013183919084
+modified: 20171013183919084
+rank: 1
+tags: [[ZRE]]
+title: ZRE Normandie
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" state="variables.json##zre" text="oui">
+
+<<<.doc
+Les cartes des ZRE sont accessibles via la carte Carmen sur la gestion de la ressource en eau
+<<< http://carmen.application.developpement-durable.gouv.fr/8/gestion_eau.map
+</$reveal>

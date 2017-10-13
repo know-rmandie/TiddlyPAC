@@ -1,0 +1,43 @@
+created: 20171013184100000
+modified: 20171013184100000
+rank: 1
+tags: [[ZV et ZAR]]
+title: ZV et ZAR en Normandie
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" state="variables.json##zv_zar" text="oui">
+
+!!!!! Partie du texte qui dépend du département ''{{variables.json##departement}}'' ([[changer|Variables])
+
+<$reveal type="match" state="variables.json##departement" text="14">
+
+Le volet régional a été défini par l’arrêté préfectoral du 7 juillet 2014 pour les départements du Calvados, de l’Orne et de la Manche.
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="50">
+
+Le volet régional a été défini par l’arrêté préfectoral du 7 juillet 2014 pour les départements du Calvados, de l’Orne et de la Manche.
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="61">
+
+Le volet régional a été défini par l’arrêté préfectoral du 7 juillet 2014 pour les départements du Calvados, de l’Orne et de la Manche.
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="27">
+
+Le volet régional a été défini par l’arrêté préfectoral du 28 mai 2014, modifié le 31 octobre 2014 pour les départements de l’Eure et de la Seine-Maritime.
+</$reveal>
+<$reveal type="match" state="variables.json##departement" text="27">
+
+Le volet régional a été défini par l’arrêté préfectoral du 28 mai 2014, modifié le 31 octobre 2014 pour les départements de l’Eure et de la Seine-Maritime.
+</$reveal>
+
+Ces textes renforcent certaines mesures du volet national pour tenir compte des enjeux locaux. Ils portent notamment sur le calendrier d’interdiction d’épandage, les couverts en périodes pluvieuses et le maintien des prairies.
+
+Il définit également des « zones d’actions renforcées » (ZAR) à mettre en place autour des points de captages pour l’eau potable au sein de la zone vulnérable. Les 5e programmes d’actions régionaux sont applicables respectivement sur les territoires de la Normandie.
+
+<<<.doc
+Pour consulter les textes et documents cartographiques sur la directive Nitrates
+<<< http://www.normandie.developpement-durable.gouv.fr/presentation-de-la-directive-nitrates-a803.html
+<<<.doc
+Les zones vulnérables et zones d’actions renforcées sont présentées dans la carte Carmen sur la gestion de la ressource en eau
+<<< http://carmen.application.developpement-durable.gouv.fr/8/gestion_eau.map
+</$reveal>

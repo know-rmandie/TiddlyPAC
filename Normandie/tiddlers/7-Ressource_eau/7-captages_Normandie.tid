@@ -1,0 +1,15 @@
+created: 20170929145154533
+modified: 20170929113919072
+rank: 1
+tags: [[Captages]]
+title: Captages Normandie
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##captages" text="non">
+
+<<<.doc
+Les informations relatives aux captages sont détenues par l’agence régionale de la santé (ARS). Téléchargement gratuit des informations après inscription, sur le site de l’ARS de Normandie à l’adresse suivante
+<<< http://www.arshn-perimetre-de-protection.fr
+
+!!!!!.todo N'est-il pas embêtant de fournir une information accessible uniquement sur inscription?
+</$reveal>
