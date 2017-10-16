@@ -1,0 +1,31 @@
+created: 20170825073044795
+modified: 20170915072138858
+rank: 1
+tags: [[Modalités de saisine]]
+title: Modalités de saisine en Normandie
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##type_EE" text="non">
+
+<<<.doc
+Différents éléments ont été mis en ligne pour aider dans la constitution du dossier de saisine
+
+* Des fiches aident à conduire la réflexion sur les incidences potentielles des projets d’urbanisation sur l’environnement ;
+* La description des caractéristiques du document d’urbanisme et de l’environnement peut être effectuée en complétant directement le formulaire ;
+* L’évaluation des incidences du document d’urbanisme sur l’environnement et la santé humaine est laissée à l’appréciation du pétitionnaire, qui en est responsable. Elle peut prendre la forme d’un document libre annexé à la demande.
+<<< http://www.normandie.developpement-durable.gouv.fr/les-modalites-de-saisine-de-l-autorite-a38.html
+
+!! Transmission des dossiers
+
+<<<.obli
+La saisine de l'Autorité Environnementale s'effectue par transmission des éléments sous deux formes :
+
+* ''2 dossiers complets en version papier'' à l’adresse postale de la DREAL Normandie
+         SECLAD - Pôle Evaluation Environnementale
+			10 boulevard du Général Vanier
+			CS 60040
+			14006 CAEN cedex
+* ''1 version sur support informatique'', notamment pour les consultations obligatoires (Agence régionale de santé par exemple) à l’adresse électronique du Pôle Évaluation Environnementale
+         [[pee.seclad.dreal-normandie@developpement-durable.gouv.fr|mailto:pee.seclad.dreal-normandie@developpement-durable.gouv.fr]]
+<<<			
+</$reveal>
