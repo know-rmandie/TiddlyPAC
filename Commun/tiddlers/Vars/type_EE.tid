@@ -1,0 +1,17 @@
+created: 20170911153453007
+modified: 20171013172736739
+title: $:/vars/type_EE
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" state="variables.json##natura_2000" text="oui">
+syst</$reveal>
+<$reveal type="nomatch" state="variables.json##natura_2000" text="oui">
+   <$reveal type="match" state="variables.json##littoral" text="oui">syst</$reveal>
+   <$reveal type="nomatch" state="variables.json##littoral" text="oui">
+      <$reveal type="match" state="variables.json##vaut_pdu" text="oui">syst</$reveal>
+      <$reveal type="nomatch" state="variables.json##vaut_pdu" text="oui">
+         <$reveal type="match" state="variables.json##vaut_pdu" text="oui">syst</$reveal>
+         <$reveal type="nomatch" state="variables.json##vaut_pdu" text="oui">cpc</$reveal>
+      </$reveal>
+   </$reveal>
+</$reveal>

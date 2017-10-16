@@ -1,0 +1,44 @@
+created: 20170825073044795
+modified: 20171016145118985
+rank: 2
+tags: [[Evaluation environnementale]]
+title: Modalités de saisine
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##type_EE" text="non">
+
+!! Modalités de saisine de l'Autorité Environnementale
+Quand le document d’urbanisme a été arrêté par l’autorité compétente, la saisine de l’Autorité environnementale s’effectue avec une lettre de saisine.
+
+L’Autorité environnementale dispose de trois mois à compter de la réception du dossier complet pour émettre un avis sur la qualité et la complétude de la démarche d’évaluation environnementale.
+
+<<<.obli
+L’avis signé est mis en ligne sur le site de l’Autorité environnementale et transmis au pétitionnaire. Il doit être joint au dossier d’enquête publique.
+<<<
+
+<$reveal type="match" state="variables.json##type_EE" text="cpc">
+
+!!! La procédure d'examen au « cas par cas »
+Les articles R104-28 à R104-33 du code de l’urbanisme définissent les modalités d’examen au cas par cas. Si un document d’urbanisme est concerné par cette procédure, la personne publique responsable doit obligatoirement saisir l’autorité environnementale compétente pour savoir si une évaluation environnementale est nécessaire.
+
+<<<.obli
+L’autorité environnementale dispose d’un délai de deux mois pour notifier sa décision. Cette décision est publiée sur le site internet de la DREAL. L’absence de notification dans le délai des deux mois vaut obligation de réaliser une évaluation environnementale.
+<<<
+
+''A quel moment saisir l’autorité environnementale pour un examen au « cas par cas » ?''
+
+| Nature du document | Moment de la saisine de l’Ae |h
+|Élaboration et révision d’un PLU |Après le débat relatif aux orientations du Projet d’Aménagement et de Développement Durable (PADD) |
+
+Il n’existe pas actuellement de formulaire Cerfa pour la demande d’examen au « cas par cas ». Le contenu de la saisine figure dans le code de l'urbanisme
+
+<<<.ref
+
+#° Une description des caractéristiques principales du document ;
+#° Une description des caractéristiques principales, de la valeur et de la vulnérabilité de la zone susceptible d’être touchée par la mise en œuvre du document ;
+#° Une description des principales incidences sur l’environnement et la santé humaine de la mise en œuvre du document.
+<<< article R104-30 du code de l’urbanisme
+
+L’ensemble des informations attendues doit être indiqué dans le document de saisine. La procédure prévoit que la saisine doit être effectuée par la personne publique responsable de l’élaboration ou de l’évolution du document d’urbanisme devant faire l’objet d’un examen au cas par cas.
+</$reveal>
+</$reveal>
