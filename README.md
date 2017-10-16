@@ -15,6 +15,7 @@ Il est également possible de travailler plus finement sur la mise en forme en i
 ## Contribuer à TiddlyPAC
 L'outil est le fruit d'un travail collectif qui s'enrichit des mises à jours régulières, commentaires et propositions d'amélioration. Plusieurs possibilités sont offertes pour ce faire (voir [contribuer à TiddlyPAC][contribuer TP] pour plus de détails) :
 
+* en venant en discuter avec le [groupe mattermost][mattermost] correspondant sur framateam
 * en [ajoutant une "issue"][issues] directement dans framagit (plate-forme où est hébergé le code de l'application)
 * en éditant directement la partie à améliorer dans l'outil, en l'exportant puis en envoyant le fichier `.tid` ainsi modifié
 * en travaillant directement sur un "clône" de TiddlyPAC et utilisant l'outil __git__
@@ -35,7 +36,8 @@ L'ensemble des adaptations (modestes) du code et des textes établis sont sous [
 
 [versions]: ./Doc/versions_de_tiddlypac.md
 [utiliser TP]: ./Doc/utiliser_TiddlyPAC.md
-[contribuer TP]: ./Doc/contribuer_a_tiddlypac.md
+[contribuer TP]: ./CONTRIBUTING.md
+[mattermost]: https://framateam.org/signup_user_complete/?id=4qbkmz8swtg3tyrs7gceamq8fo
 
 [origin]: https://framagit.org/know-rmandie/TiddlyPAC
 [issues]: https://framagit.org/know-rmandie/TiddlyPAC/issues
@@ -44,7 +46,7 @@ L'ensemble des adaptations (modestes) du code et des textes établis sont sous [
 [gitlab]: https://gitlab.com/know-rmandie/TiddlyPAC
 [gl-pages]: https://know-rmandie.gitlab.io/TiddlyPAC
 [github]: https://github.com/know-rmandie/TiddlyPAC
-[gl-pages]: https://know-rmandie.github.io/TiddlyPAC
+[gh-pages]: https://know-rmandie.github.io/TiddlyPAC
 
 [tw]:http://tiddlywiki.com
 [framagit]:https://framagit.org

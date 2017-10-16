@@ -1,9 +1,0 @@
-created: 20170911153832573
-modified: 20170911153834663
-title: variables_locales.json
-type: application/json
-
-{
-    "a_zone_DTA": "oui",
-    "doit_pluid": "non"
-}
