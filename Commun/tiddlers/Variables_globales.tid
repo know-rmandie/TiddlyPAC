@@ -1,5 +1,5 @@
 created: 20170911152904342
-modified: 20171009145233906
+modified: 20171016145302962
 tags: Variables
 title: Variables globales
 type: text/vnd.tiddlywiki
@@ -144,5 +144,16 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 
 * Le territoire comporte des communes sensibles (//oui / non//) : <$edit-text tiddler="variables.json" index="communes_sensibles" tag="input" class="pac short"/>
 * Le territoire est concerné par un PPA (//non / PPA de ...//) : <$edit-text tiddler="variables.json" index="dans_PPA" tag="input" class="pac"/>
+</$reveal>
+
+!!! [[Evaluation environnementale]] <$reveal type="nomatch" state="$:/state/eval_env" text="show">
+<$button set="$:/state/eval_env" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/eval_env" text="show">
+<$button set="$:/state/eval_env" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/eval_env" text="show">
+
+* Le document est concerné par une évaluation environnementale (//non / syst / cpc//) : <$edit-text tiddler="variables.json" index="type_EE" tag="input" class="pac mid"/><br/>
+(//Au vu des autres éléments renseignés, la réponse devrait être ''{{$:/vars/type_EE}}''//)
 </$reveal>
 </$reveal>

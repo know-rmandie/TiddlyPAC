@@ -1,0 +1,36 @@
+created: 20170825073044795
+modified: 20171016144629378
+rank: 9
+tags: [[Porter à Connaissance]] chapitre
+title: Evaluation environnementale
+type: text/vnd.tiddlywiki
+
+!!!!! En fonction du type d'évaluation environnementale ''{{variables.json##type_EE}}'' ([[changer|Variables]])
+<$reveal type="nomatch" state="variables.json##type_EE" text="non">
+
+! Evaluation environnementale
+!!!!! En fonction de la nature du document d'urbanisme ''{{variables.json##type_document}}'' ([[changer|Variables]])
+<$reveal type="match" state="variables.json##type_document" text="SCOT">
+
+!!!!!.obli En vertu de l'article L104-1 du code de l'urbanisme, le SCOT doit faire l'objet d'une évaluation environnementale
+</$reveal>
+<$reveal type="nomatch" state="variables.json##type_document" text="SCOT">
+
+!!!!!.obli En vertu de l'article L104-2 du code de l'urbanisme, le {{variables.json##type_document}} doit faire l'objet d'une évaluation environnementale
+</$reveal>
+
+!! La démarche d’évaluation environnementale
+La démarche d’évaluation environnementale est formalisée dans le rapport de présentation du document d’urbanisme, dont le contenu est défini dans le code de l’urbanisme.
+
+<<<.ref
+Le rapport de présentation des documents d'urbanisme :
+
+#° Décrit et évalue les incidences notables que peut avoir le document sur l'environnement ;
+#° Présente les mesures envisagées pour éviter, réduire et, dans la mesure du possible, compenser ces incidences négatives ;
+#° Expose les raisons pour lesquelles, notamment du point de vue de la protection de l'environnement, parmi les partis d'aménagement envisagés, le projet a été retenu.
+<<< article L104-4 du code de l'urbanisme
+
+<<<.obli
+<$reveal type="match" state="variables.json##type_document" text="SCOT">L'article [[R141-2|https://www.legifrance.gouv.fr/affichCode.do;jsessionid=15FD9B2822A3C7DB853377A159CB61E2.tplgfr35s_3?idSectionTA=LEGISCTA000031720747&cidTexte=LEGITEXT000006074075]] du même code précise</$reveal><$reveal type="nomatch" state="variables.json##type_document" text="SCOT">Les articles [[R151-1 à R151-5|https://www.legifrance.gouv.fr/affichCode.do?idArticle=LEGIARTI000031720657&idSectionTA=LEGISCTA000031720659&cidTexte=LEGITEXT000006074075]] du même code précisent</$reveal> clairement les attendus du rapport de présentation en matière d'évaluation environnementale.
+<<<
+</$reveal>

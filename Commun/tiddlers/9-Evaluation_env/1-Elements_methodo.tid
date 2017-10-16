@@ -1,0 +1,45 @@
+created: 20170825073044795
+modified: 20171016144926503
+rank: 1
+tags: [[Evaluation environnementale]]
+title: Eléments méthodologiques
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##type_EE" text="non">
+
+!! Eléments méthodologiques
+L’évaluation environnementale est une démarche continue et itérative, qui doit permettre à la collectivité de définir pas à pas un projet compatible avec les enjeux environnementaux du territoire.
+
+!!!!! En fonction du type d'évaluation environnementale ''{{variables.json##type_EE}}'' ([[changer|Variables]])
+<$reveal type="match" state="variables.json##type_EE" text="syst">
+
+<<<.obli
+C’est pourquoi, en cas de recours à un prestataire externe, les cahiers des charges doivent prévoir dès le début les différentes étapes nécessaires à cette démarche.
+<<<
+</$reveal>
+<$reveal type="match" state="variables.json##type_EE" text="cpc">
+
+C’est pourquoi, en cas de recours à un prestataire externe, les cahiers des charges doivent prévoir dès le début les différentes étapes nécessaires à cette démarche, notamment par le biais d’une tranche conditionnelle pour ce document relevant du cas par cas.
+
+Les principales étapes de la démarche sont les suivantes :
+
+# ''Analyser le contexte juridique et administratif''
+#* Pour s’assurer de la cohérence (voire de la compatibilité) du futur document d’urbanisme avec les différentes politiques publiques sur le même territoire et pour mobiliser les études déjà réalisées sur le territoire.
+# ''Élaborer l’état initial de l’environnement''
+#* Pour avoir une connaissance statique et dynamique de l’environnement et des pressions qu’il subit ;
+#* Pour hiérarchiser collectivement les enjeux environnementaux du territoire.
+# ''Construire le projet d’urbanisme''
+#* Analyser, à chaque étape de la construction du document d’urbanisme, les incidences de sa mise en œuvre sur l’environnement ;
+#* Adapter le projet en continu en préservant l’environnement.<br/>Dans cette étape, plusieurs scénarios de développement sont envisagés. Leurs incidences sur l’environnement <$reveal type="nomatch" state="variables.json##natura_2000" text="non">- et sur le(s) site(s) Natura 2000  présent(s) - </$reveal>sont évaluées. Le scénario retenu permet de concilier le projet politique et les enjeux environnementaux du territoire. Si nécessaire, des mesures d’évitement, de réduction et, en dernier lieu, de compensation des impacts négatifs doivent être envisagées.
+# ''Définir les modalités de suivi du projet''<br/>Les {{variables.json##type_document}} soumis à évaluation environnementale doivent faire l’objet d’une analyse des résultats de leur application au plus tard à l’expiration d’un délai de neuf ans à compter de la délibération portant approbation du document, ou la dernière délibération portant révision complète de ce plan, ou la délibération ayant décidé son maintien en vigueur^^9-2^^.
+
+La collectivité doit donc à ce stade définir :
+
+* des ''indicateurs'' pertinents, fiables et actualisables ;
+* ''l’état de référence'' de chaque indicateur (dans la mesure du possible), et, si c’est possible, l’objectif de résultat et l’échéance retenus pour chaque indicateur ;
+* les ''modalités d’organisation du suivi'' : pilotage, fréquence, méthodes d’analyse, mise en place d’un comité de suivi ;
+* les ''mesures à prendre'' pour adapter si nécessaire le document en cours d’application au vu des résultats du suivi.
+
+!!!!!! ^^9-2^^ article [[L153-27|https://www.legifrance.gouv.fr/affichCode.do?idSectionTA=LEGISCTA000031211764&cidTexte=LEGITEXT000006074075]] du code de l’urbanisme
+</$reveal>
+</$reveal>

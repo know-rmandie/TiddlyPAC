@@ -1,5 +1,5 @@
 created: 20170824121832438
-modified: 20171002095100803
+modified: 20171016144714118
 title: variables.json
 type: application/json
 
@@ -42,5 +42,6 @@ type: application/json
     "tri": "oui",
     "slgri": "oui",
     "littoral": "oui",
-    "urbain": "oui"
+    "urbain": "oui",
+    "type_EE": "cpc"
 }
