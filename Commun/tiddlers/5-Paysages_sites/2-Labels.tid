@@ -1,0 +1,27 @@
+created: 20170911145154533
+modified: 20171017133937577
+rank: 2
+tags: [[Paysages et sites]]
+title: Labels
+type: text/vnd.tiddlywiki
+
+!!!!! le territoire comporte un site site //patrimoine mondial// ou //Grand Site de France//? ''{{variables.json##grand_site}}'' ([[changer|Variables]])
+<$reveal type="nomatch" state="variables.json##grand_site" text="non">
+
+!!!!!.todo La partie est très //patrimoine mondial//. à amender? prévoir deux variables (unesco OU grands sites)?
+!! Labels ou reconnaissances particulières
+Des sites remarquables peuvent également faire l’objet d’une reconnaissance particulière « Grands Sites de France^^5-2-a^^ » et sites inscrits sur la liste du patrimoine mondial en particulier.
+
+La Convention concernant la protection du patrimoine mondial culturel et naturel de 1972 vise ainsi à ''identifier, protéger, conserver et mettre en valeur, les éléments du patrimoine culturel ou naturel ayant une « Valeur Universelle Exceptionnelle »'', du point de vue historique, artistique, scientifique, esthétique, ethnoloique, anthropologique (...), et présentent un caractère inestimable pour les générations actuelles et futures de l’ensemble de l’Humanité. A ce titre, la protection permanente de ce patrimoine est de la plus haute importance pour la communauté internationale toute entière^^5-2-b^^.
+
+La France s'est engagée dans la mise en oeuvre de cette convention et les documents d’urbanisme constituent en particulier des outils qui permettent d’assurer la préservation de l'authenticité et de l'intégrité bien.
+
+La valeur universelle exceptionnelle, qui va exprimer les raisons qui ont conduit à l’inscription d’un site sur la Liste du patrimoine mondial, s’appuie sur au moins 1 critère parmi les 10 critères qui peuvent constituer les piliers de l’inscription.
+
+<<<.obli
+Ainsi il convient d’avoir connaissance des périmètres des biens inscrits sur la Liste du patrimoine mondial ainsi que des informations relatives à leur vue, laquelle constitue un outil de référence sur laquelle la collectivité doit s’appuyer et dont elle doit tenir compte au moment d’élaborer son projet de territoire.
+<<<
+
+!!!!!! ^^5-2-a^^ article L341-15-1 du code de l’environnement
+!!!!!! ^^5-2-b^^ synthèse de la convention de l'unesco http://whc.unesco.org/fr/conventiontexte/
+</$reveal>

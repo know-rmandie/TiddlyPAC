@@ -1,9 +1,9 @@
 created: 20170911145154533
-modified: 20171016183000000
+modified: 20171017134245290
+rank: 5
 tags: [[Porter à Connaissance]] chapitre
 title: Paysages et sites
 type: text/vnd.tiddlywiki
-rank: 5
 
 ! Paysages, sites et cadre de vie
 Parmi les nombreux objectifs fixés à l'action publique en matière d'urbanisme et d'aménagement, plusieurs concernent le cadre de vie des citoyens et la qualité paysagère, qui sont des éléments essentiels de l'attractivité des territoires.
@@ -30,23 +30,23 @@ Les //objectifs de qualité paysagère// désignent les orientations visant à c
 <$reveal type="nomatch" state="variables.json##type_document" text="PLU">
 
 <<<.obli
-Le SCOT doit à travers son PADD fixer les objectifs des politiques publiques qualité paysagère, de protection et de mise en valeur des espaces naturels^^5-0^^, qui s'entendent au sens de la convention européenne du paysage.
+Le SCOT doit à travers son PADD fixer les objectifs des politiques publiques qualité paysagère, de protection et de mise en valeur des espaces naturels^^5-0-a^^, qui s'entendent au sens de la convention européenne du paysage.
 
-Il peut par ailleurs à travers le document d'orientation et d'objectifs préciser les objectifs de qualité paysagère et par secteur, définir des normes de qualité urbaine, architecturale et paysagère^^5-1^^ applicables en l'absence de document d'urbanisme local.
+Il peut par ailleurs à travers le document d'orientation et d'objectifs préciser les objectifs de qualité paysagère et par secteur, définir des normes de qualité urbaine, architecturale et paysagère^^5-0-b^^ applicables en l'absence de document d'urbanisme local.
 <<<
 
-!!!!!! ^^5-0^^ article L141-4 du code de l'urbanisme
-!!!!!! ^^5-1^^ article L141-18 du code de l'urbanisme
+!!!!!! ^^5-0-a^^ article L141-4 du code de l'urbanisme
+!!!!!! ^^5-0-b^^ article L141-18 du code de l'urbanisme
 </$reveal>
 <$reveal type="nomatch" state="variables.json##type_document" text="SCOT">
 
 <<<.obli
-Le PLU doit à travers son PADD définir les orientations générales des politiques de paysage, de protection des espaces naturels^^5-0^^, qui s'entendent au sens de la convention européenne du paysage. Il peut par ailleurs intégrer les spécificités paysagères, architecturales, patrimoniales et environnementales des anciennes communes.
+Le PLU doit à travers son PADD définir les orientations générales des politiques de paysage, de protection des espaces naturels^^5-0-a^^, qui s'entendent au sens de la convention européenne du paysage. Il peut par ailleurs intégrer les spécificités paysagères, architecturales, patrimoniales et environnementales des anciennes communes.
 
-Il dispose ensuite de nombreux outils pour porter ces orientations à travers les orientations d'aménagement et de programmation^^5-1^^, ou le règlement^^5-2^^, soit par des mesures de protections ou des dispositions s'imposant aux projets et constructions nouvelles.
+Il dispose ensuite de nombreux outils pour porter ces orientations à travers les orientations d'aménagement et de programmation^^5-0-b^^, ou le règlement^^5-0-c^^, soit par des mesures de protections ou des dispositions s'imposant aux projets et constructions nouvelles.
 <<<
 
-!!!!!! ^^5-0^^ article L151-5 du code de l'urbanisme
-!!!!!! ^^5-1^^ article L151-7 I 1° du code de l'urbanisme
-!!!!!! ^^5-2^^ articles L151-17 à L151-25 du code de l'urbanisme
+!!!!!! ^^5-0-a^^ article L151-5 du code de l'urbanisme
+!!!!!! ^^5-0-b^^ article L151-7 I 1° du code de l'urbanisme
+!!!!!! ^^5-0-c^^ articles L151-17 à L151-25 du code de l'urbanisme
 </$reveal>
