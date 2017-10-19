@@ -1,0 +1,32 @@
+created: 20171019125306884
+modified: 20171019141114599
+rank: 2
+tags: styles_de_tiddlyPAC
+title: Références ou citations et documentation
+type: text/vnd.tiddlywiki
+
+!!!! Références ou citations et documentation
+Sur le même principe que les obligations et recommandation, on peut faire référence à un texte, à une citation (en remplaçant `.obli` par `.ref`) ou à des documents de référence (en remplaçant `.obli` par `.doc`).
+
+//exemples//
+
+```
+
+<<<.ref
+Si il n'y a pas de solution, c'est qu'il n'y a pas de problème
+<<< Les Shadoks
+```
+<<<.ref
+Si il n'y a pas de solution, c'est qu'il n'y a pas de problème
+<<< [[Les Shadoks|https://fr.wikipedia.org/wiki/Les_Shadoks]]
+
+//ou encore//
+
+```
+<<<.doc
+L'intégralité de l'oeuvre de Jules Verne est disponible sur Wikisource
+<<< https://fr.wikisource.org/wiki/Auteur:Jules_Verne
+```
+<<<.doc
+L'intégralité de l'oeuvre de Jules Verne est disponible sur Wikisource
+<<< https://fr.wikisource.org/wiki/Auteur:Jules_Verne

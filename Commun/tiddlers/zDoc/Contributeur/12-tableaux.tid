@@ -1,0 +1,25 @@
+created: 20171019123848399
+modified: 20171019124313974
+tags: syntaxe_de_base
+title: tableaux
+type: text/vnd.tiddlywiki
+
+* ''tableaux''
+
+Les tableaux sont rendus en encadrant le contenu des cellules par le symbole `|` il est possible d'aller assez loin dans la mise en forme (alignement des cases par exemple) mais ce n'est pas détaillé ici (voir [[Tableaux avec Wikitext|http://tiddlywiki.com/languages/fr-FR/index.html#Tables%20in%20WikiText]]).
+
+Par exemple
+
+```
+    | titre général du tableau |c
+    | titre 1 | titre 2 | titre 3 |h
+    |cellule 1 | cellule 2 | cellule 3|
+    |cellule 4 | cellule 5 | cellule 6|
+```
+    
+donnera
+
+| titre général du tableau |c
+| titre 1 | titre 2 | titre 3 |h
+|cellule 1 | cellule 2 | cellule 3|
+|cellule 4 | cellule 5 | cellule 6|

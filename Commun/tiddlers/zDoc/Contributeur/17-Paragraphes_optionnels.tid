@@ -1,0 +1,45 @@
+created: 20171019142326225
+modified: 20171019145812808
+rank: 3
+tags: editer_TiddlyPAC
+title: Paragraphes optionnels
+type: text/vnd.tiddlywiki
+
+!!! Paragraphes optionnels
+Une grande partie de l'intérêt de TiddlyPAC réside dans sa capacité à faire apparaitre des paragraphes en fonction des [[variables|Variables]] qui décrivent le document ou le territoire. L'outil utilise pour cela la fonction ''reveal'' de TiddlyWiki.
+
+Pour mettre un paragraphe optionnel, on l'encadre donc avec la fonction `<$reveal>` pour marquer le début et par `</$reveal>` pour marquer la fin.
+
+''reveal'' utilise 3 paramètres :
+
+* //type// qui indique si la comparaison est de type "est égal à" (type="match") ou "est différent de" (type="nomatch")
+* //state// qui indique quelle variable on examine. Les variables sont stockées dans [[variables.json]] et [[variables_locales.json]] et appelée avec un double dièse par exemple `variaibles.json##type_document`
+* //text// qui indique la valeur souhaitée (ou non souhaitée) pour state
+
+Il faut laisser une ligne vide après `<$reveal>`. Une bonne pratique est de précéder une partie ''reveal'' d'un commentaire indiquant qu'on a un paragraphe optionnel et la variable utilisée. Il est également préférable d'utiliser le type //nomatch// qui permet de laisser le paragraphe apparent lorsque la variable n'est pas saisie ou mal saisie.
+
+!!!! exemples
+Pour voir l'effet, aller dans l'onglet //Variables// à droite et changer la variable //Type de document// (Variables globales > généralités)
+
+```
+!!!!! Paragraphe qui apparait quand le document ''n'est pas'' un SCOT
+<$reveal type="nomatch" state="variables.json##type_document" text="SCOT">
+
+Le document n'est donc pas un SCOT. Il s'agit d'un PLU (peut-être intercommunal?)
+</$reveal>
+!!!!! Paragraphe qui apparait quand le document ''est'' un SCOT
+<$reveal type="match" state="variables.json##type_document" text="SCOT">
+
+Ce document est un schéma de cohérence territoriale. Tant qu'ils existent...
+</$reveal>
+```
+!!!!! Paragraphe qui apparait quand le document ''n'est pas'' un SCOT
+<$reveal type="nomatch" state="variables.json##type_document" text="SCOT">
+
+Ce document n'est donc pas un SCOT. Il s'agit d'un PLU (peut-être intercommunal?)
+</$reveal>
+!!!!! Paragraphe qui apparait quand le document ''est'' un SCOT
+<$reveal type="match" state="variables.json##type_document" text="SCOT">
+
+Ce document est un schéma de cohérence territoriale. Tant qu'ils existent...
+</$reveal>

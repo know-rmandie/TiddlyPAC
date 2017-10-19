@@ -1,4 +1,3 @@
-
 /* titres */
 
 h1.titre {
@@ -11,9 +10,10 @@ h1.titre {
 .com,
 h5,
 p.com {
-   font-size: 0.9em;
+   font-size: .9em;
    background-color: lightgray;
-   padding: 0.5em;
+   border-left: none;
+   padding: .5em;
    margin: 2px;
    font-style: italic;
    font-family: serif;
@@ -22,18 +22,24 @@ p.com {
 .todo,
 h5.todo,
 p.todo {
+   font-size: .9em;
    background-color: orange;
+   border-left: none;
+   padding: .5em;
+   margin: 2px;
+   font-style: normal;
+   font-family: serif;
 }
 /* h6 : notes de bas de page */
 
 .nbp,
 h6,
 p.npb {
-   font-size: 0.8em;
+   font-size: 0.85em;
    font-style: italic;
    color: gray;
    border-left: none;
-   margin: 0;
+   margin: 2px 0;
 }
 /* tableaux (centrés, au moins 60% de large) */
 
@@ -73,6 +79,9 @@ input.mid {
 
 blockquote p {
    margin: 7px 0 0;
+}
+blockquote p:first-child {
+   margin: 0;
 }
 /* références, citations */
 
@@ -262,5 +271,9 @@ body.static .tc-tiddlylink-missing {
 
    blockquote {
       page-break-inside: avoid;
+   }
+
+   .visible {
+      display:block !important;
    }
 }
