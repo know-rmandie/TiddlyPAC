@@ -1,0 +1,36 @@
+created: 20170911145154533
+modified: 20171017134340329
+rank: 1
+tags: [[Paysages et sites]]
+title: Paysages patrimoniaux
+type: text/vnd.tiddlywiki
+
+!!!!! le territoire comporte un site classé ou inscrit? ''{{variables.json##sites}}'' ([[changer|Variables]])
+<$reveal type="nomatch" state="variables.json##sites" text="non">
+
+!!!!!.todo cette rédaction est très "PLU". Construire une rédaction SCOT.
+!! Outils de protection des paysages patrimoniaux
+Si la Convention européenne du paysage appréhende tous les paysages, et donc également les paysages remarquables, des outils permettent en particulier de préserver certains sites d’exception.
+
+Créés par la loi du 2 mai 1930, et régis aujourd’hui par les articles L341-1 à L341-15 du code de l’environnement, les sites classés et inscrits répondent ainsi à un objectif de conservation ou de préservation d’espaces présentant un intérêt reconnu pour des motifs d’ordre pittoresque, historique, scientifique ou légendaire.
+
+<$reveal type="nomatch" state="variables.json##type_document" text="SCOT">
+
+<<<.obli
+A ce titre, les sites classés ou inscrits constituent des servitudes d’utilité publique affectant l’utilisation du sol opposables au tiers. C’est pourquoi, la décision d’inscription ou de classement ainsi que le plan de délimitation du site doivent être reportés dans le {{variables.json##type_document}}^^5-1-a^^.
+<<<
+
+!!!!!! ^^5-1-a^^ articles R341-8 du code de l’environnement et L151-43 du code de l’urbanisme
+
+Il s’agit pour ces sites de préserver l’esprit des lieux, c’est-à-dire les qualités qui ont motivé l’inscription ou le classement du site. Toute modification des lieux, est ainsi soumise, en site classé, à la délivrance d’une autorisation spéciale individuelle. En site inscrit, tous les travaux doivent être précédés d’une déclaration préalable de 4 mois de cette intention.
+
+<$reveal type="nomatch" state="variables.json##dans_scot" text="non">
+
+<<<.obli
+Le préfet peut par ailleurs subordonner l’approbation du Plan Local d’Urbanisme aux modifications qu’il estime nécessaire d’apporter au plan lorsque les dispositions de celui-ci compromettent gravement les principes énoncés à l'article L101-2 du code de l’urbanisme, dont la protection des sites^^5-1-b^^
+<<<
+
+!!!!!! ^^5-1-b^^ article L153-25 du code de l’urbanisme
+
+</$reveal>
+</$reveal>

@@ -1,15 +1,13 @@
 created: 20171220145154533
-modified: 20171215145154533
+modified: 20171017134415021
 rank: 6
 tags: [[Risque inondation]]
 title: PAPI
 type: text/vnd.tiddlywiki
 
-<<<.com
-Territoire concerné par un PAPI? (''{{variables.json##papi}}''  - [[changer|Variables]])
-<<<
-
-<$reveal type="match" state="variables.json##papi" text="oui">
+!!!!! Territoire concerné par un PAPI? ''{{variables.json##papi}}'' ([[changer|Variables]])
+!!!!!.todo au delà de l'information, quelle action est attendue du document d'urbanisme?
+<$reveal type="nomatch" state="variables.json##papi" text="non">
 
 !!! Programme d’actions de prévention des inondations
 Le territoire est concerné par au moins un Programme d’Actions de Prévention des Inondations (PAPI).

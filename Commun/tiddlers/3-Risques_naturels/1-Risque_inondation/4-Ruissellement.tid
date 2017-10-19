@@ -1,13 +1,11 @@
 created: 20171220145154533
-modified: 20171215145154533
+modified: 20171017134529137
 rank: 4
 tags: [[Risque inondation]]
 title: Ruissellement
 type: text/vnd.tiddlywiki
 
-<<<.com
-Risque inondation par ruissellement? (''{{variables.json##r_inond_ruis}}''  - [[changer|Variables]])
-<<<
+!!!!! Risque inondation par ruissellement? ''{{variables.json##r_inond_ruis}}'' ([[changer|Variables]])
 
 <$reveal type="match" state="variables.json##r_inond_ruis" text="oui">
 
