@@ -1,0 +1,24 @@
+created: 20171019124637184
+modified: 20171019125254512
+rank: 1
+tags: styles_de_tiddlyPAC
+title: Obligations et recommandations
+type: text/vnd.tiddlywiki
+
+!!!! Obligations et recommandations
+
+Utilisé lorsque l'Etat souhaite mettre en avant des attendus et recommandations à l'attention de la collectivité ou de son bureau d'étude. On encadre le paragraphe concerné par `<<<.obli` et `<<<`. On laisse une ligne vide avant.
+
+//exemple//
+
+```
+
+<<<.obli
+Ceci est une obligation réglementaire ou une recommandation affirmée portée par l'Etat
+<<<
+```
+se traduit par
+
+<<<.obli
+Ceci est une obligation réglementaire ou une recommandation affirmée portée par l'Etat
+<<<

@@ -1,0 +1,75 @@
+created: 20171019135010034
+modified: 20171019150551161
+rank: 3
+tags: styles_de_tiddlyPAC
+title: Notes et commentaires
+type: text/vnd.tiddlywiki
+
+!!!! Notes de bas de page
+Pour éviter de surcharger le texte principal, il est souvent utile de renvoyer à des notes de bas de page. Celles-ci ne sont pas automatisées dans TiddlyPAC. Le renvoi s'effectue en utilsant l'exposant^^note^^ (encadré par deux doubles circonflexes : `l'exposant^^note^^`), la note ne se situe pas en //bas de page// mais plutôt à la fin du chapitre ou du paragraphe et en utilisant le 6ème niveau de titre  (ligne commençant par 6 points d'exclamation `!`)
+
+```
+!!!!!! ^^note^^ pas au sens d'une exposition, mais au sens typographique du terme
+```
+!!!!!! ^^note^^ pas au sens d'une exposition, mais au sens typographique du terme
+
+!!!! Commentaires //invisibles//
+Pour faciliter le travail des utilisateurs, de nombreux commentaires sont insérés dans TiddlyPAC. Il ne seront pas visibles, ni dans le document final, ni dans la version imprimée du PAC.
+
+Pour les commentaires ''sans saut de ligne'', on utilise le 5^^ème^^ niveau de titre (ligne commençant par 5 points d'exclamation `!`)
+
+```
+!!!!! Un commentaire explicatif, ou qui indique quelle variable est utilisée pour sélectionner la suite du texte
+```
+!!!!!.visible Un commentaire explicatif, ou qui indique par exemple quelle ''[[variable|Variables]]'' est utilisée pour sélectionner la suite du texte
+
+Si on veut être plus disert, on peut utiliser le style `.com` qui s'utilise comme les styles `.obli`, `.ref` ou `.doc` vus par ailleurs
+
+```
+
+<<<.com
+Quand on a plein de choses à dire
+
+* il y a toujours
+* des solutions
+<<<
+```
+
+@@.com
+<<<.visible
+Quand on a plein de choses à dire
+
+* il y a toujours
+* des solutions
+<<<
+@@
+
+!!!! Commentaires pour les contributeurs
+TiddlyPAC est en évolution (sans doute pour un moment encore). Pour ne pas bloquer son utilisation, certaines parties sont publiées malgré des doutes ou des réflexions en cours.
+
+Dans ces cas là on utilise le style `.todo` de la même façon qu'on fait les commentaires.
+
+```
+!!!!!.todo Une réflexion très intéressant pour plus tard ou un doute exprimé sur l'intérêt de ce qu'on vient d'écrire...
+```
+!!!!!.todo.visible Une réflexion très intéressante pour plus tard ou un doute exprimé sur l'intérêt de ce qu'on vient d'écrire...
+
+//ou encore//
+
+```
+
+<<<.todo.visible
+Toute la perplexité et l'angoisse
+
+* de la page blanche
+* de l'ampleur de la tâche qui nous attend
+<<<
+```
+@@.todo
+<<<.visible
+Toute la perplexité et l'angoisse
+
+* de la page blanche
+* de l'ampleur de la tâche qui nous attend
+<<<
+@@
