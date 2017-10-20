@@ -44,7 +44,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>CC de Bidule — SCOT - Eléments de porter à connaissance</title>
+<title>CC de Bidule — PLU - Eléments de porter à connaissance</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
 
 
@@ -178,9 +178,7 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
-<li>$:/state/gen</li>
-
-<li>$:/state/varglo</li>
+<li>$:/state/tab/sidebar--1835078512</li>
 
 <li>$:/state/varloc</li>
 
@@ -295,6 +293,8 @@ Error message and password prompt
 <li>images</li>
 
 <li>Incitation à faire un PLUiD</li>
+
+<li>introduction locale</li>
 
 <li>inventaire ZH bas-normand</li>
 
@@ -12523,7 +12523,7 @@ Cette &quot;macro&quot; permet d'insérer toutes les sous-parties d'un chapitre 
 \end
 ```</pre>
 </div>
-<div created="20170824122428244" modified="20171019150141752" rank="5" tags="TiddlyPAC $:/tags/Stylesheet" title="$:/pac/styles" type="text/css" revision="0" bag="default">
+<div created="20170824122428244" modified="20171020123836894" rank="5" tags="TiddlyPAC $:/tags/Stylesheet" title="$:/pac/styles" type="text/css" revision="0" bag="default">
 <pre>/* titres */
 
 h1.titre {
@@ -12697,6 +12697,37 @@ body.static .tc-tiddlylink-missing {
    color: black;
    font-style: normal;
 }
+
+body.static .visible {
+      display:block !important;
+   }
+
+   /* améliorations des sauts de page */
+   a,
+   p {
+      orphans: 2;
+   }
+
+   h1 {
+      page-break-before: always;
+   }
+
+   h1.titre, caption {
+      page-break-before: avoid;
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   caption {
+      page-break-after: avoid;
+   }
+
+   blockquote {
+      page-break-inside: avoid;
+   }
+
 /* impression */
 @media print {
    body,
@@ -12707,6 +12738,9 @@ body.static .tc-tiddlylink-missing {
       padding: 0;
    }
 
+   .tc-tiddler-frame .tc-tiddler-controls {
+   	float: none;
+   }
    .tc-dropzone,
    body.static {
       display: table;
@@ -12771,38 +12805,22 @@ body.static .tc-tiddlylink-missing {
       color: black;
       font-style: normal;
    }
-   /* améliorations des sauts de page */
-   a,
-   p {
-      orphans: 2;
-   }
-
-   h1 {
-      page-break-before: always;
-   }
-
-   h1.titre {
+    h1.titre {
       font-size: 20pt;
-      margin: 8cm 0 5cm;
-      page-break-before: avoid;
+      margin: 5cm 0 5cm;
       line-height: 25pt;
-   }
-
-   h1,
-   h2,
-   h3,
-   h4 {
-      page-break-after: avoid;
-   }
-
-   blockquote {
-      page-break-inside: avoid;
    }
 
    .visible {
       display:block !important;
    }
-}</pre>
+}
+
+@page {
+   margin:2cm;
+   margin-bottom:1cm;
+}
+</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20170914155638660" dependents="" description="Markdown parser" list="readme usage" modified="20170914155638660" plugin-type="plugin" title="$:/plugins/tiddlywiki/markdown" type="application/json" version="5.1.14" revision="0" bag="default">
 <pre>{
@@ -12991,11 +13009,8 @@ body.static .tc-tiddlylink-missing {
 <div created="20170824063202973" modified="20170830155905729" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>{{variables.json##nom_territoire}}</pre>
 </div>
-<div created="20171019153439878" modified="20171019153439878" title="$:/state/gen" revision="1" bag="default">
-<pre>show</pre>
-</div>
-<div created="20171019153437760" modified="20171019153437760" title="$:/state/varglo" revision="1" bag="default">
-<pre>show</pre>
+<div created="20171020131832008" modified="20171020131832008" title="$:/state/tab/sidebar--1835078512" revision="1" bag="default">
+<pre>Sommaire</pre>
 </div>
 <div created="20171013171835545" modified="20171013171839187" title="$:/state/varloc" revision="2" bag="default">
 <pre>hide</pre>
@@ -13203,7 +13218,7 @@ syst&lt;/$reveal&gt;
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div created="20170824120603675" modified="20170920114821478" rank="0" tags="Documentation" title="à propos" type="text/x-markdown" revision="0" bag="default">
+<div created="20170824120603675" modified="20171020113143591" rank="0" tags="Documentation" title="à propos" type="text/x-markdown" revision="0" bag="default">
 <pre>Le [projet original][origin] est hébergé sur [l'instance gitlab de Framasoft][framagit]. Merci de faire vos propositions à cet endroit. D'autres versions peuvent être déployées, notamment sur gitlab ou github, mais il s'agit de mirroirs...*
 
 TiddlyPAC est une tentative pour faciliter la production de Porter à Connaissance par les services de l'Etat. Elle s'appuye sur le logiciel libre [TiddlyWiki][tw] qui est à la fois un outil et une plate-forme.
@@ -13227,6 +13242,7 @@ L'outil est le fruit d'un travail collectif qui s'enrichit des mises à jours r�
 
 ## Crédits / Licence
 TiddlyPAC s'appuye sur
+
 * [TiddlyWiki][tw] bien évidemment (_5.1.14_) (licence [BSD 3-clause](https://opensource.org/licenses/BSD-3-Clause))
     * son plugin Markown, pour essayer d'avoir la documentation à la fois dans le dépôt et dans l'outil
 
@@ -13747,9 +13763,10 @@ site //ÉcoQuartiers// national officiel
 &lt;&lt;&lt; http://www.ecoquartiers.logement.gouv.fr
 </pre>
 </div>
-<div created="20170919134605876" modified="20170919134634954" rank="99" tags="chapitre" title="Documentation" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! Documentation
-</pre>
+<div created="20170919134605876" modified="20171020113038070" rank="99" tags="chapitre" title="Documentation" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>@@.titre
+! TiddlyPAC Documentation
+@@</pre>
 </div>
 <div caption="Directive Territoriale d'Aménagement" created="20170825073044795" modified="20170913073717280" rank="0" tags="[[Projet de territoire]]" title="DTA" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!!!! le territoire est concerné par une DTA? {{variables.json##dans_DTA}} (//non// / //DTA de ...// [[changer|Variables]])
@@ -14085,6 +14102,12 @@ Il est rappelé que conformément à l’article L 151-44 du code de l'urbanisme
 &lt;&lt;&lt;
 
 &lt;/$reveal&gt;
+</pre>
+</div>
+<div created="20170824122212870" modified="20170920093442515" title="introduction locale" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>C’est le propos de cette partie « éléments de cadrage » de la contribution de la DREAL au Porter-à-Connaissance des services de l’État qui comporte à la fois des éléments réglementaires, documentaires et des recommandations méthodologiques.
+
+Elle vient compléter la partie « données essentielles » fournie par ailleurs et permet ainsi d'élaborer le projet avec une bonne connaissance du contexte dans les ensembles que constituent la Région Normandie, la Vallée de la Seine, la Nation et l’Europe.
 </pre>
 </div>
 <div created="20170929145154533" modified="20170929113959021" title="inventaire ZH bas-normand" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -15168,14 +15191,17 @@ Par ailleurs, dans ce cas, le PLUi doit assurer sa compatibilité avec les docum
 ! {{variables.json##nom_territoire}}&lt;br/&gt;{{variables.json##type_document}} &lt;br/&gt;Eléments de porter à connaissance
 @@
 
-Ainsi que le rappelle l’article L. 101-1 du code de l’urbanisme, le territoire français est « le patrimoine commun de la nation, dont les collectivités publiques sont à la fois gestionnaires et garantes ». Une des fonctions des documents d’urbanisme est donc d’atteindre les nombreux objectifs de développement durable dans une logique de projet de territoire.
+&lt;&lt;&lt;.ref
+Le territoire français est le patrimoine commun de la nation.
 
-Un certain nombre de documents sectoriels encadrent le projet de territoire dans les domaines de l’énergie, de la biodiversité, du paysage… D’autres plus transversaux donnent des orientations générales qui sont à reprendre pour intégrer de manière cohérente les projets locaux dans les ensembles que constituent la Région Normandie, la Vallée de la Seine, la Nation et l’Europe.
+Les collectivités publiques en sont les gestionnaires et les garantes dans le cadre de leurs compétences.
+&lt;&lt;&lt; article L101-1 du code de l’urbanisme
 
-Par ailleurs, des études, analyses et méthodes sont régulièrement développées et mises à jour pour aider les territoires à construire leur projet dans les meilleures conditions.
-C’est le propos de cette partie « éléments de cadrage » de la contribution de la DREAL au Porter-à-Connaissance des services de l’État qui comporte à la fois des éléments réglementaires, documentaires et des recommandations méthodologiques.
+Ainsi, afin d'aider les collectivités à agir au mieux avec ce patrimoine dans une logique de développement durable, l'Etat porte à leur connaissance l'ensemble des éléments législatif et règlementaire à respecter ainsi que les informations sur les projets locaux.
 
-Elle vient compléter la partie « données essentielles » fournie par ailleurs.
+Par ailleurs, des études, analyses et méthodes sont régulièrement développées et mises à jour pour les aider à construire leur projet de territoire dans les meilleures conditions.
+
+{{introduction locale}}
 </pre>
 </div>
 <div created="20170825115617074" modified="20170915102902491" rank="2" tags="[[Plan de Protection de l’Atmosphère]]" title="PPA en Normandie" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -15263,12 +15289,13 @@ En fonction des évolutions des installations industrielles et des éventuelles 
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div created="20170911145154533" modified="20170912161344094" tags="[[Porter à Connaissance]] chapitre" title="Projet de territoire" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170911145154533" modified="20170912161344094" rank="1" tags="[[Porter à Connaissance]] chapitre" title="Projet de territoire" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>! Projet de territoire
 
 @@.todo
 !!!!! Aménagement numérique ?
-@@</pre>
+@@
+</pre>
 </div>
 <div created="20170911145154533" modified="20170912161344094" rank="1" tags="[[Mobilités et infrastructures]]" title="Projets d'infrastructures" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!!!! Le territoire est concerné par des projets particuliers qui méritent d’être pris en compte pour l’élaboration du projet de territoire? {{variables.json##projet_infra}} ([[changer|Variables]])
@@ -16104,7 +16131,7 @@ donnera
 |cellule 1 | cellule 2 | cellule 3|
 |cellule 4 | cellule 5 | cellule 6|</pre>
 </div>
-<div caption="TiddlyPAC (sous le capot)" created="20170920075057377" modified="20170920075333791" rank="999" tags="Documentation" title="TiddlyPAC" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="TiddlyPAC (sous le capot)" created="20170920075057377" modified="20171020112743373" rank="999" tags="chapitre" title="TiddlyPAC" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Les informations sur TiddlyPAC sont disponibles dans la [[Documentation]].
 
 Le présent //tiddler// regroupe les éléments permettant de faire fonctionner le système pour un accès plus facile. N'y touchez pas si vous ne savez pas ce que vous faites (ou faites une sauvegarde avant...)</pre>
@@ -16449,12 +16476,12 @@ Liste des variables locales (de niveau régional) modifiables contenues dans [[v
     &quot;pnrp&quot;: &quot;oui&quot;
 }</pre>
 </div>
-<div created="20170824121832438" modified="20171019145529882" title="variables.json" type="application/json" revision="0" bag="default">
+<div created="20170824121832438" modified="20171020095248609" title="variables.json" type="application/json" revision="0" bag="default">
 <pre>{
     &quot;departement&quot;: &quot;14&quot;,
     &quot;nom_territoire&quot;: &quot;CC de Bidule&quot;,
     &quot;intercommunal&quot;: &quot;oui&quot;,
-    &quot;type_document&quot;: &quot;SCOT&quot;,
+    &quot;type_document&quot;: &quot;PLU&quot;,
     &quot;est_plui&quot;: &quot;oui&quot;,
     &quot;dans_scot&quot;: &quot;SCoT de Machin-Chouette&quot;,
     &quot;vaut_pdu&quot;: &quot;oui&quot;,
