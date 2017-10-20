@@ -1,5 +1,5 @@
 created: 20170824121832438
-modified: 20171019145529882
+modified: 20171020095248609
 title: variables.json
 type: application/json
 
@@ -7,7 +7,7 @@ type: application/json
     "departement": "14",
     "nom_territoire": "CC de Bidule",
     "intercommunal": "oui",
-    "type_document": "SCOT",
+    "type_document": "PLU",
     "est_plui": "oui",
     "dans_scot": "SCoT de Machin-Chouette",
     "vaut_pdu": "oui",

@@ -1,5 +1,5 @@
 created: 20170824120603675
-modified: 20170920114821478
+modified: 20171020113143591
 rank: 0
 tags: Documentation
 title: à propos
@@ -28,6 +28,7 @@ L'outil est le fruit d'un travail collectif qui s'enrichit des mises à jours r�
 
 ## Crédits / Licence
 TiddlyPAC s'appuye sur
+
 * [TiddlyWiki][tw] bien évidemment (_5.1.14_) (licence [BSD 3-clause](https://opensource.org/licenses/BSD-3-Clause))
     * son plugin Markown, pour essayer d'avoir la documentation à la fois dans le dépôt et dans l'outil
 

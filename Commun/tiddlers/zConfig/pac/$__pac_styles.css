@@ -171,6 +171,37 @@ body.static .tc-tiddlylink-missing {
    color: black;
    font-style: normal;
 }
+
+body.static .visible {
+      display:block !important;
+   }
+
+   /* améliorations des sauts de page */
+   a,
+   p {
+      orphans: 2;
+   }
+
+   h1 {
+      page-break-before: always;
+   }
+
+   h1.titre, caption {
+      page-break-before: avoid;
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   caption {
+      page-break-after: avoid;
+   }
+
+   blockquote {
+      page-break-inside: avoid;
+   }
+
 /* impression */
 @media print {
    body,
@@ -181,6 +212,9 @@ body.static .tc-tiddlylink-missing {
       padding: 0;
    }
 
+   .tc-tiddler-frame .tc-tiddler-controls {
+   	float: none;
+   }
    .tc-dropzone,
    body.static {
       display: table;
@@ -245,35 +279,18 @@ body.static .tc-tiddlylink-missing {
       color: black;
       font-style: normal;
    }
-   /* améliorations des sauts de page */
-   a,
-   p {
-      orphans: 2;
-   }
-
-   h1 {
-      page-break-before: always;
-   }
-
-   h1.titre {
+    h1.titre {
       font-size: 20pt;
-      margin: 8cm 0 5cm;
-      page-break-before: avoid;
+      margin: 5cm 0 5cm;
       line-height: 25pt;
-   }
-
-   h1,
-   h2,
-   h3,
-   h4 {
-      page-break-after: avoid;
-   }
-
-   blockquote {
-      page-break-inside: avoid;
    }
 
    .visible {
       display:block !important;
    }
+}
+
+@page {
+   margin:2cm;
+   margin-bottom:1cm;
 }
