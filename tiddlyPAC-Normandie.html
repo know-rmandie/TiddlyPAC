@@ -178,10 +178,6 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
-<li>$:/state/tab/sidebar--1835078512</li>
-
-<li>$:/state/varloc</li>
-
 <li>$:/status/IsLoggedIn</li>
 
 <li>$:/status/UserName</li>
@@ -386,6 +382,8 @@ Error message and password prompt
 
 <li>PLUi valant PDU en Normandie</li>
 
+<li>PNR Noramndie</li>
+
 <li>Porter à Connaissance</li>
 
 <li>PPA en Normandie</li>
@@ -517,6 +515,8 @@ Error message and password prompt
 <li>Zones humides Normandie</li>
 
 <li>Zones sensibles</li>
+
+<li>Zones sensibles Normandie</li>
 
 <li>ZRE</li>
 
@@ -13009,12 +13009,6 @@ body.static .visible {
 <div created="20170824063202973" modified="20170830155905729" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>{{variables.json##nom_territoire}}</pre>
 </div>
-<div created="20171020131832008" modified="20171020131832008" title="$:/state/tab/sidebar--1835078512" revision="1" bag="default">
-<pre>Sommaire</pre>
-</div>
-<div created="20171013171835545" modified="20171013171839187" title="$:/state/varloc" revision="2" bag="default">
-<pre>hide</pre>
-</div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
 <pre>yes</pre>
 </div>
@@ -14860,30 +14854,23 @@ Ce document est un schéma de cohérence territoriale. Tant qu'ils existent...
 </div>
 <div created="20170929145154533" modified="20170929113959021" rank="9" tags="[[Espaces protégés]]" title="Parc Naturels Régionaux" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##pnr&quot; text=&quot;non&quot;&gt;
-&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##pnrbs&quot; text=&quot;non&quot;&gt;
 
-&lt;&lt;&lt;.doc
-Le territoire fait partie du Parc naturel régional des Boucles de la Seine Normande.
-&lt;&lt;&lt; http://www.pnr-seine-normande.com
-&lt;/$reveal&gt;
-&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##pnrmcb&quot; text=&quot;non&quot;&gt;
+!!! Parcs naturels Régionaux
+Un Parc Naturel Régional (PNR) est un outil original imaginé par la Délégation interministérielle à l’aménagement du territoire et à l’attractivité régionale (DATAR) en 1967 qui vise à fonder sur la protection, la gestion et la mise en valeur du patrimoine, un projet de développement pour un territoire. L’initiative de création appartient aux régions, qui s’appuient pour définir le projet sur les collectivités locales et territoriales concernées.
 
-&lt;&lt;&lt;.doc
-Le territoire fait partie du Parc naturel régional des Marais du Cotentin et du Bessin.
-&lt;&lt;&lt; http://www.parc-cotentin-bessin.fr
-&lt;/$reveal&gt;
-&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##pnrnm&quot; text=&quot;non&quot;&gt;
+Le projet de développement énoncé dans une charte doit définir les actions propices à :
 
-&lt;&lt;&lt;.doc
-Le territoire fait partie du Parc naturel régional Normandie-Maine.
-&lt;&lt;&lt; http://www.parc-naturel-normandie-maine.fr
-&lt;/$reveal&gt;
-&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##pnrp&quot; text=&quot;non&quot;&gt;
+* protéger ce patrimoine, notamment par une gestion adaptée des milieux naturels et des paysages,
+* contribuer à l’aménagement du territoire,
+* contribuer au développement économique, social, culturel, et à la qualité de la vie,
+* assurer l’accueil, l’éducation et l’information du public,
+réaliser des actions expérimentales ou exemplaires dans ces domaines et contribuer à des programmes de recherche.
 
-&lt;&lt;&lt;.doc
-Le territoire fait partie du Parc naturel régional du Perche.
-&lt;&lt;&lt; http://www.parc-naturel-perche.fr
-&lt;/$reveal&gt;
+&lt;&lt;&lt;.obli
+En application de la loi pour la reconquête de la biodiversité, de la nature et des paysages, le document d'urbanisme devra être compatible avec la Charte du Parc^^6-3-9^^. Il convient d’associer le Parc tout au long du processus d’élaboration du document d’urbanisme. Dans tous les cas, le Parc devra obligatoirement être consulté pour avis sur le document de planification.
+&lt;&lt;&lt;
+
+!!!!!! ^^6-3-9^^ article L.333-1 alinéas V et VI du code de l’environnement
 &lt;/$reveal&gt;
 </pre>
 </div>
@@ -15177,6 +15164,35 @@ Par ailleurs, dans ce cas, le PLUi doit assurer sa compatibilité avec les docum
 
 {{PPA en Normandie}}
 
+&lt;/$reveal&gt;
+</pre>
+</div>
+<div created="20170929145154533" modified="20170929113959021" rank="9" tags="[[Espaces protégés]]" title="PNR Noramndie" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##pnr&quot; text=&quot;non&quot;&gt;
+&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##pnrbs&quot; text=&quot;non&quot;&gt;
+
+&lt;&lt;&lt;.doc
+Le territoire fait partie du Parc naturel régional des Boucles de la Seine Normande.
+&lt;&lt;&lt; http://www.pnr-seine-normande.com
+&lt;/$reveal&gt;
+&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##pnrmcb&quot; text=&quot;non&quot;&gt;
+
+&lt;&lt;&lt;.doc
+Le territoire fait partie du Parc naturel régional des Marais du Cotentin et du Bessin.
+&lt;&lt;&lt; http://www.parc-cotentin-bessin.fr
+&lt;/$reveal&gt;
+&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##pnrnm&quot; text=&quot;non&quot;&gt;
+
+&lt;&lt;&lt;.doc
+Le territoire fait partie du Parc naturel régional Normandie-Maine.
+&lt;&lt;&lt; http://www.parc-naturel-normandie-maine.fr
+&lt;/$reveal&gt;
+&lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##pnrp&quot; text=&quot;non&quot;&gt;
+
+&lt;&lt;&lt;.doc
+Le territoire fait partie du Parc naturel régional du Perche.
+&lt;&lt;&lt; http://www.parc-naturel-perche.fr
+&lt;/$reveal&gt;
 &lt;/$reveal&gt;
 </pre>
 </div>
@@ -16685,7 +16701,20 @@ La compatibilité du document d’urbanisme avec le SDAGE pourra notamment se tr
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div created="20171013185000000" modified="20171013185000000" rank="1" tags="[[Zones sensibles]]" title="Zones sensibles" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170929145154533" modified="20170929113919072" rank="6" tags="[[Ressource en eau]]" title="Zones sensibles" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!!!!! Le territoire est concerné par des zones sensibles ''{{variables.json##zones_sensibles}}'' ([[changer|Variables]])
+&lt;$reveal type=&quot;match&quot; state=&quot;variables.json##zones_sensibles&quot; text=&quot;oui&quot;&gt;
+
+!! Zones sensibles
+Les zones sensibles sont des bassins versants, lacs ou zones maritimes qui sont particulièrement sensibles aux pollutions, notamment des zones qui sont sujettes à l’eutrophisation et dans lesquelles les rejets de phosphore, d’azote, ou de ces deux substances, doivent être réduits. Il peut également s’agir de zones dans lesquelles un traitement complémentaire (traitement de l’azote ou de la pollution microbiologique) est nécessaire afin de satisfaire aux directives dans le domaine de l’eau (directive &quot;eaux brutes&quot;, &quot;baignade&quot; ou &quot;conchyliculture&quot;).
+
+La première délimitation des zones sensibles à l’eutrophisation a été réalisée dans le cadre de l’application du décret n°94-469 du 3 juin 1994 qui transcrit en droit français la directive européenne n°91/271 du 21 mai 1991 relative au traitement des eaux urbaines résiduaires. Les zones sensibles sont rappelées dans le SDAGE concerné.
+
+Les Plans d’Actions Opérationnels Territorialisés, élaborés par les missions interservices de l’eau, hiérarchisent également les zones sensibles concernées par les eaux résiduaires urbaines. Les rejets provenant des stations d’épuration, dans et hors zone sensible, sont surveillés par le biais d’autocontrôles réalisés par l’exploitant de la station d’épuration.
+&lt;/$reveal&gt;
+</pre>
+</div>
+<div created="20171013185000000" modified="20171013185000000" rank="1" tags="[[Zones sensibles]]" title="Zones sensibles Normandie" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$reveal type=&quot;match&quot; state=&quot;variables.json##zones_sensibles&quot; text=&quot;oui&quot;&gt;
 
 &lt;&lt;&lt;.doc
