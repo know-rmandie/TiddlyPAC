@@ -50,6 +50,16 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 * Le territoire fait partie d'un PLH  (//non / PLH de ...//) : <$edit-text tiddler="variables.json" index="dans_PLH" tag="input" class="pac"/>
 </$reveal>
 
+!!! [[Mobilités et infrastructures]] <$reveal type="nomatch" state="$:/state/mob" text="show">
+<$button set="$:/state/mob" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
+</$reveal><$reveal type="match" state="$:/state/mob" text="show">
+<$button set="$:/state/mob" setTo="hide" class=<<tv-config-toolbar-class>>>{{$:/core/images/up-arrow}}</$button>
+</$reveal>
+<$reveal type="match" state="$:/state/mob" text="show">
+
+* Le territoire est concerné par des projets d'infra importants (//oui / non//) : <$edit-text tiddler="variables.json" index="projet_infra" tag="input" class="pac short"/>
+</$reveal>
+
 !!! [[Risques naturels]] <$reveal type="nomatch" state="$:/state/R_nat" text="show">
 <$button set="$:/state/R_nat" setTo="show" class=<<tv-config-toolbar-class>>>{{$:/core/images/down-arrow}}</$button>
 </$reveal><$reveal type="match" state="$:/state/R_nat" text="show">

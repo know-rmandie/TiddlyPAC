@@ -1,5 +1,5 @@
 created: 20170828093049959
-modified: 20170830162252185
+modified: 20171107092622844
 rank: 3
 tags: [[L’aménagement et la ville durables]]
 title: Référentiel des villes et territoires durables
@@ -8,4 +8,6 @@ type: text/vnd.tiddlywiki
 !!! Référentiel des villes et territoires durables
 Pour les territoires souhaitant bénéficier de cette logique de projet sans forcément poursuivre un objectif de labellisation, l’État a largement participé au développement de la plateforme européenne RFSC (Reference Framework for Sustainable Cities : référentiel des villes et territoires durables). Cette application en ligne propose gratuitement un outil de définition, de suivi et d’évaluation des objectifs du projet territorial, de la stratégie mise en œuvre et des résultats obtenus.
 
-L’outil RFSC est en ligne à l’adresse http://rfsc.eu/fr/. Des informations sur son utilisation sont disponibles sur le site internet du ministère consacré aux écoquartiers : http://www.ecoquartiers.logement.gouv.fr/europe-rfsc-r343.html
+<<<.doc
+Des informations sur l'outil RFSC et son utilisation sont disponibles sur le site internet de la plate-forme
+<<< http://rfsc.eu/fr/

@@ -5,7 +5,7 @@ rank: 1
 title: Projets d'infrastructures
 type: text/vnd.tiddlywiki
 
-!!!!! Le territoire est concerné par des projets particuliers qui méritent d’être pris en compte pour l’élaboration du projet de territoire? {{variables.json##projet_infra}} ([[changer|Variables]])
+!!!!! Le territoire est concerné par des projets particuliers qui méritent d’être pris en compte pour l’élaboration du projet de territoire? ''{{variables.json##projet_infra}}'' ([[changer|Variables]])
 
 <$reveal type="nomatch" state="variables.json##projet_infra" text="non">
 
