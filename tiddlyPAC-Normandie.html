@@ -178,6 +178,10 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/mob</li>
+
+<li>$:/state/varglo</li>
+
 <li>$:/status/IsLoggedIn</li>
 
 <li>$:/status/UserName</li>
@@ -13009,6 +13013,12 @@ body.static .visible {
 <div created="20170824063202973" modified="20170830155905729" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>{{variables.json##nom_territoire}}</pre>
 </div>
+<div created="20171107094500857" modified="20171107094502739" title="$:/state/mob" revision="2" bag="default">
+<pre>hide</pre>
+</div>
+<div created="20171107094459154" modified="20171107094505190" title="$:/state/varglo" revision="2" bag="default">
+<pre>hide</pre>
+</div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
 <pre>yes</pre>
 </div>
@@ -15314,7 +15324,7 @@ En fonction des évolutions des installations industrielles et des éventuelles 
 </pre>
 </div>
 <div created="20170911145154533" modified="20170912161344094" rank="1" tags="[[Mobilités et infrastructures]]" title="Projets d'infrastructures" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!!!!! Le territoire est concerné par des projets particuliers qui méritent d’être pris en compte pour l’élaboration du projet de territoire? {{variables.json##projet_infra}} ([[changer|Variables]])
+<pre>!!!!! Le territoire est concerné par des projets particuliers qui méritent d’être pris en compte pour l’élaboration du projet de territoire? ''{{variables.json##projet_infra}}'' ([[changer|Variables]])
 
 &lt;$reveal type=&quot;nomatch&quot; state=&quot;variables.json##projet_infra&quot; text=&quot;non&quot;&gt;
 
@@ -15489,11 +15499,13 @@ L'intégralité de l'oeuvre de Jules Verne est disponible sur Wikisource
 L'intégralité de l'oeuvre de Jules Verne est disponible sur Wikisource
 &lt;&lt;&lt; https://fr.wikisource.org/wiki/Auteur:Jules_Verne</pre>
 </div>
-<div created="20170828093049959" modified="20170830162252185" rank="3" tags="[[L’aménagement et la ville durables]]" title="Référentiel des villes et territoires durables" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170828093049959" modified="20171107092622844" rank="3" tags="[[L’aménagement et la ville durables]]" title="Référentiel des villes et territoires durables" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!! Référentiel des villes et territoires durables
 Pour les territoires souhaitant bénéficier de cette logique de projet sans forcément poursuivre un objectif de labellisation, l’État a largement participé au développement de la plateforme européenne RFSC (Reference Framework for Sustainable Cities : référentiel des villes et territoires durables). Cette application en ligne propose gratuitement un outil de définition, de suivi et d’évaluation des objectifs du projet territorial, de la stratégie mise en œuvre et des résultats obtenus.
 
-L’outil RFSC est en ligne à l’adresse http://rfsc.eu/fr/. Des informations sur son utilisation sont disponibles sur le site internet du ministère consacré aux écoquartiers : http://www.ecoquartiers.logement.gouv.fr/europe-rfsc-r343.html
+&lt;&lt;&lt;.doc
+Des informations sur l'outil RFSC et son utilisation sont disponibles sur le site internet de la plate-forme
+&lt;&lt;&lt; http://rfsc.eu/fr/
 </pre>
 </div>
 <div created="20170828093049959" modified="20170915072040759" rank="9" tags="[[L’aménagement et la ville durables]]" title="Référentiel normand de la ville durable" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -16335,6 +16347,16 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 * Le territoire fait partie d'un PLH  (//non / PLH de ...//) : &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;dans_PLH&quot; tag=&quot;input&quot; class=&quot;pac&quot;/&gt;
 &lt;/$reveal&gt;
 
+!!! [[Mobilités et infrastructures]] &lt;$reveal type=&quot;nomatch&quot; state=&quot;$:/state/mob&quot; text=&quot;show&quot;&gt;
+&lt;$button set=&quot;$:/state/mob&quot; setTo=&quot;show&quot; class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;{{$:/core/images/down-arrow}}&lt;/$button&gt;
+&lt;/$reveal&gt;&lt;$reveal type=&quot;match&quot; state=&quot;$:/state/mob&quot; text=&quot;show&quot;&gt;
+&lt;$button set=&quot;$:/state/mob&quot; setTo=&quot;hide&quot; class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;{{$:/core/images/up-arrow}}&lt;/$button&gt;
+&lt;/$reveal&gt;
+&lt;$reveal type=&quot;match&quot; state=&quot;$:/state/mob&quot; text=&quot;show&quot;&gt;
+
+* Le territoire est concerné par des projets d'infra importants (//oui / non//) : &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;projet_infra&quot; tag=&quot;input&quot; class=&quot;pac short&quot;/&gt;
+&lt;/$reveal&gt;
+
 !!! [[Risques naturels]] &lt;$reveal type=&quot;nomatch&quot; state=&quot;$:/state/R_nat&quot; text=&quot;show&quot;&gt;
 &lt;$button set=&quot;$:/state/R_nat&quot; setTo=&quot;show&quot; class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;{{$:/core/images/down-arrow}}&lt;/$button&gt;
 &lt;/$reveal&gt;&lt;$reveal type=&quot;match&quot; state=&quot;$:/state/R_nat&quot; text=&quot;show&quot;&gt;
@@ -16441,7 +16463,8 @@ Liste des variables globales modifiables contenues dans [[variables.json]].
 * Le document est concerné par une évaluation environnementale (//non / syst / cpc//) : &lt;$edit-text tiddler=&quot;variables.json&quot; index=&quot;type_EE&quot; tag=&quot;input&quot; class=&quot;pac mid&quot;/&gt;&lt;br/&gt;
 (//Au vu des autres éléments renseignés, la réponse devrait être ''{{$:/vars/type_EE}}''//)
 &lt;/$reveal&gt;
-&lt;/$reveal&gt;</pre>
+&lt;/$reveal&gt;
+</pre>
 </div>
 <div created="20170911153453007" modified="20171009130327667" title="Variables locales" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! [[Variables locales]] &lt;$reveal type=&quot;nomatch&quot; state=&quot;$:/state/varloc&quot; text=&quot;show&quot;&gt;
@@ -16492,7 +16515,7 @@ Liste des variables locales (de niveau régional) modifiables contenues dans [[v
     &quot;pnrp&quot;: &quot;oui&quot;
 }</pre>
 </div>
-<div created="20170824121832438" modified="20171020095248609" title="variables.json" type="application/json" revision="0" bag="default">
+<div created="20170824121832438" modified="20171107091150689" title="variables.json" type="application/json" revision="0" bag="default">
 <pre>{
     &quot;departement&quot;: &quot;14&quot;,
     &quot;nom_territoire&quot;: &quot;CC de Bidule&quot;,
@@ -16533,7 +16556,8 @@ Liste des variables locales (de niveau régional) modifiables contenues dans [[v
     &quot;slgri&quot;: &quot;oui&quot;,
     &quot;littoral&quot;: &quot;oui&quot;,
     &quot;urbain&quot;: &quot;oui&quot;,
-    &quot;type_EE&quot;: &quot;cpc&quot;
+    &quot;type_EE&quot;: &quot;cpc&quot;,
+    &quot;projet_infra&quot;: &quot;&quot;
 }</pre>
 </div>
 <div caption="versions de TiddlyPAC" created="20170905133225949" modified="20171019131146426" rank="2" tags="Documentation" title="versions_de_TiddlyPAC" type="text/vnd.tiddlywiki" revision="0" bag="default">
