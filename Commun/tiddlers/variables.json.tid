@@ -1,12 +1,19 @@
+created: 20170824121832438
+modified: 20180124142926383
+rank: 1
+tags: TiddlyPAC
+title: variables.json
+type: application/json
+
 {
     "departement": "14",
     "nom_territoire": "CC de Bidule",
     "intercommunal": "oui",
-    "type_document": "SCoT",
+    "type_document": "PLU",
     "est_plui": "oui",
     "dans_scot": "non",
-    "vaut_pdu": "non",
-    "vaut_plh": "non",
+    "vaut_pdu": "oui",
+    "vaut_plh": "oui",
     "dans_DTA": "DTA de truc",
     "dans_PLH": "PLH de machin",
     "dans_PPA": "PPA de Schmurz",
