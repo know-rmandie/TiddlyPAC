@@ -1,5 +1,7 @@
 created: 20170824121832438
-modified: 20171107091150689
+modified: 20180124142926383
+rank: 1
+tags: TiddlyPAC
 title: variables.json
 type: application/json
 
@@ -9,7 +11,7 @@ type: application/json
     "intercommunal": "oui",
     "type_document": "PLU",
     "est_plui": "oui",
-    "dans_scot": "SCoT de Machin-Chouette",
+    "dans_scot": "non",
     "vaut_pdu": "oui",
     "vaut_plh": "oui",
     "dans_DTA": "DTA de truc",

@@ -1,14 +1,20 @@
 caption: Directive Territoriale d'Aménagement
 created: 20170825073044795
-modified: 20170913073717280
+modified: 20180124101255504
 rank: 0
 tags: [[Projet de territoire]]
 title: DTA
 type: text/vnd.tiddlywiki
 
-!!!!! le territoire est concerné par une DTA? {{variables.json##dans_DTA}} (//non// / //DTA de ...// [[changer|Variables]])
+!!!!! le territoire est concerné par une DTA? ''{{variables.json##dans_DTA}}'' ([[changer|Variables]])
 
 <$reveal type="nomatch" state="variables.json##dans_DTA" text="non">
 
-{{si DTA||$:/core/ui/ViewTemplate/body}}
+!! {{variables.json##dans_DTA}}
+Les DTA approuvées avant le 13 juillet 2010, instaurées par la Loi n° 95-115 du 4 février 1995 d'orientation pour l'aménagement et le développement du territoire, ont pour objet de :
+
+* définir les orientations fondamentales de l’État en matière d’aménagement et d’équilibre entre les perspectives de développement, de protection et de mise en valeur des territoires;
+* fixer les principaux objectifs de l’État en matière de localisation des grandes infrastructures de transport et des grands équipements ainsi qu’en matière de préservation des espaces naturels, des sites et des paysages;
+* préciser, si besoin, les modalités d’application de la loi littoral, adaptées aux particularités géographiques locales.
+
 </$reveal>

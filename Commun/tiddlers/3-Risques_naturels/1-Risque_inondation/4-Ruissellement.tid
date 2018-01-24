@@ -1,5 +1,5 @@
 created: 20171220145154533
-modified: 20171017134529137
+modified: 20180124102050390
 rank: 4
 tags: [[Risque inondation]]
 title: Ruissellement
@@ -12,7 +12,10 @@ type: text/vnd.tiddlywiki
 !!! Risque inondation par ruissellement pluvial
 Pour limiter les impacts du ruissellement, une politique de gestion et de valorisation des eaux pluviales doit être intégrée aux projets d’aménagement. Néanmoins, il est important de noter que certains ouvrages, parfois mis en œuvre pour lutter contre le risque d’inondation par ruissellement, peuvent aggraver les risques liés à la dissolution du gypse et au retrait-gonflement des argiles. En zone de dissolution du gypse, les dispositifs de rétention des eaux sont à privilégier. Les procédés d’infiltration pourront être mis en œuvre moyennant la réalisation d’une étude hydrogéologique préalable. En raison du risque lié au retrait-gonflement des sols argileux, l’infiltration superficielle des eaux pluviales est à proscrire au droit des fondations des constructions.
 
+<$reveal type="match" state="variables.json##type_document" text="PLU">
+
 <<<.obli
-Le PLU peut être l’occasion, en partenariat avec les gestionnaires de réseau et sur la base d’études hydrauliques, d’identifier les secteurs communaux les plus exposés à ce risque, d’identifier les principaux axes d’écoulement qu’il serait nécessaire de préserver et d’envisager la mise en place de zonages pluviaux.
+Le {{docUrba}} peut être l’occasion, en partenariat avec les gestionnaires de réseau et sur la base d’études hydrauliques, d’identifier les secteurs communaux les plus exposés à ce risque, d’identifier les principaux axes d’écoulement qu’il serait nécessaire de préserver et d’envisager la mise en place de zonages pluviaux.
 <<<
+</$reveal>
 </$reveal>

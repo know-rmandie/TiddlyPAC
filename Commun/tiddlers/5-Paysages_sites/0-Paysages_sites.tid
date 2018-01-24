@@ -1,5 +1,5 @@
 created: 20170911145154533
-modified: 20171017134245290
+modified: 20180124102050367
 rank: 5
 tags: [[Porter à Connaissance]] chapitre
 title: Paysages et sites
@@ -38,7 +38,7 @@ Il peut par ailleurs à travers le document d'orientation et d'objectifs précis
 !!!!!! ^^5-0-a^^ article L141-4 du code de l'urbanisme
 !!!!!! ^^5-0-b^^ article L141-18 du code de l'urbanisme
 </$reveal>
-<$reveal type="nomatch" state="variables.json##type_document" text="SCOT">
+<$reveal type="nomatch" state="variables.json##type_document" text="SCoT">
 
 <<<.obli
 Le PLU doit à travers son PADD définir les orientations générales des politiques de paysage, de protection des espaces naturels^^5-0-a^^, qui s'entendent au sens de la convention européenne du paysage. Il peut par ailleurs intégrer les spécificités paysagères, architecturales, patrimoniales et environnementales des anciennes communes.
