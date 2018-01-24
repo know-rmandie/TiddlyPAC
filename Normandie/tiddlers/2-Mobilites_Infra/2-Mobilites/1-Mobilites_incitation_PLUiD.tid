@@ -1,16 +1,16 @@
 created: 20170911145154533
-modified: 20171009133635663
+modified: 20180124102050444
 rank: 1.5
 tags: Mobilités
 title: Incitation à faire un PLUiD
 type: text/vnd.tiddlywiki
 
 !!!!! Faudrait-il faire un PLUiD? {{variables.json##doit_pluid}} ([[changer|Variables]])
-
+<$reveal type="match" state="variables_locales.json##type_document" text="PLU">
 <$reveal type="nomatch" state="variables_locales.json##doit_pluid" text="non">
 
 <<<.obli
 Il est rappelé que conformément à l’article L 151-44 du code de l'urbanisme, lorsque le PLU est élaboré par un établissement public de coopération intercommunale compétent qui est autorité organisatrice de transport, ''le PLU peut tenir lieu de Plan de Déplacements Urbains''. Il est alors nécessaire d'intégrer les éléments correspondant dans le PLU.
 <<<
-
+</$reveal>
 </$reveal>
