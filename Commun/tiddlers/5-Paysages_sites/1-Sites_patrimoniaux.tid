@@ -14,7 +14,7 @@ Si la Convention européenne du paysage appréhende tous les paysages, et donc �
 
 Créés par la loi du 2 mai 1930, et régis aujourd’hui par les articles L341-1 à L341-15 du code de l’environnement, les sites classés et inscrits répondent ainsi à un objectif de conservation ou de préservation d’espaces présentant un intérêt reconnu pour des motifs d’ordre pittoresque, historique, scientifique ou légendaire.
 
-<$reveal type="nomatch" state="variables.json##type_document" text="SCOT">
+<$reveal type="nomatch" state="variables.json##type_document" text="SCoT">
 
 <<<.obli
 A ce titre, les sites classés ou inscrits constituent des servitudes d’utilité publique affectant l’utilisation du sol opposables au tiers. C’est pourquoi, la décision d’inscription ou de classement ainsi que le plan de délimitation du site doivent être reportés dans le {{variables.json##type_document}}^^5-1-a^^.

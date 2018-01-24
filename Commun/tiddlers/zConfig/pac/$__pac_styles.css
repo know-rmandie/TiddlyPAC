@@ -80,9 +80,12 @@ input.mid {
     padding:.25em .5em;
     border-radius: 1em;
 }
+.pac-btn, .tc-sidebar-lists .pac-btn {
+    color: white; 
+}
 .active {
     background-color: green;
-    color: white; fill: white;
+    color: white;
 }
 
 /* différents types de mise en exergue */

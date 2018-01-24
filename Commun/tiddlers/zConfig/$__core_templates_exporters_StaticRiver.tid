@@ -33,7 +33,7 @@ type: text/vnd.tiddlywiki
 {{$:/core/templates/exporters/StaticRiver/Content||$:/core/templates/html-tiddler}}
 </section>
 <footer>
-<div id="pied-de-page">{{variables.json##nom_territoire}} - {{variables.json##type_document}} -  porter à connaissance<div id="num"></div></div>
+<div id="pied-de-page">{{variables.json##nom_territoire}} - {{docUrba}} -  porter à connaissance<div id="num"></div></div>
 </footer>
 </body>
 </html>

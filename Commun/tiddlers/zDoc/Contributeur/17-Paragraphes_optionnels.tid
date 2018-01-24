@@ -23,23 +23,23 @@ Pour voir l'effet, aller dans l'onglet //Variables// à droite et changer la var
 
 ```
 !!!!! Paragraphe qui apparait quand le document ''n'est pas'' un SCOT
-<$reveal type="nomatch" state="variables.json##type_document" text="SCOT">
+<$reveal type="nomatch" state="variables.json##type_document" text="SCoT">
 
 Le document n'est donc pas un SCOT. Il s'agit d'un PLU (peut-être intercommunal?)
 </$reveal>
 !!!!! Paragraphe qui apparait quand le document ''est'' un SCOT
-<$reveal type="match" state="variables.json##type_document" text="SCOT">
+<$reveal type="match" state="variables.json##type_document" text="SCoT">
 
 Ce document est un schéma de cohérence territoriale. Tant qu'ils existent...
 </$reveal>
 ```
 !!!!! Paragraphe qui apparait quand le document ''n'est pas'' un SCOT
-<$reveal type="nomatch" state="variables.json##type_document" text="SCOT">
+<$reveal type="nomatch" state="variables.json##type_document" text="SCoT">
 
 Ce document n'est donc pas un SCOT. Il s'agit d'un PLU (peut-être intercommunal?)
 </$reveal>
 !!!!! Paragraphe qui apparait quand le document ''est'' un SCOT
-<$reveal type="match" state="variables.json##type_document" text="SCOT">
+<$reveal type="match" state="variables.json##type_document" text="SCoT">
 
 Ce document est un schéma de cohérence territoriale. Tant qu'ils existent...
 </$reveal>

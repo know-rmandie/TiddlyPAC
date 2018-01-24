@@ -14,7 +14,7 @@ Les plans de protection de l'atmosphère sont mis en oeuvre dans les agglomérat
 
 !!!!! le PLUi vaut PDU? {{variables.json##vaut_pdu}} (//oui - non// - [[changer|Variables]])
 <$reveal type="match" state="variables.json##vaut_pdu" text="oui">
-Le {{variables.json##type_document}} a vocation à valoir également PDU. A ce titre, il reprend les obligations de ce document et doit être compatibles avec le PPA.
+Le {{docUrba}} a vocation à valoir également PDU. A ce titre, il reprend les obligations de ce document et doit être compatibles avec le PPA.
 </$reveal>
 
 </$reveal>
