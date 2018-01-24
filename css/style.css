@@ -17,3 +17,7 @@
 .fa-button {
   margin:.5em;padding:.5em;border:3px solid purple;border-radius: 50%;background:purple;color:white;cursor: pointer;
 }
+
+#pGi a {
+  color:white;
+}
