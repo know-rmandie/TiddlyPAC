@@ -1,5 +1,5 @@
 created: 20170929145154533
-modified: 20170929114220193
+modified: 20180124102050333
 rank: 2
 tags: [[Continuités écologiques]]
 title: transposition
@@ -23,10 +23,11 @@ De plus, le PADD  devra définir des orientations générales relatives à la pr
 <<<.nbp
 ^^6-1-a^^ articles L.131-2 et L.131-7 du code de l’urbanisme
 
-^^6-1-b^^ article L.101-2 du code de l’urbanisme
-
-^^6-1-c^^ article L.151-5 du code de l’urbanisme
+^^6-1-b^^ article L.101-2
+<$reveal type="match" state="variables.json##type_document" text="PLU"> et  L.151-5</$reveal> du code de l’urbanisme
 <<<
+
+<$reveal type="match" state="variables.json##type_document" text="PLU">
 
 Ainsi, le contenu du document - diagnostic, état initial de l’environnement, PADD, règlement écrit, documents graphiques et annexes - permet de planifier et d’inscrire réglementairement à la parcelle des espaces de nature, et en complément, d’émettre un certain nombre de recommandations en dehors du cadre réglementaire.
 
@@ -48,6 +49,7 @@ Pourront notamment être utilisées :
 
 ^^6-1-f^^ article L151-41 du code de l’urbanisme
 <<<
+</$reveal>
 
 <<<.doc
 Le site internet du Ministère de la Transition écologique et solidaire dispose d'une rubrique « biodiversité et paysages » qui comporte de nombreux éléments utiles

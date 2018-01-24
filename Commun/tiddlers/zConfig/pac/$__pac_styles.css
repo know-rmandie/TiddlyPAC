@@ -75,6 +75,16 @@ input.mid {
    width: 6em;
 }
 
+.pac-btn {
+    font-size: 0.8em;
+    padding:.25em .5em;
+    border-radius: 1em;
+}
+.active {
+    background-color: green;
+    color: white; fill: white;
+}
+
 /* différents types de mise en exergue */
 
 blockquote p {
