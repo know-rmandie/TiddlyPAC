@@ -31,7 +31,7 @@ Les principales étapes de la démarche sont les suivantes :
 # ''Construire le projet d’urbanisme''
 #* Analyser, à chaque étape de la construction du document d’urbanisme, les incidences de sa mise en œuvre sur l’environnement ;
 #* Adapter le projet en continu en préservant l’environnement.<br/>Dans cette étape, plusieurs scénarios de développement sont envisagés. Leurs incidences sur l’environnement <$reveal type="nomatch" state="variables.json##natura_2000" text="non">- et sur le(s) site(s) Natura 2000  présent(s) - </$reveal>sont évaluées. Le scénario retenu permet de concilier le projet politique et les enjeux environnementaux du territoire. Si nécessaire, des mesures d’évitement, de réduction et, en dernier lieu, de compensation des impacts négatifs doivent être envisagées.
-# ''Définir les modalités de suivi du projet''<br/>Les {{variables.json##type_document}} soumis à évaluation environnementale doivent faire l’objet d’une analyse des résultats de leur application au plus tard à l’expiration d’un délai de neuf ans à compter de la délibération portant approbation du document, ou la dernière délibération portant révision complète de ce plan, ou la délibération ayant décidé son maintien en vigueur^^9-2^^.
+# ''Définir les modalités de suivi du projet''<br/>Les {{docUrba}} soumis à évaluation environnementale doivent faire l’objet d’une analyse des résultats de leur application au plus tard à l’expiration d’un délai de neuf ans à compter de la délibération portant approbation du document, ou la dernière délibération portant révision complète de ce plan, ou la délibération ayant décidé son maintien en vigueur^^9-2^^.
 
 La collectivité doit donc à ce stade définir :
 

@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 !! Schémas d’Aménagement et de Gestion des Eaux (SAGE)
 Le SDAGE et le SAGE, sont complémentaires par nature puisque le SDAGE est l’outil de mise en œuvre de la Directive Cadre Européenne sur l’eau et constitue une réponse aux principaux enjeux à l’échelle du bassin. Les SAGE constituent, eux, un outil indispensable à la mise en œuvre du SDAGE en déclinant concrètement les orientations et les dispositions, en les adaptant aux contextes locaux et en les complétant si nécessaire. D’initiative locale, ils doivent eux aussi se conformer au SDAGE, et eux-mêmes sont opposables aux tiers.
 
-<$reveal type="match" state="variables.json##type_document" text="SCOT">
+<$reveal type="match" state="variables.json##type_document" text="SCoT">
 
 <<<.obli
 Le SCOT doit être compatible avec les objectifs de protection définis par les schémas d'aménagement et de gestion des eaux prévus à l'article L. 212-3 du code de l'environnement^^7-2^^.
