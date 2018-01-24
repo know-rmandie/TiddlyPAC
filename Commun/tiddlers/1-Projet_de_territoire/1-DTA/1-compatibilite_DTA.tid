@@ -1,0 +1,38 @@
+created: 20180124100918440
+modified: 20180124131132584
+rank: 0
+tags: DTA
+title: compatibilité avec la DTA
+type: text/vnd.tiddlywiki
+
+<$reveal type="nomatch" state="variables.json##dans_DTA" text="non">
+
+La {{variables.json##dans_DTA}} approuvée par décret le 10 juillet 2006 et publiée le 12 juillet 2006 fait partie des directives territoriales définies à l’article L. 172-1 du code de l’urbanisme.
+
+!!!!! cas d'un SCoT
+<$reveal type="match" state="variables.json##type_document" text="SCoT">
+
+@@.obli
+> À ce titre, les Schémas de Cohérence Territoriale concernés doivent être compatibles avec elle.
+@@
+</$reveal>
+
+!!!!! cas d'un PLU(i)
+<$reveal type="match" state="variables.json##type_document" text="PLU">
+
+!!!!! Le {{docUrba}} fait-il partie d'un SCoT? ''{{variables.json##dans_scot}}'' ([[changer|Variables]])
+     <$reveal type="nomatch" state="variables.json##dans_scot" text="non">
+
+@@.obli
+> À ce titre, le {{variables.json##dans_scot}}, auquel appartient {{variables.json##nom_territoire}}, est compatible avec elle et les dispositions correspondantes doivent donc être reprises dans le {{docUrba}}.
+@@
+     </$reveal>
+<$reveal type="match" state="variables.json##dans_scot" text="non">
+
+@@.obli
+> À ce titre, les plans locaux d’urbanisme ou les documents en tenant lieu doivent être compatibles avec elle.
+@@
+</$reveal>
+</$reveal>
+
+</$reveal>

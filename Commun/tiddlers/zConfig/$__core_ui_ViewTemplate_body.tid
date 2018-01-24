@@ -1,5 +1,5 @@
 created: 20170912154905223
-modified: 20170912161228990
+modified: 20180124085603747
 tags: $:/tags/ViewTemplate
 title: $:/core/ui/ViewTemplate/body
 type: text/vnd.tiddlywiki
@@ -16,5 +16,6 @@ type: text/vnd.tiddlywiki
 
 </$list>
 
-</$reveal>
 <$macrocall $name="chapitre" tag=$(currentTiddler)$/>
+
+</$reveal>

@@ -1,5 +1,5 @@
 created: 20170825073044795
-modified: 20170915070451995
+modified: 20180124102050468
 rank: 4
 tags: [[Projet de territoire]]
 title: Consommation d’espace et densité
@@ -20,7 +20,7 @@ Au-delà des aspects évidents concernant le développement durable du territoir
 
 !!!!!! [1-4] article L 151-5 du code de l’urbanisme
 </$reveal>
-<$reveal type="match" state="variables.json##type_document" text="SCOT">
+<$reveal type="match" state="variables.json##type_document" text="SCoT">
 
 !!!!!! [1-4] article L 141-3 du code de l’urbanisme
 </$reveal>

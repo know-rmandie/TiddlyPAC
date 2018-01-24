@@ -9,6 +9,6 @@ type: text/vnd.tiddlywiki
 
 <$reveal type="nomatch" state="variables.json##intercommunal" text="non">
 
-Le  {{variables.json##type_document}} s'élabore à une échelle intercommunale qui est très pertinente pour mettre en cohérence les objectifs de développement entre eux et notamment les politiques d’urbanisme, d’habitat et de déplacements. L’ensemble des réflexions doivent se coordonner pour une répartition du développement entre communes qui favorise un moindre usage des modes motorisés. Le projet de territoire devra donc proposer un développement clairement hiérarchisé assurant la pérennité des pôles les mieux dotés en services et commerces et favorisant leur compacité.
+Le {{docUrba}} s'élabore à une échelle intercommunale qui est très pertinente pour mettre en cohérence les objectifs de développement entre eux et notamment les politiques d’urbanisme, d’habitat et de déplacements. L’ensemble des réflexions doivent se coordonner pour une répartition du développement entre communes qui favorise un moindre usage des modes motorisés. Le projet de territoire devra donc proposer un développement clairement hiérarchisé assurant la pérennité des pôles les mieux dotés en services et commerces et favorisant leur compacité.
 
 </$reveal>

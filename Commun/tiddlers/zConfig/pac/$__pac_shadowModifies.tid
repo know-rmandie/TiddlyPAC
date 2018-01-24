@@ -1,0 +1,10 @@
+created: 20180124090610313
+modified: 20180124093133347
+rank: 9999
+tags: TiddlyPAC
+title: $:/pac/shadowModifies
+type: text/vnd.tiddlywiki
+
+<$list filter=[all[shadows]haschanged[]]>
+
+</$list>

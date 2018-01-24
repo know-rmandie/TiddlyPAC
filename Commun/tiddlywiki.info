@@ -1,7 +1,8 @@
 {
    "plugins": [
       "tiddlywiki/tiddlyweb",
-      "tiddlywiki/filesystem"
+      "tiddlywiki/filesystem",
+      "tiddlywiki/markdown"
    ],
    "themes": [
       "tiddlywiki/vanilla",
@@ -10,5 +11,8 @@
    ],
    "languages": [
       "fr-FR"
-   ]
+   ],
+   "config": {
+      "retain-original-tiddler-path": true
+   }
 }
