@@ -5,7 +5,7 @@ tags: [[Risques technologiques industriels]]
 title: PPRT
 type: text/vnd.tiddlywiki
 
-!!!!! Y a-t-il un PPRT? {{variables.json##pprt}} ([[changer|Variables]])
+!!!!! Y a-t-il un PPRT? ''{{variables.json##pprt}}'' ([[changer|Variables]])
 
 <$reveal type="match" state="variables.json##dans_pprt" text="en cours">
 

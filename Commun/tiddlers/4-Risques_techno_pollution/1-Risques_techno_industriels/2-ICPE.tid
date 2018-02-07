@@ -6,6 +6,7 @@ title: ICPE
 type: text/vnd.tiddlywiki
 
 <$reveal type="match" state="variables.json##type_document" text="PLU">
+
 !!!!! Y a-t-il des ICPE avec zones de dangers? {{variables.json##icpe_danger}} ([[changer|Variables]])
 
 <$reveal type="match" state="variables.json##icpe_danger" text="oui">
