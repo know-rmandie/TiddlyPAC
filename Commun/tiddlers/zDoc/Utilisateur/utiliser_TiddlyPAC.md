@@ -24,6 +24,16 @@ enregistrer le document `.html` créé dans le répertoire souhaité. Il peut en
 
 Si on souhaite travailler sur la mise en page, il est possible d'importer ce fichier dans libre office pour le modifier. Un document comportant les styles utilisables est disponible.
 
+### outils utiles pour travailler avec TiddlyPAC
+
+* extension [TiddlyFox pour Firefox][TiddlyFox] pour Firefox (//jusqu'à la version 57//) :  permet d'avoir un enregistrement automatique des modifications apportées au PAC dans le répertoire de son choix.
+* application [TiddlyDesktop][TiddlyDesktop] : application dédiée qui permet de gérer plusieurs TiddlyWiki (donc plusieurs PAC) dans les répertoires de son choix. Sans installation, il suffit de dézipper les fichiers fournis (pour la plupart des utilisateurs : `tiddlydesktop-win64-vx.x.xx.zip`).
+* extension [FileBackups][FileBackups] pour Firefox (//à partir de la version 57//) : permet d'avoir un enregistrement automatique des modifications apportées au PAC si il est placé dans un sous répertoire de votre dossier de téléchargement.
+
+[TiddlyFox]: https://addons.mozilla.org/fr/firefox/addon/tiddlyfox
+[TiddlyDesktop]: https://github.com/Jermolene/TiddlyDesktop/releases
+[FileBackups]: https://addons.mozilla.org/fr/firefox/addon/file-backups
+
 [versions]: #versions_de_TiddlyPAC
 
 [img-save]: $:/doc/images/save_tw.png
