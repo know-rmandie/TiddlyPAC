@@ -26,9 +26,9 @@ Si on souhaite travailler sur la mise en page, il est possible d'importer ce fic
 
 ### outils utiles pour travailler avec TiddlyPAC
 
-* extension [TiddlyFox pour Firefox][TiddlyFox] pour Firefox (//jusqu'à la version 57//) :  permet d'avoir un enregistrement automatique des modifications apportées au PAC dans le répertoire de son choix.
+* extension [TiddlyFox pour Firefox][TiddlyFox] pour Firefox (*jusqu'à la version 57*) :  permet d'avoir un enregistrement automatique des modifications apportées au PAC dans le répertoire de son choix.
 * application [TiddlyDesktop][TiddlyDesktop] : application dédiée qui permet de gérer plusieurs TiddlyWiki (donc plusieurs PAC) dans les répertoires de son choix. Sans installation, il suffit de dézipper les fichiers fournis (pour la plupart des utilisateurs : `tiddlydesktop-win64-vx.x.xx.zip`).
-* extension [FileBackups][FileBackups] pour Firefox (//à partir de la version 57//) : permet d'avoir un enregistrement automatique des modifications apportées au PAC si il est placé dans un sous répertoire de votre dossier de téléchargement.
+* extension [FileBackups][FileBackups] pour Firefox (*à partir de la version 57*) : permet d'avoir un enregistrement automatique des modifications apportées au PAC si il est placé dans un sous répertoire de votre dossier de téléchargement.
 
 [TiddlyFox]: https://addons.mozilla.org/fr/firefox/addon/tiddlyfox
 [TiddlyDesktop]: https://github.com/Jermolene/TiddlyDesktop/releases
