@@ -5,4 +5,4 @@ tags: TiddlyPAC footer
 title: $:/pac/footer
 type: text/vnd.tiddlywiki
 
-<div id="pied-de-page">{{variables.json##nom_territoire}} -  porter à connaissance<div id="num"></div></div>
+<div id="pied-de-page">{{variables.json##nom_territoire}} - {{docUrba}} -  porter à connaissance<div id="num"></div></div>

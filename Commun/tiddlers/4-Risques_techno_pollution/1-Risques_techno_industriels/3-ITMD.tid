@@ -5,7 +5,7 @@ tags: [[Risques technologiques industriels]]
 title: ITMD
 type: text/vnd.tiddlywiki
 
-!!!!! ITMD avec zones de dangers? {{variables.json##itmd}} ([[changer|Variables]])
+!!!!! ITMD avec zones de dangers? ''{{variables.json##itmd}}'' ([[changer|Variables]])
 
 <$reveal type="nomatch" state="variables.json##itmd" text="non">
 
@@ -51,9 +51,9 @@ Les contraintes d’urbanisme sont entièrement définies dans un arrêté préf
 <$reveal type="match" state="variables.json##itmd" text="en cours">
 
 !!!! Servitudes d’utilité publique en cours d'élaboration
-Au-delà des servitudes attachées à la construction et à l’entretien de ces canalisations, et dans l’attente de la mise en œuvre des servitudes d’utilité publique prévues par la nouvelle réglementation, la prise en compte des risques liés au fluide transporté s’effectue selon les principes de la réglementation en vigueur entre 2006 et 2014. 
+Au-delà des servitudes attachées à la construction et à l’entretien de ces canalisations, et dans l’attente de la mise en œuvre des servitudes d’utilité publique prévues par la nouvelle réglementation, la prise en compte des risques liés au fluide transporté s’effectue selon les principes de la réglementation en vigueur entre 2006 et 2014.
 
-Les contraintes en matière d’urbanisme concernent les projets nouveaux relatifs aux établissements recevant du public (ERP) les plus sensibles, aux immeubles de grande hauteur (IGH) et aux installations nucléaires de base (INB). Ces contraintes s’apprécient au regard des distances de dangers génériques. Ces distances correspondent aux effets irréversibles (ZEI), premiers effets létaux (ZPEL) et effets létaux significatifs (ZELS) des scénarios d’accident redoutés. 
+Les contraintes en matière d’urbanisme concernent les projets nouveaux relatifs aux établissements recevant du public (ERP) les plus sensibles, aux immeubles de grande hauteur (IGH) et aux installations nucléaires de base (INB). Ces contraintes s’apprécient au regard des distances de dangers génériques. Ces distances correspondent aux effets irréversibles (ZEI), premiers effets létaux (ZPEL) et effets létaux significatifs (ZELS) des scénarios d’accident redoutés.
 
 Les distances d’effets précitées sont issues du tableau générique national. Ces distances sont susceptibles d’être modifiées par l’étude de sécurité du transporteur, notamment en certains points singuliers identifiés le long du tracé de la canalisation. Les distances actualisées seront prises en compte dans les servitudes d’utilité publiques à venir.
 
@@ -64,7 +64,7 @@ Les précautions suivantes concernant les activités et les projets au voisinage
 * ''proscrire la construction ou l’extension'' d’immeubles de grande hauteur (IGH), d’installation nucléaire de base (INB) et d’établissements recevant du public (ERP) relevant de la 1ère à la 3ème catégorie ''dans la zone des dangers graves pour la vie humaine (ZPEL)''.
 <<<
 
-''Il faut également veiller d’informer le transporteur de tout projet dans la zone des effets irréversibles'' (ZEI). L’aménageur de chaque projet engage une étude pour s’assurer que les conditions de sécurité sont satisfaisantes au regard des risques présentés. Cette étude repose sur les caractéristiques de l’ouvrage de transport, de son environnement mais aussi du projet envisagé et du respect de certaines contraintes en matière de sécurité (modalité d’évacuation des personnes…). 
+''Il faut également veiller d’informer le transporteur de tout projet dans la zone des effets irréversibles'' (ZEI). L’aménageur de chaque projet engage une étude pour s’assurer que les conditions de sécurité sont satisfaisantes au regard des risques présentés. Cette étude repose sur les caractéristiques de l’ouvrage de transport, de son environnement mais aussi du projet envisagé et du respect de certaines contraintes en matière de sécurité (modalité d’évacuation des personnes…).
 
 En outre, la mise en œuvre de mesure compensatoire de type physique sur l’ouvrage de transport (protection mécanique par dalle béton…) destinée à réduire l’emprise de cette zone en limitant la principale source de risque d’accident (travaux tiers) est à privilégier.
 

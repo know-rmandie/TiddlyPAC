@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 !!!!! les variables sont modifiables dans [[Variables]] ou dans l'onglet à droite.
 
 @@.titre
-! {{variables.json##nom_territoire}}<br/>{{variables.json##type_document}} <br/>Eléments de porter à connaissance
+! {{variables.json##nom_territoire}}<br/>{{docUrba}} <br/>Eléments de porter à connaissance
 @@
 
 <<<.ref

@@ -5,7 +5,7 @@ tags: [[Risques technologiques]]
 title: Risques technologiques industriels
 type: text/vnd.tiddlywiki
 
-!!!!! le territoire est concerné des risques industriels? {{variables.json##risques_indus}} ([[changer|Variables]])
+!!!!! le territoire est concerné des risques industriels? ''{{variables.json##risques_indus}}'' ([[changer|Variables]])
 
 <$reveal type="match" state="variables.json##risques_indus" text="oui">
 
