@@ -1,11 +1,13 @@
 created: 20170929145154533
-modified: 20180124102050333
+modified: 20180629130451016
+modifiers: scomte, cduboscq
 rank: 2
+revision: 0
 tags: [[Continuités écologiques]]
-title: transposition
+title: Transposition du SRCE
 type: text/vnd.tiddlywiki
 
-!!!!!.todo faut-il faire dépendre ce paragraphe du type de doc (SCOT PLU)? et de la présence d'un SCOT supérieur?
+!!!!!.todo faut-il faire dépendre ce paragraphe ~~du type de doc (SCOT PLU)~~ (fait) ? et de la présence d'un SCOT supérieur?
 
 
 <<<.obli
@@ -16,15 +18,35 @@ Outre les enjeux et objectifs régionaux relatifs à la préservation et la rest
 
 <<<.obli
 Le diagnostic devra permettre la construction du projet de territoire en intégrant la problématique des continuités écologiques (réservoirs et corridors)^^6-1-a^^.
+<<<
 
+<$reveal type="match" state="variables.json##type_document" text="PLU">
+
+<<<.obli
 De plus, le PADD  devra définir des orientations générales relatives à la préservation ou à la remise en bon état des continuités écologiques^^6-1-b^^. Ces orientations devront être traduites au travers de dispositions particulières opposables aux demandes d’autorisations d’urbanisme.
 <<<
+</$reveal>
+
+<$reveal type="match" state="variables.json##type_document" text="SCoT">
+
+<<<.obli
+De plus, le PADD  devra fixer les objectifs publics relatifs à la protection et mise en valeur des espaces naturels, agricoles et forestiers de préservation et de mise en valeur des ressources naturelles, de préservation et de remise en bon état des continuités écologiques^^6-1-b^^.
+Le DOO détermine les espaces et sites naturels, agricoles, forestiers ou urbains à protéger dont il peut définir la localisation ou la disposition et les modalités de protection des espaces nécessaires au maintien de la biodiversité et à la préservation ou la remise en bon état des continuités écologiques. Le SCoT peut définir des objectifs à atteindre en matière de maintien ou de création d'espaces verts dans les zones faisant l'objet d'une ouverture à l'urbanisation.^^6-1-c^^.
+<<<
+</$reveal>
 
 <<<.nbp
 ^^6-1-a^^ articles L.131-2 et L.131-7 du code de l’urbanisme
+<$reveal type="match" state="variables.json##type_document" text="PLU">
 
-^^6-1-b^^ article L.101-2
-<$reveal type="match" state="variables.json##type_document" text="PLU"> et  L.151-5</$reveal> du code de l’urbanisme
+^^6-1-b^^ article L.101-2  et  L.151-5 du code de l’urbanisme
+</$reveal>
+
+<$reveal type="match" state="variables.json##type_document" text="SCoT">
+^^6-1-b^^ article L.101-2  et  L.141-4 du code de l’urbanisme 
+
+^^6-1-c^^ article L.141-10 et 11 du code de l’urbanisme
+</$reveal>
 <<<
 
 <$reveal type="match" state="variables.json##type_document" text="PLU">

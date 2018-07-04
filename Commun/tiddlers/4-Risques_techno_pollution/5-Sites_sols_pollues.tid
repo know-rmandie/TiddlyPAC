@@ -1,6 +1,7 @@
 created: 20170920100406546
-modified: 20170920101336778
-rank: 4
+modified: 20180629094846146
+rank: 5
+revision: 0
 tags: [[Risques technologiques]]
 title: Sites et sols pollués
 type: text/vnd.tiddlywiki
@@ -28,8 +29,7 @@ D'une manière générale, il convient  de s’assurer, sur le fondement de l’
 <<<.doc
 Les bases de données concernant les sites et sols polluées sont à retrouver sur internet
 
-BASOL : http://basol.developpement-durable.gouv.fr.
-
-BASIAS : http://basias.brgm.fr.
+* BASOL : http://basol.developpement-durable.gouv.fr.
+* BASIAS : http://basias.brgm.fr.
 <<<
 </$reveal>
