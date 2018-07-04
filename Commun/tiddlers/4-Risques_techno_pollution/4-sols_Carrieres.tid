@@ -1,0 +1,39 @@
+created: 20180629095014954
+modifiers: cduboscq
+modified: 20180703141025340
+modifier: cduboscq
+tags: [[Risques technologiques industriels]]
+title: Carrières
+type: text/vnd.tiddlywiki
+
+<<<.todo
+
+Cette partie carrière pose question depuis un certain temps. Pour cette raison, elle est pour l'heure masquée dans l'attente d'une réponse aux questions suivantes :
+
+* La partie carrière est placée dans cette rubrique parce que c'est la "rubrique du service risques". Pour autant le sujet ressemble d'avantage à un sujet [[Projet de Territoire]]
+* Fait-on apparaitre la partie pour tous les documents ou seulement pour ceux accueillant ou susceptibles d'accueillir une carrière?
+* Si on choisit la première option quelle base de données est mobilisable?
+<<<
+
+<<<.com
+<$reveal type="nomatch" state="variables.json##sols_carrieres" text="non">
+
+!! Carrières
+
+Les conditions générales d'implantation des carrières et les orientations relatives à la logistique nécessaire à la gestion durable des granulats, des matériaux et des substances de carrière sont définies dans un schéma départemental des carrières, établi en application et dans les condition des articles L.515-3 et R.515-8-1 à R.515-8-7 du code de l'environnement.
+
+Il comprend: 
+
+*un inventaire des ressources;
+*une analyse des besoin du département;
+*une analyse des modes d’approvisionnement et de transport;
+*des orientations et des objectifs visant à réduire l'impact des extractions sur l'environnement et à privilégier une utilisation rationnelle des matériaux;
+*des orientations et des objectifs pour la remise en état des carrières en fin d'exploitation.
+
+!!!!!.todo à basculer dans "Normandie" quand on aura éclairci les questions préalables
+<$reveal type="match" state="variables.json##departement" text="14">
+
+La dernière révision du schéma départemental des carrières du département du Calvados a été approuvée par arrêté préfectoral du 18 mai 2015.
+</$reveal>
+</$reveal>
+<<<

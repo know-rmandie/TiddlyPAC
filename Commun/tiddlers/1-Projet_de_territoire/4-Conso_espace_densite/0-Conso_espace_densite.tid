@@ -1,13 +1,15 @@
 created: 20170825073044795
-modified: 20180124102050468
+modified: 20180629081947680
 rank: 4
+modifiers: cduboscq, scomte
+revision: 0
 tags: [[Projet de territoire]]
 title: Consommation d’espace et densité
 type: text/vnd.tiddlywiki
 
 !! Consommation d’espace et densité
 
-La connaissance, l’analyse, la définition d’une stratégie de maîtrise et de diminution de la consommation d’espace ainsi que sa déclinaison dans l’ensemble des pièces du {{docUrba}} sont des éléments fondamentaux attendus pour le projet de territoire^^1-4^^.
+La connaissance, l’analyse, la définition d’une stratégie de maîtrise et de diminution de la consommation d’espace ainsi que sa déclinaison dans l’ensemble des pièces du {{docUrba}} sont des éléments fondamentaux attendus pour le projet de territoire^^1-4-a^^.
 
 Au-delà des aspects évidents concernant le développement durable du territoire par la préservation de ses ressources naturelles et agricoles, cet exercice d’économie d’usage du sol est également bénéfique au projet de territoire par de multiples aspects :
 
@@ -18,12 +20,21 @@ Au-delà des aspects évidents concernant le développement durable du territoir
 
 <$reveal type="match" state="variables.json##type_document" text="PLU">
 
-!!!!!! [1-4] article L 151-5 du code de l’urbanisme
+!!!!!! [1-4-a] article L 151-5 du code de l’urbanisme
 </$reveal>
+
 <$reveal type="match" state="variables.json##type_document" text="SCoT">
 
-!!!!!! [1-4] article L 141-3 du code de l’urbanisme
+!!!!!! [1-4-a] article L 141-3 du code de l’urbanisme
 </$reveal>
+
+<$reveal type="match" state="variables.json##type_document" text="SCoT">
+
+<<<.obli
+Dans le document d’orientation et d’objectifs, le SCoT doit donner des objectifs chiffrés de consommation économe de l’espace et de lutte contre l’étalement urbain. Il peut déterminer la valeur minimale de densité de construction de secteurs délimités en fonction de la desserte par les transports collectifs, l’existence d’équipements collectifs et des protections environnementales ou agricoles.
+<<<
+</$reveal>
+
 
 Afin d’aider à cet exercice de qualification de la consommation d’espace et de définition des stratégies de gestion économes, l’État et ses partenaires mettent au point et tiennent à jour des outils multiples.
 
