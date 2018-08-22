@@ -1,10 +1,3 @@
-created: 20170824121832438
-modified: 20180207114422533
-rank: 1
-tags: TiddlyPAC
-title: variables.json
-type: application/json
-
 {
     "departement": "14",
     "nom_territoire": "CC de Bidule",

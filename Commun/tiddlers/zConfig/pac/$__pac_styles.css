@@ -1,12 +1,12 @@
-/* titres */
+/* FEUILLE DE STYLE DE TIDDLYPAC */ 
 
+/* titres */
 h1.titre {
    text-align: center;
 }
-/* titres 5 et 6 : servent à commenter, annoter */
-/* h5 : commentaires masqués */
-/* .com commentaires pour l'utilisateur */
 
+/* Titres 5 : servent à commenter, annoter */
+/*    h5, .com : commentaires masqués, commentaires pour l'utilisateur */
 .com,
 h5,
 p.com {
@@ -18,7 +18,7 @@ p.com {
    font-style: italic;
    font-family: serif;
 }
-/* .todo "choses à faire" réflexions pour les participants à la création de l'outil */
+/*    .todo : "choses à faire" réflexions pour les participants à la création de l'outil */
 .todo,
 h5.todo,
 p.todo {
@@ -30,8 +30,8 @@ p.todo {
    font-style: normal;
    font-family: serif;
 }
-/* h6 : notes de bas de page */
 
+/* Titres 6 : notes de bas de page */
 .nbp,
 h6,
 p.npb {
@@ -41,8 +41,8 @@ p.npb {
    border-left: none;
    margin: 2px 0;
 }
-/* tableaux (centrés, au moins 60% de large) */
 
+/* Tableaux (centrés, au moins 60% de large) */
 table {
    min-width: 60%;
    margin: 1em auto;
@@ -59,8 +59,8 @@ table ul, .com ul, .nbp ul, .todo ul {
     margin: 0;
     padding-left: 1em;
 }
-/* champs de saisie des formulaires */
 
+/* Champs de saisie des formulaires */
 input.pac {
    border: none;
    border-bottom: 2px solid green;
@@ -88,16 +88,14 @@ input.mid {
     color: white;
 }
 
-/* différents types de mise en exergue */
-
+/* Différents types de mise en exergue */
 blockquote p {
    margin: 7px 0 0;
 }
 blockquote p:first-child {
    margin: 0;
 }
-/* références, citations */
-
+/*     .ref: références, citations */
 .ref {
    font-family: "Liberation serif", Georgia, serif;
    font-style: italic;
@@ -129,24 +127,26 @@ blockquote p:first-child {
 .ref cite:before {
    content: "\2014 \2009";
 }
-/* ce qui est "obligatoire" */
+/*      .obli: ce qui est "obligatoire" */
 .obli {
    margin: 0;
    border-left-color: #003399;
 }
-/* documents à consulter, références à consulter */
+/*      .doc: documents à consulter, références à consulter */
 .doc {
    margin: 0;
    font-style: italic;
    color: gray;
 }
-/* pied de page masqué */
+
+/* Pied de page masqué */
 footer {
    display: none;
 }
-/* --------- */
-/* ajustements de style de TiddlyWiki */
 
+/* --------- */
+/* Ajustements de style de TiddlyWiki */
+/* (pour ceux qui ne sont pas configurables dans les options) */
 .tc-tiddler-body p {
    text-align: justify;
 }
@@ -155,11 +155,11 @@ footer {
    font-family: "Liberation Sans Narrow", sans-serif;
    color: green !important;
 }
-/* ------------------------------------------ */
-/* mise en page pour l'impression du document */
-/* cas des exports */
-/* nettoyage, masquage des entités inutiles */
 
+/* ------------------------------------------ */
+/* Mise en page pour l'impression du document */
+/* cas des exports */
+/*     nettoyage, masquage des entités inutiles */
 body.static .tc-story-river {
    padding: 0;
    margin: 0 auto;
@@ -189,33 +189,38 @@ body.static .visible {
       display:block !important;
    }
 
-   /* améliorations des sauts de page */
-   a,
-   p {
-      orphans: 2;
-   }
+/*     améliorations des sauts de page */
+a,
+p,
+ul,
+blockquote,
+.doc, .obli, .ref {
+   orphans: 3;
+   widows: 3;
+}
 
-   h1 {
-      page-break-before: always;
-   }
+h1 {
+  margin-top:2em;	
+  page-break-before: always;
+}
 
-   h1.titre, caption {
-      page-break-before: avoid;
-   }
+h1.titre, caption {
+  page-break-before: avoid;
+}
 
-   h1,
-   h2,
-   h3,
-   h4,
-   caption {
-      page-break-after: avoid;
-   }
+h1,
+h2,
+h3,
+h4,
+caption {
+  page-break-after: avoid;
+}
 
-   blockquote {
-      page-break-inside: avoid;
-   }
+blockquote {
+  page-break-inside: avoid;
+}
 
-/* impression */
+/*     impression */
 @media print {
    body,
    html {
@@ -274,6 +279,7 @@ body.static .visible {
       content: counter(page);
       counter-increment: page;
    }
+   
    /* nettoyage, masquage des entités inutiles */
    .com,
    .tc-btn-invisible,
