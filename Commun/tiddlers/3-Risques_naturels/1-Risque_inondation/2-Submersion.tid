@@ -1,22 +1,34 @@
 created: 20170926120054533
-modified: 20170926120054533
+modified: 20180821162954533
 rank: 2
+modifier : scomte
 tags: [[Risque inondation]]
 title: Submersion marine
 type: text/vnd.tiddlywiki
 
 <<<.com
-Risque inondation par submersion marine? (''{{variables.json##r_inond_submersion}}''  - [[changer|Variables]])
+Risque inondation par submersion marine? ''{{variables.json##r_inond_submersion}}''  ([[changer|Variables]])
 <<<
 
 <$reveal type="match" state="variables.json##r_inond_submersion" text="oui">
 
 !!! Risque d'inondation par submersion marine
-Les conséquences dramatiques de la tempête Xynthia qui a touché une partie importante du littoral Atlantique le 28 février 2010 ont conduit l’État à prendre une série de mesures vouées à compléter les outils existants en matière de prévention des risques de submersion marine.
+Les conséquences dramatiques de la tempête Xynthia qui a touché une partie importante du littoral Atlantique le 28 février 2010 ont conduit l’État à prendre une série de mesures vouées à compléter les outils existants en matière de prévention des risques de submersion marine. Ainsi, face à ces enjeux, la France s’est dotée en 2012 d’une ''stratégie nationale de gestion intégrée du trait de côte'' avec l’ambition de renforcer la connaissance sur le trait de côte et de favoriser la mise en place de stratégies locales pour adapter les territoires aux évolutions du littoral.
 
-La circulaire interministérielle du 7 avril 2010 a notamment demandé aux préfets des départements littoraux :
-* d’intensifier la mise en œuvre de plans de prévention des risques littoraux (PPRL),
-* de porter à connaissance des élus les études détenues par l’État sur l’exposition de leur commune au risque de submersion,
-* de faire appliquer les dispositions de l’article R.111-2 du code de l’urbanisme au sein des zones exposées à ce type de risque.
+Pour faire suite au premier programme d’actions 2012 – 2015, un nouveau programme a été adopté en 2017. Il présente :
 
+# Une synthèse des actions réalisées dans le cadre du précédent programme ;
+# Les principes communs et recommandations stratégiques en matière de gestion du trait de côte ;
+# Les 11 actions et 51 sous actions identifiées pour la période 2017-2019, organisées en 5 axes :
+#* Développer et partager la connaissance sur le trait de côte (Axe A) ;
+#* Élaborer et mettre en œuvre des stratégies territoriales partagées (Axe B) ;
+#* Développer des démarches expérimentales sur les territoires littoraux pour faciliter la recomposition spatiale (Axe C) ;
+#* Identifier les modalités d’intervention financière (Axe D) ;
+#* Communiquer, sensibiliser et former aux enjeux de la gestion du trait de côte (Axe transversal).
+
+<<<.doc
+Les informations sur la stratégie nationale et les plans d'actions sont à retrouver sur le site géolittoral
+<<< http://www.geolittoral.developpement-durable.gouv.fr/strategie-nationale-de-gestion-integree-du-trait-r434.html
+
+!!!!! une [[étude du CEREMA est en cours|https://www.cerema.fr/fr/actualites/cerema-presente-ses-travaux-lors-reunion-ouverture-du-comite]] à la date de rédaction de cette sous-partie. Il conviendra de suivre la publication des résultats pour voir dans quelle mesure on l'intègre également en référence.
 </$reveal>

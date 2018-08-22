@@ -1,15 +1,13 @@
 created: 20170926145154533
-modified: 20170926145154533
+modified: 20180821165154533
 rank: 1
 tags: [[Risques naturels]]
 title: Risque inondation
 type: text/vnd.tiddlywiki
 
-<<<.com
-le territoire est concerné par le risque inondation au sens large? (''{{variables.json##risque_inond}}''  - [[changer|Variables]])
-<<<
+!!!!! le territoire est concerné par le risque inondation au sens large? ''{{variables.json##risque_inond}}'' ([[changer|Variables]])
 
-<$reveal type="match" state="variables.json##risque_inond" text="oui">
+<$reveal type="nomatch" state="variables.json##risque_inond" text="non">
 
 !! Le risque inondation
 L’un des principes fondateurs de la prise en compte et de la traduction du risque inondation dans les documents d’urbanisme consiste à développer autant que faire se peut l’urbanisation en dehors des zones inondables pour :
@@ -22,5 +20,7 @@ L’un des principes fondateurs de la prise en compte et de la traduction du ris
 
 <<<.obli
 Les modalités de traduction des risques inondation dans les documents d’urbanisme dépendent de la présence d’enjeux, du niveau de connaissance de l’aléa dont on dispose et //in fine// du niveau de risque (croisement enjeux aléa). Les enjeux s’apprécient par l’occupation humaine à la date d’élaboration du document d’urbanisme.
+
+En particulier, dans le cadre de la mise en place de la GEMAPI (Gestion des milieux aquatiques et prévention des inondations), il appartient au document d'urbanisme de tenir compte des éléments produits dans le cadre de l'exercice de cette compétence, notamment concernant la stratégie de défense contre les inondations, pour organiser le développement de son territoire.
 <<<
 </$reveal>
