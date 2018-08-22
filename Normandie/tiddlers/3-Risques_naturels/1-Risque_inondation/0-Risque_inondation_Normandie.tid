@@ -1,11 +1,12 @@
 created: 20170926145154533
-modified: 20170926145154533
+modified: 20180821143915977
+modifier: scomte
 rank: 0
 tags: [[Risque inondation]]
 title: Risque inondation Normandie
 type: text/vnd.tiddlywiki
 
-!!!!!! données disponibles - voir si on distingue avec plus de précision en fonction des départements et de la source
+!!!!! données disponibles - voir si on distingue avec plus de précision en fonction des départements et de la source
 <$reveal type="match" state="variables.json##risque_inond" text="oui">
 
 <<<.doc
