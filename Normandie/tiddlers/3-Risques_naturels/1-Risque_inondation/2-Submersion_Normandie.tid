@@ -1,13 +1,13 @@
 created: 20170926120054533
-modified: 20170926120054533
+modified: 20180821144930161
 rank: 0
 tags: [[Submersion marine]]
 title: Submersion marine Normandie
 type: text/vnd.tiddlywiki
 
-<$reveal type="match" state="variables.json##r_inond_submersion" text="oui">
+<$reveal type="nomatch" state="variables.json##r_inond_submersion" text="non">
 
-!!!!!! l'exercice n'a été fait que pour la Basse-Normandie
+!!!!! l'exercice n'a été fait que pour la Basse-Normandie
 <$reveal type="match" state="variables.json##departement" text="14">
 
 <<<.doc

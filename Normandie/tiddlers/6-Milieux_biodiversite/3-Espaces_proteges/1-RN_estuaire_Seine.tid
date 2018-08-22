@@ -1,12 +1,13 @@
 created: 20170929145154533
-modified: 20170929113959021
+modified: 20180730113959021
+modifier: cduboscq
 rank: 1
 tags: [[Réserves naturelles]]
 title: Réserve naturelle de l'estuaire de la Seine
 type: text/vnd.tiddlywiki
 
 <$reveal type="nomatch" state="variables.json##reserves_nat" text="non">
-<$reveal type="nomatch" state="variables.json##RN_estuaire_Seine" text="non">
+<$reveal type="nomatch" state="variables_locales.json##RN_estuaire_Seine" text="non">
 
 !!! La réserve naturelle nationale de l’estuaire de la Seine
 La réserve naturelle nationale de l’estuaire de la Seine a été classée par le ministère en charge de l’environnement, le 30 décembre 1997 pour une superficie de 3 678 ha (décret n° 97-1329). Elle a été étendue à 8 528 ha le 9 novembre 2004 (décret n° 2004-1187).
