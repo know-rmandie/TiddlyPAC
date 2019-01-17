@@ -1,6 +1,8 @@
 created: 20170929145154533
-modified: 20170929113959021
+modified: 20180629131704184
+modifiers: cduboscq
 rank: 1
+revision: 1
 tags: [[Milieux naturels et biodiversité]]
 title: Continuités écologiques
 type: text/vnd.tiddlywiki
@@ -18,14 +20,23 @@ Les réservoirs de biodiversité sont les zones vitales, riches en biodiversité
 
 Les corridors écologiques assurent des connexions entre des réservoirs de biodiversité, offrant aux espèces des conditions favorables à leur déplacement et à l’accomplissement de leur cycle de vie. Ceux-ci peuvent être :
 
-* linéaires: alignements d’arbres, haies, talus, fossés …;
-* en «pas japonais» ou discontinus : ponctuation d’espaces-relais, d’îlots-refuges (mares, bosquets,...);
-* paysagers: espaces naturels, agricoles (favorables à la biodiversité tels que prairies, forêts, …) , bocagers;
+* linéaires: alignements d’arbres, haies, talus, fossés…;
+* en «pas japonais» ou discontinus : ponctuation d’espaces-relais, d’îlots-refuges (mares, bosquets…);
+* paysagers: espaces naturels, agricoles (favorables à la biodiversité tels que prairies, forêts…), bocagers;
 
 À noter que les cours d’eau constituent à la fois des réservoirs et des corridors écologiques. Pour certaines espèces, ce sont également des ruptures de continuité écologique.
 
 | les continuités écologiques |c
 
 {{continuites_ecologiques.png}}
+
+
+<$reveal type="match" state="variables.json##type_document" text="SCoT">
+
+<<<.obli
+La trame verte et bleue est intégrée dans la partie "état initial de l'environnement" du diagnostic du SCoT. Elle doit comprendre les principales continuités écologiques du territoire, puis celles à préserver et/ou à restaurer.
+Les secteurs à enjeux forts de la trame verte et bleue doivent être bien décrits et intégrés dans le SCoT pour ensuite être repris à l'échelle locale pour le territoire.
+<<<
+</$reveal>
 
 !!!!!!^^6-1^^ Le contenu précis des trames vertes et bleues est défini par les articles R.371-16 et suivants du code de l’environnement.

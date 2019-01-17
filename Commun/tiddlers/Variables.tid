@@ -1,12 +1,14 @@
 created: 20170824121739316
+creator: scomte
 list-before: $:/core/ui/SideBar/Open
-modified: 20170926134444610
+modified: 20180323151722267
+modifier: scomte
 rank: 1
 tags: TiddlyPAC $:/tags/SideBar
 title: Variables
 type: text/vnd.tiddlywiki
 
-Fiche pour la modification facile des variables. Consultez l'aide pour plus d'informations.
+Fiche pour la modification facile des variables. Consultez l'aide pour plus d'informations. Pour le suivi des modifications, merci d'indiquer votre nom : <$edit-text tiddler="$:/status/UserName" tag="input" class="pac"/>
 
 {{Variables globales}}
 

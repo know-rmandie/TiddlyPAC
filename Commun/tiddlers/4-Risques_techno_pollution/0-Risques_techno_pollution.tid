@@ -6,7 +6,7 @@ title: Risques technologiques
 type: text/vnd.tiddlywiki
 
 <<<.com
-le territoire est concerné par les risques technologiques au sens large (''{{variables.json##risques_technos}}''  - [[changer|Variables]]) et de manière plus précise par des risques  
+le territoire est concerné par les risques technologiques ou la pollution des sols au sens large? ''{{variables.json##risques_technos}}''  - [[changer|Variables]] et de manière plus précise par des risques  
 
 * industriels? ''{{variables.json##risques_indus}}'' ([[changer|Variables]])
 * risques miniers / pprm ? ''{{variables.json##risques_miniers}}'' ([[changer|Variables]])

@@ -1,5 +1,8 @@
 {
    "includeWikis": [
       "../Commun"
-   ]
+   ],
+   "config": {
+      "retain-original-tiddler-path": true
+   }
 }

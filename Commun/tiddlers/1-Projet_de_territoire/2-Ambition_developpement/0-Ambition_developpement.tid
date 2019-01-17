@@ -7,16 +7,16 @@ type: text/vnd.tiddlywiki
 
 !! Ambition et organisation du développement territorial
 
-Le projet d’aménagement et de développement durables doit exposer le projet d’urbanisme et arrêter les orientations générales concernant un vaste ensemble de sujets^^1-2^^ qui traduisent l’ambition territoriale en matière de développement. 
+Le projet d’aménagement et de développement durables doit exposer le projet d’urbanisme et arrêter les orientations générales concernant un vaste ensemble de sujets^^1-2-a^^ qui traduisent l’ambition territoriale en matière de développement. 
 Cette ambition doit tenir compte tout à la fois des volontés et du contexte local, mais aussi de ceux des territoires environnants ainsi que des ressources et des capacités à ces différentes échelles. Elle doit aussi tenir compte des impacts potentiels qu’elle pourrait avoir.
 
 <$reveal type="match" state="variables.json##type_document" text="PLU">
 
-!!!!!! [1-2] L’article  L 151-5 du Code de l’Urbanisme rappelle les objectifs du PADD
+!!!!!! [1-2-a] L’article  L 151-5 du Code de l’Urbanisme rappelle les objectifs du PADD
 </$reveal>
 <$reveal type="match" state="variables.json##type_document" text="SCoT">
 
-!!!!!! [1-2] L’article  L 141-4 du Code de l’Urbanisme rappelle les objectifs du PADD
+!!!!!! [1-2-a] L’article  L 141-4 du Code de l’Urbanisme rappelle les objectifs du PADD
 </$reveal>
 
 !!!!! le territoire fait partie d'un SCoT? ''{{variables.json##dans_scot}}'' ([[changer|Variables]])

@@ -4,7 +4,7 @@ title: Porter à Connaissance
 type: text/vnd.tiddlywiki
 
 <style type="text/css">
-{{$:/pac/styles}}
+{{$:/pac/styles.css}}
 </style>
 
 !!!!! les variables sont modifiables dans [[Variables]] ou dans l'onglet à droite.

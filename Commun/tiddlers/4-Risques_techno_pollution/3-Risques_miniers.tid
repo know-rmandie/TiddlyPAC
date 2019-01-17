@@ -1,6 +1,7 @@
 created: 20170920094023322
-modified: 20170920100326516
+modified: 20180629094513574
 rank: 3
+revision: 0
 tags: [[Risques technologiques]]
 title: Risques miniers
 type: text/vnd.tiddlywiki
@@ -22,10 +23,11 @@ Le territoire est concerné par un plan de prévention des risques miniers (PPRM
 
 <$reveal type="match" state="variables.json##risques_miniers" text="pprm">
 
-La commune est concernée par un plan de prévention des risques miniers (PPRM) approuvé par arrêté préfectoral.
+Le territoire est concerné par ou plusieurs un plan de prévention des risques miniers (PPRM) approuvé par arrêté préfectoral.
 
 <<<.obli
 Les contraintes sur l’urbanisme sont entièrement définies dans le règlement de ce document.
 <<<
-!!!!! prévoir dans la partie régionale de TiddlyPAC un renvoi éventuel vers les PPRM en fonction du territoire.
+
+!!!!! prévoir dans la partie régionale de TiddlyPAC un renvoi éventuel vers les PPRM en fonction du territoire. Ou des éléments d'information locale sur ce risque.
 </$reveal>

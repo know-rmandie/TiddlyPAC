@@ -1,0 +1,15 @@
+modified: 20180629094513574
+modifiers: cduboscq
+rank: 0
+revision: 0
+tags: [[Risques miniers]]
+title: Risques miniers
+type: text/vnd.tiddlywiki
+
+!!!!! le territoire est concerné par des risques miniers? ''{{variables.json##risques_miniers}}'' ([[changer|Variables]])
+<$reveal type="nomatch" state="variables.json##risques_miniers" text="non">
+
+<<<.doc
+Les aléas miniers connus  sont disponibles sur l'application cartographique du ministère en charge de l'environnement sur la couche "mouvement de terrain d'origine minier" de la carte "prédisposition aux risques naturels en Normandie" : 
+<<<http://carmen.developpement-durable.gouv.fr/8/risques_naturels_mvt.map
+</$reveal>
